@@ -3,5 +3,7 @@ Python tutorials
 
 loops
 let us start with loops you sniveling fool
-beg for mercy idiot
+beg for mercy WORM
+
+
 
