@@ -2,6 +2,6 @@
 Python tutorials
 
 loops
-let us start with loops you slivering fool
+let us start with loops you sniveling fool
 beg for mercy idiot
 
