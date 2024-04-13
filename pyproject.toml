@@ -2,7 +2,7 @@
 name = "back2school"
 version = "0.1.0"
 description = "Guided lessons on Python using LLMs"
-authors = ["Vincent Chang and Reuben Brasher"]
+authors = ["Vincent Chang <vincent.chang167@gmail.com> and Reuben Brasher <rkbrasher@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
