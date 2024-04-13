@@ -20,8 +20,17 @@ def for_list_total():
         total += cost
     print(f"Total: ${total}")
 
-prices = [10, 20, 61, 309]
-for_list_total()
+def for_xy_coord_gen():
+    for x in range(m):
+        for y in range(n):
+            print(f'({x}, {y})')
+
+""" prices = [10, 20, 61, 309]
+for_list_total() """
+
+m = 4
+n = 3
+for_xy_coord_gen()
 
 
 
