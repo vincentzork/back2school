@@ -11,6 +11,8 @@ def for_foo():
         print(a)
 
 for_foo()
+for_asdf()
+
 
 
 
