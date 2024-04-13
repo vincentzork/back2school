@@ -34,6 +34,18 @@ def for_xy_coord_gen():
 """ prices = [10, 20, 61, 309]
 for_list_total() """
 
-m = 4
+"""m = 4
 n = 3
+<<<<<<< Updated upstream
 for_xy_coord_gen()
+=======
+for_xy_coord_gen()"""
+
+
+def for_histogram_gen_1():
+    for x_count in numbers:
+        print("x" * x_count)
+
+
+numbers = [5, 2, 6, 2, 4]
+for_histogram_gen_1()
