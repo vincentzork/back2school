@@ -51,3 +51,16 @@ print(greet("Alice", "Welcome"))  # Output: Welcome, Alice!
 
 # Using the function with the default message
 print(greet("Bob"))  # Output: Hello, Bob!
+
+
+
+# Non-Pythonic way: using a loop to create a list of squares
+squares = []
+for i in range(10):
+    squares.append(i * i)
+
+# Pythonic way: using list comprehension to create the same list
+squares = [i * i for i in range(10)]
+
+print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
