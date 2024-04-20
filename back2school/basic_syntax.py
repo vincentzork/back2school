@@ -22,7 +22,7 @@ print(f"{name} is {age} years old and {height} feet tall. Adult? {is_adult}")
 mixed_list = [age, height, name, is_adult]
 print(mixed_list)  # Output: [30, 5.9, 'Alex', True]
 
-"""
+
 # A list of crayons
 crayons = ["blue", "green", "yellow", "red"]
 
@@ -39,3 +39,15 @@ for crayon in crayons:
 # Color the grass with green
 # Color the flowers with yellow
 # Color the flowers with red
+
+"""
+
+def greet(name, message="Hello"):
+    """Function to greet someone with a custom message or a default message."""
+    return f"{message}, {name}!"
+
+# Using the function with a custom message
+print(greet("Alice", "Welcome"))  # Output: Welcome, Alice!
+
+# Using the function with the default message
+print(greet("Bob"))  # Output: Hello, Bob!
