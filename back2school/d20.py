@@ -1,7 +1,6 @@
 import random
 import time
 
-
 class ChromaticDragon:
     def __init__(self, name, age_category, dragon_type):
         self.name = name
@@ -169,19 +168,19 @@ class ChromaticDragon:
         modifier = int(parts[1]) if len(parts) > 1 else 0
         return num_dice, dice_sides, modifier
 
-    def take_damage(self, take_damage(self, damage):
-            # Simulate taking damage
-            self.hit_points -= damage
-            print(f'{self.name} takes {damage} damage! Remaining hit points: {self.hit_points}')
+    def take_damage(self, damage):
+        # Simulate taking damage
+        self.hit_points -= damage
+        print(f'{self.name} takes {damage} damage! Remaining hit points: {self.hit_points}')
+
+# Testing the ChromaticDragon class
+red_dragon = ChromaticDragon('Red Dragon', 'Adult', 'Red')
+player = ChromaticDragon('Player', 'Adult', 'Human')
+
+# Simulate combat
+for _ in range(5):
+    red_dragon.attack(player)
+    time.sleep(1)  # Simulate time passing between attacks
 
 
-    # Testing the ChromaticDragon class
-
-    red_dragon = ChromaticDragon('Red Dragon', 'Adult', 'Red')
-    player = ChromaticDragon('Player', 'Adult', 'Human')
-
-    # Simulate combat
-    for _ in range(5):
-        red_dragon.attack(player)
-        time.sleep(1)  # Simulate time passing between attacks
 
