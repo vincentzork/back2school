@@ -1,7 +1,6 @@
 import random
 import time
 
-
 class ChromaticDragon:
     def __init__(self, name, age_category, dragon_type):
         self.name = name
@@ -13,67 +12,63 @@ class ChromaticDragon:
         self.special_attack = self.get_special_attack()
         self.finishing_move_threshold = self.calculate_finishing_move_threshold()
         self.last_breath_time = time.time()  # Track time of last breath weapon usage
-        self.breath_cooldown = (
-            60 * 10
-        )  # Cooldown time for breath weapon in seconds (10 minutes)
+        self.breath_cooldown = 60 * 10  # Cooldown time for breath weapon in seconds (10 minutes)
 
     def calculate_hit_points(self):
         hit_points_mapping = {
-            "Wyrmling": "10d8+20",
-            "Very Young": "15d10+45",
-            "Young": "20d10+80",
-            "Adult": "30d10+150",
-            "Old": "40d10+240",
-            "Ancient": "50d10+350",
+            'Wyrmling': '10d8+20',
+            'Very Young': '15d10+45',
+            'Young': '20d10+80',
+            'Adult': '30d10+150',
+            'Old': '40d10+240',
+            'Ancient': '50d10+350',
         }
-        hit_points_dice = hit_points_mapping.get(self.age_category, "0")
+        hit_points_dice = hit_points_mapping.get(self.age_category, '0')
         return self.roll_dice(hit_points_dice)
 
     def calculate_armor_class(self):
         armor_class_mapping = {
-            "Wyrmling": 17,
-            "Very Young": 18,
-            "Young": 19,
-            "Adult": 20,
-            "Old": 21,
-            "Ancient": 22,
+            'Wyrmling': 17,
+            'Very Young': 18,
+            'Young': 19,
+            'Adult': 20,
+            'Old': 21,
+            'Ancient': 22,
         }
         return armor_class_mapping.get(self.age_category, 10)
 
     def get_breath_weapon(self):
         breath_weapon_mapping = {
-            "Red": "Fire Breath",
-            "Blue": "Lightning Breath",
-            "Green": "Poison Breath",
-            "Black": "Acid Breath",
-            "White": "Cold Breath",
-            "Gray": "Paralyzing Breath",
+            'Red': 'Fire Breath',
+            'Blue': 'Lightning Breath',
+            'Green': 'Poison Breath',
+            'Black': 'Acid Breath',
+            'White': 'Cold Breath',
+            'Gray': 'Paralyzing Breath',
         }
-        return breath_weapon_mapping.get(self.dragon_type, "Unknown Breath")
+        return breath_weapon_mapping.get(self.dragon_type, 'Unknown Breath')
 
     def get_special_attack(self):
         special_attacks = {
-            "Red": "Fiery Burst",
-            "Blue": "Thunderous Roar",
-            "Green": "Toxic Cloud",
-            "Black": "Acidic Spray",
-            "White": "Frostbite",
-            "Gray": "Paralyzing Gaze",
+            'Red': 'Fiery Burst',
+            'Blue': 'Thunderous Roar',
+            'Green': 'Toxic Cloud',
+            'Black': 'Acidic Spray',
+            'White': 'Frostbite',
+            'Gray': 'Paralyzing Gaze',
         }
-        return special_attacks.get(self.dragon_type, "Unknown Attack")
+        return special_attacks.get(self.dragon_type, 'Unknown Attack')
 
     def calculate_finishing_move_threshold(self):
         threshold_mapping = {
-            "Wyrmling": 50,
-            "Very Young": 75,
-            "Young": 100,
-            "Adult": 150,
-            "Old": 200,
-            "Ancient": 300,
+            'Wyrmling': 50,
+            'Very Young': 75,
+            'Young': 100,
+            'Adult': 150,
+            'Old': 200,
+            'Ancient': 300,
         }
-        return threshold_mapping.get(
-            self.age_category, 100
-        )  # Default threshold if age category is not found
+        return threshold_mapping.get(self.age_category, 100)  # Default threshold if age category is not found
 
     def can_use_breath_weapon(self):
         current_time = time.time()
@@ -83,83 +78,79 @@ class ChromaticDragon:
     def use_breath_weapon(self):
         if self.can_use_breath_weapon():
             self.last_breath_time = time.time()
-            print(f"{self.name} uses {self.breath_weapon}!")
+            print(f'{self.name} uses {self.breath_weapon}!')
             # Add breath weapon effect here
         else:
-            print(
-                f"{self.name} cannot use {self.breath_weapon} yet. Cooldown in progress."
-            )
+            print(f'{self.name} cannot use {self.breath_weapon} yet. Cooldown in progress.')
 
     def attack(self, target):
-        physical_attack = random.choice(["claw", "bite", "tail"])
+        physical_attack = random.choice(['claw', 'bite', 'tail'])
 
-        if physical_attack == "claw":
+        if physical_attack == 'claw':
             damage = self.calculate_claw_damage()
-            print(f"{self.name} attacks with a claw!")
-        elif physical_attack == "bite":
+            print(f'{self.name} attacks with a claw!')
+        elif physical_attack == 'bite':
             damage = self.calculate_bite_damage()
-            print(f"{self.name} attacks with a bite!")
+            print(f'{self.name} attacks with a bite!')
         else:  # physical_attack == 'tail'
             damage = self.calculate_tail_damage()
-            print(f"{self.name} attacks with its tail!")
+            print(f'{self.name} attacks with its tail!')
 
         if self.hit_points >= self.finishing_move_threshold:
             finishing_damage = self.calculate_special_attack_damage()
             total_damage = damage + finishing_damage
-            print(
-                f"{self.name} executes a powerful finishing move with {self.special_attack}!"
-            )
+            print(f'{self.name} executes a powerful finishing move with {self.special_attack}!')
             target.take_damage(total_damage)
         else:
-            print(f"{self.name} deals {damage} damage to {target.name}!")
+            print(f'{self.name} deals {damage} damage to {target.name}!')
             target.take_damage(damage)
 
     def calculate_claw_damage(self):
         claw_damage_mapping = {
-            "Wyrmling": "2d6",
-            "Very Young": "2d8",
-            "Young": "2d10",
-            "Adult": "3d6",
-            "Old": "3d8",
-            "Ancient": "4d6",
+            'Wyrmling': '2d6',
+            'Very Young': '2d8',
+            'Young': '2d10',
+            'Adult': '3d6',
+            'Old': '3d8',
+            'Ancient': '4d6',
         }
-        damage_roll = claw_damage_mapping.get(self.age_category, "0")
+        damage_roll = claw_damage_mapping.get(self.age_category, '0')
         return self.roll_dice(damage_roll)
 
     def calculate_bite_damage(self):
         bite_damage_mapping = {
-            "Wyrmling": "1d10",
-            "Very Young": "2d6",
-            "Young": "2d8",
-            "Adult": "2d10",
-            "Old": "3d8",
-            "Ancient": "3d10",
+            'Wyrmling': '1d10',
+            'Very Young': '2d6',
+            'Young': '2d8',
+            'Adult': '2d10',
+            'Old': '3d8',
+            'Ancient': '3d10',
         }
-        damage_roll = bite_damage_mapping.get(self.age_category, "0")
+        damage_roll = bite_damage_mapping.get(self.age_category, '0')
         return self.roll_dice(damage_roll)
 
     def calculate_tail_damage(self):
         tail_damage_mapping = {
-            "Wyrmling": "1d8",
-            "Very Young": "1d10",
-            "Young": "2d6",
-            "Adult": "2d8",
-            "Old": "3d6",
-            "Ancient": "3d8",
+            'Wyrmling': '1d8',
+            'Very Young': '1d10',
+            'Young': '2d6',
+            'Adult': '2d8',
+            'Old': '3d6',
+            'Ancient': '3d8',
         }
-        damage_roll = tail_damage_mapping.get(self.age_category, "0")
+        damage_roll = tail_damage_mapping.get(self.age_category, '0')
         return self.roll_dice(damage_roll)
 
     def calculate_special_attack_damage(self):
         special_attack_damage_mapping = {
-            "Red": "3d8",
-            "Blue": "3d8",
-            "Green": "3d8",
-            "Black": "3d8",
-            "White": "3d8",
-            "Gray": "3d8",
+            'Red': '3d8',
+            'Blue': '3d8',
+            'Green': '3d8',
+            'Black': '3d8',
+            'White': '3d8',
+            'Gray': '3d8',
         }
-        damage_roll = special_attack_damage_mapping.get(self.dragon_type, "0")
+        damage_roll = special_attack_damage_mapping.get(self.dragon_type, '0')
         return self.roll_dice(damage_roll)
 
     def roll_dice(self, dice_code):
@@ -167,21 +158,19 @@ class ChromaticDragon:
         return sum(random.randint(1, dice_sides) for _ in range(num_dice)) + modifier
 
     def parse_dice_code(self, dice_code):
-        parts = dice_code.split("+")
-        num_dice, dice_sides = map(int, parts[0].split("d"))
+        parts = dice_code.split('+')
+        num_dice, dice_sides = map(int, parts[0].split('d'))
         modifier = int(parts[1]) if len(parts) > 1 else 0
         return num_dice, dice_sides, modifier
 
     def take_damage(self, damage):
         self.hit_points -= damage
-        print(
-            f"{self.name} takes {damage} damage! Remaining hit points: {self.hit_points}"
-        )
-
+        print(f'{self.name} takes {damage} damage! Remaining hit points: {self.hit_points}')
 
 # Testing the ChromaticDragon class
-red_dragon = ChromaticDragon("Red Dragon", "Adult", "Red")
-player = ChromaticDragon("Player", "Adult", "Human")
+red_dragon = ChromaticDragon('Red Dragon', 'Adult', 'Red')
+player = ChromaticDragon('Player', 'Adult', 'Human')
 
 for _ in range(5):
     red_dragon.attack(player)
+
