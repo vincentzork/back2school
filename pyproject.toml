@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "back2school"
-version = "0.1.0"
+version = "0.1.1"
 description = "Guided lessons on Python using LLMs"
 authors = ["Vincent Chang <vincent.chang167@gmail.com>", "Reuben Brasher <rkbrasher@gmail.com>"]
 license = "MIT"
