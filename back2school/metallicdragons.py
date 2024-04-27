@@ -1,8 +1,10 @@
 import random
 import time
 
+from .dragons import Dragon
 
-class MetallicDragon:
+
+class MetallicDragon(Dragon):
     def __init__(self, name, age_category, dragon_type):
         self.name = name
         self.age_category = age_category
@@ -168,12 +170,6 @@ class MetallicDragon:
     def roll_dice(self, dice_code):
         num_dice, dice_sides, modifier = self.parse_dice_code(dice_code)
         return sum(random.randint(1, dice_sides) for _ in range(num_dice)) + modifier
-
-    def parse_dice_code(self, dice_code):
-        parts = dice_code.split("+")
-        num_dice, dice_sides = map(int, parts[0].split("d"))
-        modifier = int(parts[1]) if len(parts) > 1 else 0
-        return num_dice, dice_sides, modifier
 
     def take_damage(self, damage):
         self.hit_points -= damage
