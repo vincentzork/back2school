@@ -42,16 +42,17 @@ for crayon in crayons:
 
 """
 
+
 def greet(name, message="Hello"):
     """Function to greet someone with a custom message or a default message."""
     return f"{message}, {name}!"
+
 
 # Using the function with a custom message
 print(greet("Alice", "Welcome"))  # Output: Welcome, Alice!
 
 # Using the function with the default message
 print(greet("Bob"))  # Output: Hello, Bob!
-
 
 
 # Non-Pythonic way: using a loop to create a list of squares
@@ -63,7 +64,3 @@ for i in range(10):
 squares = [i * i for i in range(10)]
 
 print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-
-
-
-

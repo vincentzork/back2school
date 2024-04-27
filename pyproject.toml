@@ -2,7 +2,7 @@
 name = "back2school"
 version = "0.1.0"
 description = "Guided lessons on Python using LLMs"
-authors = ["Vincent Chang <vincent.chang167@gmail.com> and Reuben Brasher <rkbrasher@gmail.com>"]
+authors = ["Vincent Chang <vincent.chang167@gmail.com>", "Reuben Brasher <rkbrasher@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
@@ -13,6 +13,9 @@ pandas = "^2.2.2"
 poetry = "^1.8.2"
 black = "^24.4.0"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.2"
 
 [build-system]
 requires = ["poetry-core"]
