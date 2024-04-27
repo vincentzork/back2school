@@ -3,6 +3,7 @@ import time
 
 from .dragons import Dragon
 
+
 class ChromaticDragon(Dragon):
     def __init__(self, name, age_category, dragon_type):
         self.name = name
@@ -166,7 +167,6 @@ class ChromaticDragon(Dragon):
     def roll_dice(self, dice_code):
         num_dice, dice_sides, modifier = self.parse_dice_code(dice_code)
         return sum(random.randint(1, dice_sides) for _ in range(num_dice)) + modifier
-
 
     def take_damage(self, damage):
         self.hit_points -= damage

@@ -39,8 +39,8 @@ def test_metallic_dragon_parse_dice_code():
     assert result3 == (5, 6, 0)
 
     # Example 4: Dice code with negative modifier
-    # result4 = metallic_dragon.parse_dice_code("8d12-5")
-    # assert result4 == (8, 12, -5)
+    result4 = metallic_dragon.parse_dice_code("8d12-5")
+    assert result4 == (8, 12, -5)
 
     # Example 5: Dice code with single die
     result5 = metallic_dragon.parse_dice_code("1d4")
