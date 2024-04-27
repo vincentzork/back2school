@@ -1,7 +1,7 @@
 import random
 import time
 
-class MetallicDragon:
+class ChromaticDragon:
     def __init__(self, name, age_category, dragon_type):
         self.name = name
         self.age_category = age_category
@@ -39,25 +39,23 @@ class MetallicDragon:
 
     def get_breath_weapon(self):
         breath_weapon_mapping = {
-            'Gold': 'Fire Breath',
-            'Silver': 'Cold Breath',
-            'Copper': 'Acid Breath',
-            'Brass': 'Fire Breath',
-            'Bronze': 'Lightning Breath',
-            'Cobalt': 'Force Breath',
-            'Mercury': 'Poison Breath',
+            'Red': 'Fire Breath',
+            'Blue': 'Lightning Breath',
+            'Green': 'Poison Breath',
+            'Black': 'Acid Breath',
+            'White': 'Cold Breath',
+            'Gray': 'Paralyzing Breath',
         }
         return breath_weapon_mapping.get(self.dragon_type, 'Unknown Breath')
 
     def get_special_attack(self):
         special_attacks = {
-            'Gold': 'Golden Blaze',
-            'Silver': 'Freezing Gaze',
-            'Copper': 'Acidic Bite',
-            'Brass': 'Inferno Roar',
-            'Bronze': 'Thunderous Charge',
-            'Cobalt': 'Forceful Blast',
-            'Mercury': 'Toxic Cloud',
+            'Red': 'Fiery Burst',
+            'Blue': 'Thunderous Roar',
+            'Green': 'Toxic Cloud',
+            'Black': 'Acidic Spray',
+            'White': 'Frostbite',
+            'Gray': 'Paralyzing Gaze',
         }
         return special_attacks.get(self.dragon_type, 'Unknown Attack')
 
@@ -145,13 +143,12 @@ class MetallicDragon:
 
     def calculate_special_attack_damage(self):
         special_attack_damage_mapping = {
-            'Gold': '3d8',
-            'Silver': '3d8',
-            'Copper': '3d8',
-            'Brass': '3d8',
-            'Bronze': '3d8',
-            'Cobalt': '3d8',
-            'Mercury': '3d8',
+            'Red': '3d8',
+            'Blue': '3d8',
+            'Green': '3d8',
+            'Black': '3d8',
+            'White': '3d8',
+            'Gray': '3d8',
         }
         damage_roll = special_attack_damage_mapping.get(self.dragon_type, '0')
         return self.roll_dice(damage_roll)
@@ -170,9 +167,10 @@ class MetallicDragon:
         self.hit_points -= damage
         print(f'{self.name} takes {damage} damage! Remaining hit points: {self.hit_points}')
 
-# Testing the MetallicDragon class
-gold_dragon = MetallicDragon('Gold Dragon', 'Adult', 'Gold')
-player = MetallicDragon('Player', 'Adult', 'Human')
+# Testing the ChromaticDragon class
+red_dragon = ChromaticDragon('Red Dragon', 'Adult', 'Red')
+player = ChromaticDragon('Player', 'Adult', 'Human')
 
 for _ in range(5):
-    gold_dragon.attack(player)
+    red_dragon.attack(player)
+
