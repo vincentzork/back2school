@@ -12,6 +12,7 @@ numpy = "^1.26.4"
 pandas = "^2.2.2"
 poetry = "^1.8.2"
 black = "^24.4.0"
+pydantic = "^2.7.1"
 
 
 [tool.poetry.group.dev.dependencies]
