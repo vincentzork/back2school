@@ -2,12 +2,12 @@ from pydantic import BaseModel, Field
 
 
 class SavingThrows(BaseModel):
-    STR: int = Field(...)
-    DEX: int = Field(...)
-    CON: int = Field(...)
-    INT: int = Field(...)
-    WIS: int = Field(...)
-    CHA: int = Field(...)
+    strength: int = Field(...)
+    dexterity: int = Field(...)
+    constitution: int = Field(...)
+    intelligence: int = Field(...)
+    wisdom: int = Field(...)
+    charisma: int = Field(...)
 
     class Config:
         validate_assignment = True

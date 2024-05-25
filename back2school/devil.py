@@ -1,26 +1,26 @@
 # Example stat block customization
 asmodeus_custom_stat_block = {
-    "Name": "Asmodeus",
-    "Hit Points": 500,  # Adjust based on desired difficulty
-    "Armor Class": 25,  # High AC reflecting his formidable defenses
-    "Speed": "40 ft, fly 60 ft",
-    "Abilities": {
-        "Strength": 24,
-        "Dexterity": 18,
-        "Constitution": 26,
-        "Intelligence": 30,
-        "Wisdom": 24,
-        "Charisma": 32,
+    "name": "Asmodeus",
+    "hit_points": 500,
+    "armor_class": 25,
+    "speed": "40 ft, fly 60 ft",
+    "abilities": {
+        "strength": 24,
+        "dexterity": 18,
+        "constitution": 26,
+        "intelligence": 30,
+        "wisdom": 24,
+        "charisma": 32,
     },
-    "Saving Throws": {
-        "STR": "+14",
-        "DEX": "+11",
-        "CON": "+15",
-        "INT": "+17",
-        "WIS": "+14",
-        "CHA": "+19",
+    "saving_throws": {
+        "strength": "+14",
+        "dexterity": "+11",
+        "constitution": "+15",
+        "intelligence": "+17",
+        "wisdom": "+14",
+        "charisma": "+19",
     },
-    "Skills": [
+    "skills": [
         "Arcana +17",
         "Deception +19",
         "Insight +14",
@@ -28,13 +28,13 @@ asmodeus_custom_stat_block = {
         "Perception +14",
         "Persuasion +19",
     ],
-    "Damage Resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks",
-    "Damage Immunities": "fire, poison",
-    "Condition Immunities": "charmed, exhausted, frightened, poisoned",
-    "Senses": "truesight 120 ft., passive Perception 24",
-    "Languages": "all, telepathy 120 ft.",
-    "Challenge": 30,
-    "Special Abilities": [
+    "damage_resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damage_immunities": "fire, poison",
+    "condition_immunities": "charmed, exhausted, frightened, poisoned",
+    "senses": "truesight 120 ft., passive Perception 24",
+    "languages": "all, telepathy 120 ft.",
+    "challenge": 30,
+    "special_abilities": [
         "Innate Spellcasting",
         "Magic Resistance",
         "Infernal Pact",
@@ -42,7 +42,7 @@ asmodeus_custom_stat_block = {
         "Hellish Rejuvenation",
         "Legendary Actions",
     ],
-    "Legendary Actions": {
+    "legendary_actions": {
         "Infernal Command": "Asmodeus commands his minions with unparalleled authority."
     },
 }

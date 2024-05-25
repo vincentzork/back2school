@@ -30,98 +30,53 @@ from typing import Dict, List
 from pydantic import BaseModel
 
 
-class LegendaryActions(BaseModel):
-    Infernal_Command: str
-
-
 class AsmodeusStatBlock(BaseModel):
-    Name: str
-    Hit_Points: int
-    Armor_Class: int
-    Speed: str
-    Abilities: abililty_scores.AbilityScores
-    Saving_Throws: savings_throws.SavingThrows
-    Skills: List[str]
-    Damage_Resistances: str
-    Damage_Immunities: str
-    Condition_Immunities: str
-    Senses: str
-    Languages: str
-    Challenge: int
-    Special_Abilities: List[str]
-    Legendary_Actions: LegendaryActions
+    name: str
+    hit_points: int
+    armor_class: int
+    speed: str
+    abilities: abililty_scores.AbilityScores
+    saving_throws: savings_throws.SavingThrows
+    skills: List[str]
+    damage_resistances: str
+    damage_immunities: str
+    condition_immunities: str
+    senses: str
+    languages: str
+    challenge: int
+    special_abilities: List[str]
+    legendary_actions: Dict[str, str]
 
 
 @pytest.fixture
 def asmodeus_stat_block():
     # Fixture to provide a sample instance of AsmodeusStatBlock for testing
-    return AsmodeusStatBlock(
-        Name="Asmodeus",
-        Hit_Points=500,
-        Armor_Class=25,
-        Speed="40 ft, fly 60 ft",
-        Abilities=abililty_scores.AbilityScores(
-            strength=24,
-            dexterity=18,
-            constitution=26,
-            intelligence=30,
-            wisdom=24,
-            charisma=32,
-        ),
-        Saving_Throws=savings_throws.SavingThrows(
-            STR="+14", DEX="+11", CON="+15", INT="+17", WIS="+14", CHA="+19"
-        ),
-        Skills=[
-            "Arcana +17",
-            "Deception +19",
-            "Insight +14",
-            "Intimidation +19",
-            "Perception +14",
-            "Persuasion +19",
-        ],
-        Damage_Resistances="cold; bludgeoning, piercing, and slashing from nonmagical attacks",
-        Damage_Immunities="fire, poison",
-        Condition_Immunities="charmed, exhausted, frightened, poisoned",
-        Senses="truesight 120 ft., passive Perception 24",
-        Languages="all, telepathy 120 ft.",
-        Challenge=30,
-        Special_Abilities=[
-            "Innate Spellcasting",
-            "Magic Resistance",
-            "Infernal Pact",
-            "Infernal Glare",
-            "Hellish Rejuvenation",
-            "Legendary Actions",
-        ],
-        Legendary_Actions={
-            "Infernal_Command": "Asmodeus commands his minions with unparalleled authority."
-        },
-    )
+    return AsmodeusStatBlock(**devil.asmodeus_custom_stat_block)
 
 
 def test_asmodeus_stat_block(asmodeus_stat_block):
     # Check if the AsmodeusStatBlock instance is created correctly
-    assert asmodeus_stat_block.Name == "Asmodeus"
-    assert asmodeus_stat_block.Hit_Points == 500
-    assert asmodeus_stat_block.Armor_Class == 25
-    assert asmodeus_stat_block.Speed == "40 ft, fly 60 ft"
-    assert asmodeus_stat_block.Abilities.strength == 24
-    assert asmodeus_stat_block.Saving_Throws.STR == 14
-    assert "Deception +19" in asmodeus_stat_block.Skills
+    assert asmodeus_stat_block.name == "Asmodeus"
+    assert asmodeus_stat_block.hit_points == 500
+    assert asmodeus_stat_block.armor_class == 25
+    assert asmodeus_stat_block.speed == "40 ft, fly 60 ft"
+    assert asmodeus_stat_block.abilities.strength == 24
+    assert asmodeus_stat_block.saving_throws.strength == 14
+    assert "Deception +19" in asmodeus_stat_block.skills
     assert (
-        asmodeus_stat_block.Damage_Resistances
+        asmodeus_stat_block.damage_resistances
         == "cold; bludgeoning, piercing, and slashing from nonmagical attacks"
     )
-    assert asmodeus_stat_block.Damage_Immunities == "fire, poison"
+    assert asmodeus_stat_block.damage_immunities == "fire, poison"
     assert (
-        asmodeus_stat_block.Condition_Immunities
+        asmodeus_stat_block.condition_immunities
         == "charmed, exhausted, frightened, poisoned"
     )
-    assert asmodeus_stat_block.Senses == "truesight 120 ft., passive Perception 24"
-    assert asmodeus_stat_block.Languages == "all, telepathy 120 ft."
-    assert asmodeus_stat_block.Challenge == 30
-    assert "Magic Resistance" in asmodeus_stat_block.Special_Abilities
+    assert asmodeus_stat_block.senses == "truesight 120 ft., passive Perception 24"
+    assert asmodeus_stat_block.languages == "all, telepathy 120 ft."
+    assert asmodeus_stat_block.challenge == 30
+    assert "Magic Resistance" in asmodeus_stat_block.special_abilities
     assert (
-        asmodeus_stat_block.Legendary_Actions.Infernal_Command
+        asmodeus_stat_block.legendary_actions["Infernal Command"]
         == "Asmodeus commands his minions with unparalleled authority."
     )
