@@ -1,4 +1,10 @@
 # Example stat block customization
+from typing import List, Dict
+
+from pydantic import BaseModel
+
+from back2school import abililty_scores, savings_throws
+
 asmodeus_custom_stat_block = {
     "unique_attacks_weapons": ["Infernal Sword", "Hellfire Whip"],
     "common_behaviors_actions": [
@@ -373,63 +379,21 @@ geryon_custom_stat_block = {
 }
 
 
-class Archdevil:
-    _unique_attacks_weapons = {
-        "Asmodeus": ["Infernal Sword", "Hellfire Whip"],
-        "Baalzebul": ["Pestilent Touch", "Corruption Blade"],
-        "Belial": ["Inferno Fist", "Deceptive Blade"],
-        "Dispater": ["Chains of Dis", "Disintegrator Ray"],
-        "Mammon": ["Greed's Grasp", "Golden Scepter"],
-        "Mephistopheles": ["Hellfire Blast", "Infernal Pactblade"],
-        "Geryon": ["Stygian Horns", "Abyssal Claws"],
-    }
-
-    _common_behaviors_actions = {
-        "Asmodeus": [
-            "Manipulative schemes",
-            "Deals with mortals and other beings for power",
-            "Strategic planning",
-            "Master of manipulation and deception",
-        ],
-        "Baalzebul": [
-            "Deals in secrets, corruption, manipulation",
-            "Bargaining, offers deals with a hidden price",
-            "Specializes in spreading disease and corruption",
-        ],
-        "Belial": [
-            "Intrigue, seduction, manipulation",
-            "Deals with mortals for power",
-            "Expert in deception and persuasion",
-        ],
-        "Dispater": [
-            "Master of intrigue and espionage",
-            "Deals in secrets and information",
-            "Uses spies and manipulative tactics",
-        ],
-        "Mammon": [
-            "Greed, wealth",
-            "Deals in trade and commerce",
-            "Focuses on hoarding and controlling resources",
-        ],
-        "Mephistopheles": [
-            "Mastery of magic",
-            "Deals in contracts and pacts",
-            "Specializes in infernal magic and arcane knowledge",
-        ],
-        "Geryon": [
-            "Fear, intimidation",
-            "Control over beasts and monsters",
-            "Focuses on terrorizing and subjugating enemies",
-        ],
-    }
-
-    def __init__(self, name):
-        self.name = name
-
-    @property
-    def common_behaviors_actions(self):
-        return self._common_behaviors_actions.get(self.name, [])
-
-    @property
-    def unique_attacks_weapons(self):
-        return self._unique_attacks_weapons.get(self.name, [])
+class ArchdevilStatBlock(BaseModel):
+    unique_attacks_weapons: List[str]
+    common_behaviors_actions: List[str]
+    name: str
+    hit_points: int
+    armor_class: int
+    speed: str
+    abilities: abililty_scores.AbilityScores
+    saving_throws: savings_throws.SavingThrows
+    skills: List[str]
+    damage_resistances: str
+    damage_immunities: str
+    condition_immunities: str
+    senses: str
+    languages: str
+    challenge: int
+    special_abilities: List[str]
+    legendary_actions: Dict[str, str]

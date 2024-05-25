@@ -2,52 +2,8 @@ import pytest
 
 
 from .. import devil
-from .. import abililty_scores
-from .. import savings_throws
 
-
-def test_behaviors():
-    asmodeus = devil.Archdevil("Asmodeus")
-    actual = asmodeus.common_behaviors_actions
-    expected = [
-        "Manipulative schemes",
-        "Deals with mortals and other beings for power",
-        "Strategic planning",
-        "Master of manipulation and deception",
-    ]
-
-    assert actual == expected
-
-
-def test_unique_weapon():
-    asmodeus = devil.Archdevil("Asmodeus")
-    actual = asmodeus.unique_attacks_weapons
-    expected = ["Infernal Sword", "Hellfire Whip"]
-    assert actual == expected
-
-
-from typing import Dict, List
-from pydantic import BaseModel
-
-
-class ArchdevilStatBlock(BaseModel):
-    unique_attacks_weapons: List[str]
-    common_behaviors_actions: List[str]
-    name: str
-    hit_points: int
-    armor_class: int
-    speed: str
-    abilities: abililty_scores.AbilityScores
-    saving_throws: savings_throws.SavingThrows
-    skills: List[str]
-    damage_resistances: str
-    damage_immunities: str
-    condition_immunities: str
-    senses: str
-    languages: str
-    challenge: int
-    special_abilities: List[str]
-    legendary_actions: Dict[str, str]
+from ..devil import ArchdevilStatBlock
 
 
 @pytest.fixture
@@ -288,3 +244,23 @@ def test_geryon_stat_block(geryon_stat_block):
         geryon_stat_block.legendary_actions["Infernal Command"]
         == "Geryon commands his minions with unparalleled authority."
     )
+
+
+def test_behaviors(asmodeus_stat_block):
+    asmodeus = asmodeus_stat_block
+    actual = asmodeus.common_behaviors_actions
+    expected = [
+        "Manipulative schemes",
+        "Deals with mortals and other beings for power",
+        "Strategic planning",
+        "Master of manipulation and deception",
+    ]
+
+    assert actual == expected
+
+
+def test_unique_weapon(asmodeus_stat_block):
+    asmodeus = asmodeus_stat_block
+    actual = asmodeus.unique_attacks_weapons
+    expected = ["Infernal Sword", "Hellfire Whip"]
+    assert actual == expected
