@@ -8,7 +8,7 @@ from .. import savings_throws
 
 def test_behaviors():
     asmodeus = devil.Archdevil("Asmodeus")
-    actual = asmodeus.get_common_behaviors_actions()
+    actual = asmodeus.common_behaviors_actions
     expected = [
         "Manipulative schemes",
         "Deals with mortals and other beings for power",
@@ -21,7 +21,7 @@ def test_behaviors():
 
 def test_unique_weapon():
     asmodeus = devil.Archdevil("Asmodeus")
-    actual = asmodeus.get_unique_attacks_weapons()
+    actual = asmodeus.unique_attacks_weapons
     expected = ["Infernal Sword", "Hellfire Whip"]
     assert actual == expected
 
@@ -31,6 +31,8 @@ from pydantic import BaseModel
 
 
 class ArchdevilStatBlock(BaseModel):
+    unique_attacks_weapons: List[str]
+    common_behaviors_actions: List[str]
     name: str
     hit_points: int
     armor_class: int
