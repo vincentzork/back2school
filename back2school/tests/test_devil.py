@@ -9,9 +9,15 @@ from .. import savings_throws
 def test_behaviors():
     asmodeus = devil.Archdevil("Asmodeus")
     actual = asmodeus.get_common_behaviors_actions()
-    expected = ['Manipulative schemes', 'Deals with mortals and other beings for power', 'Strategic planning', 'Master of manipulation and deception']
+    expected = [
+        "Manipulative schemes",
+        "Deals with mortals and other beings for power",
+        "Strategic planning",
+        "Master of manipulation and deception",
+    ]
 
     assert actual == expected
+
 
 def test_unique_weapon():
     asmodeus = devil.Archdevil("Asmodeus")
@@ -19,11 +25,14 @@ def test_unique_weapon():
     expected = ["Infernal Sword", "Hellfire Whip"]
     assert actual == expected
 
+
 from typing import Dict, List
 from pydantic import BaseModel
 
+
 class LegendaryActions(BaseModel):
     Infernal_Command: str
+
 
 class AsmodeusStatBlock(BaseModel):
     Name: str
@@ -42,6 +51,7 @@ class AsmodeusStatBlock(BaseModel):
     Special_Abilities: List[str]
     Legendary_Actions: LegendaryActions
 
+
 @pytest.fixture
 def asmodeus_stat_block():
     # Fixture to provide a sample instance of AsmodeusStatBlock for testing
@@ -56,17 +66,19 @@ def asmodeus_stat_block():
             constitution=26,
             intelligence=30,
             wisdom=24,
-            charisma=32
+            charisma=32,
         ),
         Saving_Throws=savings_throws.SavingThrows(
-            STR="+14",
-            DEX="+11",
-            CON="+15",
-            INT="+17",
-            WIS="+14",
-            CHA="+19"
+            STR="+14", DEX="+11", CON="+15", INT="+17", WIS="+14", CHA="+19"
         ),
-        Skills=["Arcana +17", "Deception +19", "Insight +14", "Intimidation +19", "Perception +14", "Persuasion +19"],
+        Skills=[
+            "Arcana +17",
+            "Deception +19",
+            "Insight +14",
+            "Intimidation +19",
+            "Perception +14",
+            "Persuasion +19",
+        ],
         Damage_Resistances="cold; bludgeoning, piercing, and slashing from nonmagical attacks",
         Damage_Immunities="fire, poison",
         Condition_Immunities="charmed, exhausted, frightened, poisoned",
@@ -79,12 +91,13 @@ def asmodeus_stat_block():
             "Infernal Pact",
             "Infernal Glare",
             "Hellish Rejuvenation",
-            "Legendary Actions"
+            "Legendary Actions",
         ],
         Legendary_Actions={
             "Infernal_Command": "Asmodeus commands his minions with unparalleled authority."
-        }
+        },
     )
+
 
 def test_asmodeus_stat_block(asmodeus_stat_block):
     # Check if the AsmodeusStatBlock instance is created correctly
@@ -95,11 +108,20 @@ def test_asmodeus_stat_block(asmodeus_stat_block):
     assert asmodeus_stat_block.Abilities.strength == 24
     assert asmodeus_stat_block.Saving_Throws.STR == 14
     assert "Deception +19" in asmodeus_stat_block.Skills
-    assert asmodeus_stat_block.Damage_Resistances == "cold; bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert (
+        asmodeus_stat_block.Damage_Resistances
+        == "cold; bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
     assert asmodeus_stat_block.Damage_Immunities == "fire, poison"
-    assert asmodeus_stat_block.Condition_Immunities == "charmed, exhausted, frightened, poisoned"
+    assert (
+        asmodeus_stat_block.Condition_Immunities
+        == "charmed, exhausted, frightened, poisoned"
+    )
     assert asmodeus_stat_block.Senses == "truesight 120 ft., passive Perception 24"
     assert asmodeus_stat_block.Languages == "all, telepathy 120 ft."
     assert asmodeus_stat_block.Challenge == 30
     assert "Magic Resistance" in asmodeus_stat_block.Special_Abilities
-    assert asmodeus_stat_block.Legendary_Actions.Infernal_Command == "Asmodeus commands his minions with unparalleled authority."
+    assert (
+        asmodeus_stat_block.Legendary_Actions.Infernal_Command
+        == "Asmodeus commands his minions with unparalleled authority."
+    )

@@ -11,7 +11,7 @@ def test_ability_scores_initialization():
         "constitution": 16,
         "intelligence": 10,
         "wisdom": 12,
-        "charisma": 8
+        "charisma": 8,
     }
     # Invalid input data with one score out of bounds
     invalid_data = valid_data.copy()
@@ -25,6 +25,7 @@ def test_ability_scores_initialization():
     with pytest.raises(ValueError):
         AbilityScores(**invalid_data)
 
+
 @pytest.fixture
 def ability_scores():
     # Fixture to provide a sample instance of AbilityScores for testing
@@ -34,8 +35,9 @@ def ability_scores():
         constitution=16,
         intelligence=10,
         wisdom=12,
-        charisma=8
+        charisma=8,
     )
+
 
 def test_ability_scores_modifiers(ability_scores):
     # Check if the modifiers are calculated correctly
@@ -45,7 +47,7 @@ def test_ability_scores_modifiers(ability_scores):
         "constitution": 3,
         "intelligence": 0,
         "wisdom": 1,
-        "charisma": -1
+        "charisma": -1,
     }
 
     assert ability_scores.modifiers == expected_modifiers

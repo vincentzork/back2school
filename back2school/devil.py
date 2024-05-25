@@ -10,7 +10,7 @@ asmodeus_custom_stat_block = {
         "Constitution": 26,
         "Intelligence": 30,
         "Wisdom": 24,
-        "Charisma": 32
+        "Charisma": 32,
     },
     "Saving Throws": {
         "STR": "+14",
@@ -18,9 +18,16 @@ asmodeus_custom_stat_block = {
         "CON": "+15",
         "INT": "+17",
         "WIS": "+14",
-        "CHA": "+19"
+        "CHA": "+19",
     },
-    "Skills": ["Arcana +17", "Deception +19", "Insight +14", "Intimidation +19", "Perception +14", "Persuasion +19"],
+    "Skills": [
+        "Arcana +17",
+        "Deception +19",
+        "Insight +14",
+        "Intimidation +19",
+        "Perception +14",
+        "Persuasion +19",
+    ],
     "Damage Resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks",
     "Damage Immunities": "fire, poison",
     "Condition Immunities": "charmed, exhausted, frightened, poisoned",
@@ -33,11 +40,11 @@ asmodeus_custom_stat_block = {
         "Infernal Pact",
         "Infernal Glare",
         "Hellish Rejuvenation",
-        "Legendary Actions"
+        "Legendary Actions",
     ],
     "Legendary Actions": {
         "Infernal Command": "Asmodeus commands his minions with unparalleled authority."
-    }
+    },
 }
 
 baalzebul_custom_stat_block = {
@@ -51,7 +58,7 @@ baalzebul_custom_stat_block = {
         "Constitution": 24,
         "Intelligence": 28,
         "Wisdom": 22,
-        "Charisma": 30
+        "Charisma": 30,
     },
     "Saving Throws": {
         "STR": "+13",
@@ -59,9 +66,16 @@ baalzebul_custom_stat_block = {
         "CON": "+14",
         "INT": "+16",
         "WIS": "+13",
-        "CHA": "+18"
+        "CHA": "+18",
     },
-    "Skills": ["Arcana +16", "Deception +18", "Insight +13", "Intimidation +18", "Perception +13", "Persuasion +18"],
+    "Skills": [
+        "Arcana +16",
+        "Deception +18",
+        "Insight +13",
+        "Intimidation +18",
+        "Perception +13",
+        "Persuasion +18",
+    ],
     "Damage Resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks",
     "Damage Immunities": "fire, poison",
     "Condition Immunities": "charmed, exhausted, frightened, poisoned",
@@ -73,11 +87,11 @@ baalzebul_custom_stat_block = {
         "Magic Resistance",
         "Corrupting Touch",
         "Hellish Rejuvenation",
-        "Legendary Actions"
+        "Legendary Actions",
     ],
     "Legendary Actions": {
         "Infernal Command": "Baalzebul commands his minions with unparalleled authority."
-    }
+    },
 }
 
 belial_custom_stat_block = {
@@ -91,7 +105,7 @@ belial_custom_stat_block = {
         "Constitution": 25,
         "Intelligence": 26,
         "Wisdom": 22,
-        "Charisma": 28
+        "Charisma": 28,
     },
     "Saving Throws": {
         "STR": "+14",
@@ -99,9 +113,16 @@ belial_custom_stat_block = {
         "CON": "+15",
         "INT": "+15",
         "WIS": "+13",
-        "CHA": "+17"
+        "CHA": "+17",
     },
-    "Skills": ["Arcana +15", "Deception +17", "Insight +13", "Intimidation +17", "Perception +13", "Persuasion +17"],
+    "Skills": [
+        "Arcana +15",
+        "Deception +17",
+        "Insight +13",
+        "Intimidation +17",
+        "Perception +13",
+        "Persuasion +17",
+    ],
     "Damage Resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks",
     "Damage Immunities": "fire, poison",
     "Condition Immunities": "charmed, exhausted, frightened, poisoned",
@@ -113,11 +134,11 @@ belial_custom_stat_block = {
         "Magic Resistance",
         "Fire Aura",
         "Infernal Command",
-        "Legendary Actions"
+        "Legendary Actions",
     ],
     "Legendary Actions": {
         "Infernal Command": "Belial commands his minions with unparalleled authority."
-    }
+    },
 }
 
 dispater_custom_stat_block = {
@@ -131,7 +152,7 @@ dispater_custom_stat_block = {
         "Constitution": 24,
         "Intelligence": 30,
         "Wisdom": 22,
-        "Charisma": 28
+        "Charisma": 28,
     },
     "Saving Throws": {
         "STR": "+13",
@@ -139,9 +160,16 @@ dispater_custom_stat_block = {
         "CON": "+14",
         "INT": "+17",
         "WIS": "+13",
-        "CHA": "+17"
+        "CHA": "+17",
     },
-    "Skills": ["Arcana +17", "Deception +17", "Insight +13", "Intimidation +17", "Perception +13", "Persuasion +17"],
+    "Skills": [
+        "Arcana +17",
+        "Deception +17",
+        "Insight +13",
+        "Intimidation +17",
+        "Perception +13",
+        "Persuasion +17",
+    ],
     "Damage Resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks",
     "Damage Immunities": "fire, poison",
     "Condition Immunities": "charmed, exhausted, frightened, poisoned",
@@ -153,11 +181,11 @@ dispater_custom_stat_block = {
         "Magic Resistance",
         "Lord of Dis",
         "Infernal Regeneration",
-        "Legendary Actions"
+        "Legendary Actions",
     ],
     "Legendary Actions": {
         "Infernal Command": "Dispater commands his minions with unparalleled authority."
-    }
+    },
 }
 
 mammon_custom_stat_block = {
@@ -171,7 +199,7 @@ mammon_custom_stat_block = {
         "Constitution": 24,
         "Intelligence": 28,
         "Wisdom": 22,
-        "Charisma": 30
+        "Charisma": 30,
     },
     "Saving Throws": {
         "STR": "+13",
@@ -179,9 +207,16 @@ mammon_custom_stat_block = {
         "CON": "+14",
         "INT": "+16",
         "WIS": "+13",
-        "CHA": "+18"
+        "CHA": "+18",
     },
-    "Skills": ["Arcana +16", "Deception +18", "Insight +13", "Intimidation +18", "Perception +13", "Persuasion +18"],
+    "Skills": [
+        "Arcana +16",
+        "Deception +18",
+        "Insight +13",
+        "Intimidation +18",
+        "Perception +13",
+        "Persuasion +18",
+    ],
     "Damage Resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks",
     "Damage Immunities": "fire, poison",
     "Condition Immunities": "charmed, exhausted, frightened, poisoned",
@@ -193,11 +228,11 @@ mammon_custom_stat_block = {
         "Magic Resistance",
         "Golden Gaze",
         "Greed's Reward",
-        "Legendary Actions"
+        "Legendary Actions",
     ],
     "Legendary Actions": {
         "Infernal Command": "Mammon commands his minions with unparalleled authority."
-    }
+    },
 }
 
 mephistopheles_custom_stat_block = {
@@ -211,7 +246,7 @@ mephistopheles_custom_stat_block = {
         "Constitution": 26,
         "Intelligence": 30,
         "Wisdom": 22,
-        "Charisma": 32
+        "Charisma": 32,
     },
     "Saving Throws": {
         "STR": "+14",
@@ -219,9 +254,16 @@ mephistopheles_custom_stat_block = {
         "CON": "+15",
         "INT": "+17",
         "WIS": "+13",
-        "CHA": "+19"
+        "CHA": "+19",
     },
-    "Skills": ["Arcana +17", "Deception +19", "Insight +14", "Intimidation +19", "Perception +14", "Persuasion +19"],
+    "Skills": [
+        "Arcana +17",
+        "Deception +19",
+        "Insight +14",
+        "Intimidation +19",
+        "Perception +14",
+        "Persuasion +19",
+    ],
     "Damage Resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks",
     "Damage Immunities": "fire, poison",
     "Condition Immunities": "charmed, exhausted, frightened, poisoned",
@@ -233,11 +275,11 @@ mephistopheles_custom_stat_block = {
         "Magic Resistance",
         "Hellfire Aura",
         "Infernal Rejuvenation",
-        "Legendary Actions"
+        "Legendary Actions",
     ],
     "Legendary Actions": {
         "Infernal Command": "Mephistopheles commands his minions with unparalleled authority."
-    }
+    },
 }
 
 geryon_custom_stat_block = {
@@ -251,7 +293,7 @@ geryon_custom_stat_block = {
         "Constitution": 26,
         "Intelligence": 22,
         "Wisdom": 24,
-        "Charisma": 28
+        "Charisma": 28,
     },
     "Saving Throws": {
         "STR": "+14",
@@ -259,9 +301,16 @@ geryon_custom_stat_block = {
         "CON": "+15",
         "INT": "+13",
         "WIS": "+14",
-        "CHA": "+17"
+        "CHA": "+17",
     },
-    "Skills": ["Arcana +13", "Deception +17", "Insight +14", "Intimidation +17", "Perception +14", "Persuasion +17"],
+    "Skills": [
+        "Arcana +13",
+        "Deception +17",
+        "Insight +14",
+        "Intimidation +17",
+        "Perception +14",
+        "Persuasion +17",
+    ],
     "Damage Resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks",
     "Damage Immunities": "fire, poison",
     "Condition Immunities": "charmed, exhausted, frightened, poisoned",
@@ -273,12 +322,13 @@ geryon_custom_stat_block = {
         "Magic Resistance",
         "Fear Aura",
         "Infernal Regeneration",
-        "Legendary Actions"
+        "Legendary Actions",
     ],
     "Legendary Actions": {
         "Infernal Command": "Geryon commands his minions with unparalleled authority."
-    }
+    },
 }
+
 
 class Archdevil:
     unique_attacks_weapons = {
@@ -288,7 +338,7 @@ class Archdevil:
         "Dispater": ["Chains of Dis", "Disintegrator Ray"],
         "Mammon": ["Greed's Grasp", "Golden Scepter"],
         "Mephistopheles": ["Hellfire Blast", "Infernal Pactblade"],
-        "Geryon": ["Stygian Horns", "Abyssal Claws"]
+        "Geryon": ["Stygian Horns", "Abyssal Claws"],
     }
 
     common_behaviors_actions = {
@@ -296,38 +346,38 @@ class Archdevil:
             "Manipulative schemes",
             "Deals with mortals and other beings for power",
             "Strategic planning",
-            "Master of manipulation and deception"
+            "Master of manipulation and deception",
         ],
         "Baalzebul": [
             "Deals in secrets, corruption, manipulation",
             "Bargaining, offers deals with a hidden price",
-            "Specializes in spreading disease and corruption"
+            "Specializes in spreading disease and corruption",
         ],
         "Belial": [
             "Intrigue, seduction, manipulation",
             "Deals with mortals for power",
-            "Expert in deception and persuasion"
+            "Expert in deception and persuasion",
         ],
         "Dispater": [
             "Master of intrigue and espionage",
             "Deals in secrets and information",
-            "Uses spies and manipulative tactics"
+            "Uses spies and manipulative tactics",
         ],
         "Mammon": [
             "Greed, wealth",
             "Deals in trade and commerce",
-            "Focuses on hoarding and controlling resources"
+            "Focuses on hoarding and controlling resources",
         ],
         "Mephistopheles": [
             "Mastery of magic",
             "Deals in contracts and pacts",
-            "Specializes in infernal magic and arcane knowledge"
+            "Specializes in infernal magic and arcane knowledge",
         ],
         "Geryon": [
             "Fear, intimidation",
             "Control over beasts and monsters",
-            "Focuses on terrorizing and subjugating enemies"
-        ]
+            "Focuses on terrorizing and subjugating enemies",
+        ],
     }
 
     def __init__(self, name):
