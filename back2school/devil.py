@@ -291,18 +291,6 @@ class Archdevil:
         "Geryon": ["Stygian Horns", "Abyssal Claws"]
     }
 
-    def __init__(self, name):
-        self.name = name
-
-    def get_unique_attacks_weapons(self):
-        return self.unique_attacks_weapons.get(self.name, [])
-
-# Example usage
-asmodeus = Archdevil("Asmodeus")
-asmodeus_attacks_weapons = asmodeus.get_unique_attacks_weapons()
-print(asmodeus_attacks_weapons)
-
-class Archdevil:
     common_behaviors_actions = {
         "Asmodeus": [
             "Manipulative schemes",
@@ -348,3 +336,5 @@ class Archdevil:
     def get_common_behaviors_actions(self):
         return self.common_behaviors_actions.get(self.name, [])
 
+    def get_unique_attacks_weapons(self):
+        return self.unique_attacks_weapons.get(self.name, [])

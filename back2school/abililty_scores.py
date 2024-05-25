@@ -2,12 +2,12 @@ from pydantic import BaseModel, Field
 
 
 class AbilityScores(BaseModel):
-    strength: int = Field(..., ge=1, le=20)
-    dexterity: int = Field(..., ge=1, le=20)
-    constitution: int = Field(..., ge=1, le=20)
-    intelligence: int = Field(..., ge=1, le=20)
-    wisdom: int = Field(..., ge=1, le=20)
-    charisma: int = Field(..., ge=1, le=20)
+    strength: int = Field(..., ge=1)
+    dexterity: int = Field(..., ge=1)
+    constitution: int = Field(..., ge=1)
+    intelligence: int = Field(..., ge=1)
+    wisdom: int = Field(..., ge=1)
+    charisma: int = Field(..., ge=1)
 
     @property
     def modifiers(self):

@@ -15,7 +15,7 @@ def test_ability_scores_initialization():
     }
     # Invalid input data with one score out of bounds
     invalid_data = valid_data.copy()
-    invalid_data["strength"] = 25
+    invalid_data["strength"] = -1
 
     # Test valid input data
     ability_scores_valid = AbilityScores(**valid_data)
