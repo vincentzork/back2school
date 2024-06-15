@@ -379,7 +379,6 @@ geryon_custom_stat_block = {
 }
 
 
-
 class ArchdevilStatBlock(BaseModel):
     unique_attacks_weapons: List[str]
     common_behaviors_actions: List[str]
