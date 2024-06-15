@@ -9,7 +9,7 @@ demogorgon_custom_stat_block = {
     "common_behaviors_actions": [
         "Sowing discord and chaos among mortal realms.",
         "Manipulating cults and followers to serve his whims.",
-        "Engaging in political intrigue and power struggles within the Abyss."
+        "Engaging in political intrigue and power struggles within the Abyss.",
     ],
     "name": "Demogorgon",
     "hit_points": 550,
@@ -61,7 +61,7 @@ orcus_custom_stat_block = {
     "common_behaviors_actions": [
         "Spreading undeath and necromancy throughout the planes.",
         "Seeking to dominate the undead and increase his own power.",
-        "Conducting dark rituals to summon powerful undead creatures."
+        "Conducting dark rituals to summon powerful undead creatures.",
     ],
     "name": "Orcus",
     "hit_points": 600,
@@ -113,7 +113,7 @@ grazzt_custom_stat_block = {
     "common_behaviors_actions": [
         "Engaging in seduction and manipulation to gain followers and allies.",
         "Scheming and plotting to expand his influence in the Abyss.",
-        "Flaunting his wealth and power, often in decadent displays."
+        "Flaunting his wealth and power, often in decadent displays.",
     ],
     "name": "Graz'zt",
     "hit_points": 500,
@@ -165,7 +165,7 @@ baphomet_custom_stat_block = {
     "common_behaviors_actions": [
         "Fomenting chaos and violence among the lesser demons and cults.",
         "Seeking to dominate and control labyrinths and mazes.",
-        "Engaging in brutal combat and displays of physical strength."
+        "Engaging in brutal combat and displays of physical strength.",
     ],
     "name": "Baphomet",
     "hit_points": 600,
@@ -217,7 +217,7 @@ yeenoghu_custom_stat_block = {
     "common_behaviors_actions": [
         "Leading hordes of gnolls in raids and pillaging across the Material Plane.",
         "Spreading savagery and madness, inciting bloodlust among his followers.",
-        "Corrupting lands and turning them into desolate wastelands."
+        "Corrupting lands and turning them into desolate wastelands.",
     ],
     "name": "Yeenoghu",
     "hit_points": 650,
@@ -269,7 +269,7 @@ zariel_custom_stat_block = {
     "common_behaviors_actions": [
         "Leading legions of devils in battles against demons and other enemies.",
         "Imposing order and discipline in the Nine Hells, punishing disobedience.",
-        "Seeking to ascend to greater power and challenge the rulership of the Nine Hells."
+        "Seeking to ascend to greater power and challenge the rulership of the Nine Hells.",
     ],
     "name": "Zariel",
     "hit_points": 580,
@@ -327,7 +327,7 @@ fraz_urbluu_custom_stat_block = {
         "Constitution": 20,
         "Intelligence": 26,
         "Wisdom": 18,
-        "Charisma": 30
+        "Charisma": 30,
     },
     "Saving Throws": {
         "STR": "+11",
@@ -335,9 +335,16 @@ fraz_urbluu_custom_stat_block = {
         "CON": "+10",
         "INT": "+13",
         "WIS": "+8",
-        "CHA": "+15"
+        "CHA": "+15",
     },
-    "Skills": ["Arcana +13", "Deception +15", "Insight +8", "Intimidation +15", "Perception +8", "Persuasion +15"],
+    "Skills": [
+        "Arcana +13",
+        "Deception +15",
+        "Insight +8",
+        "Intimidation +15",
+        "Perception +8",
+        "Persuasion +15",
+    ],
     "Damage Resistances": "cold, lightning, bludgeoning, piercing, and slashing from nonmagical attacks",
     "Damage Immunities": "poison",
     "Condition Immunities": "charmed, frightened, poisoned",
@@ -350,12 +357,12 @@ fraz_urbluu_custom_stat_block = {
         "Teleportation",
         "Psychic Bond",
         "Legendary Resistance",
-        "Legendary Actions"
+        "Legendary Actions",
     ],
     "Legendary Actions": {
         "Teleport": "Fraz-Urb'luu magically teleports to an unoccupied space he can see within 120 feet.",
-        "Telepathic Command": "Fraz-Urb'luu targets one creature he can see within 120 feet. The target must succeed on a DC 23 Wisdom saving throw or be charmed by Fraz-Urb'luu for 1 minute."
-    }
+        "Telepathic Command": "Fraz-Urb'luu targets one creature he can see within 120 feet. The target must succeed on a DC 23 Wisdom saving throw or be charmed by Fraz-Urb'luu for 1 minute.",
+    },
 }
 
 juiblex_custom_stat_block = {
@@ -369,7 +376,7 @@ juiblex_custom_stat_block = {
         "Constitution": 22,
         "Intelligence": 14,
         "Wisdom": 16,
-        "Charisma": 12
+        "Charisma": 12,
     },
     "Saving Throws": {
         "STR": "+12",
@@ -377,7 +384,7 @@ juiblex_custom_stat_block = {
         "CON": "+11",
         "INT": "+4",
         "WIS": "+6",
-        "CHA": "+3"
+        "CHA": "+3",
     },
     "Skills": ["Perception +10", "Stealth +5"],
     "Damage Resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
@@ -392,12 +399,12 @@ juiblex_custom_stat_block = {
         "Innate Spellcasting",
         "Magic Resistance",
         "Swallow",
-        "Legendary Actions"
+        "Legendary Actions",
     ],
     "Legendary Actions": {
         "Acidic Tendrils": "Juiblex makes one attack with its Acidic Tendrils.",
-        "Slime Wave (Costs 2 Actions)": "Juiblex creates a wave of acidic slime in a 30-foot cone. Each creature in that area must make a DC 20 Dexterity saving throw, taking 36 (8d8) acid damage on a failed save, or half as much damage on a successful one."
-    }
+        "Slime Wave (Costs 2 Actions)": "Juiblex creates a wave of acidic slime in a 30-foot cone. Each creature in that area must make a DC 20 Dexterity saving throw, taking 36 (8d8) acid damage on a failed save, or half as much damage on a successful one.",
+    },
 }
 
 zuggtmoy_custom_stat_block = {
@@ -411,7 +418,7 @@ zuggtmoy_custom_stat_block = {
         "Constitution": 22,
         "Intelligence": 18,
         "Wisdom": 16,
-        "Charisma": 24
+        "Charisma": 24,
     },
     "Saving Throws": {
         "STR": "+10",
@@ -419,7 +426,7 @@ zuggtmoy_custom_stat_block = {
         "CON": "+11",
         "INT": "+8",
         "WIS": "+9",
-        "CHA": "+12"
+        "CHA": "+12",
     },
     "Skills": ["Arcana +15", "Perception +9", "Nature +15", "Stealth +6"],
     "Damage Resistances": "cold, fire, lightning, bludgeoning, piercing, and slashing from nonmagical attacks",
@@ -433,14 +440,13 @@ zuggtmoy_custom_stat_block = {
         "Innate Spellcasting",
         "Magic Resistance",
         "Spore Cloud",
-        "Legendary Actions"
+        "Legendary Actions",
     ],
     "Legendary Actions": {
         "Spore Burst": "Zuggtmoy releases a burst of toxic spores. Each creature within 10 feet of Zuggtmoy must succeed on a DC 20 Constitution saving throw or take 21 (6d6) poison damage and be poisoned for 1 minute.",
-        "Animate Spore Servants": "Zuggtmoy animates up to three dead creatures within 30 feet of her as spore servants under her control for 1 hour."
-    }
+        "Animate Spore Servants": "Zuggtmoy animates up to three dead creatures within 30 feet of her as spore servants under her control for 1 hour.",
+    },
 }
-
 
 
 class DemonLordStatBlock(BaseModel):
