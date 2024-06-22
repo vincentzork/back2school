@@ -379,6 +379,18 @@ geryon_custom_stat_block = {
 }
 
 
+devil_stat_blocks = [
+    asmodeus_custom_stat_block,
+    baalzebul_custom_stat_block,
+    belial_custom_stat_block,
+    dispater_custom_stat_block,
+    geryon_custom_stat_block,
+    mammon_custom_stat_block,
+    mephistopheles_custom_stat_block,
+]
+devil_stat_blocks = {devil["name"]: devil for devil in devil_stat_blocks}
+
+
 class ArchdevilStatBlock(BaseModel):
     unique_attacks_weapons: List[str]
     common_behaviors_actions: List[str]
