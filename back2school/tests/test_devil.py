@@ -264,3 +264,18 @@ def test_unique_weapon(asmodeus_stat_block):
     actual = asmodeus.unique_attacks_weapons
     expected = ["Infernal Sword", "Hellfire Whip"]
     assert actual == expected
+
+
+def test_all_stat_blocks():
+    stat_blocks = devil.devil_stat_blocks
+    expected = [
+        "Asmodeus",
+        "Baalzebul",
+        "Belial",
+        "Dispater",
+        "Geryon",
+        "Mammon",
+        "Mephistopheles",
+    ]
+    actual = list(stat_blocks.keys())
+    assert actual == expected
