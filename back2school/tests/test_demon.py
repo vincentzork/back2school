@@ -164,3 +164,35 @@ def test_yeenoghu_stat_block(yeenoghu_stat_block):
         yeenoghu_stat_block.legendary_actions["Rampage"]
         == "Yeenoghu moves up to his speed and makes one flail attack for each enemy he passes within reach during that movement."
     )
+
+    @pytest.fixture
+    def zariel_stat_block():
+        # Fixture to provide a sample instance of ArchdevilStatBlock for testing
+        return ArchdevilStatBlock(**demon.zariel_custom_stat_block)
+
+    def test_zariel_stat_block(zariel_stat_block):
+        # Check if the ZarielStatBlock instance is created correctly
+        assert zariel_stat_block.name == "Zariel"
+        assert zariel_stat_block.hit_points == 580
+        assert zariel_stat_block.armor_class == 21
+        assert zariel_stat_block.speed == "60 ft, fly 120 ft"
+        assert zariel_stat_block.abilities.strength == 26
+        assert zariel_stat_block.saving_throws.strength == 15
+        assert "Deception +14" in zariel_stat_block.skills
+        assert (
+                zariel_stat_block.damage_resistances
+                == "cold; bludgeoning, piercing, and slashing from nonmagical attacks"
+        )
+        assert zariel_stat_block.damage_immunities == "fire, poison"
+        assert (
+                zariel_stat_block.condition_immunities
+                == "charmed, exhausted, frightened, poisoned"
+        )
+        assert zariel_stat_block.senses == "truesight 120 ft., passive Perception 15"
+        assert zariel_stat_block.languages == "Infernal, telepathy 120 ft."
+        assert zariel_stat_block.challenge == 26
+        assert "Angel of War" in zariel_stat_block.special_abilities
+        assert (
+                zariel_stat_block.legendary_actions["Infernal Command"]
+                == "Zariel commands her legions with unparalleled authority."
+        )
