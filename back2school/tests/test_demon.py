@@ -196,3 +196,35 @@ def test_yeenoghu_stat_block(yeenoghu_stat_block):
                 zariel_stat_block.legendary_actions["Infernal Command"]
                 == "Zariel commands her legions with unparalleled authority."
         )
+
+        @pytest.fixture
+        def fraz_urbluu_stat_block():
+            # Fixture to provide a sample instance of ArchdevilStatBlock for testing
+            return ArchdevilStatBlock(**demon.fraz_urbluu_custom_stat_block)
+
+        def test_fraz_urbluu_stat_block(fraz_urbluu_stat_block):
+            # Check if the Fraz-Urb'luuStatBlock instance is created correctly
+            assert fraz_urbluu_stat_block.name == "Fraz-Urb'luu"
+            assert fraz_urbluu_stat_block.hit_points == 550
+            assert fraz_urbluu_stat_block.armor_class == 21
+            assert fraz_urbluu_stat_block.speed == "30 ft, fly 60 ft"
+            assert fraz_urbluu_stat_block.abilities.strength == 22
+            assert fraz_urbluu_stat_block.saving_throws.strength == 11
+            assert "Deception +15" in fraz_urbluu_stat_block.skills
+            assert (
+                    fraz_urbluu_stat_block.damage_resistances
+                    == "cold, lightning, bludgeoning, piercing, and slashing from nonmagical attacks"
+            )
+            assert fraz_urbluu_stat_block.damage_immunities == "poison"
+            assert (
+                    fraz_urbluu_stat_block.condition_immunities
+                    == "charmed, frightened, poisoned"
+            )
+            assert fraz_urbluu_stat_block.senses == "truesight 120 ft., passive Perception 18"
+            assert fraz_urbluu_stat_block.languages == "Abyssal, Common, telepathy 120 ft."
+            assert fraz_urbluu_stat_block.challenge == 23
+            assert "Innate Spellcasting" in fraz_urbluu_stat_block.special_abilities
+            assert (
+                    fraz_urbluu_stat_block.legendary_actions["Teleport"]
+                    == "Fraz-Urb'luu magically teleports to an unoccupied space he can see within 120 feet."
+            )
