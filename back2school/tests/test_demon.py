@@ -70,7 +70,7 @@ def test_orcus_stat_block(orcus_stat_block):
     )
 
     @pytest.fixture
-    def grazzt_stat_block():
+    def test_grazzt_stat_block():
         # Fixture to provide a sample instance of DemonLordStatBlock for testing
         return DemonLordStatBlock(**demon.grazzt_custom_stat_block)
 
@@ -101,3 +101,34 @@ def test_orcus_stat_block(orcus_stat_block):
                 == "Graz'zt commands his minions with unparalleled authority."
         )
 
+@pytest.fixture
+def baphomet_stat_block():
+    # Fixture to provide a sample instance of DemonLordStatBlock for testing
+    return DemonLordStatBlock(**demon.baphomet_custom_stat_block)
+
+def test_baphomet_stat_block(baphomet_stat_block):
+    # Check if the BaphometStatBlock instance is created correctly
+    assert baphomet_stat_block.name == "Baphomet"
+    assert baphomet_stat_block.hit_points == 600
+    assert baphomet_stat_block.armor_class == 26
+    assert baphomet_stat_block.speed == "40 ft"
+    assert baphomet_stat_block.abilities.strength == 26
+    assert baphomet_stat_block.saving_throws.strength == 15
+    assert "Deception +8" in baphomet_stat_block.skills
+    assert (
+        baphomet_stat_block.damage_resistances
+        == "cold; bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
+    assert baphomet_stat_block.damage_immunities == "fire, poison"
+    assert (
+        baphomet_stat_block.condition_immunities
+        == "charmed, exhausted, frightened, poisoned"
+    )
+    assert baphomet_stat_block.senses == "darkvision 120 ft., passive Perception 19"
+    assert baphomet_stat_block.languages == "Abyssal"
+    assert baphomet_stat_block.challenge == 23
+    assert "Labyrinthine Recall" in baphomet_stat_block.special_abilities
+    assert (
+        baphomet_stat_block.legendary_actions["Teleport"]
+        == "Baphomet magically teleports, along with any equipment he is wearing or carrying, up to 120 feet to an unoccupied space he can see."
+    )
