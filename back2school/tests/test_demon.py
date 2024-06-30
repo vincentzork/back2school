@@ -70,7 +70,7 @@ def test_orcus_stat_block(orcus_stat_block):
     )
 
 @pytest.fixture
-def test_grazzt_stat_block():
+def grazzt_stat_block():
         # Fixture to provide a sample instance of DemonLordStatBlock for testing
         return DemonLordStatBlock(**demon.grazzt_custom_stat_block)
 
@@ -168,71 +168,71 @@ def test_yeenoghu_stat_block(yeenoghu_stat_block):
 @pytest.fixture
 def zariel_stat_block():
         # Fixture to provide a sample instance of ArchdevilStatBlock for testing
-        return ArchdevilStatBlock(**demon.zariel_custom_stat_block)
+        return DemonLordStatBlock(**demon.zariel_custom_stat_block)
 
-    def test_zariel_stat_block(zariel_stat_block):
-        # Check if the ZarielStatBlock instance is created correctly
-        assert zariel_stat_block.name == "Zariel"
-        assert zariel_stat_block.hit_points == 580
-        assert zariel_stat_block.armor_class == 21
-        assert zariel_stat_block.speed == "60 ft, fly 120 ft"
-        assert zariel_stat_block.abilities.strength == 26
-        assert zariel_stat_block.saving_throws.strength == 15
-        assert "Deception +14" in zariel_stat_block.skills
-        assert (
-                zariel_stat_block.damage_resistances
-                == "cold; bludgeoning, piercing, and slashing from nonmagical attacks"
-        )
-        assert zariel_stat_block.damage_immunities == "fire, poison"
-        assert (
-                zariel_stat_block.condition_immunities
-                == "charmed, exhausted, frightened, poisoned"
-        )
-        assert zariel_stat_block.senses == "truesight 120 ft., passive Perception 15"
-        assert zariel_stat_block.languages == "Infernal, telepathy 120 ft."
-        assert zariel_stat_block.challenge == 26
-        assert "Angel of War" in zariel_stat_block.special_abilities
-        assert (
-                zariel_stat_block.legendary_actions["Infernal Command"]
-                == "Zariel commands her legions with unparalleled authority."
-        )
+def test_zariel_stat_block(zariel_stat_block):
+    # Check if the ZarielStatBlock instance is created correctly
+    assert zariel_stat_block.name == "Zariel"
+    assert zariel_stat_block.hit_points == 580
+    assert zariel_stat_block.armor_class == 21
+    assert zariel_stat_block.speed == "60 ft, fly 120 ft"
+    assert zariel_stat_block.abilities.strength == 26
+    assert zariel_stat_block.saving_throws.strength == 15
+    assert "Deception +14" in zariel_stat_block.skills
+    assert (
+            zariel_stat_block.damage_resistances
+            == "cold; bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
+    assert zariel_stat_block.damage_immunities == "fire, poison"
+    assert (
+            zariel_stat_block.condition_immunities
+            == "charmed, exhausted, frightened, poisoned"
+    )
+    assert zariel_stat_block.senses == "truesight 120 ft., passive Perception 15"
+    assert zariel_stat_block.languages == "Infernal, telepathy 120 ft."
+    assert zariel_stat_block.challenge == 26
+    assert "Angel of War" in zariel_stat_block.special_abilities
+    assert (
+            zariel_stat_block.legendary_actions["Infernal Command"]
+            == "Zariel commands her legions with unparalleled authority."
+    )
 
 @pytest.fixture
 def fraz_urbluu_stat_block():
             # Fixture to provide a sample instance of ArchdevilStatBlock for testing
-            return ArchdevilStatBlock(**demon.fraz_urbluu_custom_stat_block)
+            return DemonLordStatBlock(**demon.fraz_urbluu_custom_stat_block)
 
-        def test_fraz_urbluu_stat_block(fraz_urbluu_stat_block):
-            # Check if the Fraz-Urb'luuStatBlock instance is created correctly
-            assert fraz_urbluu_stat_block.name == "Fraz-Urb'luu"
-            assert fraz_urbluu_stat_block.hit_points == 550
-            assert fraz_urbluu_stat_block.armor_class == 21
-            assert fraz_urbluu_stat_block.speed == "30 ft, fly 60 ft"
-            assert fraz_urbluu_stat_block.abilities.strength == 22
-            assert fraz_urbluu_stat_block.saving_throws.strength == 11
-            assert "Deception +15" in fraz_urbluu_stat_block.skills
-            assert (
-                    fraz_urbluu_stat_block.damage_resistances
-                    == "cold, lightning, bludgeoning, piercing, and slashing from nonmagical attacks"
-            )
-            assert fraz_urbluu_stat_block.damage_immunities == "poison"
-            assert (
-                    fraz_urbluu_stat_block.condition_immunities
-                    == "charmed, frightened, poisoned"
-            )
-            assert fraz_urbluu_stat_block.senses == "truesight 120 ft., passive Perception 18"
-            assert fraz_urbluu_stat_block.languages == "Abyssal, Common, telepathy 120 ft."
-            assert fraz_urbluu_stat_block.challenge == 23
-            assert "Innate Spellcasting" in fraz_urbluu_stat_block.special_abilities
-            assert (
-                    fraz_urbluu_stat_block.legendary_actions["Teleport"]
-                    == "Fraz-Urb'luu magically teleports to an unoccupied space he can see within 120 feet."
-            )
+def test_fraz_urbluu_stat_block(fraz_urbluu_stat_block):
+    # Check if the Fraz-Urb'luuStatBlock instance is created correctly
+    assert fraz_urbluu_stat_block.name == "Fraz-Urb'luu"
+    assert fraz_urbluu_stat_block.hit_points == 550
+    assert fraz_urbluu_stat_block.armor_class == 21
+    assert fraz_urbluu_stat_block.speed == "30 ft, fly 60 ft"
+    assert fraz_urbluu_stat_block.abilities.strength == 22
+    assert fraz_urbluu_stat_block.saving_throws.strength == 11
+    assert "Deception +15" in fraz_urbluu_stat_block.skills
+    assert (
+            fraz_urbluu_stat_block.damage_resistances
+            == "cold, lightning, bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
+    assert fraz_urbluu_stat_block.damage_immunities == "poison"
+    assert (
+            fraz_urbluu_stat_block.condition_immunities
+            == "charmed, frightened, poisoned"
+    )
+    assert fraz_urbluu_stat_block.senses == "truesight 120 ft., passive Perception 18"
+    assert fraz_urbluu_stat_block.languages == "Abyssal, Common, telepathy 120 ft."
+    assert fraz_urbluu_stat_block.challenge == 23
+    assert "Innate Spellcasting" in fraz_urbluu_stat_block.special_abilities
+    assert (
+            fraz_urbluu_stat_block.legendary_actions["Teleport"]
+            == "Fraz-Urb'luu magically teleports to an unoccupied space he can see within 120 feet."
+    )
 
 @pytest.fixture
 def juiblex_stat_block():
     # Fixture to provide a sample instance of ArchdevilStatBlock for testing
-    return ArchdevilStatBlock(**juiblex_custom_stat_block)
+    return DemonLordStatBlock(**demon.juiblex_custom_stat_block)
 
 def test_juiblex_stat_block(juiblex_stat_block):
     # Check if the JuiblexStatBlock instance is created correctly
@@ -263,7 +263,7 @@ def test_juiblex_stat_block(juiblex_stat_block):
 @pytest.fixture
 def zuggtmoy_stat_block():
     # Fixture to provide a sample instance of ArchdevilStatBlock for testing
-    return ArchdevilStatBlock(**demon.zuggtmoy_custom_stat_block)
+    return DemonLordStatBlock(**demon.zuggtmoy_custom_stat_block)
 
 def test_zuggtmoy_stat_block(zuggtmoy_stat_block):
     # Check if the ZuggtmoyStatBlock instance is created correctly
@@ -291,5 +291,5 @@ def test_zuggtmoy_stat_block(zuggtmoy_stat_block):
         zuggtmoy_stat_block.legendary_actions["Spore Burst"]
         == "Zuggtmoy releases a burst of toxic spores. Each creature within 10 feet of Zuggtmoy must succeed on a DC 20 Constitution saving throw or take 21 (6d6) poison damage and be poisoned for 1 minute."
     )
-}
+
 
