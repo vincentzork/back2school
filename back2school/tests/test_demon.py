@@ -132,3 +132,35 @@ def test_baphomet_stat_block(baphomet_stat_block):
         baphomet_stat_block.legendary_actions["Teleport"]
         == "Baphomet magically teleports, along with any equipment he is wearing or carrying, up to 120 feet to an unoccupied space he can see."
     )
+
+@pytest.fixture
+def yeenoghu_stat_block():
+    # Fixture to provide a sample instance of DemonLordStatBlock for testing
+    return DemonLordStatBlock(**demon.yeenoghu_custom_stat_block)
+
+def test_yeenoghu_stat_block(yeenoghu_stat_block):
+    # Check if the YeenoghuStatBlock instance is created correctly
+    assert yeenoghu_stat_block.name == "Yeenoghu"
+    assert yeenoghu_stat_block.hit_points == 650
+    assert yeenoghu_stat_block.armor_class == 23
+    assert yeenoghu_stat_block.speed == "50 ft"
+    assert yeenoghu_stat_block.abilities.strength == 25
+    assert yeenoghu_stat_block.saving_throws.strength == 14
+    assert "Deception +8" in yeenoghu_stat_block.skills
+    assert (
+        yeenoghu_stat_block.damage_resistances
+        == "cold; bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
+    assert yeenoghu_stat_block.damage_immunities == "fire, poison"
+    assert (
+        yeenoghu_stat_block.condition_immunities
+        == "charmed, exhausted, frightened, poisoned"
+    )
+    assert yeenoghu_stat_block.senses == "darkvision 120 ft., passive Perception 13"
+    assert yeenoghu_stat_block.languages == "Abyssal"
+    assert yeenoghu_stat_block.challenge == 24
+    assert "Rampage" in yeenoghu_stat_block.special_abilities
+    assert (
+        yeenoghu_stat_block.legendary_actions["Rampage"]
+        == "Yeenoghu moves up to his speed and makes one flail attack for each enemy he passes within reach during that movement."
+    )
