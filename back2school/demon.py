@@ -380,6 +380,47 @@ fraz_urbluu_custom_stat_block = {
     ],
 }
 
+juiblex_custom_stat_block = {
+    "Name": "Juiblex",
+    "Hit Points": 600,  # Adjust based on desired difficulty
+    "Armor Class": 18,  # Reflecting its amorphous form
+    "Speed": "20 ft, swim 40 ft",
+    "Abilities": {
+        "Strength": 25,
+        "Dexterity": 8,
+        "Constitution": 22,
+        "Intelligence": 14,
+        "Wisdom": 16,
+        "Charisma": 12,
+    },
+    "Saving Throws": {
+        "STR": "+12",
+        "DEX": "-1",
+        "CON": "+11",
+        "INT": "+4",
+        "WIS": "+6",
+        "CHA": "+3",
+    },
+    "Skills": ["Perception +10", "Stealth +5"],
+    "Damage Resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "Damage Immunities": "poison",
+    "Condition Immunities": "blinded, charmed, deafened, frightened, poisoned, prone",
+    "Senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 20",
+    "Languages": "Abyssal, telepathy 120 ft.",
+    "Challenge": 24,
+    "Special Abilities": [
+        "Amorphous",
+        "Corrosive Aura",
+        "Innate Spellcasting",
+        "Magic Resistance",
+        "Swallow",
+        "Legendary Actions",
+    ],
+    "Legendary Actions": {
+        "Acidic Tendrils": "Juiblex makes one attack with its Acidic Tendrils.",
+        "Slime Wave (Costs 2 Actions)": "Juiblex creates a wave of acidic slime in a 30-foot cone. Each creature in that area must make a DC 20 Dexterity saving throw, taking 36 (8d8) acid damage on a failed save, or half as much damage on a successful one.",
+    },
+}
 
 zuggtmoy_custom_stat_block = {
     "Name": "Zuggtmoy",
