@@ -317,27 +317,27 @@ zariel_custom_stat_block = {
 }
 
 fraz_urbluu_custom_stat_block = {
-    "Name": "Fraz-Urb'luu",
-    "Hit Points": 550,  # Adjust based on desired difficulty
-    "Armor Class": 21,  # Reflecting magical defenses
-    "Speed": "30 ft, fly 60 ft",
-    "Abilities": {
-        "Strength": 22,
-        "Dexterity": 18,
-        "Constitution": 20,
-        "Intelligence": 26,
-        "Wisdom": 18,
-        "Charisma": 30,
+    "name": "Fraz-Urb'luu",
+    "hit_points": 550,
+    "armor_class": 21,
+    "speed": "30 ft, fly 60 ft",
+    "abilities": {
+        "strength": 22,
+        "dexterity": 18,
+        "constitution": 20,
+        "intelligence": 26,
+        "wisdom": 18,
+        "charisma": 30,
     },
-    "Saving Throws": {
-        "STR": "+11",
-        "DEX": "+8",
-        "CON": "+10",
-        "INT": "+13",
-        "WIS": "+8",
-        "CHA": "+15",
+    "saving_throws": {
+        "strength": "+11",
+        "dexterity": "+8",
+        "constitution": "+10",
+        "intelligence": "+13",
+        "wisdom": "+8",
+        "charisma": "+15",
     },
-    "Skills": [
+    "skills": [
         "Arcana +13",
         "Deception +15",
         "Insight +8",
@@ -345,13 +345,13 @@ fraz_urbluu_custom_stat_block = {
         "Perception +8",
         "Persuasion +15",
     ],
-    "Damage Resistances": "cold, lightning, bludgeoning, piercing, and slashing from nonmagical attacks",
-    "Damage Immunities": "poison",
-    "Condition Immunities": "charmed, frightened, poisoned",
-    "Senses": "truesight 120 ft., passive Perception 18",
-    "Languages": "Abyssal, Common, telepathy 120 ft.",
-    "Challenge": 23,
-    "Special Abilities": [
+    "damage_resistances": "cold, lightning, bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damage_immunities": "poison",
+    "condition_immunities": "charmed, frightened, poisoned",
+    "senses": "truesight 120 ft., passive Perception 18",
+    "languages": "Abyssal, Common, telepathy 120 ft.",
+    "challenge": 23,
+    "special_abilities": [
         "Innate Spellcasting",
         "Magic Resistance",
         "Teleportation",
@@ -359,53 +359,27 @@ fraz_urbluu_custom_stat_block = {
         "Legendary Resistance",
         "Legendary Actions",
     ],
-    "Legendary Actions": {
+    "legendary_actions": {
         "Teleport": "Fraz-Urb'luu magically teleports to an unoccupied space he can see within 120 feet.",
         "Telepathic Command": "Fraz-Urb'luu targets one creature he can see within 120 feet. The target must succeed on a DC 23 Wisdom saving throw or be charmed by Fraz-Urb'luu for 1 minute.",
     },
+    "unique_attacks_weapons": [
+        "Infernal Gaze",
+        "Psychic Assault",
+        "Illusory Blades",
+    ],
+    "common_behaviors_actions": [
+        "Deception and trickery, manipulating others for personal gain.",
+        "Manipulating cults and followers to worship and serve him.",
+        "Creating illusions to confuse and mislead enemies.",
+        "Engaging in political intrigue and power struggles within the Abyss.",
+        "Corrupting and tempting mortals with promises of power and wealth.",
+        "Using psychic abilities to manipulate and control creatures.",
+        "Escaping dangerous situations using teleportation and illusions.",
+        "Undermining and subverting the authority of other demon lords.",
+    ],
 }
 
-juiblex_custom_stat_block = {
-    "Name": "Juiblex",
-    "Hit Points": 600,  # Adjust based on desired difficulty
-    "Armor Class": 18,  # Reflecting its amorphous form
-    "Speed": "20 ft, swim 40 ft",
-    "Abilities": {
-        "Strength": 25,
-        "Dexterity": 8,
-        "Constitution": 22,
-        "Intelligence": 14,
-        "Wisdom": 16,
-        "Charisma": 12,
-    },
-    "Saving Throws": {
-        "STR": "+12",
-        "DEX": "-1",
-        "CON": "+11",
-        "INT": "+4",
-        "WIS": "+6",
-        "CHA": "+3",
-    },
-    "Skills": ["Perception +10", "Stealth +5"],
-    "Damage Resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
-    "Damage Immunities": "poison",
-    "Condition Immunities": "blinded, charmed, deafened, frightened, poisoned, prone",
-    "Senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 20",
-    "Languages": "Abyssal, telepathy 120 ft.",
-    "Challenge": 24,
-    "Special Abilities": [
-        "Amorphous",
-        "Corrosive Aura",
-        "Innate Spellcasting",
-        "Magic Resistance",
-        "Swallow",
-        "Legendary Actions",
-    ],
-    "Legendary Actions": {
-        "Acidic Tendrils": "Juiblex makes one attack with its Acidic Tendrils.",
-        "Slime Wave (Costs 2 Actions)": "Juiblex creates a wave of acidic slime in a 30-foot cone. Each creature in that area must make a DC 20 Dexterity saving throw, taking 36 (8d8) acid damage on a failed save, or half as much damage on a successful one.",
-    },
-}
 
 zuggtmoy_custom_stat_block = {
     "Name": "Zuggtmoy",
