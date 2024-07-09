@@ -252,7 +252,7 @@ def juiblex_stat_block():
 def test_juiblex_stat_block(juiblex_stat_block):
     # Check if the JuiblexStatBlock instance is created correctly
     assert juiblex_stat_block.name == "Juiblex"
-    assert juiblex_stat_block.hit_points == 600
+    assert juiblex_stat_block.hit_points == 400
     assert juiblex_stat_block.armor_class == 18
     assert juiblex_stat_block.speed == "20 ft, swim 40 ft"
     assert juiblex_stat_block.abilities.strength == 25

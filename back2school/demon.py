@@ -381,34 +381,43 @@ fraz_urbluu_custom_stat_block = {
 }
 
 juiblex_custom_stat_block = {
-    "Name": "Juiblex",
-    "Hit Points": 600,  # Adjust based on desired difficulty
-    "Armor Class": 18,  # Reflecting its amorphous form
-    "Speed": "20 ft, swim 40 ft",
-    "Abilities": {
-        "Strength": 25,
-        "Dexterity": 8,
-        "Constitution": 22,
-        "Intelligence": 14,
-        "Wisdom": 16,
-        "Charisma": 12,
+    "unique_attacks_weapons": ["Acidic Tendrils", "Swallow"],
+    "common_behaviors_actions": [
+        "Spreading corruption and decay.",
+        "Absorbing and consuming all matter in its path.",
+        "Manipulating slimes and oozes to do its bidding."
+    ],
+    "name": "Juiblex",
+    "hit_points": 400,
+    "armor_class": 18,
+    "speed": "20 ft, swim 40 ft",
+    "abilities": {
+        "strength": 25,
+        "dexterity": 8,
+        "constitution": 22,
+        "intelligence": 14,
+        "wisdom": 16,
+        "charisma": 12,
     },
-    "Saving Throws": {
-        "STR": "+12",
-        "DEX": "-1",
-        "CON": "+11",
-        "INT": "+4",
-        "WIS": "+6",
-        "CHA": "+3",
+    "saving_throws": {
+        "strength": "+12",
+        "dexterity": "-1",
+        "constitution": "+11",
+        "intelligence": "+4",
+        "wisdom": "+6",
+        "charisma": "+3",
     },
-    "Skills": ["Perception +10", "Stealth +5"],
-    "Damage Resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
-    "Damage Immunities": "poison",
-    "Condition Immunities": "blinded, charmed, deafened, frightened, poisoned, prone",
-    "Senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 20",
-    "Languages": "Abyssal, telepathy 120 ft.",
-    "Challenge": 24,
-    "Special Abilities": [
+    "skills": [
+        "Perception +10",
+        "Stealth +5",
+    ],
+    "damage_resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damage_immunities": "poison",
+    "condition_immunities": "blinded, charmed, deafened, frightened, poisoned, prone",
+    "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 20",
+    "languages": "Abyssal, telepathy 120 ft.",
+    "challenge": 24,
+    "special_abilities": [
         "Amorphous",
         "Corrosive Aura",
         "Innate Spellcasting",
@@ -416,48 +425,59 @@ juiblex_custom_stat_block = {
         "Swallow",
         "Legendary Actions",
     ],
-    "Legendary Actions": {
+    "legendary_actions": {
         "Acidic Tendrils": "Juiblex makes one attack with its Acidic Tendrils.",
         "Slime Wave (Costs 2 Actions)": "Juiblex creates a wave of acidic slime in a 30-foot cone. Each creature in that area must make a DC 20 Dexterity saving throw, taking 36 (8d8) acid damage on a failed save, or half as much damage on a successful one.",
     },
 }
 
 zuggtmoy_custom_stat_block = {
-    "Name": "Zuggtmoy",
-    "Hit Points": 550,  # Adjust based on desired difficulty
-    "Armor Class": 20,  # Reflecting her fungal defenses
-    "Speed": "20 ft",
-    "Abilities": {
-        "Strength": 20,
-        "Dexterity": 10,
-        "Constitution": 22,
-        "Intelligence": 18,
-        "Wisdom": 16,
-        "Charisma": 24,
+    "unique_attacks_weapons": ["Spore Burst", "Fungal Infestation"],
+    "common_behaviors_actions": [
+        "Spreading fungal corruption throughout the Abyss.",
+        "Cultivating and commanding vast fungal forests.",
+        "Manipulating mortals through fungal infestation."
+    ],
+    "name": "Zuggtmoy",
+    "hit_points": 550,
+    "armor_class": 20,
+    "speed": "20 ft",
+    "abilities": {
+        "strength": 20,
+        "dexterity": 10,
+        "constitution": 22,
+        "intelligence": 18,
+        "wisdom": 16,
+        "charisma": 24,
     },
-    "Saving Throws": {
-        "STR": "+10",
-        "DEX": "+3",
-        "CON": "+11",
-        "INT": "+8",
-        "WIS": "+9",
-        "CHA": "+12",
+    "saving_throws": {
+        "strength": "+10",
+        "dexterity": "+3",
+        "constitution": "+11",
+        "intelligence": "+8",
+        "wisdom": "+9",
+        "charisma": "+12",
     },
-    "Skills": ["Arcana +15", "Perception +9", "Nature +15", "Stealth +6"],
-    "Damage Resistances": "cold, fire, lightning, bludgeoning, piercing, and slashing from nonmagical attacks",
-    "Damage Immunities": "poison",
-    "Condition Immunities": "blinded, charmed, deafened, frightened, poisoned",
-    "Senses": "truesight 120 ft., darkvision 120 ft., passive Perception 19",
-    "Languages": "Abyssal, telepathy 120 ft.",
-    "Challenge": 26,
-    "Special Abilities": [
+    "skills": [
+        "Arcana +15",
+        "Nature +15",
+        "Perception +9",
+        "Stealth +6",
+    ],
+    "damage_resistances": "cold, fire, lightning, bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damage_immunities": "poison",
+    "condition_immunities": "blinded, charmed, deafened, frightened, poisoned",
+    "senses": "truesight 120 ft., darkvision 120 ft., passive Perception 19",
+    "languages": "Abyssal, telepathy 120 ft.",
+    "challenge": 26,
+    "special_abilities": [
         "Fungal Infestation",
         "Innate Spellcasting",
         "Magic Resistance",
         "Spore Cloud",
         "Legendary Actions",
     ],
-    "Legendary Actions": {
+    "legendary_actions": {
         "Spore Burst": "Zuggtmoy releases a burst of toxic spores. Each creature within 10 feet of Zuggtmoy must succeed on a DC 20 Constitution saving throw or take 21 (6d6) poison damage and be poisoned for 1 minute.",
         "Animate Spore Servants": "Zuggtmoy animates up to three dead creatures within 30 feet of her as spore servants under her control for 1 hour.",
     },
