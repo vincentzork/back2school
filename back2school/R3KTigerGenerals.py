@@ -339,7 +339,7 @@ ma_chao_custom_stat_block = {
     ]
 }
 
-class R3KTigerGeneral(BaseModel):
+class R3KTigerGeneralStatBlock(BaseModel):
     character_class: Dict[str, Dict[str, str]]
     unique_attacks_weapons: List[str]
     common_behaviors_actions: List[str]
