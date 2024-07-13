@@ -386,7 +386,7 @@ juiblex_custom_stat_block = {
     "common_behaviors_actions": [
         "Spreading corruption and decay.",
         "Absorbing and consuming all matter in its path.",
-        "Manipulating slimes and oozes to do its bidding."
+        "Manipulating slimes and oozes to do its bidding.",
     ],
     "name": "Juiblex",
     "hit_points": 400,
@@ -437,7 +437,7 @@ zuggtmoy_custom_stat_block = {
     "common_behaviors_actions": [
         "Spreading fungal corruption throughout the Abyss.",
         "Cultivating and commanding vast fungal forests.",
-        "Manipulating mortals through fungal infestation."
+        "Manipulating mortals through fungal infestation.",
     ],
     "name": "Zuggtmoy",
     "hit_points": 550,
