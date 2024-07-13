@@ -81,8 +81,16 @@ zhang_fei_custom_stat_block = {
 
 guan_yu_custom_stat_block = {
     "character_class": {
-        "primary_class": {"class": "Fighter", "archetype": "Champion", "level": 15},
-        "secondary_class": {"class": "Paladin", "oath": "Oath of Devotion", "level": 5},
+        "primary_class": {
+            "class_name": "Fighter",
+            "archetype": "Champion",
+            "level": 15,
+        },
+        "secondary_class": {
+            "class_name": "Paladin",
+            "archetype": "Oath of Devotion",
+            "level": 5,
+        },
     },
     "unique_attacks_weapons": ["Green Dragon Crescent Blade"],
     "common_behaviors_actions": [
@@ -141,11 +149,10 @@ guan_yu_custom_stat_block = {
 huang_zhong_custom_stat_block = {
     "character_class": {
         "primary_class": {
-            "class": "Fighter",
+            "class_name": "Fighter",
             "archetype": "Battle Master",
             "level": 20,
-        },
-        "secondary_class": None,
+        }
     },
     "unique_attacks_weapons": ["Longbow"],
     "common_behaviors_actions": [
@@ -201,8 +208,16 @@ huang_zhong_custom_stat_block = {
 
 zhao_yun_custom_stat_block = {
     "character_class": {
-        "primary_class": {"class": "Fighter", "archetype": "Champion", "level": 18},
-        "secondary_class": {"class": "Fighter", "archetype": "Cavalier", "level": 2},
+        "primary_class": {
+            "class_name": "Fighter",
+            "archetype": "Champion",
+            "level": 18,
+        },
+        "secondary_class": {
+            "class_name": "Fighter",
+            "archetype": "Cavalier",
+            "level": 2,
+        },
     },
     "unique_attacks_weapons": ["Sword"],
     "common_behaviors_actions": [
@@ -259,8 +274,12 @@ zhao_yun_custom_stat_block = {
 
 ma_chao_custom_stat_block = {
     "character_class": {
-        "primary_class": {"class": "Fighter", "archetype": "Battlemaster", "level": 18},
-        "secondary_class": {"class": "Ranger", "archetype": "Hunter", "level": 2},
+        "primary_class": {
+            "class_name": "Fighter",
+            "archetype": "Battlemaster",
+            "level": 18,
+        },
+        "secondary_class": {"class_name": "Ranger", "archetype": "Hunter", "level": 2},
     },
     "unique_attacks_weapons": ["Bow", "Sword"],
     "common_behaviors_actions": [
