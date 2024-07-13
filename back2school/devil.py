@@ -3,7 +3,8 @@ from typing import List, Dict
 
 from pydantic import BaseModel
 
-from back2school import abililty_scores, savings_throws
+from .abililty_scores import AbilityScores
+from .savings_throws import SavingThrows
 
 asmodeus_custom_stat_block = {
     "unique_attacks_weapons": ["Infernal Sword", "Hellfire Whip"],
@@ -398,8 +399,8 @@ class ArchdevilStatBlock(BaseModel):
     hit_points: int
     armor_class: int
     speed: str
-    abilities: abililty_scores.AbilityScores
-    saving_throws: savings_throws.SavingThrows
+    abilities: AbilityScores
+    saving_throws: SavingThrows
     skills: List[str]
     damage_resistances: str
     damage_immunities: str

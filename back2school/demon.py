@@ -2,7 +2,8 @@ from typing import List, Dict
 
 from pydantic import BaseModel
 
-from back2school import abililty_scores, savings_throws
+from .abililty_scores import AbilityScores
+from .savings_throws import SavingThrows
 
 demogorgon_custom_stat_block = {
     "unique_attacks_weapons": ["Twin Tentacle Strike", "Bite", "Tail Whip"],
@@ -385,7 +386,7 @@ juiblex_custom_stat_block = {
     "common_behaviors_actions": [
         "Spreading corruption and decay.",
         "Absorbing and consuming all matter in its path.",
-        "Manipulating slimes and oozes to do its bidding."
+        "Manipulating slimes and oozes to do its bidding.",
     ],
     "name": "Juiblex",
     "hit_points": 400,
@@ -436,7 +437,7 @@ zuggtmoy_custom_stat_block = {
     "common_behaviors_actions": [
         "Spreading fungal corruption throughout the Abyss.",
         "Cultivating and commanding vast fungal forests.",
-        "Manipulating mortals through fungal infestation."
+        "Manipulating mortals through fungal infestation.",
     ],
     "name": "Zuggtmoy",
     "hit_points": 550,
@@ -491,8 +492,8 @@ class DemonLordStatBlock(BaseModel):
     hit_points: int
     armor_class: int
     speed: str
-    abilities: abililty_scores.AbilityScores
-    saving_throws: savings_throws.SavingThrows
+    abilities: AbilityScores
+    saving_throws: SavingThrows
     skills: List[str]
     damage_resistances: str
     damage_immunities: str
