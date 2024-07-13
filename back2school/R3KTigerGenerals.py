@@ -8,11 +8,15 @@ from .savings_throws import SavingThrows
 zhang_fei_custom_stat_block = {
     "character_class": {
         "primary_class": {
-            "class": "Fighter",
+            "class_name": "Fighter",  # Changed from "class" to "class_name"
             "archetype": "Champion or Battle Master",
             "level": 15,
         },
-        "secondary_class": {"class": "Barbarian", "path": "Berserker", "level": 5},
+        "secondary_class": {
+            "class_name": "Barbarian",  # Changed from "class" to "class_name"
+            "archetype": "Berserker",  # Changed from "path" to "archetype"
+            "level": 5,
+        },
     },
     "unique_attacks_weapons": ["Serpent Spear"],
     "common_behaviors_actions": [
@@ -308,8 +312,14 @@ ma_chao_custom_stat_block = {
 }
 
 
+class CharacterClass(BaseModel):
+    class_name: str
+    archetype: str
+    level: int
+
+
 class R3KTigerGeneralStatBlock(BaseModel):
-    character_class: Dict[str, Dict[str, str]]
+    character_class: Dict[str, CharacterClass]
     unique_attacks_weapons: List[str]
     common_behaviors_actions: List[str]
     name: str

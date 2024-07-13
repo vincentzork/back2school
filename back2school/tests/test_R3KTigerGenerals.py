@@ -19,7 +19,7 @@ def test_zhang_fei_stat_block(zhang_fei_stat_block):
     assert zhang_fei_stat_block.armor_class == 18
     assert zhang_fei_stat_block.speed == "30 ft."
     assert zhang_fei_stat_block.abilities.strength == 20
-    assert zhang_fei_stat_block.saving_throws.strength == "+11"
+    assert zhang_fei_stat_block.saving_throws.strength == 11
     assert "Athletics +11" in zhang_fei_stat_block.skills
     assert (
         zhang_fei_stat_block.damage_resistances
@@ -29,7 +29,7 @@ def test_zhang_fei_stat_block(zhang_fei_stat_block):
     assert zhang_fei_stat_block.senses == "passive Perception 17"
     assert zhang_fei_stat_block.languages == "Common"
     assert zhang_fei_stat_block.challenge == 20
-    assert "Unyielding Presence" in zhang_fei_stat_block.special_abilities
+    assert "Unyielding Presence: Zhang Fei can use his Action Surge to emit a terrifying battle cry. Enemies within 30 feet must make a DC 15 Wisdom saving throw or become frightened for 1 minute." in zhang_fei_stat_block.special_abilities
     assert (
         zhang_fei_stat_block.legendary_actions["Indomitable"]
         == "Zhang Fei can reroll a saving throw that he fails. If he does so, he must use the new roll."
