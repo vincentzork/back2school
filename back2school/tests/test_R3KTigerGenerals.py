@@ -1,9 +1,11 @@
 import pytest
 
 
-from .. import R3KTigerGenerals
+#from .. import R3KTigerGenerals
+from back2school import R3KTigerGenerals
 
-from ..R3KTigerGenerals import R3KTigerGeneralStatBlock
+#from ..R3KTigerGenerals import R3KTigerGeneralStatBlock
+from back2school.R3KTigerGenerals import R3KTigerGeneralStatBlock
 
 @pytest.fixture
 def zhang_fei_stat_block():
@@ -30,4 +32,4 @@ def test_zhang_fei_stat_block(zhang_fei_stat_block):
     assert zhang_fei_stat_block.actions[1] == "Serpent Spear: Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 1d10+7 (12) piercing damage (or 1d10+10 (15) while raging)."
     assert zhang_fei_stat_block.bonus_actions[0] == "Rage (4 uses/day)"
     assert zhang_fei_stat_block.reactions[0] == "Riposte: When a creature misses Zhang Fei with a melee attack, he can use his reaction to make a melee weapon attack against the creature."
-}
+
