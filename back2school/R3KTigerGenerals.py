@@ -2,7 +2,8 @@ from typing import List, Dict
 
 from pydantic import BaseModel
 
-from back2school import abililty_scores, savings_throws
+from .abililty_scores import AbilityScores
+from .savings_throws import SavingThrows
 
 zhang_fei_custom_stat_block = {
     "character_class": {

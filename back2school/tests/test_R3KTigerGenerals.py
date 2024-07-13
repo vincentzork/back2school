@@ -1,11 +1,10 @@
 import pytest
 
 
-#from .. import R3KTigerGenerals
-from back2school import R3KTigerGenerals
+from .. import R3KTigerGenerals
 
-#from ..R3KTigerGenerals import R3KTigerGeneralStatBlock
-from back2school.R3KTigerGenerals import R3KTigerGeneralStatBlock
+from ..R3KTigerGenerals import R3KTigerGeneralStatBlock
+
 
 @pytest.fixture
 def zhang_fei_stat_block():
