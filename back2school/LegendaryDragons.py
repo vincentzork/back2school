@@ -7,28 +7,28 @@ from .abililty_scores import AbilityScores
 from .savings_throws import SavingThrows
 
 tiamat_custom_stat_block = {
-    "Dragon Type": "Unique Dragon",
-    "Name": "Tiamat",
-    "Hit Points": 615,
-    "Armor Class": 25,
-    "Speed": "60 ft, fly 120 ft",
-    "Abilities": {
-        "Strength": 30,
-        "Dexterity": 16,
-        "Constitution": 30,
-        "Intelligence": 26,
-        "Wisdom": 26,
-        "Charisma": 28
+    "dragon_type": "Unique Dragon",
+    "name": "Tiamat",
+    "hit_points": 615,
+    "armor_class": 25,
+    "speed": "60 ft, fly 120 ft",
+    "abilities": {
+        "strength": 30,
+        "dexterity": 16,
+        "constitution": 30,
+        "intelligence": 26,
+        "wisdom": 26,
+        "charisma": 28
     },
-    "Saving Throws": {
-        "STR": "+17",
-        "DEX": "+13",
-        "CON": "+17",
-        "INT": "+15",
-        "WIS": "+15",
-        "CHA": "+16"
+    "saving_throws": {
+        "strength": "+17",
+        "dexterity": "+13",
+        "constitution": "+17",
+        "intelligence": "+15",
+        "wisdom": "+15",
+        "charisma": "+16"
     },
-    "Skills": [
+    "skills": [
         "Arcana +15",
         "Deception +16",
         "Insight +15",
@@ -36,13 +36,13 @@ tiamat_custom_stat_block = {
         "Perception +22",
         "Persuasion +16"
     ],
-    "Damage Resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
-    "Damage Immunities": "acid, cold, fire, lightning, poison",
-    "Condition Immunities": "charmed, frightened, poisoned",
-    "Senses": "darkvision 240 ft., truesight 120 ft., passive Perception 32",
-    "Languages": "all, telepathy 120 ft.",
-    "Challenge": 30,
-    "Special Abilities": [
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damage_immunities": "acid, cold, fire, lightning, poison",
+    "condition_immunities": "charmed, frightened, poisoned",
+    "senses": "darkvision 240 ft., truesight 120 ft., passive Perception 32",
+    "languages": "all, telepathy 120 ft.",
+    "challenge": 30,
+    "special_abilities": [
         "Legendary Resistance (5/Day): If Tiamat fails a saving throw, she can choose to succeed instead.",
         "Magic Resistance: Tiamat has advantage on saving throws against spells and other magical effects.",
         "Multiple Heads: Tiamat can take one reaction per turn, rather than only one per round. She also has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.",
@@ -50,7 +50,7 @@ tiamat_custom_stat_block = {
         "Innate Spellcasting: Tiamat's spellcasting ability is Charisma (spell save DC 24). She can innately cast the following spells, requiring no material components: 3/day each: divine word, teleport",
         "Legendary Actions: Tiamat can take 5 legendary actions, choosing from the options below."
     ],
-    "Actions": {
+    "actions": {
         "Multiattack": "Tiamat can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws.",
         "Bite": "Melee Weapon Attack: +19 to hit, reach 20 ft., one target. Hit: 32 (4d10 + 10) piercing damage plus 14 (4d6) damage of a type based on the dragon head used: acid (black), lightning (blue), fire (red), poison (green), or cold (white).",
         "Claw": "Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit: 22 (4d6 + 10) slashing damage.",
@@ -63,7 +63,7 @@ tiamat_custom_stat_block = {
         "Poison Breath (Green Dragon Head)": "Tiamat exhales poisonous gas in a 90-foot cone. Each creature in that area must make a DC 27 Constitution saving throw, taking 77 (22d6) poison damage on a failed save, or half as much damage on a successful one.",
         "Cold Breath (White Dragon Head)": "Tiamat exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 27 Constitution saving throw, taking 72 (16d8) cold damage on a failed save, or half as much damage on a successful one."
     },
-    "Legendary Actions": {
+    "legendary_actions": {
         "Detect": "Tiamat makes a Wisdom (Perception) check.",
         "Tail Attack": "Tiamat makes a tail attack.",
         "Wing Attack (Costs 2 Actions)": "Tiamat beats her wings. Each creature within 15 ft. of Tiamat must succeed on a DC 25 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Tiamat can then fly up to half her flying speed.",
@@ -71,70 +71,6 @@ tiamat_custom_stat_block = {
         "Claw Attack": "Tiamat makes a claw attack."
     }
 }
-
-"""""
-bahamut_custom_stat_block = {
-    "Dragon Type": "Gold Dragon",
-    "Name": "Bahamut",
-    "Hit Points": 585,
-    "Armor Class": 24,
-    "Speed": "60 ft, fly 120 ft",
-    "Abilities": {
-        "Strength": 30,
-        "Dexterity": 16,
-        "Constitution": 30,
-        "Intelligence": 26,
-        "Wisdom": 27,
-        "Charisma": 30
-    },
-    "Saving Throws": {
-        "STR": "+17",
-        "DEX": "+13",
-        "CON": "+17",
-        "INT": "+15",
-        "WIS": "+16",
-        "CHA": "+18"
-    },
-    "Skills": [
-        "Arcana +15",
-        "Insight +16",
-        "Perception +26",
-        "Persuasion +18",
-        "Religion +15"
-    ],
-    "Damage Resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
-    "Damage Immunities": "radiant, necrotic",
-    "Condition Immunities": "charmed, frightened, poisoned",
-    "Senses": "darkvision 240 ft., truesight 120 ft., passive Perception 36",
-    "Languages": "all, telepathy 120 ft.",
-    "Challenge": 30,
-    "Special Abilities": [
-        "Legendary Resistance (5/Day): If Bahamut fails a saving throw, he can choose to succeed instead.",
-        "Magic Resistance: Bahamut has advantage on saving throws against spells and other magical effects.",
-        "Divine Awareness: Bahamut knows if he hears a lie.",
-        "Regeneration: Bahamut regains 30 hit points at the start of his turn if he has at least 1 hit point.",
-        "Innate Spellcasting: Bahamut's spellcasting ability is Charisma (spell save DC 26). He can innately cast the following spells, requiring no material components: 3/day each: bless, cure wounds (9th level), divine word, holy aura",
-        "Legendary Actions: Bahamut can take 5 legendary actions, choosing from the options below."
-    ],
-    "Actions": {
-        "Multiattack": "Bahamut can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
-        "Bite": "Melee Weapon Attack: +19 to hit, reach 20 ft., one target. Hit: 32 (4d10 + 10) piercing damage plus 14 (4d6) radiant damage.",
-        "Claw": "Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit: 22 (4d6 + 10) slashing damage.",
-        "Tail": "Melee Weapon Attack: +19 to hit, reach 25 ft., one target. Hit: 24 (4d8 + 10) bludgeoning damage.",
-        "Frightful Presence": "Each creature of Bahamut's choice that is within 120 feet of him and aware of him must succeed on a DC 26 Wisdom saving throw or become frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if Bahamut is within line of sight, ending the effect on itself on a success.",
-        "Radiant Breath (Recharge 5-6)": "Bahamut exhales radiant energy in a 90-foot cone. Each creature in that area must make a DC 27 Dexterity saving throw, taking 91 (26d6) radiant damage on a failed save, or half as much damage on a successful one.",
-        "Platinum Aura": "Bahamut radiates a calming aura in a 60-foot radius. Each creature of Bahamut's choice in that area has advantage on saving throws against being charmed or frightened, and other creatures have disadvantage on attack rolls against them."
-    },
-    "Legendary Actions": {
-        "Detect": "Bahamut makes a Wisdom (Perception) check.",
-        "Tail Attack": "Bahamut makes a tail attack.",
-        "Wing Attack (Costs 2 Actions)": "Bahamut beats his wings. Each creature within 15 ft. of Bahamut must succeed on a DC 25 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Bahamut can then fly up to half his flying speed.",
-        "Bite Attack": "Bahamut makes a bite attack.",
-        "Claw Attack": "Bahamut makes a claw attack."
-    }
-}
-
-"""""
 
 bahamut_custom_stat_block = {
     "dragon_type": "Gold Dragon",
@@ -199,49 +135,49 @@ bahamut_custom_stat_block = {
 
 
 shimmergloom_custom_stat_block = {
-    "Dragon Type": "Shadow Dragon",
-    "Name": "Shimmergloom",
-    "Hit Points": 370,
-    "Armor Class": 21,
-    "Speed": "60 ft, fly 80 ft",
-    "Abilities": {
-        "Strength": 23,
-        "Dexterity": 18,
-        "Constitution": 25,
-        "Intelligence": 18,
-        "Wisdom": 17,
-        "Charisma": 20
+    "dragon_type": "Shadow Dragon",
+    "name": "Shimmergloom",
+    "hit_points": 370,
+    "armor_class": 21,
+    "speed": "60 ft, fly 80 ft",
+    "abilities": {
+        "strength": 23,
+        "dexterity": 18,
+        "constitution": 25,
+        "intelligence": 18,
+        "wisdom": 17,
+        "charisma": 20
     },
-    "Saving Throws": {
-        "STR": "+13",
-        "DEX": "+11",
-        "CON": "+14",
-        "INT": "+10",
-        "WIS": "+10",
-        "CHA": "+12"
+    "saving_throws": {
+        "strength": "+13",
+        "dexterity": "+11",
+        "constitution": "+14",
+        "intelligence": "+10",
+        "wisdom": "+10",
+        "charisma": "+12"
     },
-    "Skills": [
+    "skills": [
         "Perception +17",
         "Stealth +18"
     ],
-    "Damage Resistances": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
-    "Damage Immunities": "cold, necrotic",
-    "Condition Immunities": "charmed, exhaustion, frightened, poisoned",
-    "Senses": "darkvision 240 ft., truesight 120 ft., passive Perception 27",
-    "Languages": "Common, Draconic, telepathy 120 ft.",
-    "Challenge": 24,
-    "Special Abilities": [
+    "damage_resistances": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damage_immunities": "cold, necrotic",
+    "condition_immunities": "charmed, exhaustion, frightened, poisoned",
+    "senses": "darkvision 240 ft., truesight 120 ft., passive Perception 27",
+    "languages": "Common, Draconic, telepathy 120 ft.",
+    "challenge": 24,
+    "special_abilities": [
         "Legendary Resistance (3/Day): If Shimmergloom fails a saving throw, it can choose to succeed instead.",
         "Shadow Stealth: While in dim light or darkness, Shimmergloom can take the Hide action as a bonus action.",
         "Magic Resistance: Shimmergloom has advantage on saving throws against spells and other magical effects."
     ],
-    "Actions": {
+    "actions": {
         "Multiattack": "Shimmergloom makes three attacks: one with its bite and two with its claws.",
         "Bite": "Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit: 36 (4d10 + 16) piercing damage plus 14 (4d6) necrotic damage.",
         "Claw": "Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 28 (4d6 + 16) slashing damage.",
         "Shadow Breath (Recharge 5-6)": "Shimmergloom exhales shadowy energy in a 90-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) necrotic damage on a failed save, or half as much damage on a successful one."
     },
-    "Legendary Actions": {
+    "legendary_actions": {
         "Detect": "Shimmergloom makes a Wisdom (Perception) check.",
         "Tail Attack": "Shimmergloom makes a tail attack.",
         "Wing Attack (Costs 2 Actions)": "Shimmergloom beats its wings. Each creature within 15 feet of it must succeed on a DC 21 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Shimmergloom can then fly up to half its flying speed."
@@ -249,52 +185,52 @@ shimmergloom_custom_stat_block = {
 }
 
 ashardalon_custom_stat_block = {
-    "Dragon Type": "Red Dragon",
-    "Name": "Ashardalon",
-    "Hit Points": 500,
-    "Armor Class": 21,
-    "Speed": "40 ft, fly 80 ft (hover)",
-    "Abilities": {
-        "Strength": 27,
-        "Dexterity": 10,
-        "Constitution": 25,
-        "Intelligence": 18,
-        "Wisdom": 15,
-        "Charisma": 22
+    "dragon_type": "Red Dragon",
+    "name": "Ashardalon",
+    "hit_points": 500,
+    "armor_class": 21,
+    "speed": "40 ft, fly 80 ft (hover)",
+    "abilities": {
+        "strength": 27,
+        "dexterity": 10,
+        "constitution": 25,
+        "intelligence": 18,
+        "wisdom": 15,
+        "charisma": 22
     },
-    "Saving Throws": {
-        "STR": "+15",
-        "DEX": "+5",
-        "CON": "+14",
-        "INT": "+10",
-        "WIS": "+9",
-        "CHA": "+12"
+    "saving_throws": {
+        "strength": "+15",
+        "dexterity": "+5",
+        "constitution": "+14",
+        "intelligence": "+10",
+        "wisdom": "+9",
+        "charisma": "+12"
     },
-    "Skills": [
+    "skills": [
         "Perception +16"
     ],
-    "Damage Resistances": "fire; bludgeoning, piercing, and slashing from nonmagical attacks",
-    "Damage Immunities": "none",
-    "Condition Immunities": "exhausted, frightened",
-    "Senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 26",
-    "Languages": "Common, Draconic",
-    "Challenge": 24,
-    "Special Abilities": [
+    "damage_resistances": "fire; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damage_immunities": "none",
+    "condition_immunities": "exhausted, frightened",
+    "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 26",
+    "languages": "Common, Draconic",
+    "challenge": 24,
+    "special_abilities": [
         "Legendary Resistance (3/Day): If Ashardalon fails a saving throw, he can choose to succeed instead.",
         "Magic Resistance: Ashardalon has advantage on saving throws against spells and other magical effects.",
         "Fire Breath (Recharge 5-6): Ashardalon exhales fire in a 90-foot cone. Each creature in that area must make a DC 22 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one.",
         "Summon Demons: Ashardalon can summon demons to aid him in battle. He can summon 2d6 dretches, 1d4 babaus, or 1 balor.",
         "Demonic Heart: Ashardalon's heart contains demonic essence, granting him increased physical prowess."
     ],
-    "Actions": {
-        "Multiattack": "Ashardalon can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
-        "Bite": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 34 (4d10 + 13) piercing damage plus 14 (4d6) fire damage.",
-        "Claw": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 27 (4d6 + 13) slashing damage."
+    "actions": {
+        "multiattack": "Ashardalon can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
+        "bite": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 34 (4d10 + 13) piercing damage plus 14 (4d6) fire damage.",
+        "claw": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 27 (4d6 + 13) slashing damage."
     },
-    "Legendary Actions": {
-        "Detect": "Ashardalon makes a Wisdom (Perception) check.",
-        "Tail Attack": "Ashardalon makes a tail attack.",
-        "Wing Attack (Costs 2 Actions)": "Ashardalon beats his wings. Each creature within 15 feet of him must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ashardalon can then fly up to half his flying speed."
+    "legendary_actions": {
+        "detect": "Ashardalon makes a Wisdom (Perception) check.",
+        "tail_attack": "Ashardalon makes a tail attack.",
+        "wing_attack (costs 2 actions)": "Ashardalon beats his wings. Each creature within 15 feet of him must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ashardalon can then fly up to half his flying speed."
     }
 }
 

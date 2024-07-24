@@ -108,6 +108,7 @@ from .. import LegendaryDragons
 
 from ..LegendaryDragons import LegendaryDragonStatBlock
 
+
 @pytest.fixture
 def bahamut_stat_block():
     # Fixture to provide a sample instance of LegendaryDragons for testing
@@ -156,4 +157,153 @@ def test_bahamut_stat_block(bahamut_stat_block):
         == "Bahamut radiates a calming aura in a 60-foot radius. Each creature of Bahamut's choice in that area has advantage on saving throws against being charmed or frightened, and other creatures have disadvantage on attack rolls against them."
     )
 
+# Define the fixture for Tiamat's stat block
+@pytest.fixture
+def tiamat_stat_block():
+    # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
+    return LegendaryDragonStatBlock(**LegendaryDragons.tiamat_custom_stat_block)
 
+    # Test function for Tiamat's stat block
+def test_tiamat_stat_block(tiamat_stat_block):
+    # Check if the Tiamat StatBlock instance is created correctly
+    assert tiamat_stat_block.name == "Tiamat"
+    assert tiamat_stat_block.hit_points == 615
+    assert tiamat_stat_block.armor_class == 25
+    assert tiamat_stat_block.speed == "60 ft, fly 120 ft"
+    assert tiamat_stat_block.abilities.strength == 30
+    assert tiamat_stat_block.saving_throws.strength == 17
+    assert "Arcana +15" in tiamat_stat_block.skills
+    assert (
+        tiamat_stat_block.damage_resistances
+        == "bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
+    assert tiamat_stat_block.damage_immunities == "acid, cold, fire, lightning, poison"
+    assert tiamat_stat_block.condition_immunities == "charmed, frightened, poisoned"
+    assert tiamat_stat_block.senses == "darkvision 240 ft., truesight 120 ft., passive Perception 32"
+    assert tiamat_stat_block.languages == "all, telepathy 120 ft."
+    assert tiamat_stat_block.challenge == 30
+    assert (
+        "Legendary Resistance (5/Day): If Tiamat fails a saving throw, she can choose to succeed instead."
+        in tiamat_stat_block.special_abilities
+    )
+    assert (
+        tiamat_stat_block.legendary_actions["Detect"]
+        == "Tiamat makes a Wisdom (Perception) check."
+    )
+    assert (
+        tiamat_stat_block.actions["Multiattack"]
+        == "Tiamat can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws."
+    )
+    assert (
+        tiamat_stat_block.actions["Bite"]
+        == "Melee Weapon Attack: +19 to hit, reach 20 ft., one target. Hit: 32 (4d10 + 10) piercing damage plus 14 (4d6) damage of a type based on the dragon head used: acid (black), lightning (blue), fire (red), poison (green), or cold (white)."
+    )
+    assert (
+        tiamat_stat_block.actions["Breath Weapons (Recharge 5-6)"]
+        == "Tiamat uses one of the following breath weapons. She can use each breath weapon only once per recharge cycle."
+    )
+    assert (
+        tiamat_stat_block.actions["Acid Breath (Black Dragon Head)"]
+        == "Tiamat exhales acid in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 27 Dexterity saving throw, taking 88 (16d10) acid damage on a failed save, or half as much damage on a successful one."
+    )
+    assert (
+        tiamat_stat_block.actions["Lightning Breath (Blue Dragon Head)"]
+        == "Tiamat exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 27 Dexterity saving throw, taking 110 (20d10) lightning damage on a failed save, or half as much damage on a successful one."
+    )
+    assert (
+        tiamat_stat_block.actions["Fire Breath (Red Dragon Head)"]
+        == "Tiamat exhales fire in a 90-foot cone. Each creature in that area must make a DC 27 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one."
+    )
+    assert (
+        tiamat_stat_block.actions["Poison Breath (Green Dragon Head)"]
+        == "Tiamat exhales poisonous gas in a 90-foot cone. Each creature in that area must make a DC 27 Constitution saving throw, taking 77 (22d6) poison damage on a failed save, or half as much damage on a successful one."
+    )
+    assert (
+        tiamat_stat_block.actions["Cold Breath (White Dragon Head)"]
+        == "Tiamat exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 27 Constitution saving throw, taking 72 (16d8) cold damage on a failed save, or half as much damage on a successful one."
+    )
+
+@pytest.fixture
+def shimmergloom_stat_block():
+    # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
+    return LegendaryDragonStatBlock(**LegendaryDragons.shimmergloom_custom_stat_block)
+
+def test_shimmergloom_stat_block(shimmergloom_stat_block):
+    # Check if the Shimmergloom StatBlock instance is created correctly
+    assert shimmergloom_stat_block.name == "Shimmergloom"
+    assert shimmergloom_stat_block.hit_points == 370
+    assert shimmergloom_stat_block.armor_class == 21
+    assert shimmergloom_stat_block.speed == "60 ft, fly 80 ft"
+    assert shimmergloom_stat_block.abilities.strength == 23
+    assert shimmergloom_stat_block.saving_throws.strength == 13
+    assert "Perception +17" in shimmergloom_stat_block.skills
+    assert shimmergloom_stat_block.damage_resistances == "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert shimmergloom_stat_block.damage_immunities == "cold, necrotic"
+    assert shimmergloom_stat_block.condition_immunities == "charmed, exhaustion, frightened, poisoned"
+    assert shimmergloom_stat_block.senses == "darkvision 240 ft., truesight 120 ft., passive Perception 27"
+    assert shimmergloom_stat_block.languages == "Common, Draconic, telepathy 120 ft."
+    assert shimmergloom_stat_block.challenge == 24
+    assert (
+        "Legendary Resistance (3/Day): If Shimmergloom fails a saving throw, it can choose to succeed instead."
+        in shimmergloom_stat_block.special_abilities
+    )
+    assert (
+        shimmergloom_stat_block.legendary_actions["Detect"]
+        == "Shimmergloom makes a Wisdom (Perception) check."
+    )
+    assert (
+        shimmergloom_stat_block.actions["Multiattack"]
+        == "Shimmergloom makes three attacks: one with its bite and two with its claws."
+    )
+    assert (
+        shimmergloom_stat_block.actions["Bite"]
+        == "Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit: 36 (4d10 + 16) piercing damage plus 14 (4d6) necrotic damage."
+    )
+    assert (
+        shimmergloom_stat_block.actions["Shadow Breath (Recharge 5-6)"]
+        == "Shimmergloom exhales shadowy energy in a 90-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) necrotic damage on a failed save, or half as much damage on a successful one."
+    )
+
+@pytest.fixture
+def ashardalon_stat_block():
+    # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
+    return LegendaryDragonStatBlock(**LegendaryDragons.ashardalon_custom_stat_block)
+
+def test_ashardalon_stat_block(ashardalon_stat_block):
+    # Check if the Ashardalon StatBlock instance is created correctly
+    assert ashardalon_stat_block.name == "Ashardalon"
+    assert ashardalon_stat_block.hit_points == 500
+    assert ashardalon_stat_block.armor_class == 21
+    assert ashardalon_stat_block.speed == "40 ft, fly 80 ft (hover)"
+    assert ashardalon_stat_block.abilities.strength == 27
+    assert ashardalon_stat_block.saving_throws.strength == 15
+    assert "Perception +16" in ashardalon_stat_block.skills
+    assert (
+        ashardalon_stat_block.damage_resistances
+        == "fire; bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
+    assert ashardalon_stat_block.damage_immunities == "none"
+    assert ashardalon_stat_block.condition_immunities == "exhausted, frightened"
+    assert ashardalon_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 26"
+    assert ashardalon_stat_block.languages == "Common, Draconic"
+    assert ashardalon_stat_block.challenge == 24
+    assert (
+        "Legendary Resistance (3/Day): If Ashardalon fails a saving throw, he can choose to succeed instead."
+        in ashardalon_stat_block.special_abilities
+    )
+    assert (
+        ashardalon_stat_block.legendary_actions["Detect"]
+        == "Ashardalon makes a Wisdom (Perception) check."
+    )
+    assert (
+        ashardalon_stat_block.actions["Multiattack"]
+        == "Ashardalon can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws."
+    )
+    assert (
+        ashardalon_stat_block.actions["Bite"]
+        == "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 34 (4d10 + 13) piercing damage plus 14 (4d6) fire damage."
+    )
+    assert (
+        ashardalon_stat_block.actions["Fire Breath (Recharge 5-6)"]
+        == "Ashardalon exhales fire in a 90-foot cone. Each creature in that area must make a DC 22 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one."
+    )
