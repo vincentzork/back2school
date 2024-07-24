@@ -1,3 +1,4 @@
+
 from typing import List, Dict
 
 from pydantic import BaseModel
@@ -71,6 +72,7 @@ tiamat_custom_stat_block = {
     }
 }
 
+"""""
 bahamut_custom_stat_block = {
     "Dragon Type": "Gold Dragon",
     "Name": "Bahamut",
@@ -131,6 +133,70 @@ bahamut_custom_stat_block = {
         "Claw Attack": "Bahamut makes a claw attack."
     }
 }
+
+"""""
+
+bahamut_custom_stat_block = {
+    "dragon_type": "Gold Dragon",
+    "name": "Bahamut",
+    "hit_points": 585,
+    "armor_class": 24,
+    "speed": "60 ft, fly 120 ft",
+    "abilities": {
+        "strength": 30,
+        "dexterity": 16,
+        "constitution": 30,
+        "intelligence": 26,
+        "wisdom": 27,
+        "charisma": 30
+    },
+    "saving_throws": {
+        "strength": "+17",
+        "dexterity": "+13",
+        "constitution": "+17",
+        "intelligence": "+15",
+        "wisdom": "+16",
+        "charisma": "+18"
+    },
+    "skills": [
+        "Arcana +15",
+        "Insight +16",
+        "Perception +26",
+        "Persuasion +18",
+        "Religion +15"
+    ],
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damage_immunities": "radiant, necrotic",
+    "condition_immunities": "charmed, frightened, poisoned",
+    "senses": "darkvision 240 ft., truesight 120 ft., passive Perception 36",
+    "languages": "all, telepathy 120 ft.",
+    "challenge": 30,
+    "special_abilities": [
+        "Legendary Resistance (5/Day): If Bahamut fails a saving throw, he can choose to succeed instead.",
+        "Magic Resistance: Bahamut has advantage on saving throws against spells and other magical effects.",
+        "Divine Awareness: Bahamut knows if he hears a lie.",
+        "Regeneration: Bahamut regains 30 hit points at the start of his turn if he has at least 1 hit point.",
+        "Innate Spellcasting: Bahamut's spellcasting ability is Charisma (spell save DC 26). He can innately cast the following spells, requiring no material components: 3/day each: bless, cure wounds (9th level), divine word, holy aura",
+        "Legendary Actions: Bahamut can take 5 legendary actions, choosing from the options below."
+    ],
+    "actions": {
+        "Multiattack": "Bahamut can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
+        "Bite": "Melee Weapon Attack: +19 to hit, reach 20 ft., one target. Hit: 32 (4d10 + 10) piercing damage plus 14 (4d6) radiant damage.",
+        "Claw": "Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit: 22 (4d6 + 10) slashing damage.",
+        "Tail": "Melee Weapon Attack: +19 to hit, reach 25 ft., one target. Hit: 24 (4d8 + 10) bludgeoning damage.",
+        "Frightful Presence": "Each creature of Bahamut's choice that is within 120 feet of him and aware of him must succeed on a DC 26 Wisdom saving throw or become frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if Bahamut is within line of sight, ending the effect on itself on a success.",
+        "Radiant Breath (Recharge 5-6)": "Bahamut exhales radiant energy in a 90-foot cone. Each creature in that area must make a DC 27 Dexterity saving throw, taking 91 (26d6) radiant damage on a failed save, or half as much damage on a successful one.",
+        "Platinum Aura": "Bahamut radiates a calming aura in a 60-foot radius. Each creature of Bahamut's choice in that area has advantage on saving throws against being charmed or frightened, and other creatures have disadvantage on attack rolls against them."
+    },
+    "legendary_actions": {
+        "Detect": "Bahamut makes a Wisdom (Perception) check.",
+        "Tail Attack": "Bahamut makes a tail attack.",
+        "Wing Attack (Costs 2 Actions)": "Bahamut beats his wings. Each creature within 15 ft. of Bahamut must succeed on a DC 25 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Bahamut can then fly up to half his flying speed.",
+        "Bite Attack": "Bahamut makes a bite attack.",
+        "Claw Attack": "Bahamut makes a claw attack."
+    }
+}
+
 
 shimmergloom_custom_stat_block = {
     "Dragon Type": "Shadow Dragon",
