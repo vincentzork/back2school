@@ -347,37 +347,37 @@ iymrith_custom_stat_block = {
 
 
 dragotha_custom_stat_block = {
-    "Dragon Type": "Dracolich",
-    "Name": "Dragotha",
-    "Hit Points": 367,
-    "Armor Class": 20,
-    "Speed": "40 ft, fly 80 ft (hover)",
-    "Abilities": {
-        "Strength": 22,
-        "Dexterity": 10,
-        "Constitution": 20,
-        "Intelligence": 18,
-        "Wisdom": 15,
-        "Charisma": 21
+    "dragon_type": "Dracolich",
+    "name": "Dragotha",
+    "hit_points": 367,
+    "armor_class": 20,
+    "speed": "40 ft, fly 80 ft (hover)",
+    "abilities": {
+        "strength": 22,
+        "dexterity": 10,
+        "constitution": 20,
+        "intelligence": 18,
+        "wisdom": 15,
+        "charisma": 21
     },
-    "Saving Throws": {
-        "STR": "+12",
-        "DEX": "+6",
-        "CON": "+11",
-        "INT": "+10",
-        "WIS": "+9",
-        "CHA": "+11"
+    "saving_throws": {
+        "strength": "+12",
+        "dexterity": "+6",
+        "constitution": "+11",
+        "intelligence": "+10",
+        "wisdom": "+9",
+        "charisma": "+11"
     },
-    "Skills": [
+    "skills": [
         "Perception +15"
     ],
-    "Damage Resistances": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
-    "Damage Immunities": "cold, poison",
-    "Condition Immunities": "charmed, exhaustion, frightened, paralyzed, poisoned",
-    "Senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 25",
-    "Languages": "Common, Draconic, plus any three languages",
-    "Challenge": 22,
-    "Special Abilities": [
+    "damage_resistances": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damage_immunities": "cold, poison",
+    "condition_immunities": "charmed, exhausted, frightened, paralyzed, poisoned",
+    "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 25",
+    "languages": "Common, Draconic, plus any three languages",
+    "challenge": 22,
+    "special_abilities": [
         "Legendary Resistance (3/Day): If Dragotha fails a saving throw, he can choose to succeed instead.",
         "Magic Resistance: Dragotha has advantage on saving throws against spells and other magical effects.",
         "Icy Breath (Recharge 5-6): Dragotha exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 21 Constitution saving throw, taking 66 (12d10) cold damage on a failed save, or half as much damage on a successful one.",
@@ -390,17 +390,18 @@ dragotha_custom_stat_block = {
         "- 5th level (3 slots): Cloudkill, Cone of Cold",
         "- 6th level (1 slot): Disintegrate"
     ],
-    "Actions": {
-        "Multiattack": "Dragotha can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
-        "Bite": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 23 (3d10 + 7) piercing damage plus 14 (4d6) necrotic damage.",
-        "Claw": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 7) slashing damage."
+    "actions": {
+        "multiattack": "Dragotha can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
+        "bite": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 23 (3d10 + 7) piercing damage plus 14 (4d6) necrotic damage.",
+        "claw": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 7) slashing damage."
     },
-    "Legendary Actions": {
-        "Detect": "Dragotha makes a Wisdom (Perception) check.",
-        "Tail Attack": "Dragotha makes a tail attack.",
-        "Wing Attack (Costs 2 Actions)": "Dragotha beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Dragotha can then fly up to half his flying speed."
+    "legendary_actions": {
+        "detect": "Dragotha makes a Wisdom (Perception) check.",
+        "tail_attack": "Dragotha makes a tail attack.",
+        "wing_attack (costs 2 actions)": "Dragotha beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Dragotha can then fly up to half his flying speed."
     }
 }
+
 
 klauth_custom_stat_block = {
     "Dragon Type": "Red Dragon",

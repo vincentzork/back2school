@@ -421,3 +421,64 @@ def test_iymrith_stat_block(iymrith_stat_block):
         == "Iymrith beats her wings. Each creature within 15 feet of her must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Iymrith can then fly up to half her flying speed."
     )
 
+@pytest.fixture
+def dragotha_stat_block():
+    # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
+    return LegendaryDragonStatBlock(**LegendaryDragons.dragotha_custom_stat_block)
+
+def test_dragotha_stat_block(dragotha_stat_block):
+    # Check if the Dragotha StatBlock instance is created correctly
+    assert dragotha_stat_block.name == "Dragotha"
+    assert dragotha_stat_block.hit_points == 367
+    assert dragotha_stat_block.armor_class == 20
+    assert dragotha_stat_block.speed == "40 ft, fly 80 ft (hover)"
+    assert dragotha_stat_block.abilities.strength == 22
+    assert dragotha_stat_block.abilities.dexterity == 10
+    assert dragotha_stat_block.abilities.constitution == 20
+    assert dragotha_stat_block.abilities.intelligence == 18
+    assert dragotha_stat_block.abilities.wisdom == 15
+    assert dragotha_stat_block.abilities.charisma == 21
+    assert dragotha_stat_block.saving_throws.strength == 12
+    assert dragotha_stat_block.saving_throws.dexterity == 6
+    assert dragotha_stat_block.saving_throws.constitution == 11
+    assert dragotha_stat_block.saving_throws.intelligence == 10
+    assert dragotha_stat_block.saving_throws.wisdom == 9
+    assert dragotha_stat_block.saving_throws.charisma == 11
+    assert "Perception +15" in dragotha_stat_block.skills
+    assert (
+        dragotha_stat_block.damage_resistances
+        == "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
+    assert dragotha_stat_block.damage_immunities == "cold, poison"
+    assert dragotha_stat_block.condition_immunities == "charmed, exhausted, frightened, paralyzed, poisoned"
+    assert dragotha_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 25"
+    assert dragotha_stat_block.languages == "Common, Draconic, plus any three languages"
+    assert dragotha_stat_block.challenge == 22
+    assert (
+        "Legendary Resistance (3/Day): If Dragotha fails a saving throw, he can choose to succeed instead."
+        in dragotha_stat_block.special_abilities
+    )
+    assert (
+        dragotha_stat_block.legendary_actions["detect"]
+        == "Dragotha makes a Wisdom (Perception) check."
+    )
+    assert (
+        dragotha_stat_block.actions["multiattack"]
+        == "Dragotha can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws."
+    )
+    assert (
+        dragotha_stat_block.actions["bite"]
+        == "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 23 (3d10 + 7) piercing damage plus 14 (4d6) necrotic damage."
+    )
+    assert (
+        dragotha_stat_block.actions["claw"]
+        == "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 7) slashing damage."
+    )
+    assert (
+        dragotha_stat_block.legendary_actions["tail_attack"]
+        == "Dragotha makes a tail attack."
+    )
+    assert (
+        dragotha_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
+        == "Dragotha beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Dragotha can then fly up to half his flying speed."
+    )
