@@ -268,7 +268,6 @@ def test_shimmergloom_stat_block(shimmergloom_stat_block):
 def ashardalon_stat_block():
     # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
     return LegendaryDragonStatBlock(**LegendaryDragons.ashardalon_custom_stat_block)
-
 def test_ashardalon_stat_block(ashardalon_stat_block):
     # Check if the Ashardalon StatBlock instance is created correctly
     assert ashardalon_stat_block.name == "Ashardalon"
@@ -276,7 +275,8 @@ def test_ashardalon_stat_block(ashardalon_stat_block):
     assert ashardalon_stat_block.armor_class == 21
     assert ashardalon_stat_block.speed == "40 ft, fly 80 ft (hover)"
     assert ashardalon_stat_block.abilities.strength == 27
-    assert ashardalon_stat_block.saving_throws.strength == 15
+    assert ashardalon_stat_block.saving_throws.strength == 15  # Adjusted to expect an integer
+    assert ashardalon_stat_block.saving_throws.dexterity == 5  # Added for consistency
     assert "Perception +16" in ashardalon_stat_block.skills
     assert (
         ashardalon_stat_block.damage_resistances
@@ -292,18 +292,26 @@ def test_ashardalon_stat_block(ashardalon_stat_block):
         in ashardalon_stat_block.special_abilities
     )
     assert (
-        ashardalon_stat_block.legendary_actions["Detect"]
+        ashardalon_stat_block.legendary_actions["detect"]
         == "Ashardalon makes a Wisdom (Perception) check."
     )
     assert (
-        ashardalon_stat_block.actions["Multiattack"]
+        ashardalon_stat_block.actions["multiattack"]
         == "Ashardalon can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws."
     )
     assert (
-        ashardalon_stat_block.actions["Bite"]
+        ashardalon_stat_block.actions["bite"]
         == "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 34 (4d10 + 13) piercing damage plus 14 (4d6) fire damage."
     )
     assert (
-        ashardalon_stat_block.actions["Fire Breath (Recharge 5-6)"]
-        == "Ashardalon exhales fire in a 90-foot cone. Each creature in that area must make a DC 22 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one."
+        ashardalon_stat_block.actions["claw"]
+        == "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 27 (4d6 + 13) slashing damage."
+    )
+    assert (
+        ashardalon_stat_block.legendary_actions["tail_attack"]
+        == "Ashardalon makes a tail attack."
+    )
+    assert (
+        ashardalon_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
+        == "Ashardalon beats his wings. Each creature within 15 feet of him must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ashardalon can then fly up to half his flying speed."
     )
