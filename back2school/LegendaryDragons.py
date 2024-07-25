@@ -235,38 +235,38 @@ ashardalon_custom_stat_block = {
 }
 
 null_custom_stat_block = {
-    "Dragon Type": "Shadow Dragon",
-    "Name": "Null, The Deathwyrm",
-    "Hit Points": 550,
-    "Armor Class": 23,
-    "Speed": "40 ft, fly 80 ft (hover)",
-    "Abilities": {
-        "Strength": 24,
-        "Dexterity": 12,
-        "Constitution": 23,
-        "Intelligence": 18,
-        "Wisdom": 16,
-        "Charisma": 20
+    "dragon_type": "Shadow Dragon",
+    "name": "Null, The Deathwyrm",
+    "hit_points": 550,
+    "armor_class": 23,
+    "speed": "40 ft, fly 80 ft (hover)",
+    "abilities": {
+        "strength": 24,
+        "dexterity": 12,
+        "constitution": 23,
+        "intelligence": 18,
+        "wisdom": 16,
+        "charisma": 20
     },
-    "Saving Throws": {
-        "STR": "+14",
-        "DEX": "+8",
-        "CON": "+13",
-        "INT": "+10",
-        "WIS": "+9",
-        "CHA": "+11"
+    "saving_throws": {
+        "strength": "+14",
+        "dexterity": "+8",
+        "constitution": "+13",
+        "intelligence": "+10",
+        "wisdom": "+9",
+        "charisma": "+11"
     },
-    "Skills": [
+    "skills": [
         "Perception +16",
         "Stealth +12"
     ],
-    "Damage Resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
-    "Damage Immunities": "necrotic, poison",
-    "Condition Immunities": "exhausted, frightened, paralyzed, poisoned",
-    "Senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 26",
-    "Languages": "Common, Draconic",
-    "Challenge": 26,
-    "Special Abilities": [
+    "damage_resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damage_immunities": "necrotic, poison",
+    "condition_immunities": "exhausted, frightened, paralyzed, poisoned",
+    "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 26",
+    "languages": "Common, Draconic",
+    "challenge": 26,
+    "special_abilities": [
         "Legendary Resistance (3/Day): If Null fails a saving throw, he can choose to succeed instead.",
         "Magic Resistance: Null has advantage on saving throws against spells and other magical effects.",
         "Shadow Stealth: While in dim light or darkness, Null can take the Hide action as a bonus action.",
@@ -274,16 +274,16 @@ null_custom_stat_block = {
         "Life Drain: When Null hits a creature with its bite attack, it can choose to drain life energy. The target must succeed on a DC 23 Constitution saving throw or take 21 (6d6) necrotic damage, and Null regains hit points equal to the damage dealt.",
         "Command Undead: Null can magically command undead creatures within 120 feet of it. Undead creatures must make a DC 23 Wisdom saving throw or be charmed by Null for 24 hours."
     ],
-    "Actions": {
-        "Multiattack": "Null can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
-        "Bite": "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 34 (4d10 + 12) piercing damage plus 14 (4d6) necrotic damage. On a hit, Null can use Life Drain.",
-        "Claw": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 27 (4d6 + 12) slashing damage.",
-        "Shadow Breath (Recharge 5-6)": "Null exhales shadowy energy in a 90-foot cone. Each creature in that area must make a DC 23 Dexterity saving throw, taking 84 (24d6) necrotic damage on a failed save, or half as much damage on a successful one."
+    "actions": {
+        "multiattack": "Null can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
+        "bite": "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 34 (4d10 + 12) piercing damage plus 14 (4d6) necrotic damage. On a hit, Null can use Life Drain.",
+        "claw": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 27 (4d6 + 12) slashing damage.",
+        "shadow_breath (recharge 5-6)": "Null exhales shadowy energy in a 90-foot cone. Each creature in that area must make a DC 23 Dexterity saving throw, taking 84 (24d6) necrotic damage on a failed save, or half as much damage on a successful one."
     },
-    "Legendary Actions": {
-        "Detect": "Null makes a Wisdom (Perception) check.",
-        "Tail Attack": "Null makes a tail attack.",
-        "Wing Attack (Costs 2 Actions)": "Null beats his wings. Each creature within 15 feet of him must succeed on a DC 24 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. Null can then fly up to half his flying speed."
+    "legendary_actions": {
+        "detect": "Null makes a Wisdom (Perception) check.",
+        "tail_attack": "Null makes a tail attack.",
+        "wing_attack (costs 2 actions)": "Null beats his wings. Each creature within 15 feet of him must succeed on a DC 24 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. Null can then fly up to half his flying speed."
     }
 }
 

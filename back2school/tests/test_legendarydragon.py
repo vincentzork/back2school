@@ -315,3 +315,56 @@ def test_ashardalon_stat_block(ashardalon_stat_block):
         ashardalon_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
         == "Ashardalon beats his wings. Each creature within 15 feet of him must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ashardalon can then fly up to half his flying speed."
     )
+
+@pytest.fixture
+def null_stat_block():
+    # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
+    return LegendaryDragonStatBlock(**LegendaryDragons.null_custom_stat_block)
+
+def test_null_stat_block(null_stat_block):
+    # Check if the Null StatBlock instance is created correctly
+    assert null_stat_block.name == "Null, The Deathwyrm"
+    assert null_stat_block.hit_points == 550
+    assert null_stat_block.armor_class == 23
+    assert null_stat_block.speed == "40 ft, fly 80 ft (hover)"
+    assert null_stat_block.abilities.strength == 24
+    assert null_stat_block.saving_throws.strength == 14  # Adjusted to expect an integer
+    assert null_stat_block.saving_throws.dexterity == 8  # Added for consistency
+    assert "Perception +16" in null_stat_block.skills
+    assert (
+        null_stat_block.damage_resistances
+        == "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
+    assert null_stat_block.damage_immunities == "necrotic, poison"
+    assert null_stat_block.condition_immunities == "exhausted, frightened, paralyzed, poisoned"
+    assert null_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 26"
+    assert null_stat_block.languages == "Common, Draconic"
+    assert null_stat_block.challenge == 26
+    assert (
+        "Legendary Resistance (3/Day): If Null fails a saving throw, he can choose to succeed instead."
+        in null_stat_block.special_abilities
+    )
+    assert (
+        null_stat_block.legendary_actions["detect"]
+        == "Null makes a Wisdom (Perception) check."
+    )
+    assert (
+        null_stat_block.actions["multiattack"]
+        == "Null can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws."
+    )
+    assert (
+        null_stat_block.actions["bite"]
+        == "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 34 (4d10 + 12) piercing damage plus 14 (4d6) necrotic damage. On a hit, Null can use Life Drain."
+    )
+    assert (
+        null_stat_block.actions["claw"]
+        == "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 27 (4d6 + 12) slashing damage."
+    )
+    assert (
+        null_stat_block.legendary_actions["tail_attack"]
+        == "Null makes a tail attack."
+    )
+    assert (
+        null_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
+        == "Null beats his wings. Each creature within 15 feet of him must succeed on a DC 24 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. Null can then fly up to half his flying speed."
+    )
