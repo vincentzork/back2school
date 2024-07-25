@@ -287,38 +287,40 @@ null_custom_stat_block = {
     }
 }
 
+
 iymrith_custom_stat_block = {
-    "Dragon Type": "Blue Dragon",
-    "Name": "Iymrith, the Doom of the Desert",
-    "Hit Points": 481,
-    "Armor Class": 22,
-    "Speed": "40 ft, burrow 40 ft, fly 120 ft",
-    "Abilities": {
-        "Strength": 27,
-        "Dexterity": 10,
-        "Constitution": 25,
-        "Intelligence": 18,
-        "Wisdom": 17,
-        "Charisma": 21
+    "dragon_type": "Blue Dragon",
+    "name": "Iymrith, the Doom of the Desert",
+    "hit_points": 481,
+    "armor_class": 22,
+    "speed": "40 ft, burrow 40 ft, fly 120 ft",
+    "abilities": {
+        "strength": 27,
+        "dexterity": 10,
+        "constitution": 25,
+        "intelligence": 18,
+        "wisdom": 17,
+        "charisma": 21
     },
-    "Saving Throws": {
-        "STR": "+16",
-        "DEX": "+8",
-        "CON": "+14",
-        "INT": "+10",
-        "WIS": "+11",
-        "CHA": "+12"
+    "saving_throws": {
+        "strength": 16,
+        "dexterity": 8,
+        "constitution": 14,
+        "intelligence": 10,
+        "wisdom": 11,
+        "charisma": 12
     },
-    "Skills": [
+    "skills": [
         "Perception +17",
         "Stealth +8"
     ],
-    "Damage Immunities": "lightning",
-    "Condition Immunities": "exhausted, paralyzed",
-    "Senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 27",
-    "Languages": "Common, Draconic",
-    "Challenge": 23,
-    "Special Abilities": [
+    "damage_resistances": "",
+    "damage_immunities": "lightning",
+    "condition_immunities": "exhausted, paralyzed",
+    "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 27",
+    "languages": "Common, Draconic",
+    "challenge": 23,
+    "special_abilities": [
         "Legendary Resistance (3/Day): If Iymrith fails a saving throw, she can choose to succeed instead.",
         "Magic Resistance: Iymrith has advantage on saving throws against spells and other magical effects.",
         "Electrical Breath (Recharge 5-6): Iymrith exhales lightning in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.",
@@ -331,17 +333,18 @@ iymrith_custom_stat_block = {
         "- 5th level (3 slots): Cloudkill, Cone of Cold",
         "- 6th level (1 slot): Chain Lightning"
     ],
-    "Actions": {
-        "Multiattack": "Iymrith can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws.",
-        "Bite": "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 36 (4d10 + 16) piercing damage.",
-        "Claw": "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 28 (4d6 + 16) slashing damage."
+    "actions": {
+        "multiattack": "Iymrith can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws.",
+        "bite": "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 36 (4d10 + 16) piercing damage.",
+        "claw": "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 28 (4d6 + 16) slashing damage."
     },
-    "Legendary Actions": {
-        "Detect": "Iymrith makes a Wisdom (Perception) check.",
-        "Tail Attack": "Iymrith makes a tail attack.",
-        "Wing Attack (Costs 2 Actions)": "Iymrith beats her wings. Each creature within 15 feet of her must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Iymrith can then fly up to half her flying speed."
+    "legendary_actions": {
+        "detect": "Iymrith makes a Wisdom (Perception) check.",
+        "tail_attack": "Iymrith makes a tail attack.",
+        "wing_attack (costs 2 actions)": "Iymrith beats her wings. Each creature within 15 feet of her must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Iymrith can then fly up to half her flying speed."
     }
 }
+
 
 dragotha_custom_stat_block = {
     "Dragon Type": "Dracolich",

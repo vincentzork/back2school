@@ -368,3 +368,56 @@ def test_null_stat_block(null_stat_block):
         null_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
         == "Null beats his wings. Each creature within 15 feet of him must succeed on a DC 24 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. Null can then fly up to half his flying speed."
     )
+
+@pytest.fixture
+def iymrith_stat_block():
+    # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
+    return LegendaryDragonStatBlock(**LegendaryDragons.iymrith_custom_stat_block)
+
+def test_iymrith_stat_block(iymrith_stat_block):
+    # Check if the Iymrith StatBlock instance is created correctly
+    assert iymrith_stat_block.name == "Iymrith, the Doom of the Desert"
+    assert iymrith_stat_block.hit_points == 481
+    assert iymrith_stat_block.armor_class == 22
+    assert iymrith_stat_block.speed == "40 ft, burrow 40 ft, fly 120 ft"
+    assert iymrith_stat_block.abilities.strength == 27
+    assert iymrith_stat_block.saving_throws.strength == 16
+    assert iymrith_stat_block.saving_throws.dexterity == 8
+    assert "Perception +17" in iymrith_stat_block.skills
+    assert (
+        iymrith_stat_block.damage_immunities
+        == "lightning"
+    )
+    assert iymrith_stat_block.condition_immunities == "exhausted, paralyzed"
+    assert iymrith_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 27"
+    assert iymrith_stat_block.languages == "Common, Draconic"
+    assert iymrith_stat_block.challenge == 23
+    assert (
+        "Legendary Resistance (3/Day): If Iymrith fails a saving throw, she can choose to succeed instead."
+        in iymrith_stat_block.special_abilities
+    )
+    assert (
+        iymrith_stat_block.legendary_actions["detect"]
+        == "Iymrith makes a Wisdom (Perception) check."
+    )
+    assert (
+        iymrith_stat_block.actions["multiattack"]
+        == "Iymrith can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws."
+    )
+    assert (
+        iymrith_stat_block.actions["bite"]
+        == "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 36 (4d10 + 16) piercing damage."
+    )
+    assert (
+        iymrith_stat_block.actions["claw"]
+        == "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 28 (4d6 + 16) slashing damage."
+    )
+    assert (
+        iymrith_stat_block.legendary_actions["tail_attack"]
+        == "Iymrith makes a tail attack."
+    )
+    assert (
+        iymrith_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
+        == "Iymrith beats her wings. Each creature within 15 feet of her must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Iymrith can then fly up to half her flying speed."
+    )
+
