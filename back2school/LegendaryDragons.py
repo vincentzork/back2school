@@ -404,36 +404,38 @@ dragotha_custom_stat_block = {
 
 
 klauth_custom_stat_block = {
-    "Dragon Type": "Red Dragon",
-    "Name": "Klauth",
-    "Hit Points": 546,
-    "Armor Class": 24,
-    "Speed": "40 ft, burrow 40 ft, fly 80 ft",
-    "Abilities": {
-        "Strength": 30,
-        "Dexterity": 10,
-        "Constitution": 28,
-        "Intelligence": 18,
-        "Wisdom": 15,
-        "Charisma": 22
+    "dragon_type": "Red Dragon",
+    "name": "Klauth",
+    "hit_points": 546,
+    "armor_class": 24,
+    "speed": "40 ft, burrow 40 ft, fly 80 ft",
+    "abilities": {
+        "strength": 30,
+        "dexterity": 10,
+        "constitution": 28,
+        "intelligence": 18,
+        "wisdom": 15,
+        "charisma": 22
     },
-    "Saving Throws": {
-        "STR": "+19",
-        "DEX": "+9",
-        "CON": "+18",
-        "INT": "+12",
-        "WIS": "+11",
-        "CHA": "+14"
+    "saving_throws": {
+        "strength": "+19",
+        "dexterity": "+9",
+        "constitution": "+18",
+        "intelligence": "+12",
+        "wisdom": "+11",
+        "charisma": "+14"
     },
-    "Skills": [
+    "skills": [
         "Perception +17",
         "Stealth +9"
     ],
-    "Damage Immunities": "fire",
-    "Senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 27",
-    "Languages": "Common, Draconic",
-    "Challenge": 23,
-    "Special Abilities": [
+    "damage_resistances": "",  # Add appropriate resistances if any
+    "damage_immunities": "fire",
+    "condition_immunities": "",  # Add appropriate condition immunities if any
+    "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 27",
+    "languages": "Common, Draconic",
+    "challenge": 23,
+    "special_abilities": [
         "Legendary Resistance (3/Day): If Klauth fails a saving throw, he can choose to succeed instead.",
         "Magic Resistance: Klauth has advantage on saving throws against spells and other magical effects.",
         "Fire Breath (Recharge 5-6): Klauth exhales fire in a 90-foot cone. Each creature in that area must make a DC 26 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one.",
@@ -446,51 +448,54 @@ klauth_custom_stat_block = {
         "- 5th level (3 slots): Immolation, Cone of Cold",
         "- 6th level (1 slot): Chain Lightning"
     ],
-    "Actions": {
-        "Multiattack": "Klauth can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
-        "Bite": "Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit: 30 (4d6 + 19) piercing damage plus 14 (4d6) fire damage.",
-        "Claw": "Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 24 (3d8 + 19) slashing damage."
+    "actions": {
+        "multiattack": "Klauth can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
+        "bite": "Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit: 30 (4d6 + 19) piercing damage plus 14 (4d6) fire damage.",
+        "claw": "Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 24 (3d8 + 19) slashing damage."
     },
-    "Legendary Actions": {
-        "Detect": "Klauth makes a Wisdom (Perception) check.",
-        "Tail Attack": "Klauth makes a tail attack.",
-        "Wing Attack (Costs 2 Actions)": "Klauth beats his wings. Each creature within 15 feet of him must succeed on a DC 27 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Klauth can then fly up to half his flying speed."
+    "legendary_actions": {
+        "detect": "Klauth makes a Wisdom (Perception) check.",
+        "tail_attack": "Klauth makes a tail attack.",
+        "wing_attack (costs 2 actions)": "Klauth beats his wings. Each creature within 15 feet of him must succeed on a DC 27 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Klauth can then fly up to half his flying speed."
     }
 }
 
+
 ilnezhara_custom_stat_block = {
-    "Dragon Type": "Green Dragon",
-    "Name": "Ilnezhara",
-    "Hit Points": 367,
-    "Armor Class": 21,
-    "Speed": "40 ft, fly 80 ft, swim 40 ft",
-    "Abilities": {
-        "Strength": 23,
-        "Dexterity": 14,
-        "Constitution": 21,
-        "Intelligence": 18,
-        "Wisdom": 17,
-        "Charisma": 20
+    "dragon_type": "Green Dragon",
+    "name": "Ilnezhara",
+    "hit_points": 367,
+    "armor_class": 21,
+    "speed": "40 ft, fly 80 ft, swim 40 ft",
+    "abilities": {
+        "strength": 23,
+        "dexterity": 14,
+        "constitution": 21,
+        "intelligence": 18,
+        "wisdom": 17,
+        "charisma": 20
     },
-    "Saving Throws": {
-        "STR": "+12",
-        "DEX": "+8",
-        "CON": "+11",
-        "INT": "+10",
-        "WIS": "+9",
-        "CHA": "+10"
+    "saving_throws": {
+        "strength": "+12",
+        "dexterity": "+8",
+        "constitution": "+11",
+        "intelligence": "+10",
+        "wisdom": "+9",
+        "charisma": "+10"
     },
-    "Skills": [
+    "skills": [
         "Perception +13",
         "Stealth +8",
         "Deception +10",
         "Persuasion +10"
     ],
-    "Damage Immunities": "poison",
-    "Senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 23",
-    "Languages": "Common, Draconic, Elvish",
-    "Challenge": 22,
-    "Special Abilities": [
+    "damage_resistances": "",  # Add appropriate resistances if any
+    "damage_immunities": "poison",
+    "condition_immunities": "",  # Add appropriate condition immunities if any
+    "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 23",
+    "languages": "Common, Draconic, Elvish",
+    "challenge": 22,
+    "special_abilities": [
         "Legendary Resistance (3/Day): If Ilnezhara fails a saving throw, she can choose to succeed instead.",
         "Magic Resistance: Ilnezhara has advantage on saving throws against spells and other magical effects.",
         "Poison Breath (Recharge 5-6): Ilnezhara exhales poisonous gas in a 90-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 70 (20d6) poison damage on a failed save, or half as much damage on a successful one.",
@@ -502,17 +507,18 @@ ilnezhara_custom_stat_block = {
         "- 4th level (3 slots): Blight, Dominate Beast, Greater Invisibility",
         "- 5th level (2 slots): Cloudkill, Insect Plague"
     ],
-    "Actions": {
-        "Multiattack": "Ilnezhara can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws.",
-        "Bite": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 14 (4d6) poison damage.",
-        "Claw": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
+    "actions": {
+        "multiattack": "Ilnezhara can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws.",
+        "bite": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 14 (4d6) poison damage.",
+        "claw": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
     },
-    "Legendary Actions": {
-        "Detect": "Ilnezhara makes a Wisdom (Perception) check.",
-        "Tail Attack": "Ilnezhara makes a tail attack.",
-        "Wing Attack (Costs 2 Actions)": "Ilnezhara beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ilnezhara can then fly up to half her flying speed."
+    "legendary_actions": {
+        "detect": "Ilnezhara makes a Wisdom (Perception) check.",
+        "tail_attack": "Ilnezhara makes a tail attack.",
+        "wing_attack (costs 2 actions)": "Ilnezhara beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ilnezhara can then fly up to half her flying speed."
     }
 }
+
 
 tazmikella_custom_stat_block = {
     "Dragon Type": "Green Dragon",

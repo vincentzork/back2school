@@ -482,3 +482,198 @@ def test_dragotha_stat_block(dragotha_stat_block):
         dragotha_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
         == "Dragotha beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Dragotha can then fly up to half his flying speed."
     )
+
+@pytest.fixture
+def klauth_stat_block():
+    # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
+    return LegendaryDragonStatBlock(**LegendaryDragons.klauth_custom_stat_block)
+
+def test_klauth_stat_block(klauth_stat_block):
+    # Check if the Klauth StatBlock instance is created correctly
+    assert klauth_stat_block.name == "Klauth"
+    assert klauth_stat_block.hit_points == 546
+    assert klauth_stat_block.armor_class == 24
+    assert klauth_stat_block.speed == "40 ft, burrow 40 ft, fly 80 ft"
+    assert klauth_stat_block.abilities.strength == 30
+    assert klauth_stat_block.abilities.dexterity == 10
+    assert klauth_stat_block.abilities.constitution == 28
+    assert klauth_stat_block.abilities.intelligence == 18
+    assert klauth_stat_block.abilities.wisdom == 15
+    assert klauth_stat_block.abilities.charisma == 22
+    assert klauth_stat_block.saving_throws.strength == 19
+    assert klauth_stat_block.saving_throws.dexterity == 9
+    assert klauth_stat_block.saving_throws.constitution == 18
+    assert klauth_stat_block.saving_throws.intelligence == 12
+    assert klauth_stat_block.saving_throws.wisdom == 11
+    assert klauth_stat_block.saving_throws.charisma == 14
+    assert "Perception +17" in klauth_stat_block.skills
+    assert "Stealth +9" in klauth_stat_block.skills
+    assert klauth_stat_block.damage_immunities == "fire"
+    assert klauth_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 27"
+    assert klauth_stat_block.languages == "Common, Draconic"
+    assert klauth_stat_block.challenge == 23
+    assert (
+        "Legendary Resistance (3/Day): If Klauth fails a saving throw, he can choose to succeed instead."
+        in klauth_stat_block.special_abilities
+    )
+    assert (
+        "Magic Resistance: Klauth has advantage on saving throws against spells and other magical effects."
+        in klauth_stat_block.special_abilities
+    )
+    assert (
+        "Fire Breath (Recharge 5-6): Klauth exhales fire in a 90-foot cone. Each creature in that area must make a DC 26 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one."
+        in klauth_stat_block.special_abilities
+    )
+    assert (
+        "Spellcasting: Klauth is a 17th-level spellcaster. His spellcasting ability is Charisma (spell save DC 22, +14 to hit with spell attacks). He has the following spells prepared:"
+        in klauth_stat_block.special_abilities
+    )
+    assert (
+        "- Cantrips (at will): Fire Bolt, Mage Hand, Prestidigitation"
+        in klauth_stat_block.special_abilities
+    )
+    assert (
+        "- 1st level (4 slots): Burning Hands, Shield"
+        in klauth_stat_block.special_abilities
+    )
+    assert (
+        "- 2nd level (3 slots): Scorching Ray, Mirror Image"
+        in klauth_stat_block.special_abilities
+    )
+    assert (
+        "- 3rd level (3 slots): Fireball, Counterspell"
+        in klauth_stat_block.special_abilities
+    )
+    assert (
+        "- 4th level (3 slots): Wall of Fire, Greater Invisibility"
+        in klauth_stat_block.special_abilities
+    )
+    assert (
+        "- 5th level (3 slots): Immolation, Cone of Cold"
+        in klauth_stat_block.special_abilities
+    )
+    assert (
+        "- 6th level (1 slot): Chain Lightning"
+        in klauth_stat_block.special_abilities
+    )
+    assert (
+        klauth_stat_block.actions["multiattack"]
+        == "Klauth can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws."
+    )
+    assert (
+        klauth_stat_block.actions["bite"]
+        == "Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit: 30 (4d6 + 19) piercing damage plus 14 (4d6) fire damage."
+    )
+    assert (
+        klauth_stat_block.actions["claw"]
+        == "Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 24 (3d8 + 19) slashing damage."
+    )
+    assert (
+        klauth_stat_block.legendary_actions["detect"]
+        == "Klauth makes a Wisdom (Perception) check."
+    )
+    assert (
+        klauth_stat_block.legendary_actions["tail_attack"]
+        == "Klauth makes a tail attack."
+    )
+    assert (
+        klauth_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
+        == "Klauth beats his wings. Each creature within 15 feet of him must succeed on a DC 27 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Klauth can then fly up to half his flying speed."
+    )
+
+
+@pytest.fixture
+def ilnezhara_stat_block():
+    # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
+    return LegendaryDragonStatBlock(**LegendaryDragons.ilnezhara_custom_stat_block)
+
+def test_ilnezhara_stat_block(ilnezhara_stat_block):
+    # Check if the Ilnezhara StatBlock instance is created correctly
+    assert ilnezhara_stat_block.name == "Ilnezhara"
+    assert ilnezhara_stat_block.hit_points == 367
+    assert ilnezhara_stat_block.armor_class == 21
+    assert ilnezhara_stat_block.speed == "40 ft, fly 80 ft, swim 40 ft"
+    assert ilnezhara_stat_block.abilities.strength == 23
+    assert ilnezhara_stat_block.abilities.dexterity == 14
+    assert ilnezhara_stat_block.abilities.constitution == 21
+    assert ilnezhara_stat_block.abilities.intelligence == 18
+    assert ilnezhara_stat_block.abilities.wisdom == 17
+    assert ilnezhara_stat_block.abilities.charisma == 20
+    assert ilnezhara_stat_block.saving_throws.strength == 12
+    assert ilnezhara_stat_block.saving_throws.dexterity == 8
+    assert ilnezhara_stat_block.saving_throws.constitution == 11
+    assert ilnezhara_stat_block.saving_throws.intelligence == 10
+    assert ilnezhara_stat_block.saving_throws.wisdom == 9
+    assert ilnezhara_stat_block.saving_throws.charisma == 10
+    assert "Perception +13" in ilnezhara_stat_block.skills
+    assert "Stealth +8" in ilnezhara_stat_block.skills
+    assert "Deception +10" in ilnezhara_stat_block.skills
+    assert "Persuasion +10" in ilnezhara_stat_block.skills
+    assert ilnezhara_stat_block.damage_immunities == "poison"
+    assert ilnezhara_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 23"
+    assert ilnezhara_stat_block.languages == "Common, Draconic, Elvish"
+    assert ilnezhara_stat_block.challenge == 22
+    assert (
+        "Legendary Resistance (3/Day): If Ilnezhara fails a saving throw, she can choose to succeed instead."
+        in ilnezhara_stat_block.special_abilities
+    )
+    assert (
+        "Magic Resistance: Ilnezhara has advantage on saving throws against spells and other magical effects."
+        in ilnezhara_stat_block.special_abilities
+    )
+    assert (
+        "Poison Breath (Recharge 5-6): Ilnezhara exhales poisonous gas in a 90-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 70 (20d6) poison damage on a failed save, or half as much damage on a successful one."
+        in ilnezhara_stat_block.special_abilities
+    )
+    assert (
+        "Spellcasting: Ilnezhara is a 16th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). She has the following spells prepared:"
+        in ilnezhara_stat_block.special_abilities
+    )
+    assert (
+        "- Cantrips (at will): Druidcraft, Poison Spray, Thaumaturgy"
+        in ilnezhara_stat_block.special_abilities
+    )
+    assert (
+        "- 1st level (4 slots): Entangle, Fog Cloud, Charm Person"
+        in ilnezhara_stat_block.special_abilities
+    )
+    assert (
+        "- 2nd level (3 slots): Barkskin, Enhance Ability, Pass without Trace"
+        in ilnezhara_stat_block.special_abilities
+    )
+    assert (
+        "- 3rd level (3 slots): Plant Growth, Protection from Energy, Sleet Storm"
+        in ilnezhara_stat_block.special_abilities
+    )
+    assert (
+        "- 4th level (3 slots): Blight, Dominate Beast, Greater Invisibility"
+        in ilnezhara_stat_block.special_abilities
+    )
+    assert (
+        "- 5th level (2 slots): Cloudkill, Insect Plague"
+        in ilnezhara_stat_block.special_abilities
+    )
+    assert (
+        ilnezhara_stat_block.actions["multiattack"]
+        == "Ilnezhara can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws."
+    )
+    assert (
+        ilnezhara_stat_block.actions["bite"]
+        == "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 14 (4d6) poison damage."
+    )
+    assert (
+        ilnezhara_stat_block.actions["claw"]
+        == "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
+    )
+    assert (
+        ilnezhara_stat_block.legendary_actions["detect"]
+        == "Ilnezhara makes a Wisdom (Perception) check."
+    )
+    assert (
+        ilnezhara_stat_block.legendary_actions["tail_attack"]
+        == "Ilnezhara makes a tail attack."
+    )
+    assert (
+        ilnezhara_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
+        == "Ilnezhara beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ilnezhara can then fly up to half her flying speed."
+    )
