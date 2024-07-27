@@ -677,3 +677,239 @@ def test_ilnezhara_stat_block(ilnezhara_stat_block):
         ilnezhara_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
         == "Ilnezhara beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ilnezhara can then fly up to half her flying speed."
     )
+
+@pytest.fixture
+def tazmikella_stat_block():
+    # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
+    return LegendaryDragonStatBlock(**LegendaryDragons.tazmikella_custom_stat_block)
+
+def test_tazmikella_stat_block(tazmikella_stat_block):
+    # Check if the Tazmikella StatBlock instance is created correctly
+    assert tazmikella_stat_block.name == "Tazmikella"
+    assert tazmikella_stat_block.hit_points == 367
+    assert tazmikella_stat_block.armor_class == 21
+    assert tazmikella_stat_block.speed == "40 ft, fly 80 ft, swim 40 ft"
+
+    # Access AbilityScores attributes individually
+    assert tazmikella_stat_block.abilities.strength == 23
+    assert tazmikella_stat_block.abilities.dexterity == 14
+    assert tazmikella_stat_block.abilities.constitution == 21
+    assert tazmikella_stat_block.abilities.intelligence == 18
+    assert tazmikella_stat_block.abilities.wisdom == 17
+    assert tazmikella_stat_block.abilities.charisma == 20
+
+    # Access SavingThrows attributes individually
+    assert tazmikella_stat_block.saving_throws.strength == 12
+    assert tazmikella_stat_block.saving_throws.dexterity == 8
+    assert tazmikella_stat_block.saving_throws.constitution == 11
+    assert tazmikella_stat_block.saving_throws.intelligence == 10
+    assert tazmikella_stat_block.saving_throws.wisdom == 9
+    assert tazmikella_stat_block.saving_throws.charisma == 10
+
+    # Validate skills
+    assert "Perception +13" in tazmikella_stat_block.skills
+    assert "Stealth +8" in tazmikella_stat_block.skills
+    assert "Deception +10" in tazmikella_stat_block.skills
+    assert "Persuasion +10" in tazmikella_stat_block.skills
+
+    # Validate other attributes
+    assert tazmikella_stat_block.damage_resistances == ""
+    assert tazmikella_stat_block.damage_immunities == "poison"
+    assert tazmikella_stat_block.condition_immunities == ""
+    assert tazmikella_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 23"
+    assert tazmikella_stat_block.languages == "Common, Draconic, Elvish"
+    assert tazmikella_stat_block.challenge == 22
+
+    # Validate special abilities
+    assert (
+            "Legendary Resistance (3/Day): If Tazmikella fails a saving throw, she can choose to succeed instead."
+            in tazmikella_stat_block.special_abilities
+    )
+    assert (
+            "Magic Resistance: Tazmikella has advantage on saving throws against spells and other magical effects."
+            in tazmikella_stat_block.special_abilities
+    )
+    assert (
+            "Poison Breath (Recharge 5-6): Tazmikella exhales poisonous gas in a 90-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 70 (20d6) poison damage on a failed save, or half as much damage on a successful one."
+            in tazmikella_stat_block.special_abilities
+    )
+    assert (
+            "Spellcasting: Tazmikella is a 16th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). She has the following spells prepared:"
+            in tazmikella_stat_block.special_abilities
+    )
+    assert (
+            "- Cantrips (at will): Druidcraft, Poison Spray, Thaumaturgy"
+            in tazmikella_stat_block.special_abilities
+    )
+    assert (
+            "- 1st level (4 slots): Entangle, Fog Cloud, Charm Person"
+            in tazmikella_stat_block.special_abilities
+    )
+    assert (
+            "- 2nd level (3 slots): Barkskin, Enhance Ability, Pass without Trace"
+            in tazmikella_stat_block.special_abilities
+    )
+    assert (
+            "- 3rd level (3 slots): Plant Growth, Protection from Energy, Sleet Storm"
+            in tazmikella_stat_block.special_abilities
+    )
+    assert (
+            "- 4th level (3 slots): Blight, Dominate Beast, Greater Invisibility"
+            in tazmikella_stat_block.special_abilities
+    )
+    assert (
+            "- 5th level (2 slots): Cloudkill, Insect Plague"
+            in tazmikella_stat_block.special_abilities
+    )
+
+    # Validate actions
+    assert (
+            tazmikella_stat_block.actions["multiattack"]
+            == "Tazmikella can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws."
+    )
+    assert (
+            tazmikella_stat_block.actions["bite"]
+            == "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 14 (4d6) poison damage."
+    )
+    assert (
+            tazmikella_stat_block.actions["claw"]
+            == "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
+    )
+
+    # Validate legendary actions
+    assert (
+            tazmikella_stat_block.legendary_actions["detect"]
+            == "Tazmikella makes a Wisdom (Perception) check."
+    )
+    assert (
+            tazmikella_stat_block.legendary_actions["tail_attack"]
+            == "Tazmikella makes a tail attack."
+    )
+    assert (
+            tazmikella_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
+            == "Tazmikella beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Tazmikella can then fly up to half her flying speed."
+    )
+
+
+@pytest.fixture
+def aurgloroasa_stat_block():
+    # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
+    return LegendaryDragonStatBlock(**LegendaryDragons.aurgloroasa_custom_stat_block)
+
+
+@pytest.fixture
+def aurgloroasa_stat_block():
+    # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
+    return LegendaryDragonStatBlock(**LegendaryDragons.aurgloroasa_custom_stat_block)
+
+def test_aurgloroasa_stat_block(aurgloroasa_stat_block):
+    # Check if the Aurgloroasa StatBlock instance is created correctly
+    assert aurgloroasa_stat_block.name == "Aurgloroasa"
+    assert aurgloroasa_stat_block.hit_points == 350
+    assert aurgloroasa_stat_block.armor_class == 19
+    assert aurgloroasa_stat_block.speed == "40 ft, fly 80 ft, swim 40 ft"
+
+    # Access AbilityScores attributes individually
+    assert aurgloroasa_stat_block.abilities.strength == 22
+    assert aurgloroasa_stat_block.abilities.dexterity == 14
+    assert aurgloroasa_stat_block.abilities.constitution == 21
+    assert aurgloroasa_stat_block.abilities.intelligence == 18
+    assert aurgloroasa_stat_block.abilities.wisdom == 17
+    assert aurgloroasa_stat_block.abilities.charisma == 20
+
+    # Access SavingThrows attributes individually
+    assert aurgloroasa_stat_block.saving_throws.strength == 12
+    assert aurgloroasa_stat_block.saving_throws.dexterity == 8
+    assert aurgloroasa_stat_block.saving_throws.constitution == 11
+    assert aurgloroasa_stat_block.saving_throws.intelligence == 10
+    assert aurgloroasa_stat_block.saving_throws.wisdom == 9
+    assert aurgloroasa_stat_block.saving_throws.charisma == 10
+
+    # Validate skills
+    assert "Perception +13" in aurgloroasa_stat_block.skills
+    assert "Stealth +8" in aurgloroasa_stat_block.skills
+    assert "Deception +10" in aurgloroasa_stat_block.skills
+    assert "Arcana +10" in aurgloroasa_stat_block.skills
+
+    # Validate other attributes
+    assert aurgloroasa_stat_block.damage_resistances == "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert aurgloroasa_stat_block.damage_immunities == "necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert aurgloroasa_stat_block.condition_immunities == "charmed, frightened, paralyzed, poisoned"
+    assert aurgloroasa_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 23"
+    assert aurgloroasa_stat_block.languages == "Common, Draconic, Abyssal"
+    assert aurgloroasa_stat_block.challenge == 23
+
+    # Validate special abilities
+    assert (
+        "Legendary Resistance (3/Day): If Aurgloroasa fails a saving throw, she can choose to succeed instead."
+        in aurgloroasa_stat_block.special_abilities
+    )
+    assert (
+        "Magic Resistance: Aurgloroasa has advantage on saving throws against spells and other magical effects."
+        in aurgloroasa_stat_block.special_abilities
+    )
+    assert (
+        "Life Drain (Recharge 5-6): Aurgloroasa targets one creature she can see within 30 feet of her. The target must succeed on a DC 20 Constitution saving throw or take 45 (10d8) necrotic damage and Aurgloroasa regains hit points equal to the necrotic damage dealt."
+        in aurgloroasa_stat_block.special_abilities
+    )
+    assert (
+        "Shadow Control: Aurgloroasa can manipulate shadows within 120 feet of her, using them to obscure vision or create areas of darkness as if casting the darkness spell."
+        in aurgloroasa_stat_block.special_abilities
+    )
+    assert (
+        "Spellcasting: Aurgloroasa is a 16th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). She has the following spells prepared:"
+        in aurgloroasa_stat_block.special_abilities
+    )
+    assert (
+        "- Cantrips (at will): Chill Touch, Mage Hand, Minor Illusion"
+        in aurgloroasa_stat_block.special_abilities
+    )
+    assert (
+        "- 1st level (4 slots): Detect Magic, Ray of Sickness, Shield"
+        in aurgloroasa_stat_block.special_abilities
+    )
+    assert (
+        "- 2nd level (3 slots): Blindness/Deafness, Misty Step, Ray of Enfeeblement"
+        in aurgloroasa_stat_block.special_abilities
+    )
+    assert (
+        "- 3rd level (3 slots): Counterspell, Fear, Lightning Bolt"
+        in aurgloroasa_stat_block.special_abilities
+    )
+    assert (
+        "- 4th level (3 slots): Blight, Greater Invisibility, Phantasmal Killer"
+        in aurgloroasa_stat_block.special_abilities
+    )
+    assert (
+        "- 5th level (2 slots): Cloudkill, Dominate Person"
+        in aurgloroasa_stat_block.special_abilities
+    )
+
+    # Validate actions
+    assert (
+        aurgloroasa_stat_block.actions["multiattack"]
+        == "Aurgloroasa can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws."
+    )
+    assert (
+        aurgloroasa_stat_block.actions["bite"]
+        == "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 14 (4d6) necrotic damage."
+    )
+    assert (
+        aurgloroasa_stat_block.actions["claw"]
+        == "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
+    )
+
+    # Validate legendary actions
+    assert (
+        aurgloroasa_stat_block.legendary_actions["detect"]
+        == "Aurgloroasa makes a Wisdom (Perception) check."
+    )
+    assert (
+        aurgloroasa_stat_block.legendary_actions["tail_attack"]
+        == "Aurgloroasa makes a tail attack."
+    )
+    assert (
+        aurgloroasa_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
+        == "Aurgloroasa beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Aurgloroasa can then fly up to half her flying speed."
+    )
+
