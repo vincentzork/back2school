@@ -1,15 +1,15 @@
 import pytest
 
 
-from .. import R3KTigerGenerals
+from .. import r3k_tiger_generals
 
-from ..R3KTigerGenerals import R3KTigerGeneralStatBlock
+from ..r3k_tiger_generals import R3KTigerGeneralStatBlock
 
 
 @pytest.fixture
 def zhang_fei_stat_block():
     # Fixture to provide a sample instance of R3KTigerGeneralStatBlock for testing
-    return R3KTigerGeneralStatBlock(**R3KTigerGenerals.zhang_fei_custom_stat_block)
+    return R3KTigerGeneralStatBlock(**r3k_tiger_generals.zhang_fei_custom_stat_block)
 
 
 def test_zhang_fei_stat_block(zhang_fei_stat_block):
@@ -55,7 +55,7 @@ def test_zhang_fei_stat_block(zhang_fei_stat_block):
 @pytest.fixture
 def guan_yu_stat_block():
     # Fixture to provide a sample instance of R3KTigerGeneralStatBlock for testing
-    return R3KTigerGeneralStatBlock(**R3KTigerGenerals.guan_yu_custom_stat_block)
+    return R3KTigerGeneralStatBlock(**r3k_tiger_generals.guan_yu_custom_stat_block)
 
 
 def test_guan_yu_stat_block(guan_yu_stat_block):
@@ -102,7 +102,7 @@ def test_guan_yu_stat_block(guan_yu_stat_block):
 @pytest.fixture
 def huang_zhong_stat_block():
     # Fixture to provide a sample instance of R3KTigerGeneralStatBlock for testing
-    return R3KTigerGeneralStatBlock(**R3KTigerGenerals.huang_zhong_custom_stat_block)
+    return R3KTigerGeneralStatBlock(**r3k_tiger_generals.huang_zhong_custom_stat_block)
 
 
 def test_huang_zhong_stat_block(huang_zhong_stat_block):
@@ -146,7 +146,7 @@ def test_huang_zhong_stat_block(huang_zhong_stat_block):
 @pytest.fixture
 def zhao_yun_stat_block():
     # Fixture to provide a sample instance of R3KTigerGeneralStatBlock for testing
-    return R3KTigerGeneralStatBlock(**R3KTigerGenerals.zhao_yun_custom_stat_block)
+    return R3KTigerGeneralStatBlock(**r3k_tiger_generals.zhao_yun_custom_stat_block)
 
 
 def test_zhao_yun_stat_block(zhao_yun_stat_block):
@@ -194,7 +194,7 @@ def test_zhao_yun_stat_block(zhao_yun_stat_block):
 @pytest.fixture
 def ma_chao_stat_block():
     # Fixture to provide a sample instance of R3KTigerGeneralStatBlock for testing
-    return R3KTigerGeneralStatBlock(**R3KTigerGenerals.ma_chao_custom_stat_block)
+    return R3KTigerGeneralStatBlock(**r3k_tiger_generals.ma_chao_custom_stat_block)
 
 
 def test_ma_chao_stat_block(ma_chao_stat_block):
