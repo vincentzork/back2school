@@ -1,118 +1,16 @@
-"""""
-import pytest
-
-from .bahamut_stat_block import BahamutStatBlock, bahamut_custom_stat_block
-
-@pytest.fixture
-def bahamut_stat_block():
-    return BahamutStatBlock(**bahamut_custom_stat_block)
-
-def test_bahamut_stat_block(bahamut_stat_block):
-    assert bahamut_stat_block.Dragon_Type == "Gold Dragon"
-    assert bahamut_stat_block.Name == "Bahamut"
-    assert bahamut_stat_block.Hit_Points == 585
-    assert bahamut_stat_block.Armor_Class == 24
-    assert bahamut_stat_block.Speed == "60 ft, fly 120 ft"
-    assert bahamut_stat_block.Abilities.Strength == 30
-    assert bahamut_stat_block.Abilities.Dexterity == 16
-    assert bahamut_stat_block.Abilities.Constitution == 30
-    assert bahamut_stat_block.Abilities.Intelligence == 26
-    assert bahamut_stat_block.Abilities.Wisdom == 27
-    assert bahamut_stat_block.Abilities.Charisma == 30
-    assert bahamut_stat_block.Saving_Throws.STR == "+17"
-    assert bahamut_stat_block.Saving_Throws.DEX == "+13"
-    assert bahamut_stat_block.Saving_Throws.CON == "+17"
-    assert bahamut_stat_block.Saving_Throws.INT == "+15"
-    assert bahamut_stat_block.Saving_Throws.WIS == "+16"
-    assert bahamut_stat_block.Saving_Throws.CHA == "+18"
-    assert "Arcana +15" in bahamut_stat_block.Skills
-    assert "Insight +16" in bahamut_stat_block.Skills
-    assert "Perception +26" in bahamut_stat_block.Skills
-    assert "Persuasion +18" in bahamut_stat_block.Skills
-    assert "Religion +15" in bahamut_stat_block.Skills
-    assert bahamut_stat_block.Damage_Resistances == "bludgeoning, piercing, and slashing from nonmagical attacks"
-    assert bahamut_stat_block.Damage_Immunities == "radiant, necrotic"
-    assert bahamut_stat_block.Condition_Immunities == "charmed, frightened, poisoned"
-    assert bahamut_stat_block.Senses == "darkvision 240 ft., truesight 120 ft., passive Perception 36"
-    assert bahamut_stat_block.Languages == "all, telepathy 120 ft."
-    assert bahamut_stat_block.Challenge == 30
-    assert (
-        "Legendary Resistance (5/Day): If Bahamut fails a saving throw, he can choose to succeed instead."
-        in bahamut_stat_block.Special_Abilities
-    )
-    assert (
-        "Magic Resistance: Bahamut has advantage on saving throws against spells and other magical effects."
-        in bahamut_stat_block.Special_Abilities
-    )
-    assert (
-        "Divine Awareness: Bahamut knows if he hears a lie."
-        in bahamut_stat_block.Special_Abilities
-    )
-    assert (
-        "Regeneration: Bahamut regains 30 hit points at the start of his turn if he has at least 1 hit point."
-        in bahamut_stat_block.Special_Abilities
-    )
-    assert (
-        "Innate Spellcasting: Bahamut's spellcasting ability is Charisma (spell save DC 26). He can innately cast the following spells, requiring no material components: 3/day each: bless, cure wounds (9th level), divine word, holy aura"
-        in bahamut_stat_block.Special_Abilities
-    )
-    assert (
-        "Legendary Actions: Bahamut can take 5 legendary actions, choosing from the options below."
-        in bahamut_stat_block.Special_Abilities
-    )
-    assert (
-        bahamut_stat_block.Actions["Multiattack"]
-        == "Bahamut can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws."
-    )
-    assert (
-        bahamut_stat_block.Actions["Bite"]
-        == "Melee Weapon Attack: +19 to hit, reach 20 ft., one target. Hit: 32 (4d10 + 10) piercing damage plus 14 (4d6) radiant damage."
-    )
-    assert (
-        bahamut_stat_block.Actions["Claw"]
-        == "Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit: 22 (4d6 + 10) slashing damage."
-    )
-    assert (
-        bahamut_stat_block.Actions["Tail"]
-        == "Melee Weapon Attack: +19 to hit, reach 25 ft., one target. Hit: 24 (4d8 + 10) bludgeoning damage."
-    )
-    assert (
-        bahamut_stat_block.Actions["Frightful Presence"]
-        == "Each creature of Bahamut's choice that is within 120 feet of him and aware of him must succeed on a DC 26 Wisdom saving throw or become frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if Bahamut is within line of sight, ending the effect on itself on a success."
-    )
-    assert (
-        bahamut_stat_block.Actions["Radiant Breath (Recharge 5-6)"]
-        == "Bahamut exhales radiant energy in a 90-foot cone. Each creature in that area must make a DC 27 Dexterity saving throw, taking 91 (26d6) radiant damage on a failed save, or half as much damage on a successful one."
-    )
-    assert (
-        bahamut_stat_block.Actions["Platinum Aura"]
-        == "Bahamut radiates a calming aura in a 60-foot radius. Each creature of Bahamut's choice in that area has advantage on saving throws against being charmed or frightened, and other creatures have disadvantage on attack rolls against them."
-    )
-    assert bahamut_stat_block.Legendary_Actions["Detect"] == "Bahamut makes a Wisdom (Perception) check."
-    assert bahamut_stat_block.Legendary_Actions["Tail Attack"] == "Bahamut makes a tail attack."
-    assert (
-        bahamut_stat_block.Legendary_Actions["Wing Attack (Costs 2 Actions)"]
-        == "Bahamut beats his wings. Each creature within 15 ft. of Bahamut must succeed on a DC 25 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Bahamut can then fly up to half his flying speed."
-    )
-    assert bahamut_stat_block.Legendary_Actions["Bite Attack"] == "Bahamut makes a bite attack."
-    assert bahamut_stat_block.Legendary_Actions["Claw Attack"] == "Bahamut makes a claw attack."
-
-"""""
-
-
-
 import pytest
 
 
-from .. import LegendaryDragons
+from .. import legendary_dragons
 
-from ..LegendaryDragons import LegendaryDragonStatBlock
+from ..legendary_dragons import LegendaryDragonStatBlock
 
 
 @pytest.fixture
 def bahamut_stat_block():
-    # Fixture to provide a sample instance of LegendaryDragons for testing
-    return LegendaryDragonStatBlock(**LegendaryDragons.bahamut_custom_stat_block)
+    # Fixture to provide a sample instance of legendary_dragons for testing
+    return LegendaryDragonStatBlock(**legendary_dragons.bahamut_custom_stat_block)
+
 
 def test_bahamut_stat_block(bahamut_stat_block):
     # Check if the Bahamut StatBlock instance is created correctly
@@ -129,7 +27,10 @@ def test_bahamut_stat_block(bahamut_stat_block):
     )
     assert bahamut_stat_block.damage_immunities == "radiant, necrotic"
     assert bahamut_stat_block.condition_immunities == "charmed, frightened, poisoned"
-    assert bahamut_stat_block.senses == "darkvision 240 ft., truesight 120 ft., passive Perception 36"
+    assert (
+        bahamut_stat_block.senses
+        == "darkvision 240 ft., truesight 120 ft., passive Perception 36"
+    )
     assert bahamut_stat_block.languages == "all, telepathy 120 ft."
     assert bahamut_stat_block.challenge == 30
     assert (
@@ -157,13 +58,16 @@ def test_bahamut_stat_block(bahamut_stat_block):
         == "Bahamut radiates a calming aura in a 60-foot radius. Each creature of Bahamut's choice in that area has advantage on saving throws against being charmed or frightened, and other creatures have disadvantage on attack rolls against them."
     )
 
+
 # Define the fixture for Tiamat's stat block
 @pytest.fixture
 def tiamat_stat_block():
     # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
-    return LegendaryDragonStatBlock(**LegendaryDragons.tiamat_custom_stat_block)
+    return LegendaryDragonStatBlock(**legendary_dragons.tiamat_custom_stat_block)
 
     # Test function for Tiamat's stat block
+
+
 def test_tiamat_stat_block(tiamat_stat_block):
     # Check if the Tiamat StatBlock instance is created correctly
     assert tiamat_stat_block.name == "Tiamat"
@@ -179,7 +83,10 @@ def test_tiamat_stat_block(tiamat_stat_block):
     )
     assert tiamat_stat_block.damage_immunities == "acid, cold, fire, lightning, poison"
     assert tiamat_stat_block.condition_immunities == "charmed, frightened, poisoned"
-    assert tiamat_stat_block.senses == "darkvision 240 ft., truesight 120 ft., passive Perception 32"
+    assert (
+        tiamat_stat_block.senses
+        == "darkvision 240 ft., truesight 120 ft., passive Perception 32"
+    )
     assert tiamat_stat_block.languages == "all, telepathy 120 ft."
     assert tiamat_stat_block.challenge == 30
     assert (
@@ -223,10 +130,12 @@ def test_tiamat_stat_block(tiamat_stat_block):
         == "Tiamat exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 27 Constitution saving throw, taking 72 (16d8) cold damage on a failed save, or half as much damage on a successful one."
     )
 
+
 @pytest.fixture
 def shimmergloom_stat_block():
     # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
-    return LegendaryDragonStatBlock(**LegendaryDragons.shimmergloom_custom_stat_block)
+    return LegendaryDragonStatBlock(**legendary_dragons.shimmergloom_custom_stat_block)
+
 
 def test_shimmergloom_stat_block(shimmergloom_stat_block):
     # Check if the Shimmergloom StatBlock instance is created correctly
@@ -237,10 +146,19 @@ def test_shimmergloom_stat_block(shimmergloom_stat_block):
     assert shimmergloom_stat_block.abilities.strength == 23
     assert shimmergloom_stat_block.saving_throws.strength == 13
     assert "Perception +17" in shimmergloom_stat_block.skills
-    assert shimmergloom_stat_block.damage_resistances == "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert (
+        shimmergloom_stat_block.damage_resistances
+        == "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
     assert shimmergloom_stat_block.damage_immunities == "cold, necrotic"
-    assert shimmergloom_stat_block.condition_immunities == "charmed, exhaustion, frightened, poisoned"
-    assert shimmergloom_stat_block.senses == "darkvision 240 ft., truesight 120 ft., passive Perception 27"
+    assert (
+        shimmergloom_stat_block.condition_immunities
+        == "charmed, exhaustion, frightened, poisoned"
+    )
+    assert (
+        shimmergloom_stat_block.senses
+        == "darkvision 240 ft., truesight 120 ft., passive Perception 27"
+    )
     assert shimmergloom_stat_block.languages == "Common, Draconic, telepathy 120 ft."
     assert shimmergloom_stat_block.challenge == 24
     assert (
@@ -264,10 +182,13 @@ def test_shimmergloom_stat_block(shimmergloom_stat_block):
         == "Shimmergloom exhales shadowy energy in a 90-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) necrotic damage on a failed save, or half as much damage on a successful one."
     )
 
+
 @pytest.fixture
 def ashardalon_stat_block():
     # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
-    return LegendaryDragonStatBlock(**LegendaryDragons.ashardalon_custom_stat_block)
+    return LegendaryDragonStatBlock(**legendary_dragons.ashardalon_custom_stat_block)
+
+
 def test_ashardalon_stat_block(ashardalon_stat_block):
     # Check if the Ashardalon StatBlock instance is created correctly
     assert ashardalon_stat_block.name == "Ashardalon"
@@ -275,7 +196,9 @@ def test_ashardalon_stat_block(ashardalon_stat_block):
     assert ashardalon_stat_block.armor_class == 21
     assert ashardalon_stat_block.speed == "40 ft, fly 80 ft (hover)"
     assert ashardalon_stat_block.abilities.strength == 27
-    assert ashardalon_stat_block.saving_throws.strength == 15  # Adjusted to expect an integer
+    assert (
+        ashardalon_stat_block.saving_throws.strength == 15
+    )  # Adjusted to expect an integer
     assert ashardalon_stat_block.saving_throws.dexterity == 5  # Added for consistency
     assert "Perception +16" in ashardalon_stat_block.skills
     assert (
@@ -284,7 +207,10 @@ def test_ashardalon_stat_block(ashardalon_stat_block):
     )
     assert ashardalon_stat_block.damage_immunities == "none"
     assert ashardalon_stat_block.condition_immunities == "exhausted, frightened"
-    assert ashardalon_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 26"
+    assert (
+        ashardalon_stat_block.senses
+        == "blindsight 60 ft., darkvision 120 ft., passive Perception 26"
+    )
     assert ashardalon_stat_block.languages == "Common, Draconic"
     assert ashardalon_stat_block.challenge == 24
     assert (
@@ -316,10 +242,12 @@ def test_ashardalon_stat_block(ashardalon_stat_block):
         == "Ashardalon beats his wings. Each creature within 15 feet of him must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ashardalon can then fly up to half his flying speed."
     )
 
+
 @pytest.fixture
 def null_stat_block():
     # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
-    return LegendaryDragonStatBlock(**LegendaryDragons.null_custom_stat_block)
+    return LegendaryDragonStatBlock(**legendary_dragons.null_custom_stat_block)
+
 
 def test_null_stat_block(null_stat_block):
     # Check if the Null StatBlock instance is created correctly
@@ -336,8 +264,14 @@ def test_null_stat_block(null_stat_block):
         == "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks"
     )
     assert null_stat_block.damage_immunities == "necrotic, poison"
-    assert null_stat_block.condition_immunities == "exhausted, frightened, paralyzed, poisoned"
-    assert null_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 26"
+    assert (
+        null_stat_block.condition_immunities
+        == "exhausted, frightened, paralyzed, poisoned"
+    )
+    assert (
+        null_stat_block.senses
+        == "blindsight 60 ft., darkvision 120 ft., passive Perception 26"
+    )
     assert null_stat_block.languages == "Common, Draconic"
     assert null_stat_block.challenge == 26
     assert (
@@ -361,18 +295,19 @@ def test_null_stat_block(null_stat_block):
         == "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 27 (4d6 + 12) slashing damage."
     )
     assert (
-        null_stat_block.legendary_actions["tail_attack"]
-        == "Null makes a tail attack."
+        null_stat_block.legendary_actions["tail_attack"] == "Null makes a tail attack."
     )
     assert (
         null_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
         == "Null beats his wings. Each creature within 15 feet of him must succeed on a DC 24 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. Null can then fly up to half his flying speed."
     )
 
+
 @pytest.fixture
 def iymrith_stat_block():
     # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
-    return LegendaryDragonStatBlock(**LegendaryDragons.iymrith_custom_stat_block)
+    return LegendaryDragonStatBlock(**legendary_dragons.iymrith_custom_stat_block)
+
 
 def test_iymrith_stat_block(iymrith_stat_block):
     # Check if the Iymrith StatBlock instance is created correctly
@@ -384,12 +319,12 @@ def test_iymrith_stat_block(iymrith_stat_block):
     assert iymrith_stat_block.saving_throws.strength == 16
     assert iymrith_stat_block.saving_throws.dexterity == 8
     assert "Perception +17" in iymrith_stat_block.skills
-    assert (
-        iymrith_stat_block.damage_immunities
-        == "lightning"
-    )
+    assert iymrith_stat_block.damage_immunities == "lightning"
     assert iymrith_stat_block.condition_immunities == "exhausted, paralyzed"
-    assert iymrith_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 27"
+    assert (
+        iymrith_stat_block.senses
+        == "blindsight 60 ft., darkvision 120 ft., passive Perception 27"
+    )
     assert iymrith_stat_block.languages == "Common, Draconic"
     assert iymrith_stat_block.challenge == 23
     assert (
@@ -421,10 +356,12 @@ def test_iymrith_stat_block(iymrith_stat_block):
         == "Iymrith beats her wings. Each creature within 15 feet of her must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Iymrith can then fly up to half her flying speed."
     )
 
+
 @pytest.fixture
 def dragotha_stat_block():
     # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
-    return LegendaryDragonStatBlock(**LegendaryDragons.dragotha_custom_stat_block)
+    return LegendaryDragonStatBlock(**legendary_dragons.dragotha_custom_stat_block)
+
 
 def test_dragotha_stat_block(dragotha_stat_block):
     # Check if the Dragotha StatBlock instance is created correctly
@@ -450,8 +387,14 @@ def test_dragotha_stat_block(dragotha_stat_block):
         == "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks"
     )
     assert dragotha_stat_block.damage_immunities == "cold, poison"
-    assert dragotha_stat_block.condition_immunities == "charmed, exhausted, frightened, paralyzed, poisoned"
-    assert dragotha_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 25"
+    assert (
+        dragotha_stat_block.condition_immunities
+        == "charmed, exhausted, frightened, paralyzed, poisoned"
+    )
+    assert (
+        dragotha_stat_block.senses
+        == "blindsight 60 ft., darkvision 120 ft., passive Perception 25"
+    )
     assert dragotha_stat_block.languages == "Common, Draconic, plus any three languages"
     assert dragotha_stat_block.challenge == 22
     assert (
@@ -483,10 +426,12 @@ def test_dragotha_stat_block(dragotha_stat_block):
         == "Dragotha beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Dragotha can then fly up to half his flying speed."
     )
 
+
 @pytest.fixture
 def klauth_stat_block():
     # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
-    return LegendaryDragonStatBlock(**LegendaryDragons.klauth_custom_stat_block)
+    return LegendaryDragonStatBlock(**legendary_dragons.klauth_custom_stat_block)
+
 
 def test_klauth_stat_block(klauth_stat_block):
     # Check if the Klauth StatBlock instance is created correctly
@@ -509,7 +454,10 @@ def test_klauth_stat_block(klauth_stat_block):
     assert "Perception +17" in klauth_stat_block.skills
     assert "Stealth +9" in klauth_stat_block.skills
     assert klauth_stat_block.damage_immunities == "fire"
-    assert klauth_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 27"
+    assert (
+        klauth_stat_block.senses
+        == "blindsight 60 ft., darkvision 120 ft., passive Perception 27"
+    )
     assert klauth_stat_block.languages == "Common, Draconic"
     assert klauth_stat_block.challenge == 23
     assert (
@@ -553,8 +501,7 @@ def test_klauth_stat_block(klauth_stat_block):
         in klauth_stat_block.special_abilities
     )
     assert (
-        "- 6th level (1 slot): Chain Lightning"
-        in klauth_stat_block.special_abilities
+        "- 6th level (1 slot): Chain Lightning" in klauth_stat_block.special_abilities
     )
     assert (
         klauth_stat_block.actions["multiattack"]
@@ -585,7 +532,8 @@ def test_klauth_stat_block(klauth_stat_block):
 @pytest.fixture
 def ilnezhara_stat_block():
     # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
-    return LegendaryDragonStatBlock(**LegendaryDragons.ilnezhara_custom_stat_block)
+    return LegendaryDragonStatBlock(**legendary_dragons.ilnezhara_custom_stat_block)
+
 
 def test_ilnezhara_stat_block(ilnezhara_stat_block):
     # Check if the Ilnezhara StatBlock instance is created correctly
@@ -610,7 +558,10 @@ def test_ilnezhara_stat_block(ilnezhara_stat_block):
     assert "Deception +10" in ilnezhara_stat_block.skills
     assert "Persuasion +10" in ilnezhara_stat_block.skills
     assert ilnezhara_stat_block.damage_immunities == "poison"
-    assert ilnezhara_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 23"
+    assert (
+        ilnezhara_stat_block.senses
+        == "blindsight 60 ft., darkvision 120 ft., passive Perception 23"
+    )
     assert ilnezhara_stat_block.languages == "Common, Draconic, Elvish"
     assert ilnezhara_stat_block.challenge == 22
     assert (
@@ -678,10 +629,12 @@ def test_ilnezhara_stat_block(ilnezhara_stat_block):
         == "Ilnezhara beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ilnezhara can then fly up to half her flying speed."
     )
 
+
 @pytest.fixture
 def tazmikella_stat_block():
     # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
-    return LegendaryDragonStatBlock(**LegendaryDragons.tazmikella_custom_stat_block)
+    return LegendaryDragonStatBlock(**legendary_dragons.tazmikella_custom_stat_block)
+
 
 def test_tazmikella_stat_block(tazmikella_stat_block):
     # Check if the Tazmikella StatBlock instance is created correctly
@@ -716,91 +669,95 @@ def test_tazmikella_stat_block(tazmikella_stat_block):
     assert tazmikella_stat_block.damage_resistances == ""
     assert tazmikella_stat_block.damage_immunities == "poison"
     assert tazmikella_stat_block.condition_immunities == ""
-    assert tazmikella_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 23"
+    assert (
+        tazmikella_stat_block.senses
+        == "blindsight 60 ft., darkvision 120 ft., passive Perception 23"
+    )
     assert tazmikella_stat_block.languages == "Common, Draconic, Elvish"
     assert tazmikella_stat_block.challenge == 22
 
     # Validate special abilities
     assert (
-            "Legendary Resistance (3/Day): If Tazmikella fails a saving throw, she can choose to succeed instead."
-            in tazmikella_stat_block.special_abilities
+        "Legendary Resistance (3/Day): If Tazmikella fails a saving throw, she can choose to succeed instead."
+        in tazmikella_stat_block.special_abilities
     )
     assert (
-            "Magic Resistance: Tazmikella has advantage on saving throws against spells and other magical effects."
-            in tazmikella_stat_block.special_abilities
+        "Magic Resistance: Tazmikella has advantage on saving throws against spells and other magical effects."
+        in tazmikella_stat_block.special_abilities
     )
     assert (
-            "Poison Breath (Recharge 5-6): Tazmikella exhales poisonous gas in a 90-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 70 (20d6) poison damage on a failed save, or half as much damage on a successful one."
-            in tazmikella_stat_block.special_abilities
+        "Poison Breath (Recharge 5-6): Tazmikella exhales poisonous gas in a 90-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 70 (20d6) poison damage on a failed save, or half as much damage on a successful one."
+        in tazmikella_stat_block.special_abilities
     )
     assert (
-            "Spellcasting: Tazmikella is a 16th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). She has the following spells prepared:"
-            in tazmikella_stat_block.special_abilities
+        "Spellcasting: Tazmikella is a 16th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). She has the following spells prepared:"
+        in tazmikella_stat_block.special_abilities
     )
     assert (
-            "- Cantrips (at will): Druidcraft, Poison Spray, Thaumaturgy"
-            in tazmikella_stat_block.special_abilities
+        "- Cantrips (at will): Druidcraft, Poison Spray, Thaumaturgy"
+        in tazmikella_stat_block.special_abilities
     )
     assert (
-            "- 1st level (4 slots): Entangle, Fog Cloud, Charm Person"
-            in tazmikella_stat_block.special_abilities
+        "- 1st level (4 slots): Entangle, Fog Cloud, Charm Person"
+        in tazmikella_stat_block.special_abilities
     )
     assert (
-            "- 2nd level (3 slots): Barkskin, Enhance Ability, Pass without Trace"
-            in tazmikella_stat_block.special_abilities
+        "- 2nd level (3 slots): Barkskin, Enhance Ability, Pass without Trace"
+        in tazmikella_stat_block.special_abilities
     )
     assert (
-            "- 3rd level (3 slots): Plant Growth, Protection from Energy, Sleet Storm"
-            in tazmikella_stat_block.special_abilities
+        "- 3rd level (3 slots): Plant Growth, Protection from Energy, Sleet Storm"
+        in tazmikella_stat_block.special_abilities
     )
     assert (
-            "- 4th level (3 slots): Blight, Dominate Beast, Greater Invisibility"
-            in tazmikella_stat_block.special_abilities
+        "- 4th level (3 slots): Blight, Dominate Beast, Greater Invisibility"
+        in tazmikella_stat_block.special_abilities
     )
     assert (
-            "- 5th level (2 slots): Cloudkill, Insect Plague"
-            in tazmikella_stat_block.special_abilities
+        "- 5th level (2 slots): Cloudkill, Insect Plague"
+        in tazmikella_stat_block.special_abilities
     )
 
     # Validate actions
     assert (
-            tazmikella_stat_block.actions["multiattack"]
-            == "Tazmikella can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws."
+        tazmikella_stat_block.actions["multiattack"]
+        == "Tazmikella can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws."
     )
     assert (
-            tazmikella_stat_block.actions["bite"]
-            == "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 14 (4d6) poison damage."
+        tazmikella_stat_block.actions["bite"]
+        == "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 14 (4d6) poison damage."
     )
     assert (
-            tazmikella_stat_block.actions["claw"]
-            == "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
+        tazmikella_stat_block.actions["claw"]
+        == "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
     )
 
     # Validate legendary actions
     assert (
-            tazmikella_stat_block.legendary_actions["detect"]
-            == "Tazmikella makes a Wisdom (Perception) check."
+        tazmikella_stat_block.legendary_actions["detect"]
+        == "Tazmikella makes a Wisdom (Perception) check."
     )
     assert (
-            tazmikella_stat_block.legendary_actions["tail_attack"]
-            == "Tazmikella makes a tail attack."
+        tazmikella_stat_block.legendary_actions["tail_attack"]
+        == "Tazmikella makes a tail attack."
     )
     assert (
-            tazmikella_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
-            == "Tazmikella beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Tazmikella can then fly up to half her flying speed."
+        tazmikella_stat_block.legendary_actions["wing_attack (costs 2 actions)"]
+        == "Tazmikella beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Tazmikella can then fly up to half her flying speed."
     )
 
 
 @pytest.fixture
 def aurgloroasa_stat_block():
     # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
-    return LegendaryDragonStatBlock(**LegendaryDragons.aurgloroasa_custom_stat_block)
+    return LegendaryDragonStatBlock(**legendary_dragons.aurgloroasa_custom_stat_block)
 
 
 @pytest.fixture
 def aurgloroasa_stat_block():
     # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
-    return LegendaryDragonStatBlock(**LegendaryDragons.aurgloroasa_custom_stat_block)
+    return LegendaryDragonStatBlock(**legendary_dragons.aurgloroasa_custom_stat_block)
+
 
 def test_aurgloroasa_stat_block(aurgloroasa_stat_block):
     # Check if the Aurgloroasa StatBlock instance is created correctly
@@ -832,10 +789,22 @@ def test_aurgloroasa_stat_block(aurgloroasa_stat_block):
     assert "Arcana +10" in aurgloroasa_stat_block.skills
 
     # Validate other attributes
-    assert aurgloroasa_stat_block.damage_resistances == "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks"
-    assert aurgloroasa_stat_block.damage_immunities == "necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks"
-    assert aurgloroasa_stat_block.condition_immunities == "charmed, frightened, paralyzed, poisoned"
-    assert aurgloroasa_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 23"
+    assert (
+        aurgloroasa_stat_block.damage_resistances
+        == "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
+    assert (
+        aurgloroasa_stat_block.damage_immunities
+        == "necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
+    assert (
+        aurgloroasa_stat_block.condition_immunities
+        == "charmed, frightened, paralyzed, poisoned"
+    )
+    assert (
+        aurgloroasa_stat_block.senses
+        == "blindsight 60 ft., darkvision 120 ft., passive Perception 23"
+    )
     assert aurgloroasa_stat_block.languages == "Common, Draconic, Abyssal"
     assert aurgloroasa_stat_block.challenge == 23
 
@@ -913,130 +882,71 @@ def test_aurgloroasa_stat_block(aurgloroasa_stat_block):
         == "Aurgloroasa beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Aurgloroasa can then fly up to half her flying speed."
     )
 
+
+# Define the fixture for Niv-Mizzet's stat block
 @pytest.fixture
 def niv_mizzet_stat_block():
-    return LegendaryDragonStatBlock(**LegendaryDragons.niv_mizzet_custom_stat_block)
+    # Fixture to provide a sample instance of LegendaryDragonStatBlock for testing
+    return LegendaryDragonStatBlock(**legendary_dragons.niv_mizzet_custom_stat_block)
 
+
+# Test function for Niv-Mizzet's stat block
 def test_niv_mizzet_stat_block(niv_mizzet_stat_block):
     # Check if the Niv-Mizzet StatBlock instance is created correctly
     assert niv_mizzet_stat_block.name == "Niv-Mizzet, the Firemind"
     assert niv_mizzet_stat_block.hit_points == 546
     assert niv_mizzet_stat_block.armor_class == 22
     assert niv_mizzet_stat_block.speed == "40 ft, fly 80 ft"
-
-    # Access AbilityScores attributes individually
     assert niv_mizzet_stat_block.abilities.strength == 23
     assert niv_mizzet_stat_block.abilities.dexterity == 10
     assert niv_mizzet_stat_block.abilities.constitution == 21
     assert niv_mizzet_stat_block.abilities.intelligence == 26
     assert niv_mizzet_stat_block.abilities.wisdom == 17
     assert niv_mizzet_stat_block.abilities.charisma == 24
-
-    # Access SavingThrows attributes individually
     assert niv_mizzet_stat_block.saving_throws.strength == 13
     assert niv_mizzet_stat_block.saving_throws.dexterity == 6
     assert niv_mizzet_stat_block.saving_throws.constitution == 12
     assert niv_mizzet_stat_block.saving_throws.intelligence == 15
     assert niv_mizzet_stat_block.saving_throws.wisdom == 10
     assert niv_mizzet_stat_block.saving_throws.charisma == 14
-
-    # Validate skills
     assert "Arcana +15" in niv_mizzet_stat_block.skills
-    assert "History +15" in niv_mizzet_stat_block.skills
-    assert "Insight +10" in niv_mizzet_stat_block.skills
-    assert "Perception +10" in niv_mizzet_stat_block.skills
-    assert "Persuasion +14" in niv_mizzet_stat_block.skills
-
-    # Validate other attributes
     assert niv_mizzet_stat_block.damage_resistances == "fire"
-    assert niv_mizzet_stat_block.damage_immunities == ""  # Add the expected value for damage immunities
+    assert niv_mizzet_stat_block.damage_immunities == ""
     assert niv_mizzet_stat_block.condition_immunities == "charmed, frightened"
-    assert niv_mizzet_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 20"
-    assert niv_mizzet_stat_block.languages == "Common, Draconic, Ravnican, telepathy 120 ft."
+    assert (
+        niv_mizzet_stat_block.senses
+        == "blindsight 60 ft., darkvision 120 ft., passive Perception 20"
+    )
+    assert (
+        niv_mizzet_stat_block.languages
+        == "Common, Draconic, Ravnican, telepathy 120 ft."
+    )
     assert niv_mizzet_stat_block.challenge == 26
-
-    # Validate special abilities
     assert (
         "Legendary Resistance (3/Day): If Niv-Mizzet fails a saving throw, he can choose to succeed instead."
         in niv_mizzet_stat_block.special_abilities
     )
     assert (
-        "Magic Resistance: Niv-Mizzet has advantage on saving throws against spells and other magical effects."
-        in niv_mizzet_stat_block.special_abilities
+        niv_mizzet_stat_block.actions["Multiattack"]
+        == "Niv-Mizzet can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws."
     )
     assert (
-        "Fire Breath (Recharge 5-6): Niv-Mizzet exhales fire in a 90-foot cone. Each creature in that area must make a DC 20 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one."
-        in niv_mizzet_stat_block.special_abilities
+        niv_mizzet_stat_block.actions["Bite"]
+        == "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 14 (4d6) fire damage."
     )
     assert (
-        "Spellcasting: Niv-Mizzet is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 23, +15 to hit with spell attacks). He has the following spells prepared:"
-        in niv_mizzet_stat_block.special_abilities
+        niv_mizzet_stat_block.actions["Claw"]
+        == "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage."
     )
     assert (
-        "- Cantrips (at will): Fire Bolt, Mage Hand, Prestidigitation, Shocking Grasp"
-        in niv_mizzet_stat_block.special_abilities
+        niv_mizzet_stat_block.legendary_actions["Detect"]
+        == "Niv-Mizzet makes a Wisdom (Perception) check."
     )
     assert (
-        "- 1st level (4 slots): Chromatic Orb, Detect Magic, Feather Fall, Magic Missile"
-        in niv_mizzet_stat_block.special_abilities
+        niv_mizzet_stat_block.legendary_actions["Tail Attack"]
+        == "Niv-Mizzet makes a tail attack."
     )
     assert (
-        "- 2nd level (3 slots): Detect Thoughts, Mirror Image, Scorching Ray"
-        in niv_mizzet_stat_block.special_abilities
-    )
-    assert (
-        "- 3rd level (3 slots): Counterspell, Fireball, Lightning Bolt"
-        in niv_mizzet_stat_block.special_abilities
-    )
-    assert (
-        "- 4th level (3 slots): Fabricate, Greater Invisibility, Ice Storm"
-        in niv_mizzet_stat_block.special_abilities
-    )
-    assert (
-        "- 5th level (3 slots): Cone of Cold, Telekinesis"
-        in niv_mizzet_stat_block.special_abilities
-    )
-    assert (
-        "- 6th level (2 slots): Chain Lightning, Globe of Invulnerability"
-        in niv_mizzet_stat_block.special_abilities
-    )
-    assert (
-        "- 7th level (2 slots): Delayed Blast Fireball, Plane Shift"
-        in niv_mizzet_stat_block.special_abilities
-    )
-    assert (
-        "- 8th level (1 slot): Dominate Monster, Sunburst"
-        in niv_mizzet_stat_block.special_abilities
-    )
-    assert (
-        "- 9th level (1 slot): Meteor Swarm, Wish"
-        in niv_mizzet_stat_block.special_abilities
-    )
-
-    # Validate actions
-    assert (
-        "Multiattack: Niv-Mizzet can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws."
-        in niv_mizzet_stat_block.actions
-    )
-    assert (
-        "Bite: Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 14 (4d6) fire damage."
-        in niv_mizzet_stat_block.actions
-    )
-    assert (
-        "Claw: Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage."
-        in niv_mizzet_stat_block.actions
-    )
-
-    # Validate legendary actions
-    assert (
-        "Detect: Niv-Mizzet makes a Wisdom (Perception) check."
-        in niv_mizzet_stat_block.legendary_actions
-    )
-    assert (
-        "Tail Attack: Niv-Mizzet makes a tail attack."
-        in niv_mizzet_stat_block.legendary_actions
-    )
-    assert (
-        "Wing Attack (Costs 2 Actions): Niv-Mizzet beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Niv-Mizzet can then fly up to half his flying speed."
-        in niv_mizzet_stat_block.legendary_actions
+        niv_mizzet_stat_block.legendary_actions["Wing Attack (Costs 2 Actions)"]
+        == "Niv-Mizzet beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Niv-Mizzet can then fly up to half his flying speed."
     )

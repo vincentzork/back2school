@@ -1,4 +1,3 @@
-
 from typing import List, Dict
 
 from pydantic import BaseModel
@@ -18,7 +17,7 @@ tiamat_custom_stat_block = {
         "constitution": 30,
         "intelligence": 26,
         "wisdom": 26,
-        "charisma": 28
+        "charisma": 28,
     },
     "saving_throws": {
         "strength": "+17",
@@ -26,7 +25,7 @@ tiamat_custom_stat_block = {
         "constitution": "+17",
         "intelligence": "+15",
         "wisdom": "+15",
-        "charisma": "+16"
+        "charisma": "+16",
     },
     "skills": [
         "Arcana +15",
@@ -34,7 +33,7 @@ tiamat_custom_stat_block = {
         "Insight +15",
         "Intimidation +16",
         "Perception +22",
-        "Persuasion +16"
+        "Persuasion +16",
     ],
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_immunities": "acid, cold, fire, lightning, poison",
@@ -48,7 +47,7 @@ tiamat_custom_stat_block = {
         "Multiple Heads: Tiamat can take one reaction per turn, rather than only one per round. She also has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.",
         "Regeneration: Tiamat regains 30 hit points at the start of her turn if she has at least 1 hit point.",
         "Innate Spellcasting: Tiamat's spellcasting ability is Charisma (spell save DC 24). She can innately cast the following spells, requiring no material components: 3/day each: divine word, teleport",
-        "Legendary Actions: Tiamat can take 5 legendary actions, choosing from the options below."
+        "Legendary Actions: Tiamat can take 5 legendary actions, choosing from the options below.",
     ],
     "actions": {
         "Multiattack": "Tiamat can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws.",
@@ -61,15 +60,15 @@ tiamat_custom_stat_block = {
         "Lightning Breath (Blue Dragon Head)": "Tiamat exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 27 Dexterity saving throw, taking 110 (20d10) lightning damage on a failed save, or half as much damage on a successful one.",
         "Fire Breath (Red Dragon Head)": "Tiamat exhales fire in a 90-foot cone. Each creature in that area must make a DC 27 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one.",
         "Poison Breath (Green Dragon Head)": "Tiamat exhales poisonous gas in a 90-foot cone. Each creature in that area must make a DC 27 Constitution saving throw, taking 77 (22d6) poison damage on a failed save, or half as much damage on a successful one.",
-        "Cold Breath (White Dragon Head)": "Tiamat exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 27 Constitution saving throw, taking 72 (16d8) cold damage on a failed save, or half as much damage on a successful one."
+        "Cold Breath (White Dragon Head)": "Tiamat exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 27 Constitution saving throw, taking 72 (16d8) cold damage on a failed save, or half as much damage on a successful one.",
     },
     "legendary_actions": {
         "Detect": "Tiamat makes a Wisdom (Perception) check.",
         "Tail Attack": "Tiamat makes a tail attack.",
         "Wing Attack (Costs 2 Actions)": "Tiamat beats her wings. Each creature within 15 ft. of Tiamat must succeed on a DC 25 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Tiamat can then fly up to half her flying speed.",
         "Bite Attack": "Tiamat makes a bite attack with one of her heads.",
-        "Claw Attack": "Tiamat makes a claw attack."
-    }
+        "Claw Attack": "Tiamat makes a claw attack.",
+    },
 }
 
 bahamut_custom_stat_block = {
@@ -84,7 +83,7 @@ bahamut_custom_stat_block = {
         "constitution": 30,
         "intelligence": 26,
         "wisdom": 27,
-        "charisma": 30
+        "charisma": 30,
     },
     "saving_throws": {
         "strength": "+17",
@@ -92,14 +91,14 @@ bahamut_custom_stat_block = {
         "constitution": "+17",
         "intelligence": "+15",
         "wisdom": "+16",
-        "charisma": "+18"
+        "charisma": "+18",
     },
     "skills": [
         "Arcana +15",
         "Insight +16",
         "Perception +26",
         "Persuasion +18",
-        "Religion +15"
+        "Religion +15",
     ],
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_immunities": "radiant, necrotic",
@@ -113,7 +112,7 @@ bahamut_custom_stat_block = {
         "Divine Awareness: Bahamut knows if he hears a lie.",
         "Regeneration: Bahamut regains 30 hit points at the start of his turn if he has at least 1 hit point.",
         "Innate Spellcasting: Bahamut's spellcasting ability is Charisma (spell save DC 26). He can innately cast the following spells, requiring no material components: 3/day each: bless, cure wounds (9th level), divine word, holy aura",
-        "Legendary Actions: Bahamut can take 5 legendary actions, choosing from the options below."
+        "Legendary Actions: Bahamut can take 5 legendary actions, choosing from the options below.",
     ],
     "actions": {
         "Multiattack": "Bahamut can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
@@ -122,15 +121,15 @@ bahamut_custom_stat_block = {
         "Tail": "Melee Weapon Attack: +19 to hit, reach 25 ft., one target. Hit: 24 (4d8 + 10) bludgeoning damage.",
         "Frightful Presence": "Each creature of Bahamut's choice that is within 120 feet of him and aware of him must succeed on a DC 26 Wisdom saving throw or become frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if Bahamut is within line of sight, ending the effect on itself on a success.",
         "Radiant Breath (Recharge 5-6)": "Bahamut exhales radiant energy in a 90-foot cone. Each creature in that area must make a DC 27 Dexterity saving throw, taking 91 (26d6) radiant damage on a failed save, or half as much damage on a successful one.",
-        "Platinum Aura": "Bahamut radiates a calming aura in a 60-foot radius. Each creature of Bahamut's choice in that area has advantage on saving throws against being charmed or frightened, and other creatures have disadvantage on attack rolls against them."
+        "Platinum Aura": "Bahamut radiates a calming aura in a 60-foot radius. Each creature of Bahamut's choice in that area has advantage on saving throws against being charmed or frightened, and other creatures have disadvantage on attack rolls against them.",
     },
     "legendary_actions": {
         "Detect": "Bahamut makes a Wisdom (Perception) check.",
         "Tail Attack": "Bahamut makes a tail attack.",
         "Wing Attack (Costs 2 Actions)": "Bahamut beats his wings. Each creature within 15 ft. of Bahamut must succeed on a DC 25 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Bahamut can then fly up to half his flying speed.",
         "Bite Attack": "Bahamut makes a bite attack.",
-        "Claw Attack": "Bahamut makes a claw attack."
-    }
+        "Claw Attack": "Bahamut makes a claw attack.",
+    },
 }
 
 
@@ -146,7 +145,7 @@ shimmergloom_custom_stat_block = {
         "constitution": 25,
         "intelligence": 18,
         "wisdom": 17,
-        "charisma": 20
+        "charisma": 20,
     },
     "saving_throws": {
         "strength": "+13",
@@ -154,12 +153,9 @@ shimmergloom_custom_stat_block = {
         "constitution": "+14",
         "intelligence": "+10",
         "wisdom": "+10",
-        "charisma": "+12"
+        "charisma": "+12",
     },
-    "skills": [
-        "Perception +17",
-        "Stealth +18"
-    ],
+    "skills": ["Perception +17", "Stealth +18"],
     "damage_resistances": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_immunities": "cold, necrotic",
     "condition_immunities": "charmed, exhaustion, frightened, poisoned",
@@ -169,19 +165,19 @@ shimmergloom_custom_stat_block = {
     "special_abilities": [
         "Legendary Resistance (3/Day): If Shimmergloom fails a saving throw, it can choose to succeed instead.",
         "Shadow Stealth: While in dim light or darkness, Shimmergloom can take the Hide action as a bonus action.",
-        "Magic Resistance: Shimmergloom has advantage on saving throws against spells and other magical effects."
+        "Magic Resistance: Shimmergloom has advantage on saving throws against spells and other magical effects.",
     ],
     "actions": {
         "Multiattack": "Shimmergloom makes three attacks: one with its bite and two with its claws.",
         "Bite": "Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit: 36 (4d10 + 16) piercing damage plus 14 (4d6) necrotic damage.",
         "Claw": "Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 28 (4d6 + 16) slashing damage.",
-        "Shadow Breath (Recharge 5-6)": "Shimmergloom exhales shadowy energy in a 90-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) necrotic damage on a failed save, or half as much damage on a successful one."
+        "Shadow Breath (Recharge 5-6)": "Shimmergloom exhales shadowy energy in a 90-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) necrotic damage on a failed save, or half as much damage on a successful one.",
     },
     "legendary_actions": {
         "Detect": "Shimmergloom makes a Wisdom (Perception) check.",
         "Tail Attack": "Shimmergloom makes a tail attack.",
-        "Wing Attack (Costs 2 Actions)": "Shimmergloom beats its wings. Each creature within 15 feet of it must succeed on a DC 21 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Shimmergloom can then fly up to half its flying speed."
-    }
+        "Wing Attack (Costs 2 Actions)": "Shimmergloom beats its wings. Each creature within 15 feet of it must succeed on a DC 21 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Shimmergloom can then fly up to half its flying speed.",
+    },
 }
 
 ashardalon_custom_stat_block = {
@@ -196,7 +192,7 @@ ashardalon_custom_stat_block = {
         "constitution": 25,
         "intelligence": 18,
         "wisdom": 15,
-        "charisma": 22
+        "charisma": 22,
     },
     "saving_throws": {
         "strength": "+15",
@@ -204,11 +200,9 @@ ashardalon_custom_stat_block = {
         "constitution": "+14",
         "intelligence": "+10",
         "wisdom": "+9",
-        "charisma": "+12"
+        "charisma": "+12",
     },
-    "skills": [
-        "Perception +16"
-    ],
+    "skills": ["Perception +16"],
     "damage_resistances": "fire; bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_immunities": "none",
     "condition_immunities": "exhausted, frightened",
@@ -220,18 +214,18 @@ ashardalon_custom_stat_block = {
         "Magic Resistance: Ashardalon has advantage on saving throws against spells and other magical effects.",
         "Fire Breath (Recharge 5-6): Ashardalon exhales fire in a 90-foot cone. Each creature in that area must make a DC 22 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one.",
         "Summon Demons: Ashardalon can summon demons to aid him in battle. He can summon 2d6 dretches, 1d4 babaus, or 1 balor.",
-        "Demonic Heart: Ashardalon's heart contains demonic essence, granting him increased physical prowess."
+        "Demonic Heart: Ashardalon's heart contains demonic essence, granting him increased physical prowess.",
     ],
     "actions": {
         "multiattack": "Ashardalon can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
         "bite": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 34 (4d10 + 13) piercing damage plus 14 (4d6) fire damage.",
-        "claw": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 27 (4d6 + 13) slashing damage."
+        "claw": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 27 (4d6 + 13) slashing damage.",
     },
     "legendary_actions": {
         "detect": "Ashardalon makes a Wisdom (Perception) check.",
         "tail_attack": "Ashardalon makes a tail attack.",
-        "wing_attack (costs 2 actions)": "Ashardalon beats his wings. Each creature within 15 feet of him must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ashardalon can then fly up to half his flying speed."
-    }
+        "wing_attack (costs 2 actions)": "Ashardalon beats his wings. Each creature within 15 feet of him must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ashardalon can then fly up to half his flying speed.",
+    },
 }
 
 null_custom_stat_block = {
@@ -246,7 +240,7 @@ null_custom_stat_block = {
         "constitution": 23,
         "intelligence": 18,
         "wisdom": 16,
-        "charisma": 20
+        "charisma": 20,
     },
     "saving_throws": {
         "strength": "+14",
@@ -254,12 +248,9 @@ null_custom_stat_block = {
         "constitution": "+13",
         "intelligence": "+10",
         "wisdom": "+9",
-        "charisma": "+11"
+        "charisma": "+11",
     },
-    "skills": [
-        "Perception +16",
-        "Stealth +12"
-    ],
+    "skills": ["Perception +16", "Stealth +12"],
     "damage_resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_immunities": "necrotic, poison",
     "condition_immunities": "exhausted, frightened, paralyzed, poisoned",
@@ -272,19 +263,19 @@ null_custom_stat_block = {
         "Shadow Stealth: While in dim light or darkness, Null can take the Hide action as a bonus action.",
         "Necrotic Breath (Recharge 5-6): Null exhales necrotic energy in a 90-foot cone. Each creature in that area must make a DC 23 Dexterity saving throw, taking 84 (24d6) necrotic damage on a failed save, or half as much damage on a successful one.",
         "Life Drain: When Null hits a creature with its bite attack, it can choose to drain life energy. The target must succeed on a DC 23 Constitution saving throw or take 21 (6d6) necrotic damage, and Null regains hit points equal to the damage dealt.",
-        "Command Undead: Null can magically command undead creatures within 120 feet of it. Undead creatures must make a DC 23 Wisdom saving throw or be charmed by Null for 24 hours."
+        "Command Undead: Null can magically command undead creatures within 120 feet of it. Undead creatures must make a DC 23 Wisdom saving throw or be charmed by Null for 24 hours.",
     ],
     "actions": {
         "multiattack": "Null can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
         "bite": "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 34 (4d10 + 12) piercing damage plus 14 (4d6) necrotic damage. On a hit, Null can use Life Drain.",
         "claw": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 27 (4d6 + 12) slashing damage.",
-        "shadow_breath (recharge 5-6)": "Null exhales shadowy energy in a 90-foot cone. Each creature in that area must make a DC 23 Dexterity saving throw, taking 84 (24d6) necrotic damage on a failed save, or half as much damage on a successful one."
+        "shadow_breath (recharge 5-6)": "Null exhales shadowy energy in a 90-foot cone. Each creature in that area must make a DC 23 Dexterity saving throw, taking 84 (24d6) necrotic damage on a failed save, or half as much damage on a successful one.",
     },
     "legendary_actions": {
         "detect": "Null makes a Wisdom (Perception) check.",
         "tail_attack": "Null makes a tail attack.",
-        "wing_attack (costs 2 actions)": "Null beats his wings. Each creature within 15 feet of him must succeed on a DC 24 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. Null can then fly up to half his flying speed."
-    }
+        "wing_attack (costs 2 actions)": "Null beats his wings. Each creature within 15 feet of him must succeed on a DC 24 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. Null can then fly up to half his flying speed.",
+    },
 }
 
 
@@ -300,7 +291,7 @@ iymrith_custom_stat_block = {
         "constitution": 25,
         "intelligence": 18,
         "wisdom": 17,
-        "charisma": 21
+        "charisma": 21,
     },
     "saving_throws": {
         "strength": 16,
@@ -308,12 +299,9 @@ iymrith_custom_stat_block = {
         "constitution": 14,
         "intelligence": 10,
         "wisdom": 11,
-        "charisma": 12
+        "charisma": 12,
     },
-    "skills": [
-        "Perception +17",
-        "Stealth +8"
-    ],
+    "skills": ["Perception +17", "Stealth +8"],
     "damage_resistances": "",
     "damage_immunities": "lightning",
     "condition_immunities": "exhausted, paralyzed",
@@ -331,18 +319,18 @@ iymrith_custom_stat_block = {
         "- 3rd level (3 slots): Lightning Bolt, Counterspell",
         "- 4th level (3 slots): Storm Sphere, Greater Invisibility",
         "- 5th level (3 slots): Cloudkill, Cone of Cold",
-        "- 6th level (1 slot): Chain Lightning"
+        "- 6th level (1 slot): Chain Lightning",
     ],
     "actions": {
         "multiattack": "Iymrith can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws.",
         "bite": "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 36 (4d10 + 16) piercing damage.",
-        "claw": "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 28 (4d6 + 16) slashing damage."
+        "claw": "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 28 (4d6 + 16) slashing damage.",
     },
     "legendary_actions": {
         "detect": "Iymrith makes a Wisdom (Perception) check.",
         "tail_attack": "Iymrith makes a tail attack.",
-        "wing_attack (costs 2 actions)": "Iymrith beats her wings. Each creature within 15 feet of her must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Iymrith can then fly up to half her flying speed."
-    }
+        "wing_attack (costs 2 actions)": "Iymrith beats her wings. Each creature within 15 feet of her must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Iymrith can then fly up to half her flying speed.",
+    },
 }
 
 
@@ -358,7 +346,7 @@ dragotha_custom_stat_block = {
         "constitution": 20,
         "intelligence": 18,
         "wisdom": 15,
-        "charisma": 21
+        "charisma": 21,
     },
     "saving_throws": {
         "strength": "+12",
@@ -366,11 +354,9 @@ dragotha_custom_stat_block = {
         "constitution": "+11",
         "intelligence": "+10",
         "wisdom": "+9",
-        "charisma": "+11"
+        "charisma": "+11",
     },
-    "skills": [
-        "Perception +15"
-    ],
+    "skills": ["Perception +15"],
     "damage_resistances": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_immunities": "cold, poison",
     "condition_immunities": "charmed, exhausted, frightened, paralyzed, poisoned",
@@ -388,18 +374,18 @@ dragotha_custom_stat_block = {
         "- 3rd level (3 slots): Counterspell, Bestow Curse",
         "- 4th level (3 slots): Blight, Greater Invisibility",
         "- 5th level (3 slots): Cloudkill, Cone of Cold",
-        "- 6th level (1 slot): Disintegrate"
+        "- 6th level (1 slot): Disintegrate",
     ],
     "actions": {
         "multiattack": "Dragotha can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
         "bite": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 23 (3d10 + 7) piercing damage plus 14 (4d6) necrotic damage.",
-        "claw": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 7) slashing damage."
+        "claw": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 7) slashing damage.",
     },
     "legendary_actions": {
         "detect": "Dragotha makes a Wisdom (Perception) check.",
         "tail_attack": "Dragotha makes a tail attack.",
-        "wing_attack (costs 2 actions)": "Dragotha beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Dragotha can then fly up to half his flying speed."
-    }
+        "wing_attack (costs 2 actions)": "Dragotha beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Dragotha can then fly up to half his flying speed.",
+    },
 }
 
 
@@ -415,7 +401,7 @@ klauth_custom_stat_block = {
         "constitution": 28,
         "intelligence": 18,
         "wisdom": 15,
-        "charisma": 22
+        "charisma": 22,
     },
     "saving_throws": {
         "strength": "+19",
@@ -423,12 +409,9 @@ klauth_custom_stat_block = {
         "constitution": "+18",
         "intelligence": "+12",
         "wisdom": "+11",
-        "charisma": "+14"
+        "charisma": "+14",
     },
-    "skills": [
-        "Perception +17",
-        "Stealth +9"
-    ],
+    "skills": ["Perception +17", "Stealth +9"],
     "damage_resistances": "",  # Add appropriate resistances if any
     "damage_immunities": "fire",
     "condition_immunities": "",  # Add appropriate condition immunities if any
@@ -446,18 +429,18 @@ klauth_custom_stat_block = {
         "- 3rd level (3 slots): Fireball, Counterspell",
         "- 4th level (3 slots): Wall of Fire, Greater Invisibility",
         "- 5th level (3 slots): Immolation, Cone of Cold",
-        "- 6th level (1 slot): Chain Lightning"
+        "- 6th level (1 slot): Chain Lightning",
     ],
     "actions": {
         "multiattack": "Klauth can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
         "bite": "Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit: 30 (4d6 + 19) piercing damage plus 14 (4d6) fire damage.",
-        "claw": "Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 24 (3d8 + 19) slashing damage."
+        "claw": "Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 24 (3d8 + 19) slashing damage.",
     },
     "legendary_actions": {
         "detect": "Klauth makes a Wisdom (Perception) check.",
         "tail_attack": "Klauth makes a tail attack.",
-        "wing_attack (costs 2 actions)": "Klauth beats his wings. Each creature within 15 feet of him must succeed on a DC 27 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Klauth can then fly up to half his flying speed."
-    }
+        "wing_attack (costs 2 actions)": "Klauth beats his wings. Each creature within 15 feet of him must succeed on a DC 27 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Klauth can then fly up to half his flying speed.",
+    },
 }
 
 
@@ -473,7 +456,7 @@ ilnezhara_custom_stat_block = {
         "constitution": 21,
         "intelligence": 18,
         "wisdom": 17,
-        "charisma": 20
+        "charisma": 20,
     },
     "saving_throws": {
         "strength": "+12",
@@ -481,14 +464,9 @@ ilnezhara_custom_stat_block = {
         "constitution": "+11",
         "intelligence": "+10",
         "wisdom": "+9",
-        "charisma": "+10"
+        "charisma": "+10",
     },
-    "skills": [
-        "Perception +13",
-        "Stealth +8",
-        "Deception +10",
-        "Persuasion +10"
-    ],
+    "skills": ["Perception +13", "Stealth +8", "Deception +10", "Persuasion +10"],
     "damage_resistances": "",  # Add appropriate resistances if any
     "damage_immunities": "poison",
     "condition_immunities": "",  # Add appropriate condition immunities if any
@@ -505,18 +483,18 @@ ilnezhara_custom_stat_block = {
         "- 2nd level (3 slots): Barkskin, Enhance Ability, Pass without Trace",
         "- 3rd level (3 slots): Plant Growth, Protection from Energy, Sleet Storm",
         "- 4th level (3 slots): Blight, Dominate Beast, Greater Invisibility",
-        "- 5th level (2 slots): Cloudkill, Insect Plague"
+        "- 5th level (2 slots): Cloudkill, Insect Plague",
     ],
     "actions": {
         "multiattack": "Ilnezhara can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws.",
         "bite": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 14 (4d6) poison damage.",
-        "claw": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
+        "claw": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
     },
     "legendary_actions": {
         "detect": "Ilnezhara makes a Wisdom (Perception) check.",
         "tail_attack": "Ilnezhara makes a tail attack.",
-        "wing_attack (costs 2 actions)": "Ilnezhara beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ilnezhara can then fly up to half her flying speed."
-    }
+        "wing_attack (costs 2 actions)": "Ilnezhara beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ilnezhara can then fly up to half her flying speed.",
+    },
 }
 
 
@@ -532,7 +510,7 @@ tazmikella_custom_stat_block = {
         "constitution": 21,
         "intelligence": 18,
         "wisdom": 17,
-        "charisma": 20
+        "charisma": 20,
     },
     "saving_throws": {
         "strength": "+12",
@@ -540,14 +518,9 @@ tazmikella_custom_stat_block = {
         "constitution": "+11",
         "intelligence": "+10",
         "wisdom": "+9",
-        "charisma": "+10"
+        "charisma": "+10",
     },
-    "skills": [
-        "Perception +13",
-        "Stealth +8",
-        "Deception +10",
-        "Persuasion +10"
-    ],
+    "skills": ["Perception +13", "Stealth +8", "Deception +10", "Persuasion +10"],
     "damage_resistances": "",  # Default or appropriate value
     "damage_immunities": "poison",
     "condition_immunities": "",  # Default or appropriate value
@@ -564,18 +537,18 @@ tazmikella_custom_stat_block = {
         "- 2nd level (3 slots): Barkskin, Enhance Ability, Pass without Trace",
         "- 3rd level (3 slots): Plant Growth, Protection from Energy, Sleet Storm",
         "- 4th level (3 slots): Blight, Dominate Beast, Greater Invisibility",
-        "- 5th level (2 slots): Cloudkill, Insect Plague"
+        "- 5th level (2 slots): Cloudkill, Insect Plague",
     ],
     "actions": {
         "multiattack": "Tazmikella can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws.",
         "bite": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 14 (4d6) poison damage.",
-        "claw": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
+        "claw": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
     },
     "legendary_actions": {
         "detect": "Tazmikella makes a Wisdom (Perception) check.",
         "tail_attack": "Tazmikella makes a tail attack.",
-        "wing_attack (costs 2 actions)": "Tazmikella beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Tazmikella can then fly up to half her flying speed."
-    }
+        "wing_attack (costs 2 actions)": "Tazmikella beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Tazmikella can then fly up to half her flying speed.",
+    },
 }
 
 
@@ -591,7 +564,7 @@ aurgloroasa_custom_stat_block = {
         "constitution": 21,
         "intelligence": 18,
         "wisdom": 17,
-        "charisma": 20
+        "charisma": 20,
     },
     "saving_throws": {
         "strength": 12,
@@ -599,7 +572,7 @@ aurgloroasa_custom_stat_block = {
         "constitution": 11,
         "intelligence": 10,
         "wisdom": 9,
-        "charisma": 10
+        "charisma": 10,
     },
     "skills": ["Perception +13", "Stealth +8", "Deception +10", "Arcana +10"],
     "damage_resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
@@ -619,22 +592,22 @@ aurgloroasa_custom_stat_block = {
         "- 2nd level (3 slots): Blindness/Deafness, Misty Step, Ray of Enfeeblement",
         "- 3rd level (3 slots): Counterspell, Fear, Lightning Bolt",
         "- 4th level (3 slots): Blight, Greater Invisibility, Phantasmal Killer",
-        "- 5th level (2 slots): Cloudkill, Dominate Person"
+        "- 5th level (2 slots): Cloudkill, Dominate Person",
     ],
     "actions": {
         "multiattack": "Aurgloroasa can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws.",
         "bite": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 14 (4d6) necrotic damage.",
-        "claw": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
+        "claw": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
     },
     "legendary_actions": {
         "detect": "Aurgloroasa makes a Wisdom (Perception) check.",
         "tail_attack": "Aurgloroasa makes a tail attack.",
-        "wing_attack (costs 2 actions)": "Aurgloroasa beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Aurgloroasa can then fly up to half her flying speed."
-    }
+        "wing_attack (costs 2 actions)": "Aurgloroasa beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Aurgloroasa can then fly up to half her flying speed.",
+    },
 }
 
 niv_mizzet_custom_stat_block = {
-    "dragon_type": "Ancient Red Dragon (Unique)",
+    "dragon_type": "Unique Dragon",
     "name": "Niv-Mizzet, the Firemind",
     "hit_points": 546,
     "armor_class": 22,
@@ -645,17 +618,23 @@ niv_mizzet_custom_stat_block = {
         "constitution": 21,
         "intelligence": 26,
         "wisdom": 17,
-        "charisma": 24
+        "charisma": 24,
     },
     "saving_throws": {
-        "strength": 13,
-        "dexterity": 6,
-        "constitution": 12,
-        "intelligence": 15,
-        "wisdom": 10,
-        "charisma": 14
+        "strength": "+13",
+        "dexterity": "+6",
+        "constitution": "+12",
+        "intelligence": "+15",
+        "wisdom": "+10",
+        "charisma": "+14",
     },
-    "skills": ["Arcana +15", "History +15", "Insight +10", "Perception +10", "Persuasion +14"],
+    "skills": [
+        "Arcana +15",
+        "History +15",
+        "Insight +10",
+        "Perception +10",
+        "Persuasion +14",
+    ],
     "damage_resistances": "fire",
     "damage_immunities": "",
     "condition_immunities": "charmed, frightened",
@@ -676,18 +655,18 @@ niv_mizzet_custom_stat_block = {
         "- 6th level (2 slots): Chain Lightning, Globe of Invulnerability",
         "- 7th level (2 slots): Delayed Blast Fireball, Plane Shift",
         "- 8th level (1 slot): Dominate Monster, Sunburst",
-        "- 9th level (1 slot): Meteor Swarm, Wish"
+        "- 9th level (1 slot): Meteor Swarm, Wish",
     ],
     "actions": {
-        "multiattack": "Niv-Mizzet can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
-        "bite": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 14 (4d6) fire damage.",
-        "claw": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage."
+        "Multiattack": "Niv-Mizzet can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
+        "Bite": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 14 (4d6) fire damage.",
+        "Claw": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage.",
     },
     "legendary_actions": {
-        "detect": "Niv-Mizzet makes a Wisdom (Perception) check.",
-        "tail_attack": "Niv-Mizzet makes a tail attack.",
-        "wing_attack (costs 2 actions)": "Niv-Mizzet beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Niv-Mizzet can then fly up to half his flying speed."
-    }
+        "Detect": "Niv-Mizzet makes a Wisdom (Perception) check.",
+        "Tail Attack": "Niv-Mizzet makes a tail attack.",
+        "Wing Attack (Costs 2 Actions)": "Niv-Mizzet beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Niv-Mizzet can then fly up to half his flying speed.",
+    },
 }
 
 
@@ -709,4 +688,3 @@ class LegendaryDragonStatBlock(BaseModel):
     special_abilities: List[str]
     actions: Dict[str, str]
     legendary_actions: Dict[str, str]
-
