@@ -634,40 +634,35 @@ aurgloroasa_custom_stat_block = {
 }
 
 niv_mizzet_custom_stat_block = {
-    "Dragon Type": "Ancient Red Dragon (Unique)",
-    "Name": "Niv-Mizzet, the Firemind",
-    "Hit Points": 546,
-    "Armor Class": 22,
-    "Speed": "40 ft, fly 80 ft",
-    "Abilities": {
-        "Strength": 23,
-        "Dexterity": 10,
-        "Constitution": 21,
-        "Intelligence": 26,
-        "Wisdom": 17,
-        "Charisma": 24
+    "dragon_type": "Ancient Red Dragon (Unique)",
+    "name": "Niv-Mizzet, the Firemind",
+    "hit_points": 546,
+    "armor_class": 22,
+    "speed": "40 ft, fly 80 ft",
+    "abilities": {
+        "strength": 23,
+        "dexterity": 10,
+        "constitution": 21,
+        "intelligence": 26,
+        "wisdom": 17,
+        "charisma": 24
     },
-    "Saving Throws": {
-        "STR": "+13",
-        "DEX": "+6",
-        "CON": "+12",
-        "INT": "+15",
-        "WIS": "+10",
-        "CHA": "+14"
+    "saving_throws": {
+        "strength": 13,
+        "dexterity": 6,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 10,
+        "charisma": 14
     },
-    "Skills": [
-        "Arcana +15",
-        "History +15",
-        "Insight +10",
-        "Perception +10",
-        "Persuasion +14"
-    ],
-    "Damage Resistances": "fire",
-    "Condition Immunities": "charmed, frightened",
-    "Senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 20",
-    "Languages": "Common, Draconic, Ravnican, telepathy 120 ft.",
-    "Challenge": 26,
-    "Special Abilities": [
+    "skills": ["Arcana +15", "History +15", "Insight +10", "Perception +10", "Persuasion +14"],
+    "damage_resistances": "fire",
+    "damage_immunities": "",
+    "condition_immunities": "charmed, frightened",
+    "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 20",
+    "languages": "Common, Draconic, Ravnican, telepathy 120 ft.",
+    "challenge": 26,
+    "special_abilities": [
         "Legendary Resistance (3/Day): If Niv-Mizzet fails a saving throw, he can choose to succeed instead.",
         "Magic Resistance: Niv-Mizzet has advantage on saving throws against spells and other magical effects.",
         "Fire Breath (Recharge 5-6): Niv-Mizzet exhales fire in a 90-foot cone. Each creature in that area must make a DC 20 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one.",
@@ -683,15 +678,15 @@ niv_mizzet_custom_stat_block = {
         "- 8th level (1 slot): Dominate Monster, Sunburst",
         "- 9th level (1 slot): Meteor Swarm, Wish"
     ],
-    "Actions": {
-        "Multiattack": "Niv-Mizzet can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
-        "Bite": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 14 (4d6) fire damage.",
-        "Claw": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage."
+    "actions": {
+        "multiattack": "Niv-Mizzet can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.",
+        "bite": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 14 (4d6) fire damage.",
+        "claw": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage."
     },
-    "Legendary Actions": {
-        "Detect": "Niv-Mizzet makes a Wisdom (Perception) check.",
-        "Tail Attack": "Niv-Mizzet makes a tail attack.",
-        "Wing Attack (Costs 2 Actions)": "Niv-Mizzet beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Niv-Mizzet can then fly up to half his flying speed."
+    "legendary_actions": {
+        "detect": "Niv-Mizzet makes a Wisdom (Perception) check.",
+        "tail_attack": "Niv-Mizzet makes a tail attack.",
+        "wing_attack (costs 2 actions)": "Niv-Mizzet beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Niv-Mizzet can then fly up to half his flying speed."
     }
 }
 

@@ -913,3 +913,130 @@ def test_aurgloroasa_stat_block(aurgloroasa_stat_block):
         == "Aurgloroasa beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Aurgloroasa can then fly up to half her flying speed."
     )
 
+@pytest.fixture
+def niv_mizzet_stat_block():
+    return LegendaryDragonStatBlock(**LegendaryDragons.niv_mizzet_custom_stat_block)
+
+def test_niv_mizzet_stat_block(niv_mizzet_stat_block):
+    # Check if the Niv-Mizzet StatBlock instance is created correctly
+    assert niv_mizzet_stat_block.name == "Niv-Mizzet, the Firemind"
+    assert niv_mizzet_stat_block.hit_points == 546
+    assert niv_mizzet_stat_block.armor_class == 22
+    assert niv_mizzet_stat_block.speed == "40 ft, fly 80 ft"
+
+    # Access AbilityScores attributes individually
+    assert niv_mizzet_stat_block.abilities.strength == 23
+    assert niv_mizzet_stat_block.abilities.dexterity == 10
+    assert niv_mizzet_stat_block.abilities.constitution == 21
+    assert niv_mizzet_stat_block.abilities.intelligence == 26
+    assert niv_mizzet_stat_block.abilities.wisdom == 17
+    assert niv_mizzet_stat_block.abilities.charisma == 24
+
+    # Access SavingThrows attributes individually
+    assert niv_mizzet_stat_block.saving_throws.strength == 13
+    assert niv_mizzet_stat_block.saving_throws.dexterity == 6
+    assert niv_mizzet_stat_block.saving_throws.constitution == 12
+    assert niv_mizzet_stat_block.saving_throws.intelligence == 15
+    assert niv_mizzet_stat_block.saving_throws.wisdom == 10
+    assert niv_mizzet_stat_block.saving_throws.charisma == 14
+
+    # Validate skills
+    assert "Arcana +15" in niv_mizzet_stat_block.skills
+    assert "History +15" in niv_mizzet_stat_block.skills
+    assert "Insight +10" in niv_mizzet_stat_block.skills
+    assert "Perception +10" in niv_mizzet_stat_block.skills
+    assert "Persuasion +14" in niv_mizzet_stat_block.skills
+
+    # Validate other attributes
+    assert niv_mizzet_stat_block.damage_resistances == "fire"
+    assert niv_mizzet_stat_block.damage_immunities == ""  # Add the expected value for damage immunities
+    assert niv_mizzet_stat_block.condition_immunities == "charmed, frightened"
+    assert niv_mizzet_stat_block.senses == "blindsight 60 ft., darkvision 120 ft., passive Perception 20"
+    assert niv_mizzet_stat_block.languages == "Common, Draconic, Ravnican, telepathy 120 ft."
+    assert niv_mizzet_stat_block.challenge == 26
+
+    # Validate special abilities
+    assert (
+        "Legendary Resistance (3/Day): If Niv-Mizzet fails a saving throw, he can choose to succeed instead."
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "Magic Resistance: Niv-Mizzet has advantage on saving throws against spells and other magical effects."
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "Fire Breath (Recharge 5-6): Niv-Mizzet exhales fire in a 90-foot cone. Each creature in that area must make a DC 20 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one."
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "Spellcasting: Niv-Mizzet is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 23, +15 to hit with spell attacks). He has the following spells prepared:"
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "- Cantrips (at will): Fire Bolt, Mage Hand, Prestidigitation, Shocking Grasp"
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "- 1st level (4 slots): Chromatic Orb, Detect Magic, Feather Fall, Magic Missile"
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "- 2nd level (3 slots): Detect Thoughts, Mirror Image, Scorching Ray"
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "- 3rd level (3 slots): Counterspell, Fireball, Lightning Bolt"
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "- 4th level (3 slots): Fabricate, Greater Invisibility, Ice Storm"
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "- 5th level (3 slots): Cone of Cold, Telekinesis"
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "- 6th level (2 slots): Chain Lightning, Globe of Invulnerability"
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "- 7th level (2 slots): Delayed Blast Fireball, Plane Shift"
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "- 8th level (1 slot): Dominate Monster, Sunburst"
+        in niv_mizzet_stat_block.special_abilities
+    )
+    assert (
+        "- 9th level (1 slot): Meteor Swarm, Wish"
+        in niv_mizzet_stat_block.special_abilities
+    )
+
+    # Validate actions
+    assert (
+        "Multiattack: Niv-Mizzet can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws."
+        in niv_mizzet_stat_block.actions
+    )
+    assert (
+        "Bite: Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 14 (4d6) fire damage."
+        in niv_mizzet_stat_block.actions
+    )
+    assert (
+        "Claw: Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage."
+        in niv_mizzet_stat_block.actions
+    )
+
+    # Validate legendary actions
+    assert (
+        "Detect: Niv-Mizzet makes a Wisdom (Perception) check."
+        in niv_mizzet_stat_block.legendary_actions
+    )
+    assert (
+        "Tail Attack: Niv-Mizzet makes a tail attack."
+        in niv_mizzet_stat_block.legendary_actions
+    )
+    assert (
+        "Wing Attack (Costs 2 Actions): Niv-Mizzet beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Niv-Mizzet can then fly up to half his flying speed."
+        in niv_mizzet_stat_block.legendary_actions
+    )
