@@ -1,5 +1,5 @@
-[
-    {
+{
+    "Ashardalon": {
         "dragon_type": "Red Dragon",
         "name": "Ashardalon",
         "hit_points": 500,
@@ -48,7 +48,7 @@
             "wing_attack (costs 2 actions)": "Ashardalon beats his wings. Each creature within 15 feet of him must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ashardalon can then fly up to half his flying speed."
         }
     },
-    {
+    "Aurgloroasa": {
         "dragon_type": "Shadow Dragon",
         "name": "Aurgloroasa",
         "hit_points": 350,
@@ -106,7 +106,7 @@
             "wing_attack (costs 2 actions)": "Aurgloroasa beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Aurgloroasa can then fly up to half her flying speed."
         }
     },
-    {
+    "Bahamut": {
         "dragon_type": "Gold Dragon",
         "name": "Bahamut",
         "hit_points": 585,
@@ -166,7 +166,7 @@
             "Claw Attack": "Bahamut makes a claw attack."
         }
     },
-    {
+    "Dragotha": {
         "dragon_type": "Dracolich",
         "name": "Dragotha",
         "hit_points": 367,
@@ -221,7 +221,7 @@
             "wing_attack (costs 2 actions)": "Dragotha beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Dragotha can then fly up to half his flying speed."
         }
     },
-    {
+    "Ilnezhara": {
         "dragon_type": "Green Dragon",
         "name": "Ilnezhara",
         "hit_points": 367,
@@ -278,7 +278,7 @@
             "wing_attack (costs 2 actions)": "Ilnezhara beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ilnezhara can then fly up to half her flying speed."
         }
     },
-    {
+    "Iymrith": {
         "dragon_type": "Blue Dragon",
         "name": "Iymrith, the Doom of the Desert",
         "hit_points": 481,
@@ -334,7 +334,7 @@
             "wing_attack (costs 2 actions)": "Iymrith beats her wings. Each creature within 15 feet of her must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Iymrith can then fly up to half her flying speed."
         }
     },
-    {
+    "Klauth": {
         "dragon_type": "Red Dragon",
         "name": "Klauth",
         "hit_points": 546,
@@ -390,7 +390,7 @@
             "wing_attack (costs 2 actions)": "Klauth beats his wings. Each creature within 15 feet of him must succeed on a DC 27 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Klauth can then fly up to half his flying speed."
         }
     },
-    {
+    "Niv-Mizzet": {
         "dragon_type": "Unique Dragon",
         "name": "Niv-Mizzet, the Firemind",
         "hit_points": 546,
@@ -452,7 +452,7 @@
             "Wing Attack (Costs 2 Actions)": "Niv-Mizzet beats his wings. Each creature within 15 feet of him must succeed on a DC 21 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Niv-Mizzet can then fly up to half his flying speed."
         }
     },
-    {
+    "Null": {
         "dragon_type": "Shadow Dragon",
         "name": "Null, The Deathwyrm",
         "hit_points": 550,
@@ -504,7 +504,7 @@
             "wing_attack (costs 2 actions)": "Null beats his wings. Each creature within 15 feet of him must succeed on a DC 24 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. Null can then fly up to half his flying speed."
         }
     },
-    {
+    "Shimmergloom": {
         "dragon_type": "Shadow Dragon",
         "name": "Shimmergloom",
         "hit_points": 370,
@@ -553,7 +553,7 @@
             "Wing Attack (Costs 2 Actions)": "Shimmergloom beats its wings. Each creature within 15 feet of it must succeed on a DC 21 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Shimmergloom can then fly up to half its flying speed."
         }
     },
-    {
+    "Tazmikella": {
         "dragon_type": "Green Dragon",
         "name": "Tazmikella",
         "hit_points": 367,
@@ -610,7 +610,7 @@
             "wing_attack (costs 2 actions)": "Tazmikella beats her wings. Each creature within 15 feet of her must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Tazmikella can then fly up to half her flying speed."
         }
     },
-    {
+    "Tiamat": {
         "dragon_type": "Unique Dragon",
         "name": "Tiamat",
         "hit_points": 615,
@@ -675,4 +675,4 @@
             "Claw Attack": "Tiamat makes a claw attack."
         }
     }
-]
+}
