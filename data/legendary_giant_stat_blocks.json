@@ -771,8 +771,77 @@
         "reactions": [
             "Storm's Fury: When a creature hits Morak with a melee attack, he can use his reaction to deal lightning damage to the attacker. The attacker must make a DC 20 Dexterity saving throw, taking 21 (6d6) lightning damage on a failed save, or half as much damage on a successful one."
         ]
+    },
+    "Wiggan Nettlebee": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Druid",
+                "archetype": "Circle of the Land (Forest)",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Nature Staff",
+            "Entangling Vines"
+        ],
+        "common_behaviors_actions": [
+            "Tending to the forests and hills as a guardian of his territory.",
+            "Using his druidic magic to shape the land and control plants and animals.",
+            "Healing himself and others with his deep connection to nature."
+        ],
+        "giant_type": "hill giant",
+        "name": "Wiggan Nettlebee",
+        "hit_points": 380,
+        "armor_class": 18,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 24,
+            "dexterity": 14,
+            "constitution": 20,
+            "intelligence": 16,
+            "wisdom": 26,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "strength": "+12",
+            "dexterity": "+2",
+            "constitution": "+10",
+            "intelligence": "+8",
+            "wisdom": "+13",
+            "charisma": "+9"
+        },
+        "skills": [
+            "Nature +13",
+            "Survival +13",
+            "Perception +13",
+            "Medicine +13"
+        ],
+        "damage_resistances": "poison",
+        "condition_immunities": "none",
+        "senses": "darkvision 60 ft., passive Perception 23",
+        "languages": "Giant, Common, Druidic",
+        "challenge": 20,
+        "special_abilities": [
+            "Natural Recovery: Wiggan can regain some of his magical energy by sitting in meditation and communing with nature. Once per day during a short rest, he can recover expended spell slots with a combined level that is equal to or less than half his druid level (rounded up).",
+            "Land's Stride: Moving through nonmagical difficult terrain costs Wiggan no extra movement. He can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard."
+        ],
+        "legendary_actions": {
+            "Detect": "Wiggan makes a Wisdom (Perception) check.",
+            "Move": "Wiggan moves up to his speed without provoking opportunity attacks.",
+            "Call Lightning (Costs 2 Actions)": "Wiggan casts Call Lightning."
+        },
+        "actions": [
+            "Multiattack: Wiggan makes two attacks with his Nature Staff.",
+            "Nature Staff: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 6) bludgeoning damage plus 14 (4d6) poison damage.",
+            "Entangling Vines: Wiggan summons vines to entangle his enemies. Each creature within a 20-foot square centered on a point within 90 feet must succeed on a DC 20 Strength saving throw or be restrained by the vines. A creature restrained by the vines can use its action to make a DC 20 Strength check, freeing itself on a success."
+        ],
+        "bonus_actions": [],
+        "reactions": [
+            "Nature's Ward: When Wiggan is hit by an attack, he can use his reaction to gain resistance to all damage from the attack."
+        ]
     }
 }
+
 
 
 

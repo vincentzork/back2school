@@ -475,3 +475,46 @@ def test_morak_thunderstep_stat_block(morak_thunderstep_stat_block):
         morak_thunderstep_stat_block.reactions[0]
         == "Storm's Fury: When a creature hits Morak with a melee attack, he can use his reaction to deal lightning damage to the attacker. The attacker must make a DC 20 Dexterity saving throw, taking 21 (6d6) lightning damage on a failed save, or half as much damage on a successful one."
     )
+
+
+@pytest.fixture
+def wiggan_nettlebee_stat_block():
+    # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
+    return LegendaryGiantStatBlock(**legendary_giants.wiggan_nettlebee_custom_stat_block)
+
+def test_wiggan_nettlebee_stat_block(wiggan_nettlebee_stat_block):
+    # Check if the Wiggan Nettlebee StatBlock instance is created correctly
+    assert wiggan_nettlebee_stat_block.name == "Wiggan Nettlebee"
+    assert wiggan_nettlebee_stat_block.hit_points == 380
+    assert wiggan_nettlebee_stat_block.armor_class == 18
+    assert wiggan_nettlebee_stat_block.speed == "40 ft."
+    assert wiggan_nettlebee_stat_block.abilities.strength == 24
+    assert wiggan_nettlebee_stat_block.saving_throws.strength == 12
+    assert "Nature +13" in wiggan_nettlebee_stat_block.skills
+    assert wiggan_nettlebee_stat_block.damage_resistances == "poison"
+    assert wiggan_nettlebee_stat_block.condition_immunities == "none"
+    assert wiggan_nettlebee_stat_block.senses == "darkvision 60 ft., passive Perception 23"
+    assert wiggan_nettlebee_stat_block.languages == "Giant, Common, Druidic"
+    assert wiggan_nettlebee_stat_block.challenge == 20
+    assert (
+        "Natural Recovery: Wiggan can regain some of his magical energy by sitting in meditation and communing with nature. Once per day during a short rest, he can recover expended spell slots with a combined level that is equal to or less than half his druid level (rounded up)."
+        in wiggan_nettlebee_stat_block.special_abilities
+    )
+    assert (
+        wiggan_nettlebee_stat_block.legendary_actions["Detect"]
+        == "Wiggan makes a Wisdom (Perception) check."
+    )
+    assert (
+        wiggan_nettlebee_stat_block.actions[0]
+        == "Multiattack: Wiggan makes two attacks with his Nature Staff."
+    )
+    assert (
+        wiggan_nettlebee_stat_block.actions[1]
+        == "Nature Staff: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 6) bludgeoning damage plus 14 (4d6) poison damage."
+    )
+    # No bonus actions defined, but including an empty check
+    assert wiggan_nettlebee_stat_block.bonus_actions == []
+    assert (
+        wiggan_nettlebee_stat_block.reactions[0]
+        == "Nature's Ward: When Wiggan is hit by an attack, he can use his reaction to gain resistance to all damage from the attack."
+    )
