@@ -261,3 +261,46 @@ def test_harshnag_the_grim_stat_block(harshnag_the_grim_stat_block):
         == "Parry: Harshnag adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
     )
 
+
+@pytest.fixture
+def jarl_grugnur_stat_block():
+    # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
+    return LegendaryGiantStatBlock(**legendary_giants.jarl_grugnur_custom_stat_block)
+
+def test_jarl_grugnur_stat_block(jarl_grugnur_stat_block):
+    # Check if the Jarl Grugnur StatBlock instance is created correctly
+    assert jarl_grugnur_stat_block.name == "Jarl Grugnur"
+    assert jarl_grugnur_stat_block.hit_points == 480
+    assert jarl_grugnur_stat_block.armor_class == 21
+    assert jarl_grugnur_stat_block.speed == "40 ft."
+    assert jarl_grugnur_stat_block.abilities.strength == 29
+    assert jarl_grugnur_stat_block.saving_throws.strength == 15
+    assert "Athletics +15" in jarl_grugnur_stat_block.skills
+    assert jarl_grugnur_stat_block.damage_resistances == "cold"
+    assert jarl_grugnur_stat_block.condition_immunities == "none"
+    assert jarl_grugnur_stat_block.senses == "darkvision 60 ft., passive Perception 18"
+    assert jarl_grugnur_stat_block.languages == "Giant, Common"
+    assert jarl_grugnur_stat_block.challenge == 21
+    assert (
+        "Unstoppable Rage: While raging, Jarl Grugnur has advantage on all Strength checks and saving throws."
+        in jarl_grugnur_stat_block.special_abilities
+    )
+    assert (
+        jarl_grugnur_stat_block.legendary_actions["Detect"]
+        == "Jarl Grugnur makes a Wisdom (Perception) check."
+    )
+    assert (
+        jarl_grugnur_stat_block.actions[0]
+        == "Multiattack: Jarl Grugnur makes three attacks with his Greatclub."
+    )
+    assert (
+        jarl_grugnur_stat_block.actions[1]
+        == "Greatclub: Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 31 (6d8 + 10) bludgeoning damage."
+    )
+    # No bonus actions defined, but including an empty check
+    assert jarl_grugnur_stat_block.bonus_actions == []
+    assert (
+        jarl_grugnur_stat_block.reactions[0]
+        == "Parry: Jarl Grugnur adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
+    )
+
