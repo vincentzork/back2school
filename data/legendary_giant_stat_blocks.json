@@ -68,5 +68,81 @@
         ],
         "bonus_actions": [],
         "reactions": []
+    },
+    "King Snurre Ironbelly": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Fighter",
+                "archetype": "Battle Master",
+                "level": 15
+            },
+            "secondary_class": {
+                "class_name": "Barbarian",
+                "archetype": "Path of the Juggernaut",
+                "level": 5
+            }
+        },
+        "unique_attacks_weapons": [
+            "Flaming Greatsword",
+            "Throwing Hammer"
+        ],
+        "common_behaviors_actions": [
+            "Leading his fire giant kin with an iron fist and ruthless tactics.",
+            "Utilizing his strategic mind to outmaneuver his enemies in combat.",
+            "Wielding massive weapons with expert proficiency and deadly precision."
+        ],
+        "name": "King Snurre Ironbelly",
+        "hit_points": 345,
+        "armor_class": 21,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 28,
+            "dexterity": 12,
+            "constitution": 24,
+            "intelligence": 14,
+            "wisdom": 16,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "strength": "+14",
+            "dexterity": "+1",
+            "constitution": "+12",
+            "intelligence": "+2",
+            "wisdom": "+4",
+            "charisma": "+8"
+        },
+        "skills": [
+            "Athletics +14",
+            "Intimidation +10",
+            "Perception +8",
+            "Survival +8"
+        ],
+        "damage_resistances": "fire",
+        "condition_immunities": "none",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Giant, Common, Ignan",
+        "challenge": 18,
+        "special_abilities": [
+            "Fire Aura: King Snurre radiates intense heat. Any creature that starts its turn within 5 feet of him takes 10 (3d6) fire damage.",
+            "Ruthless Strike: King Snurre can add his proficiency bonus to damage rolls with melee weapons."
+        ],
+        "legendary_actions": {
+            "Detect": "King Snurre makes a Wisdom (Perception) check.",
+            "Move": "King Snurre moves up to his speed without provoking opportunity attacks.",
+            "Ignite Weapon (Costs 2 Actions)": "King Snurre sets a weapon he wields aflame, causing it to deal an extra 14 (4d6) fire damage on a hit for 1 minute."
+        },
+        "actions": [
+            "Multiattack: King Snurre makes three attacks with his Flaming Greatsword.",
+            "Flaming Greatsword: Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 23 (4d6 + 9) slashing damage plus 14 (4d6) fire damage.",
+            "Throwing Hammer: Ranged Weapon Attack: +14 to hit, range 60/240 ft., one target. Hit: 18 (3d8 + 9) bludgeoning damage plus 7 (2d6) fire damage."
+        ],
+        "bonus_actions": [
+            "Rage (4 uses/day): King Snurre can enter a rage as a bonus action, gaining resistance to bludgeoning, piercing, and slashing damage, and adding bonus damage to his melee attacks."
+        ],
+        "reactions": [
+            "Parry: King Snurre adds 4 to his AC against one melee attack that would hit him. To do so, King Snurre must see the attacker and be wielding a melee weapon."
+        ]
     }
+
+
 }

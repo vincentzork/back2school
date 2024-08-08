@@ -12,7 +12,7 @@ with open(data("legendary_giant_stat_blocks.json")) as f:
     legendary_giant_stat_blocks = json.load(f)
 
 thane_kayalithica_custom_stat_block = legendary_giant_stat_blocks["Thane Kayalithica"]
-
+king_snurre_ironbelly_custom_stat_block = legendary_giant_stat_blocks["King Snurre Ironbelly"]
 
 
 class CharacterClass(BaseModel):
