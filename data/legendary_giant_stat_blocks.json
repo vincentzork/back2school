@@ -21,6 +21,7 @@
             "Using her druidic powers to manipulate the earth and protect her people.",
             "Engaging in combat with both physical attacks and powerful spells."
         ],
+        "giant_type": "stone giant",
         "name": "Thane Kayalithica",
         "hit_points": 230,
         "armor_class": 18,
@@ -91,6 +92,7 @@
             "Utilizing his strategic mind to outmaneuver his enemies in combat.",
             "Wielding massive weapons with expert proficiency and deadly precision."
         ],
+        "giant_type": "fire giant",
         "name": "King Snurre Ironbelly",
         "hit_points": 345,
         "armor_class": 21,
@@ -142,7 +144,78 @@
         "reactions": [
             "Parry: King Snurre adds 4 to his AC against one melee attack that would hit him. To do so, King Snurre must see the attacker and be wielding a melee weapon."
         ]
+    },
+    "Queen Neri": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Druid",
+                "archetype": "Circle of the Sea",
+                "level": 15
+            },
+            "secondary_class": {
+                "class_name": "Sorcerer",
+                "archetype": "Storm Sorcery",
+                "level": 5
+            }
+        },
+        "unique_attacks_weapons": [
+            "Trident",
+            "Lightning Strike"
+        ],
+        "common_behaviors_actions": [
+            "Ruling her subjects with wisdom and a protective nature.",
+            "Using her control over weather and the sea to safeguard her domain.",
+            "Commanding aquatic creatures and summoning storms to defend against threats."
+        ],
+        "giant_type": "storm giant",
+        "name": "Queen Neri",
+        "hit_points": 310,
+        "armor_class": 20,
+        "speed": "50 ft., swim 100 ft.",
+        "abilities": {
+            "strength": 26,
+            "dexterity": 14,
+            "constitution": 22,
+            "intelligence": 18,
+            "wisdom": 20,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "strength": "+13",
+            "dexterity": "+3",
+            "constitution": "+11",
+            "intelligence": "+8",
+            "wisdom": "+10",
+            "charisma": "+8"
+        },
+        "skills": [
+            "Insight +10",
+            "Perception +10",
+            "Arcana +8",
+            "Nature +10"
+        ],
+        "damage_resistances": "lightning, thunder",
+        "condition_immunities": "none",
+        "senses": "darkvision 60 ft., passive Perception 20",
+        "languages": "Giant, Common, Aquan",
+        "challenge": 17,
+        "special_abilities": [
+            "Storm Aura: Queen Neri is surrounded by a swirling storm. Any creature that starts its turn within 10 feet of her takes 10 (3d6) lightning damage.",
+            "Aquatic Command: Queen Neri can command aquatic creatures within 60 feet. These creatures are charmed and obey her commands."
+        ],
+        "legendary_actions": {
+            "Detect": "Queen Neri makes a Wisdom (Perception) check.",
+            "Move": "Queen Neri moves up to her speed without provoking opportunity attacks.",
+            "Summon Storm (Costs 2 Actions)": "Queen Neri summons a storm within 60 feet, causing lightning strikes and heavy rain. Each creature within the area must make a DC 18 Dexterity saving throw, taking 14 (4d6) lightning damage on a failed save, or half as much damage on a successful one."
+        },
+        "actions": [
+            "Multiattack: Queen Neri makes three attacks with her Trident.",
+            "Trident: Melee or Ranged Weapon Attack: +13 to hit, reach 10 ft. or range 20/60 ft., one target. Hit: 21 (3d8 + 8) piercing damage.",
+            "Lightning Strike: Ranged Spell Attack: +10 to hit, range 120 ft., one target. Hit: 28 (8d6) lightning damage."
+        ],
+        "bonus_actions": [],
+        "reactions": [
+            "Shield: Queen Neri adds 5 to her AC against one attack that would hit her. To do so, she must see the attacker."
+        ]
     }
-
-
 }

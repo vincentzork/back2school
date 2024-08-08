@@ -90,3 +90,45 @@ def test_king_snurre_ironbelly_stat_block(king_snurre_ironbelly_stat_block):
         king_snurre_ironbelly_stat_block.reactions[0]
         == "Parry: King Snurre adds 4 to his AC against one melee attack that would hit him. To do so, King Snurre must see the attacker and be wielding a melee weapon."
     )
+
+@pytest.fixture
+def queen_neri_stat_block():
+    # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
+    return LegendaryGiantStatBlock(**legendary_giants.queen_neri_custom_stat_block)
+
+def test_queen_neri_stat_block(queen_neri_stat_block):
+    # Check if the Queen Neri StatBlock instance is created correctly
+    assert queen_neri_stat_block.name == "Queen Neri"
+    assert queen_neri_stat_block.hit_points == 310
+    assert queen_neri_stat_block.armor_class == 20
+    assert queen_neri_stat_block.speed == "50 ft., swim 100 ft."
+    assert queen_neri_stat_block.abilities.strength == 26
+    assert queen_neri_stat_block.saving_throws.strength == 13
+    assert "Insight +10" in queen_neri_stat_block.skills
+    assert queen_neri_stat_block.damage_resistances == "lightning, thunder"
+    assert queen_neri_stat_block.condition_immunities == "none"
+    assert queen_neri_stat_block.senses == "darkvision 60 ft., passive Perception 20"
+    assert queen_neri_stat_block.languages == "Giant, Common, Aquan"
+    assert queen_neri_stat_block.challenge == 17
+    assert (
+        "Storm Aura: Queen Neri is surrounded by a swirling storm. Any creature that starts its turn within 10 feet of her takes 10 (3d6) lightning damage."
+        in queen_neri_stat_block.special_abilities
+    )
+    assert (
+        queen_neri_stat_block.legendary_actions["Detect"]
+        == "Queen Neri makes a Wisdom (Perception) check."
+    )
+    assert (
+        queen_neri_stat_block.actions[0]
+        == "Multiattack: Queen Neri makes three attacks with her Trident."
+    )
+    assert (
+        queen_neri_stat_block.actions[1]
+        == "Trident: Melee or Ranged Weapon Attack: +13 to hit, reach 10 ft. or range 20/60 ft., one target. Hit: 21 (3d8 + 8) piercing damage."
+    )
+    # No bonus actions defined, but including an empty check
+    assert queen_neri_stat_block.bonus_actions == []
+    assert (
+        queen_neri_stat_block.reactions[0]
+        == "Shield: Queen Neri adds 5 to her AC against one attack that would hit her. To do so, she must see the attacker."
+    )

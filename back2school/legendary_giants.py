@@ -13,7 +13,7 @@ with open(data("legendary_giant_stat_blocks.json")) as f:
 
 thane_kayalithica_custom_stat_block = legendary_giant_stat_blocks["Thane Kayalithica"]
 king_snurre_ironbelly_custom_stat_block = legendary_giant_stat_blocks["King Snurre Ironbelly"]
-
+queen_neri_custom_stat_block = legendary_giant_stat_blocks["Queen Neri"]
 
 class CharacterClass(BaseModel):
     class_name: str
@@ -24,6 +24,7 @@ class LegendaryGiantStatBlock(BaseModel):
     character_class: Dict[str, CharacterClass]
     unique_attacks_weapons: List[str]
     common_behaviors_actions: List[str]
+    giant_type: str
     name: str
     hit_points: int
     armor_class: int
