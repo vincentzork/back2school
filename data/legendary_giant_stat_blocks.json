@@ -635,8 +635,77 @@
         "reactions": [
             "Stone Wall: Thalia can use her reaction to create a wall of stone that provides cover to her allies within 30 feet."
         ]
+    },
+    "Vaald the Wise": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Wizard",
+                "archetype": "School of Evocation",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Fire Staff",
+            "Flaming Sphere"
+        ],
+        "common_behaviors_actions": [
+            "Delving into ancient tomes and magical artifacts.",
+            "Using his intelligence and strategic mind to control the battlefield.",
+            "Unleashing devastating fire and elemental spells."
+        ],
+        "giant_type": "fire giant",
+        "name": "Vaald the Wise",
+        "hit_points": 320,
+        "armor_class": 18,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 23,
+            "dexterity": 14,
+            "constitution": 20,
+            "intelligence": 26,
+            "wisdom": 18,
+            "charisma": 16
+        },
+        "saving_throws": {
+            "strength": "+11",
+            "dexterity": "+2",
+            "constitution": "+10",
+            "intelligence": "+13",
+            "wisdom": "+9",
+            "charisma": "+8"
+        },
+        "skills": [
+            "Arcana +18",
+            "History +13",
+            "Insight +9",
+            "Investigation +13"
+        ],
+        "damage_resistances": "fire",
+        "condition_immunities": "none",
+        "senses": "darkvision 60 ft., passive Perception 19",
+        "languages": "Giant, Common, Draconic",
+        "challenge": 20,
+        "special_abilities": [
+            "Sculpt Spells: Vaald can create pockets of relative safety within the effects of his evocation spells. When he casts an evocation spell that affects other creatures that he can see, he can choose a number of them equal to 1 + the spell’s level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.",
+            "Arcane Recovery: Once per day when Vaald finishes a short rest, he can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half his wizard level (rounded up)."
+        ],
+        "legendary_actions": {
+            "Detect": "Vaald makes a Wisdom (Perception) check.",
+            "Move": "Vaald moves up to his speed without provoking opportunity attacks.",
+            "Fireball (Costs 2 Actions)": "Vaald casts Fireball."
+        },
+        "actions": [
+            "Multiattack: Vaald makes two attacks with his Fire Staff.",
+            "Fire Staff: Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage plus 14 (4d6) fire damage.",
+            "Flaming Sphere: Vaald conjures a flaming sphere at a point he can see within 60 feet. Each creature within 5 feet of the sphere must make a Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one."
+        ],
+        "bonus_actions": [],
+        "reactions": [
+            "Counterspell: Vaald can use his reaction to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, Vaald makes an ability check using his Intelligence modifier. The DC equals 10 + the spell’s level. On a success, the creature’s spell fails and has no effect."
+        ]
     }
 }
+
 
 
 

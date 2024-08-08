@@ -389,3 +389,46 @@ def test_thalia_rock_carver_stat_block(thalia_rock_carver_stat_block):
         thalia_rock_carver_stat_block.reactions[0]
         == "Stone Wall: Thalia can use her reaction to create a wall of stone that provides cover to her allies within 30 feet."
     )
+
+
+@pytest.fixture
+def vaald_the_wise_stat_block():
+    # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
+    return LegendaryGiantStatBlock(**legendary_giants.vaald_the_wise_custom_stat_block)
+
+def test_vaald_the_wise_stat_block(vaald_the_wise_stat_block):
+    # Check if the Vaald the Wise StatBlock instance is created correctly
+    assert vaald_the_wise_stat_block.name == "Vaald the Wise"
+    assert vaald_the_wise_stat_block.hit_points == 320
+    assert vaald_the_wise_stat_block.armor_class == 18
+    assert vaald_the_wise_stat_block.speed == "40 ft."
+    assert vaald_the_wise_stat_block.abilities.strength == 23
+    assert vaald_the_wise_stat_block.saving_throws.strength == 11
+    assert "Arcana +18" in vaald_the_wise_stat_block.skills
+    assert vaald_the_wise_stat_block.damage_resistances == "fire"
+    assert vaald_the_wise_stat_block.condition_immunities == "none"
+    assert vaald_the_wise_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+    assert vaald_the_wise_stat_block.languages == "Giant, Common, Draconic"
+    assert vaald_the_wise_stat_block.challenge == 20
+    assert (
+        "Sculpt Spells: Vaald can create pockets of relative safety within the effects of his evocation spells. When he casts an evocation spell that affects other creatures that he can see, he can choose a number of them equal to 1 + the spell’s level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
+        in vaald_the_wise_stat_block.special_abilities
+    )
+    assert (
+        vaald_the_wise_stat_block.legendary_actions["Detect"]
+        == "Vaald makes a Wisdom (Perception) check."
+    )
+    assert (
+        vaald_the_wise_stat_block.actions[0]
+        == "Multiattack: Vaald makes two attacks with his Fire Staff."
+    )
+    assert (
+        vaald_the_wise_stat_block.actions[1]
+        == "Fire Staff: Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage plus 14 (4d6) fire damage."
+    )
+    # No bonus actions defined, but including an empty check
+    assert vaald_the_wise_stat_block.bonus_actions == []
+    assert (
+        vaald_the_wise_stat_block.reactions[0]
+        == "Counterspell: Vaald can use his reaction to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, Vaald makes an ability check using his Intelligence modifier. The DC equals 10 + the spell’s level. On a success, the creature’s spell fails and has no effect."
+    )
