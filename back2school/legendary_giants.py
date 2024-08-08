@@ -23,6 +23,7 @@ thalia_rock_carver_custom_stat_block = legendary_giant_stat_blocks["Thalia Rock-
 vaald_the_wise_custom_stat_block = legendary_giant_stat_blocks["Vaald the Wise"]
 morak_thunderstep_custom_stat_block = legendary_giant_stat_blocks["Morak Thunderstep"]
 wiggan_nettlebee_custom_stat_block = legendary_giant_stat_blocks["Wiggan Nettlebee"]
+tartha_bear_slayer_custom_stat_block = legendary_giant_stat_blocks["Tartha Bear-Slayer"]
 
 class CharacterClass(BaseModel):
     class_name: str

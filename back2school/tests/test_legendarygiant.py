@@ -518,3 +518,46 @@ def test_wiggan_nettlebee_stat_block(wiggan_nettlebee_stat_block):
         wiggan_nettlebee_stat_block.reactions[0]
         == "Nature's Ward: When Wiggan is hit by an attack, he can use his reaction to gain resistance to all damage from the attack."
     )
+
+
+@pytest.fixture
+def tartha_bear_slayer_stat_block():
+    # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
+    return LegendaryGiantStatBlock(**legendary_giants.tartha_bear_slayer_custom_stat_block)
+
+def test_tartha_bear_slayer_stat_block(tartha_bear_slayer_stat_block):
+    # Check if the Tartha Bear-Slayer StatBlock instance is created correctly
+    assert tartha_bear_slayer_stat_block.name == "Tartha Bear-Slayer"
+    assert tartha_bear_slayer_stat_block.hit_points == 360
+    assert tartha_bear_slayer_stat_block.armor_class == 20
+    assert tartha_bear_slayer_stat_block.speed == "40 ft."
+    assert tartha_bear_slayer_stat_block.abilities.strength == 24
+    assert tartha_bear_slayer_stat_block.saving_throws.strength == 12
+    assert "Survival +15" in tartha_bear_slayer_stat_block.skills
+    assert tartha_bear_slayer_stat_block.damage_resistances == "bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert tartha_bear_slayer_stat_block.condition_immunities == "none"
+    assert tartha_bear_slayer_stat_block.senses == "darkvision 60 ft., passive Perception 25"
+    assert tartha_bear_slayer_stat_block.languages == "Giant, Common, Elvish"
+    assert tartha_bear_slayer_stat_block.challenge == 20
+    assert (
+        "Hunter's Mark: Tartha can use a bonus action to mark a target. She deals an extra 1d6 damage to the marked target whenever she hits it with a weapon attack."
+        in tartha_bear_slayer_stat_block.special_abilities
+    )
+    assert (
+        tartha_bear_slayer_stat_block.legendary_actions["Detect"]
+        == "Tartha makes a Wisdom (Perception) check."
+    )
+    assert (
+        tartha_bear_slayer_stat_block.actions[0]
+        == "Multiattack: Tartha makes two attacks with her Massive Longbow or Dire Bear Claws."
+    )
+    assert (
+        tartha_bear_slayer_stat_block.actions[1]
+        == "Massive Longbow: Ranged Weapon Attack: +11 to hit, range 150/600 ft., one target. Hit: 23 (3d10 + 6) piercing damage."
+    )
+    # No bonus actions defined, but including an empty check
+    assert tartha_bear_slayer_stat_block.bonus_actions == []
+    assert (
+        tartha_bear_slayer_stat_block.reactions[0]
+        == "Stone's Endurance: Tartha can use her reaction to roll a d12 and add her Constitution modifier to the result. She reduces the damage by that total."
+    )

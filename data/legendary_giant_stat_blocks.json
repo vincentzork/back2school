@@ -839,8 +839,78 @@
         "reactions": [
             "Nature's Ward: When Wiggan is hit by an attack, he can use his reaction to gain resistance to all damage from the attack."
         ]
+    },
+    "Tartha Bear-Slayer": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Ranger",
+                "archetype": "Hunter",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Massive Longbow",
+            "Dire Bear Claws"
+        ],
+        "common_behaviors_actions": [
+            "Tracking and hunting dangerous creatures to protect her clan.",
+            "Using her skills in ranged combat to take down targets from a distance.",
+            "Utilizing her keen senses and knowledge of the terrain to scout and survive in the wilderness."
+        ],
+        "giant_type": "stone giant",
+        "name": "Tartha Bear-Slayer",
+        "hit_points": 360,
+        "armor_class": 20,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 24,
+            "dexterity": 18,
+            "constitution": 20,
+            "intelligence": 14,
+            "wisdom": 20,
+            "charisma": 16
+        },
+        "saving_throws": {
+            "strength": "+12",
+            "dexterity": "+9",
+            "constitution": "+10",
+            "intelligence": "+7",
+            "wisdom": "+10",
+            "charisma": "+8"
+        },
+        "skills": [
+            "Survival +15",
+            "Perception +15",
+            "Stealth +9",
+            "Nature +10"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+        "condition_immunities": "none",
+        "senses": "darkvision 60 ft., passive Perception 25",
+        "languages": "Giant, Common, Elvish",
+        "challenge": 20,
+        "special_abilities": [
+            "Hunter's Mark: Tartha can use a bonus action to mark a target. She deals an extra 1d6 damage to the marked target whenever she hits it with a weapon attack.",
+            "Giant's Strength: Tartha has advantage on Strength checks and Strength saving throws."
+        ],
+        "legendary_actions": {
+            "Detect": "Tartha makes a Wisdom (Perception) check.",
+            "Move": "Tartha moves up to her speed without provoking opportunity attacks.",
+            "Volley (Costs 2 Actions)": "Tartha makes a ranged attack against any number of creatures within 10 feet of a point she can see within her longbow's range. She makes a separate attack roll for each target."
+        },
+        "actions": [
+            "Multiattack: Tartha makes two attacks with her Massive Longbow or Dire Bear Claws.",
+            "Massive Longbow: Ranged Weapon Attack: +11 to hit, range 150/600 ft., one target. Hit: 23 (3d10 + 6) piercing damage.",
+            "Dire Bear Claws: Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 6) slashing damage."
+        ],
+        "bonus_actions": [],
+        "reactions": [
+            "Stone's Endurance: Tartha can use her reaction to roll a d12 and add her Constitution modifier to the result. She reduces the damage by that total."
+        ]
     }
 }
+
+
 
 
 
