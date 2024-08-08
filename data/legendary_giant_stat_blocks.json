@@ -217,5 +217,79 @@
         "reactions": [
             "Shield: Queen Neri adds 5 to her AC against one attack that would hit her. To do so, she must see the attacker."
         ]
+    },
+    "King Hekaton": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Fighter",
+                "archetype": "Battle Master",
+                "level": 15
+            },
+            "secondary_class": {
+                "class_name": "Sorcerer",
+                "archetype": "Storm Sorcery",
+                "level": 5
+            }
+        },
+        "unique_attacks_weapons": [
+            "Thunderous Greatsword",
+            "Lightning Bolt"
+        ],
+        "common_behaviors_actions": [
+            "Ruling the storm giants with a combination of strength and wisdom.",
+            "Using his control over lightning and thunder to protect his kingdom.",
+            "Demonstrating masterful combat strategies and powerful elemental attacks."
+        ],
+        "giant_type": "storm giant",
+        "name": "King Hekaton",
+        "hit_points": 350,
+        "armor_class": 22,
+        "speed": "50 ft., swim 50 ft.",
+        "abilities": {
+            "strength": 29,
+            "dexterity": 14,
+            "constitution": 26,
+            "intelligence": 18,
+            "wisdom": 20,
+            "charisma": 19
+        },
+        "saving_throws": {
+            "strength": "+15",
+            "dexterity": "+3",
+            "constitution": "+13",
+            "intelligence": "+8",
+            "wisdom": "+10",
+            "charisma": "+9"
+        },
+        "skills": [
+            "Athletics +15",
+            "Intimidation +9",
+            "Perception +10",
+            "Insight +10"
+        ],
+        "damage_resistances": "lightning, thunder",
+        "condition_immunities": "none",
+        "senses": "darkvision 60 ft., passive Perception 20",
+        "languages": "Giant, Common, Primordial",
+        "challenge": 19,
+        "special_abilities": [
+            "Storm Aura: King Hekaton is surrounded by a raging storm. Any creature that starts its turn within 10 feet of him takes 10 (3d6) lightning damage.",
+            "Elemental Command: King Hekaton can command elemental forces within 60 feet. These elements respond to his will, causing various effects in his favor."
+        ],
+        "legendary_actions": {
+            "Detect": "King Hekaton makes a Wisdom (Perception) check.",
+            "Move": "King Hekaton moves up to his speed without provoking opportunity attacks.",
+            "Thunderclap (Costs 2 Actions)": "King Hekaton creates a thunderclap within 60 feet, causing a thunderous boom. Each creature within the area must make a DC 19 Constitution saving throw, taking 14 (4d6) thunder damage on a failed save, or half as much damage on a successful one."
+        },
+        "actions": [
+            "Multiattack: King Hekaton makes three attacks with his Thunderous Greatsword.",
+            "Thunderous Greatsword: Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 24 (4d6 + 10) slashing damage plus 14 (4d6) thunder damage.",
+            "Lightning Bolt: Ranged Spell Attack: +10 to hit, range 120 ft., one target. Hit: 35 (10d6) lightning damage."
+        ],
+        "bonus_actions": [],
+        "reactions": [
+            "Parry: King Hekaton adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
+        ]
     }
 }
+

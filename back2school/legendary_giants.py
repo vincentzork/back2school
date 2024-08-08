@@ -14,7 +14,7 @@ with open(data("legendary_giant_stat_blocks.json")) as f:
 thane_kayalithica_custom_stat_block = legendary_giant_stat_blocks["Thane Kayalithica"]
 king_snurre_ironbelly_custom_stat_block = legendary_giant_stat_blocks["King Snurre Ironbelly"]
 queen_neri_custom_stat_block = legendary_giant_stat_blocks["Queen Neri"]
-
+king_hekaton_custom_stat_block = legendary_giant_stat_blocks["King Hekaton"]
 class CharacterClass(BaseModel):
     class_name: str
     archetype: str
