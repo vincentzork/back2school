@@ -217,3 +217,47 @@ def test_chief_nosnra_stat_block(chief_nosnra_stat_block):
         chief_nosnra_stat_block.reactions[0]
         == "Parry: Chief Nosnra adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
     )
+
+
+@pytest.fixture
+def harshnag_the_grim_stat_block():
+    # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
+    return LegendaryGiantStatBlock(**legendary_giants.harshnag_the_grim_custom_stat_block)
+
+def test_harshnag_the_grim_stat_block(harshnag_the_grim_stat_block):
+    # Check if the Harshnag the Grim StatBlock instance is created correctly
+    assert harshnag_the_grim_stat_block.name == "Harshnag the Grim"
+    assert harshnag_the_grim_stat_block.hit_points == 450
+    assert harshnag_the_grim_stat_block.armor_class == 22
+    assert harshnag_the_grim_stat_block.speed == "40 ft."
+    assert harshnag_the_grim_stat_block.abilities.strength == 28
+    assert harshnag_the_grim_stat_block.saving_throws.strength == 15
+    assert "Athletics +15" in harshnag_the_grim_stat_block.skills
+    assert harshnag_the_grim_stat_block.damage_resistances == "cold"
+    assert harshnag_the_grim_stat_block.condition_immunities == "none"
+    assert harshnag_the_grim_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+    assert harshnag_the_grim_stat_block.languages == "Giant, Common"
+    assert harshnag_the_grim_stat_block.challenge == 20
+    assert (
+        "Great Weapon Fighting: When Harshnag rolls a 1 or 2 on a damage die for an attack he makes with a melee weapon that he is wielding with two hands, he can reroll the die and must use the new roll."
+        in harshnag_the_grim_stat_block.special_abilities
+    )
+    assert (
+        harshnag_the_grim_stat_block.legendary_actions["Detect"]
+        == "Harshnag makes a Wisdom (Perception) check."
+    )
+    assert (
+        harshnag_the_grim_stat_block.actions[0]
+        == "Multiattack: Harshnag makes three attacks with his Greataxe."
+    )
+    assert (
+        harshnag_the_grim_stat_block.actions[1]
+        == "Greataxe: Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 25 (3d12 + 8) slashing damage."
+    )
+    # No bonus actions defined, but including an empty check
+    assert harshnag_the_grim_stat_block.bonus_actions == []
+    assert (
+        harshnag_the_grim_stat_block.reactions[0]
+        == "Parry: Harshnag adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
+    )
+

@@ -16,6 +16,7 @@ king_snurre_ironbelly_custom_stat_block = legendary_giant_stat_blocks["King Snur
 queen_neri_custom_stat_block = legendary_giant_stat_blocks["Queen Neri"]
 king_hekaton_custom_stat_block = legendary_giant_stat_blocks["King Hekaton"]
 chief_nosnra_custom_stat_block = legendary_giant_stat_blocks["Chief Nosnra"]
+harshnag_the_grim_custom_stat_block = legendary_giant_stat_blocks["Harshnag the Grim"]
 
 class CharacterClass(BaseModel):
     class_name: str

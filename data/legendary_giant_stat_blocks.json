@@ -363,7 +363,76 @@
         "reactions": [
             "Parry: Chief Nosnra adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
         ]
+    },
+    "Harshnag the Grim": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Fighter",
+                "archetype": "Champion",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Greataxe",
+            "Thrown Boulder"
+        ],
+        "common_behaviors_actions": [
+            "Serving as a guide and protector in the wilderness.",
+            "Assisting adventurers in their quests with honor and justice.",
+            "Demonstrating exceptional combat prowess and tactical acumen."
+        ],
+        "giant_type": "frost giant",
+        "name": "Harshnag the Grim",
+        "hit_points": 450,
+        "armor_class": 22,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 28,
+            "dexterity": 13,
+            "constitution": 26,
+            "intelligence": 14,
+            "wisdom": 16,
+            "charisma": 14
+        },
+        "saving_throws": {
+            "strength": "+15",
+            "dexterity": "+1",
+            "constitution": "+13",
+            "intelligence": "+2",
+            "wisdom": "+8",
+            "charisma": "+6"
+        },
+        "skills": [
+            "Athletics +15",
+            "Survival +8",
+            "Perception +8",
+            "Intimidation +6"
+        ],
+        "damage_resistances": "cold",
+        "condition_immunities": "none",
+        "senses": "darkvision 60 ft., passive Perception 19",
+        "languages": "Giant, Common",
+        "challenge": 20,
+        "special_abilities": [
+            "Great Weapon Fighting: When Harshnag rolls a 1 or 2 on a damage die for an attack he makes with a melee weapon that he is wielding with two hands, he can reroll the die and must use the new roll.",
+            "Indomitable (3/Day): Harshnag can reroll a saving throw that he fails. If he does so, he must use the new roll."
+        ],
+        "legendary_actions": {
+            "Detect": "Harshnag makes a Wisdom (Perception) check.",
+            "Move": "Harshnag moves up to his speed without provoking opportunity attacks.",
+            "Cleave (Costs 2 Actions)": "Harshnag makes a melee attack against a target within 10 feet. If the attack hits, it deals an additional 14 (4d6) slashing damage and can target another creature within reach if the initial attack reduces the target to 0 hit points."
+        },
+        "actions": [
+            "Multiattack: Harshnag makes three attacks with his Greataxe.",
+            "Greataxe: Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 25 (3d12 + 8) slashing damage.",
+            "Thrown Boulder: Ranged Weapon Attack: +15 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 9) bludgeoning damage."
+        ],
+        "bonus_actions": [],
+        "reactions": [
+            "Parry: Harshnag adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
+        ]
     }
 }
+
 
 
