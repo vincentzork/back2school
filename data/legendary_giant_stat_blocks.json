@@ -703,8 +703,78 @@
         "reactions": [
             "Counterspell: Vaald can use his reaction to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, Vaald makes an ability check using his Intelligence modifier. The DC equals 10 + the spell’s level. On a success, the creature’s spell fails and has no effect."
         ]
+    },
+    "Morak Thunderstep": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Sorcerer",
+                "archetype": "Storm Sorcery",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Lightning Staff",
+            "Thunderous Blast"
+        ],
+        "common_behaviors_actions": [
+            "Manipulating weather patterns to protect his domain.",
+            "Summoning storms and unleashing lightning strikes.",
+            "Using his charisma and magical command to lead and intimidate."
+        ],
+        "giant_type": "cloud giant",
+        "name": "Morak Thunderstep",
+        "hit_points": 350,
+        "armor_class": 19,
+        "speed": "40 ft., fly 60 ft.",
+        "abilities": {
+            "strength": 22,
+            "dexterity": 14,
+            "constitution": 20,
+            "intelligence": 16,
+            "wisdom": 18,
+            "charisma": 26
+        },
+        "saving_throws": {
+            "strength": "+11",
+            "dexterity": "+2",
+            "constitution": "+10",
+            "intelligence": "+8",
+            "wisdom": "+9",
+            "charisma": "+13"
+        },
+        "skills": [
+            "Arcana +13",
+            "Deception +13",
+            "Intimidation +13",
+            "Perception +9"
+        ],
+        "damage_resistances": "lightning, thunder",
+        "condition_immunities": "none",
+        "senses": "darkvision 60 ft., passive Perception 19",
+        "languages": "Giant, Common, Primordial",
+        "challenge": 20,
+        "special_abilities": [
+            "Tempestuous Magic: Morak can use a bonus action on his turn to cause whirling gusts of elemental air to briefly surround him, immediately before or after he casts a spell of 1st level or higher. Doing so allows him to fly up to 10 feet without provoking opportunity attacks.",
+            "Heart of the Storm: Morak has resistance to lightning and thunder damage. When he starts casting a spell of 1st level or higher that deals lightning or thunder damage, stormy magic erupts from him. This eruption causes creatures of his choice that he can see within 10 feet to take lightning or thunder damage (choose each time this ability activates) equal to half his sorcerer level."
+        ],
+        "legendary_actions": {
+            "Detect": "Morak makes a Wisdom (Perception) check.",
+            "Move": "Morak moves up to his speed without provoking opportunity attacks.",
+            "Storm Bolt (Costs 2 Actions)": "Morak hurls a bolt of lightning at a target within 120 feet. The target must make a DC 20 Dexterity saving throw, taking 28 (8d6) lightning damage on a failed save, or half as much damage on a successful one."
+        },
+        "actions": [
+            "Multiattack: Morak makes two attacks with his Lightning Staff.",
+            "Lightning Staff: Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage plus 14 (4d6) lightning damage.",
+            "Thunderous Blast: Morak creates a burst of thunderous sound. Each creature within 20 feet of him must make a DC 20 Constitution saving throw, taking 21 (6d6) thunder damage on a failed save, or half as much damage on a successful one."
+        ],
+        "bonus_actions": [],
+        "reactions": [
+            "Storm's Fury: When a creature hits Morak with a melee attack, he can use his reaction to deal lightning damage to the attacker. The attacker must make a DC 20 Dexterity saving throw, taking 21 (6d6) lightning damage on a failed save, or half as much damage on a successful one."
+        ]
     }
 }
+
+
 
 
 

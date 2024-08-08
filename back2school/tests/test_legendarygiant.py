@@ -432,3 +432,46 @@ def test_vaald_the_wise_stat_block(vaald_the_wise_stat_block):
         vaald_the_wise_stat_block.reactions[0]
         == "Counterspell: Vaald can use his reaction to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, Vaald makes an ability check using his Intelligence modifier. The DC equals 10 + the spell’s level. On a success, the creature’s spell fails and has no effect."
     )
+
+
+@pytest.fixture
+def morak_thunderstep_stat_block():
+    # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
+    return LegendaryGiantStatBlock(**legendary_giants.morak_thunderstep_custom_stat_block)
+
+def test_morak_thunderstep_stat_block(morak_thunderstep_stat_block):
+    # Check if the Morak Thunderstep StatBlock instance is created correctly
+    assert morak_thunderstep_stat_block.name == "Morak Thunderstep"
+    assert morak_thunderstep_stat_block.hit_points == 350
+    assert morak_thunderstep_stat_block.armor_class == 19
+    assert morak_thunderstep_stat_block.speed == "40 ft., fly 60 ft."
+    assert morak_thunderstep_stat_block.abilities.strength == 22
+    assert morak_thunderstep_stat_block.saving_throws.strength == 11
+    assert "Arcana +13" in morak_thunderstep_stat_block.skills
+    assert morak_thunderstep_stat_block.damage_resistances == "lightning, thunder"
+    assert morak_thunderstep_stat_block.condition_immunities == "none"
+    assert morak_thunderstep_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+    assert morak_thunderstep_stat_block.languages == "Giant, Common, Primordial"
+    assert morak_thunderstep_stat_block.challenge == 20
+    assert (
+        "Tempestuous Magic: Morak can use a bonus action on his turn to cause whirling gusts of elemental air to briefly surround him, immediately before or after he casts a spell of 1st level or higher. Doing so allows him to fly up to 10 feet without provoking opportunity attacks."
+        in morak_thunderstep_stat_block.special_abilities
+    )
+    assert (
+        morak_thunderstep_stat_block.legendary_actions["Detect"]
+        == "Morak makes a Wisdom (Perception) check."
+    )
+    assert (
+        morak_thunderstep_stat_block.actions[0]
+        == "Multiattack: Morak makes two attacks with his Lightning Staff."
+    )
+    assert (
+        morak_thunderstep_stat_block.actions[1]
+        == "Lightning Staff: Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage plus 14 (4d6) lightning damage."
+    )
+    # No bonus actions defined, but including an empty check
+    assert morak_thunderstep_stat_block.bonus_actions == []
+    assert (
+        morak_thunderstep_stat_block.reactions[0]
+        == "Storm's Fury: When a creature hits Morak with a melee attack, he can use his reaction to deal lightning damage to the attacker. The attacker must make a DC 20 Dexterity saving throw, taking 21 (6d6) lightning damage on a failed save, or half as much damage on a successful one."
+    )
