@@ -567,8 +567,78 @@
         "reactions": [
             "Cutting Words: When a creature Sylara can see within 60 feet makes an attack roll, ability check, or damage roll, she can use her reaction to expend one use of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature’s roll."
         ]
+    },
+    "Thalia Rock-Carver": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Cleric",
+                "archetype": "Earth Domain",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Warhammer",
+            "Stone Fist"
+        ],
+        "common_behaviors_actions": [
+            "Serving as a spiritual leader for her community.",
+            "Using her wisdom to guide and protect her people.",
+            "Manipulating stone and earth to create barriers and sanctuaries."
+        ],
+        "giant_type": "stone giant",
+        "name": "Thalia Rock-Carver",
+        "hit_points": 400,
+        "armor_class": 22,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 24,
+            "dexterity": 14,
+            "constitution": 22,
+            "intelligence": 16,
+            "wisdom": 22,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "strength": "+12",
+            "dexterity": "+2",
+            "constitution": "+11",
+            "intelligence": "+8",
+            "wisdom": "+11",
+            "charisma": "+9"
+        },
+        "skills": [
+            "Insight +11",
+            "Perception +11",
+            "Religion +8",
+            "Medicine +11"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+        "condition_immunities": "none",
+        "senses": "darkvision 60 ft., passive Perception 21",
+        "languages": "Giant, Common, Terran",
+        "challenge": 20,
+        "special_abilities": [
+            "Divine Intervention (1/Day): Thalia can call on her deity to intervene on her behalf when her need is great.",
+            "Stone Shape: Thalia can manipulate stone to create barriers, bridges, or sanctuaries."
+        ],
+        "legendary_actions": {
+            "Detect": "Thalia makes a Wisdom (Perception) check.",
+            "Move": "Thalia moves up to her speed without provoking opportunity attacks.",
+            "Earthquake (Costs 2 Actions)": "Thalia causes the ground to shake violently. Each creature other than her within 30 feet must succeed on a DC 20 Dexterity saving throw or be knocked prone and take 14 (4d6) bludgeoning damage."
+        },
+        "actions": [
+            "Multiattack: Thalia makes two attacks with her Warhammer.",
+            "Warhammer: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.",
+            "Stone Fist: Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 22 (4d8 + 6) bludgeoning damage."
+        ],
+        "bonus_actions": [],
+        "reactions": [
+            "Stone Wall: Thalia can use her reaction to create a wall of stone that provides cover to her allies within 30 feet."
+        ]
     }
 }
+
+
 
 
 

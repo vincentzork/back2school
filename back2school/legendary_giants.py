@@ -19,6 +19,7 @@ chief_nosnra_custom_stat_block = legendary_giant_stat_blocks["Chief Nosnra"]
 harshnag_the_grim_custom_stat_block = legendary_giant_stat_blocks["Harshnag the Grim"]
 jarl_grugnur_custom_stat_block = legendary_giant_stat_blocks["Jarl Grugnur"]
 sylara_leafweaver_custom_stat_block = legendary_giant_stat_blocks["Sylara Leafweaver"]
+thalia_rock_carver_custom_stat_block = legendary_giant_stat_blocks["Thalia Rock-Carver"]
 
 class CharacterClass(BaseModel):
     class_name: str

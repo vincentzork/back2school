@@ -346,3 +346,46 @@ def test_sylara_leafweaver_stat_block(sylara_leafweaver_stat_block):
         sylara_leafweaver_stat_block.reactions[0]
         == "Cutting Words: When a creature Sylara can see within 60 feet makes an attack roll, ability check, or damage roll, she can use her reaction to expend one use of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature’s roll."
     )
+
+
+@pytest.fixture
+def thalia_rock_carver_stat_block():
+    # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
+    return LegendaryGiantStatBlock(**legendary_giants.thalia_rock_carver_custom_stat_block)
+
+def test_thalia_rock_carver_stat_block(thalia_rock_carver_stat_block):
+    # Check if the Thalia Rock-Carver StatBlock instance is created correctly
+    assert thalia_rock_carver_stat_block.name == "Thalia Rock-Carver"
+    assert thalia_rock_carver_stat_block.hit_points == 400
+    assert thalia_rock_carver_stat_block.armor_class == 22
+    assert thalia_rock_carver_stat_block.speed == "40 ft."
+    assert thalia_rock_carver_stat_block.abilities.strength == 24
+    assert thalia_rock_carver_stat_block.saving_throws.strength == 12
+    assert "Insight +11" in thalia_rock_carver_stat_block.skills
+    assert thalia_rock_carver_stat_block.damage_resistances == "bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert thalia_rock_carver_stat_block.condition_immunities == "none"
+    assert thalia_rock_carver_stat_block.senses == "darkvision 60 ft., passive Perception 21"
+    assert thalia_rock_carver_stat_block.languages == "Giant, Common, Terran"
+    assert thalia_rock_carver_stat_block.challenge == 20
+    assert (
+        "Divine Intervention (1/Day): Thalia can call on her deity to intervene on her behalf when her need is great."
+        in thalia_rock_carver_stat_block.special_abilities
+    )
+    assert (
+        thalia_rock_carver_stat_block.legendary_actions["Detect"]
+        == "Thalia makes a Wisdom (Perception) check."
+    )
+    assert (
+        thalia_rock_carver_stat_block.actions[0]
+        == "Multiattack: Thalia makes two attacks with her Warhammer."
+    )
+    assert (
+        thalia_rock_carver_stat_block.actions[1]
+        == "Warhammer: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage."
+    )
+    # No bonus actions defined, but including an empty check
+    assert thalia_rock_carver_stat_block.bonus_actions == []
+    assert (
+        thalia_rock_carver_stat_block.reactions[0]
+        == "Stone Wall: Thalia can use her reaction to create a wall of stone that provides cover to her allies within 30 feet."
+    )
