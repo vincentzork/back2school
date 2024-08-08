@@ -175,3 +175,45 @@ def test_king_hekaton_stat_block(king_hekaton_stat_block):
         == "Parry: King Hekaton adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
     )
 
+
+@pytest.fixture
+def chief_nosnra_stat_block():
+    # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
+    return LegendaryGiantStatBlock(**legendary_giants.chief_nosnra_custom_stat_block)
+
+def test_chief_nosnra_stat_block(chief_nosnra_stat_block):
+    # Check if the Chief Nosnra StatBlock instance is created correctly
+    assert chief_nosnra_stat_block.name == "Chief Nosnra"
+    assert chief_nosnra_stat_block.hit_points == 340
+    assert chief_nosnra_stat_block.armor_class == 19
+    assert chief_nosnra_stat_block.speed == "40 ft."
+    assert chief_nosnra_stat_block.abilities.strength == 27
+    assert chief_nosnra_stat_block.saving_throws.strength == 14
+    assert "Athletics +14" in chief_nosnra_stat_block.skills
+    assert chief_nosnra_stat_block.damage_resistances == "bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert chief_nosnra_stat_block.condition_immunities == "none"
+    assert chief_nosnra_stat_block.senses == "darkvision 60 ft., passive Perception 18"
+    assert chief_nosnra_stat_block.languages == "Giant, Common"
+    assert chief_nosnra_stat_block.challenge == 18
+    assert (
+        "Rallying Cry: Chief Nosnra can use a bonus action to bolster his allies, granting them advantage on their next attack roll or saving throw."
+        in chief_nosnra_stat_block.special_abilities
+    )
+    assert (
+        chief_nosnra_stat_block.legendary_actions["Detect"]
+        == "Chief Nosnra makes a Wisdom (Perception) check."
+    )
+    assert (
+        chief_nosnra_stat_block.actions[0]
+        == "Multiattack: Chief Nosnra makes three attacks with his Greatclub."
+    )
+    assert (
+        chief_nosnra_stat_block.actions[1]
+        == "Greatclub: Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 23 (3d8 + 10) bludgeoning damage."
+    )
+    # No bonus actions defined, but including an empty check
+    assert chief_nosnra_stat_block.bonus_actions == []
+    assert (
+        chief_nosnra_stat_block.reactions[0]
+        == "Parry: Chief Nosnra adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
+    )

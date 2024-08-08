@@ -290,6 +290,80 @@
         "reactions": [
             "Parry: King Hekaton adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
         ]
+    },
+    "Chief Nosnra": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Barbarian",
+                "archetype": "Path of the Juggernaut",
+                "level": 15
+            },
+            "secondary_class": {
+                "class_name": "Fighter",
+                "archetype": "Battle Master",
+                "level": 5
+            }
+        },
+        "unique_attacks_weapons": [
+            "Greatclub",
+            "Thrown Boulder"
+        ],
+        "common_behaviors_actions": [
+            "Leading raids against settlements to expand his territory.",
+            "Using his brute strength and cunning to outmatch his enemies.",
+            "Rallying other giants to his cause with his leadership and combat prowess."
+        ],
+        "giant_type": "hill giant",
+        "name": "Chief Nosnra",
+        "hit_points": 340,
+        "armor_class": 19,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 27,
+            "dexterity": 14,
+            "constitution": 24,
+            "intelligence": 12,
+            "wisdom": 16,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "strength": "+14",
+            "dexterity": "+3",
+            "constitution": "+12",
+            "intelligence": "+1",
+            "wisdom": "+8",
+            "charisma": "+8"
+        },
+        "skills": [
+            "Athletics +14",
+            "Intimidation +9",
+            "Perception +8",
+            "Survival +8"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+        "condition_immunities": "none",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Giant, Common",
+        "challenge": 18,
+        "special_abilities": [
+            "Rallying Cry: Chief Nosnra can use a bonus action to bolster his allies, granting them advantage on their next attack roll or saving throw.",
+            "Unstoppable Force: Chief Nosnra can charge through enemies, knocking them prone if they fail a DC 18 Strength saving throw."
+        ],
+        "legendary_actions": {
+            "Detect": "Chief Nosnra makes a Wisdom (Perception) check.",
+            "Move": "Chief Nosnra moves up to his speed without provoking opportunity attacks.",
+            "Brutal Slam (Costs 2 Actions)": "Chief Nosnra makes a melee attack against a target within 10 feet. If the attack hits, the target takes an additional 14 (4d6) bludgeoning damage and must succeed on a DC 18 Strength saving throw or be knocked prone."
+        },
+        "actions": [
+            "Multiattack: Chief Nosnra makes three attacks with his Greatclub.",
+            "Greatclub: Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 23 (3d8 + 10) bludgeoning damage.",
+            "Thrown Boulder: Ranged Weapon Attack: +14 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 9) bludgeoning damage."
+        ],
+        "bonus_actions": [],
+        "reactions": [
+            "Parry: Chief Nosnra adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
+        ]
     }
 }
+
 
