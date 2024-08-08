@@ -304,3 +304,45 @@ def test_jarl_grugnur_stat_block(jarl_grugnur_stat_block):
         == "Parry: Jarl Grugnur adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
     )
 
+
+@pytest.fixture
+def sylara_leafweaver_stat_block():
+    # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
+    return LegendaryGiantStatBlock(**legendary_giants.sylara_leafweaver_custom_stat_block)
+
+def test_sylara_leafweaver_stat_block(sylara_leafweaver_stat_block):
+    # Check if the Sylara Leafweaver StatBlock instance is created correctly
+    assert sylara_leafweaver_stat_block.name == "Sylara Leafweaver"
+    assert sylara_leafweaver_stat_block.hit_points == 380
+    assert sylara_leafweaver_stat_block.armor_class == 20
+    assert sylara_leafweaver_stat_block.speed == "40 ft."
+    assert sylara_leafweaver_stat_block.abilities.strength == 22
+    assert sylara_leafweaver_stat_block.saving_throws.strength == 11
+    assert "Performance +18" in sylara_leafweaver_stat_block.skills
+    assert sylara_leafweaver_stat_block.damage_resistances == "thunder"
+    assert sylara_leafweaver_stat_block.condition_immunities == "none"
+    assert sylara_leafweaver_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+    assert sylara_leafweaver_stat_block.languages == "Giant, Common, Elvish"
+    assert sylara_leafweaver_stat_block.challenge == 20
+    assert (
+        "Bardic Inspiration (d12, 5/Day): Sylara can use a bonus action to give one creature within 60 feet an inspiration die."
+        in sylara_leafweaver_stat_block.special_abilities
+    )
+    assert (
+        sylara_leafweaver_stat_block.legendary_actions["Detect"]
+        == "Sylara makes a Wisdom (Perception) check."
+    )
+    assert (
+        sylara_leafweaver_stat_block.actions[0]
+        == "Multiattack: Sylara makes two attacks with her Rapier."
+    )
+    assert (
+        sylara_leafweaver_stat_block.actions[1]
+        == "Rapier: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) piercing damage."
+    )
+    # No bonus actions defined, but including an empty check
+    assert sylara_leafweaver_stat_block.bonus_actions == []
+    assert (
+        sylara_leafweaver_stat_block.reactions[0]
+        == "Cutting Words: When a creature Sylara can see within 60 feet makes an attack roll, ability check, or damage roll, she can use her reaction to expend one use of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature’s roll."
+    )

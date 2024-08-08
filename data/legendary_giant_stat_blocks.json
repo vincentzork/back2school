@@ -499,8 +499,78 @@
         "reactions": [
             "Parry: Jarl Grugnur adds 4 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
         ]
+    },
+    "Sylara Leafweaver": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Bard",
+                "archetype": "College of Lore",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Rapier",
+            "Thrown Harp"
+        ],
+        "common_behaviors_actions": [
+            "Using her enchanting music and storytelling to inspire and charm.",
+            "Wandering as a minstrel and diplomat.",
+            "Influencing emotions, healing, and inspiring courage in her allies."
+        ],
+        "giant_type": "cloud giant",
+        "name": "Sylara Leafweaver",
+        "hit_points": 380,
+        "armor_class": 20,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 22,
+            "dexterity": 18,
+            "constitution": 20,
+            "intelligence": 16,
+            "wisdom": 18,
+            "charisma": 24
+        },
+        "saving_throws": {
+            "strength": "+11",
+            "dexterity": "+9",
+            "constitution": "+10",
+            "intelligence": "+8",
+            "wisdom": "+9",
+            "charisma": "+12"
+        },
+        "skills": [
+            "Performance +18",
+            "Persuasion +12",
+            "Insight +9",
+            "Perception +9"
+        ],
+        "damage_resistances": "thunder",
+        "condition_immunities": "none",
+        "senses": "darkvision 60 ft., passive Perception 19",
+        "languages": "Giant, Common, Elvish",
+        "challenge": 20,
+        "special_abilities": [
+            "Bardic Inspiration (d12, 5/Day): Sylara can use a bonus action to give one creature within 60 feet an inspiration die.",
+            "Countercharm: Sylara can use an action to grant herself and allies within 30 feet advantage on saving throws against being frightened or charmed."
+        ],
+        "legendary_actions": {
+            "Detect": "Sylara makes a Wisdom (Perception) check.",
+            "Move": "Sylara moves up to her speed without provoking opportunity attacks.",
+            "Enchanting Melody (Costs 2 Actions)": "Sylara plays an enchanting melody. Each creature of her choice within 30 feet must succeed on a DC 20 Wisdom saving throw or be charmed for 1 minute."
+        },
+        "actions": [
+            "Multiattack: Sylara makes two attacks with her Rapier.",
+            "Rapier: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) piercing damage.",
+            "Thrown Harp: Ranged Weapon Attack: +12 to hit, range 20/60 ft., one target. Hit: 18 (3d8 + 6) bludgeoning damage."
+        ],
+        "bonus_actions": [],
+        "reactions": [
+            "Cutting Words: When a creature Sylara can see within 60 feet makes an attack roll, ability check, or damage roll, she can use her reaction to expend one use of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature’s roll."
+        ]
     }
 }
+
+
 
 
 
