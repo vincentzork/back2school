@@ -20,10 +20,12 @@ obould_custom_stat_block = legendary_humanoid_stat_blocks["Obould"]
 karzoug_custom_stat_block = legendary_humanoid_stat_blocks["Karzoug"]
 sharak_custom_stat_block = legendary_humanoid_stat_blocks["Sharak"]
 
+
 class CharacterClass(BaseModel):
     class_name: str
     archetype: str
     level: int
+
 
 class HumanoidChampionStatBlock(BaseModel):
     character_class: Dict[str, CharacterClass]

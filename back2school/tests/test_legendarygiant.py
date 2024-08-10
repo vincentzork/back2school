@@ -4,10 +4,14 @@ from .. import legendary_giants
 
 from ..legendary_giants import LegendaryGiantStatBlock
 
+
 @pytest.fixture
 def thane_kayalithica_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
-    return LegendaryGiantStatBlock(**legendary_giants.thane_kayalithica_custom_stat_block)
+    return LegendaryGiantStatBlock(
+        **legendary_giants.thane_kayalithica_custom_stat_block
+    )
+
 
 def test_thane_kayalithica_stat_block(thane_kayalithica_stat_block):
     # Check if the Thane Kayalithica StatBlock instance is created correctly
@@ -23,7 +27,10 @@ def test_thane_kayalithica_stat_block(thane_kayalithica_stat_block):
         == "bludgeoning, piercing, and slashing from nonmagical attacks"
     )
     assert thane_kayalithica_stat_block.condition_immunities == "none"
-    assert thane_kayalithica_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+    assert (
+        thane_kayalithica_stat_block.senses
+        == "darkvision 60 ft., passive Perception 19"
+    )
     assert thane_kayalithica_stat_block.languages == "Giant, Terran"
     assert thane_kayalithica_stat_block.challenge == 13
     assert (
@@ -47,10 +54,14 @@ def test_thane_kayalithica_stat_block(thane_kayalithica_stat_block):
     # No reactions defined, but including an empty check
     assert thane_kayalithica_stat_block.reactions == []
 
+
 @pytest.fixture
 def king_snurre_ironbelly_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
-    return LegendaryGiantStatBlock(**legendary_giants.king_snurre_ironbelly_custom_stat_block)
+    return LegendaryGiantStatBlock(
+        **legendary_giants.king_snurre_ironbelly_custom_stat_block
+    )
+
 
 def test_king_snurre_ironbelly_stat_block(king_snurre_ironbelly_stat_block):
     # Check if the King Snurre Ironbelly StatBlock instance is created correctly
@@ -63,7 +74,10 @@ def test_king_snurre_ironbelly_stat_block(king_snurre_ironbelly_stat_block):
     assert "Athletics +14" in king_snurre_ironbelly_stat_block.skills
     assert king_snurre_ironbelly_stat_block.damage_resistances == "fire"
     assert king_snurre_ironbelly_stat_block.condition_immunities == "none"
-    assert king_snurre_ironbelly_stat_block.senses == "darkvision 60 ft., passive Perception 18"
+    assert (
+        king_snurre_ironbelly_stat_block.senses
+        == "darkvision 60 ft., passive Perception 18"
+    )
     assert king_snurre_ironbelly_stat_block.languages == "Giant, Common, Ignan"
     assert king_snurre_ironbelly_stat_block.challenge == 18
     assert (
@@ -91,10 +105,12 @@ def test_king_snurre_ironbelly_stat_block(king_snurre_ironbelly_stat_block):
         == "Parry: King Snurre adds 4 to his AC against one melee attack that would hit him. To do so, King Snurre must see the attacker and be wielding a melee weapon."
     )
 
+
 @pytest.fixture
 def queen_neri_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
     return LegendaryGiantStatBlock(**legendary_giants.queen_neri_custom_stat_block)
+
 
 def test_queen_neri_stat_block(queen_neri_stat_block):
     # Check if the Queen Neri StatBlock instance is created correctly
@@ -133,10 +149,12 @@ def test_queen_neri_stat_block(queen_neri_stat_block):
         == "Shield: Queen Neri adds 5 to her AC against one attack that would hit her. To do so, she must see the attacker."
     )
 
+
 @pytest.fixture
 def king_hekaton_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
     return LegendaryGiantStatBlock(**legendary_giants.king_hekaton_custom_stat_block)
+
 
 def test_king_hekaton_stat_block(king_hekaton_stat_block):
     # Check if the King Hekaton StatBlock instance is created correctly
@@ -181,6 +199,7 @@ def chief_nosnra_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
     return LegendaryGiantStatBlock(**legendary_giants.chief_nosnra_custom_stat_block)
 
+
 def test_chief_nosnra_stat_block(chief_nosnra_stat_block):
     # Check if the Chief Nosnra StatBlock instance is created correctly
     assert chief_nosnra_stat_block.name == "Chief Nosnra"
@@ -190,7 +209,10 @@ def test_chief_nosnra_stat_block(chief_nosnra_stat_block):
     assert chief_nosnra_stat_block.abilities.strength == 27
     assert chief_nosnra_stat_block.saving_throws.strength == 14
     assert "Athletics +14" in chief_nosnra_stat_block.skills
-    assert chief_nosnra_stat_block.damage_resistances == "bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert (
+        chief_nosnra_stat_block.damage_resistances
+        == "bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
     assert chief_nosnra_stat_block.condition_immunities == "none"
     assert chief_nosnra_stat_block.senses == "darkvision 60 ft., passive Perception 18"
     assert chief_nosnra_stat_block.languages == "Giant, Common"
@@ -222,7 +244,10 @@ def test_chief_nosnra_stat_block(chief_nosnra_stat_block):
 @pytest.fixture
 def harshnag_the_grim_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
-    return LegendaryGiantStatBlock(**legendary_giants.harshnag_the_grim_custom_stat_block)
+    return LegendaryGiantStatBlock(
+        **legendary_giants.harshnag_the_grim_custom_stat_block
+    )
+
 
 def test_harshnag_the_grim_stat_block(harshnag_the_grim_stat_block):
     # Check if the Harshnag the Grim StatBlock instance is created correctly
@@ -235,7 +260,10 @@ def test_harshnag_the_grim_stat_block(harshnag_the_grim_stat_block):
     assert "Athletics +15" in harshnag_the_grim_stat_block.skills
     assert harshnag_the_grim_stat_block.damage_resistances == "cold"
     assert harshnag_the_grim_stat_block.condition_immunities == "none"
-    assert harshnag_the_grim_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+    assert (
+        harshnag_the_grim_stat_block.senses
+        == "darkvision 60 ft., passive Perception 19"
+    )
     assert harshnag_the_grim_stat_block.languages == "Giant, Common"
     assert harshnag_the_grim_stat_block.challenge == 20
     assert (
@@ -266,6 +294,7 @@ def test_harshnag_the_grim_stat_block(harshnag_the_grim_stat_block):
 def jarl_grugnur_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
     return LegendaryGiantStatBlock(**legendary_giants.jarl_grugnur_custom_stat_block)
+
 
 def test_jarl_grugnur_stat_block(jarl_grugnur_stat_block):
     # Check if the Jarl Grugnur StatBlock instance is created correctly
@@ -308,7 +337,10 @@ def test_jarl_grugnur_stat_block(jarl_grugnur_stat_block):
 @pytest.fixture
 def sylara_leafweaver_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
-    return LegendaryGiantStatBlock(**legendary_giants.sylara_leafweaver_custom_stat_block)
+    return LegendaryGiantStatBlock(
+        **legendary_giants.sylara_leafweaver_custom_stat_block
+    )
+
 
 def test_sylara_leafweaver_stat_block(sylara_leafweaver_stat_block):
     # Check if the Sylara Leafweaver StatBlock instance is created correctly
@@ -321,7 +353,10 @@ def test_sylara_leafweaver_stat_block(sylara_leafweaver_stat_block):
     assert "Performance +18" in sylara_leafweaver_stat_block.skills
     assert sylara_leafweaver_stat_block.damage_resistances == "thunder"
     assert sylara_leafweaver_stat_block.condition_immunities == "none"
-    assert sylara_leafweaver_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+    assert (
+        sylara_leafweaver_stat_block.senses
+        == "darkvision 60 ft., passive Perception 19"
+    )
     assert sylara_leafweaver_stat_block.languages == "Giant, Common, Elvish"
     assert sylara_leafweaver_stat_block.challenge == 20
     assert (
@@ -351,7 +386,10 @@ def test_sylara_leafweaver_stat_block(sylara_leafweaver_stat_block):
 @pytest.fixture
 def thalia_rock_carver_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
-    return LegendaryGiantStatBlock(**legendary_giants.thalia_rock_carver_custom_stat_block)
+    return LegendaryGiantStatBlock(
+        **legendary_giants.thalia_rock_carver_custom_stat_block
+    )
+
 
 def test_thalia_rock_carver_stat_block(thalia_rock_carver_stat_block):
     # Check if the Thalia Rock-Carver StatBlock instance is created correctly
@@ -362,9 +400,15 @@ def test_thalia_rock_carver_stat_block(thalia_rock_carver_stat_block):
     assert thalia_rock_carver_stat_block.abilities.strength == 24
     assert thalia_rock_carver_stat_block.saving_throws.strength == 12
     assert "Insight +11" in thalia_rock_carver_stat_block.skills
-    assert thalia_rock_carver_stat_block.damage_resistances == "bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert (
+        thalia_rock_carver_stat_block.damage_resistances
+        == "bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
     assert thalia_rock_carver_stat_block.condition_immunities == "none"
-    assert thalia_rock_carver_stat_block.senses == "darkvision 60 ft., passive Perception 21"
+    assert (
+        thalia_rock_carver_stat_block.senses
+        == "darkvision 60 ft., passive Perception 21"
+    )
     assert thalia_rock_carver_stat_block.languages == "Giant, Common, Terran"
     assert thalia_rock_carver_stat_block.challenge == 20
     assert (
@@ -396,6 +440,7 @@ def vaald_the_wise_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
     return LegendaryGiantStatBlock(**legendary_giants.vaald_the_wise_custom_stat_block)
 
+
 def test_vaald_the_wise_stat_block(vaald_the_wise_stat_block):
     # Check if the Vaald the Wise StatBlock instance is created correctly
     assert vaald_the_wise_stat_block.name == "Vaald the Wise"
@@ -407,7 +452,9 @@ def test_vaald_the_wise_stat_block(vaald_the_wise_stat_block):
     assert "Arcana +18" in vaald_the_wise_stat_block.skills
     assert vaald_the_wise_stat_block.damage_resistances == "fire"
     assert vaald_the_wise_stat_block.condition_immunities == "none"
-    assert vaald_the_wise_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+    assert (
+        vaald_the_wise_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+    )
     assert vaald_the_wise_stat_block.languages == "Giant, Common, Draconic"
     assert vaald_the_wise_stat_block.challenge == 20
     assert (
@@ -437,7 +484,10 @@ def test_vaald_the_wise_stat_block(vaald_the_wise_stat_block):
 @pytest.fixture
 def morak_thunderstep_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
-    return LegendaryGiantStatBlock(**legendary_giants.morak_thunderstep_custom_stat_block)
+    return LegendaryGiantStatBlock(
+        **legendary_giants.morak_thunderstep_custom_stat_block
+    )
+
 
 def test_morak_thunderstep_stat_block(morak_thunderstep_stat_block):
     # Check if the Morak Thunderstep StatBlock instance is created correctly
@@ -450,7 +500,10 @@ def test_morak_thunderstep_stat_block(morak_thunderstep_stat_block):
     assert "Arcana +13" in morak_thunderstep_stat_block.skills
     assert morak_thunderstep_stat_block.damage_resistances == "lightning, thunder"
     assert morak_thunderstep_stat_block.condition_immunities == "none"
-    assert morak_thunderstep_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+    assert (
+        morak_thunderstep_stat_block.senses
+        == "darkvision 60 ft., passive Perception 19"
+    )
     assert morak_thunderstep_stat_block.languages == "Giant, Common, Primordial"
     assert morak_thunderstep_stat_block.challenge == 20
     assert (
@@ -480,7 +533,10 @@ def test_morak_thunderstep_stat_block(morak_thunderstep_stat_block):
 @pytest.fixture
 def wiggan_nettlebee_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
-    return LegendaryGiantStatBlock(**legendary_giants.wiggan_nettlebee_custom_stat_block)
+    return LegendaryGiantStatBlock(
+        **legendary_giants.wiggan_nettlebee_custom_stat_block
+    )
+
 
 def test_wiggan_nettlebee_stat_block(wiggan_nettlebee_stat_block):
     # Check if the Wiggan Nettlebee StatBlock instance is created correctly
@@ -493,7 +549,9 @@ def test_wiggan_nettlebee_stat_block(wiggan_nettlebee_stat_block):
     assert "Nature +13" in wiggan_nettlebee_stat_block.skills
     assert wiggan_nettlebee_stat_block.damage_resistances == "poison"
     assert wiggan_nettlebee_stat_block.condition_immunities == "none"
-    assert wiggan_nettlebee_stat_block.senses == "darkvision 60 ft., passive Perception 23"
+    assert (
+        wiggan_nettlebee_stat_block.senses == "darkvision 60 ft., passive Perception 23"
+    )
     assert wiggan_nettlebee_stat_block.languages == "Giant, Common, Druidic"
     assert wiggan_nettlebee_stat_block.challenge == 20
     assert (
@@ -523,7 +581,10 @@ def test_wiggan_nettlebee_stat_block(wiggan_nettlebee_stat_block):
 @pytest.fixture
 def tartha_bear_slayer_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
-    return LegendaryGiantStatBlock(**legendary_giants.tartha_bear_slayer_custom_stat_block)
+    return LegendaryGiantStatBlock(
+        **legendary_giants.tartha_bear_slayer_custom_stat_block
+    )
+
 
 def test_tartha_bear_slayer_stat_block(tartha_bear_slayer_stat_block):
     # Check if the Tartha Bear-Slayer StatBlock instance is created correctly
@@ -534,9 +595,15 @@ def test_tartha_bear_slayer_stat_block(tartha_bear_slayer_stat_block):
     assert tartha_bear_slayer_stat_block.abilities.strength == 24
     assert tartha_bear_slayer_stat_block.saving_throws.strength == 12
     assert "Survival +15" in tartha_bear_slayer_stat_block.skills
-    assert tartha_bear_slayer_stat_block.damage_resistances == "bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert (
+        tartha_bear_slayer_stat_block.damage_resistances
+        == "bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
     assert tartha_bear_slayer_stat_block.condition_immunities == "none"
-    assert tartha_bear_slayer_stat_block.senses == "darkvision 60 ft., passive Perception 25"
+    assert (
+        tartha_bear_slayer_stat_block.senses
+        == "darkvision 60 ft., passive Perception 25"
+    )
     assert tartha_bear_slayer_stat_block.languages == "Giant, Common, Elvish"
     assert tartha_bear_slayer_stat_block.challenge == 20
     assert (

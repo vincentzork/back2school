@@ -4,10 +4,13 @@ from .. import legendary_humanoids
 
 from ..legendary_humanoids import HumanoidChampionStatBlock
 
+
 @pytest.fixture
 def gog_the_crusher_stat_block():
     # Fixture to provide a sample instance of LegendaryGiantStatBlock for testing
-    return HumanoidChampionStatBlock(**legendary_humanoids.gog_the_crusher_custom_stat_block)
+    return HumanoidChampionStatBlock(
+        **legendary_humanoids.gog_the_crusher_custom_stat_block
+    )
 
 
 def test_gog_the_crusher_stat_block(gog_the_crusher_stat_block):
@@ -19,9 +22,14 @@ def test_gog_the_crusher_stat_block(gog_the_crusher_stat_block):
     assert gog_the_crusher_stat_block.abilities.strength == 26
     assert gog_the_crusher_stat_block.saving_throws.strength == 14
     assert "Athletics +18" in gog_the_crusher_stat_block.skills
-    assert gog_the_crusher_stat_block.damage_resistances == "bludgeoning, piercing, and slashing from nonmagical attacks while raging"
+    assert (
+        gog_the_crusher_stat_block.damage_resistances
+        == "bludgeoning, piercing, and slashing from nonmagical attacks while raging"
+    )
     assert gog_the_crusher_stat_block.condition_immunities == "frightened while raging"
-    assert gog_the_crusher_stat_block.senses == "darkvision 60 ft., passive Perception 18"
+    assert (
+        gog_the_crusher_stat_block.senses == "darkvision 60 ft., passive Perception 18"
+    )
     assert gog_the_crusher_stat_block.languages == "Giant, Common"
     assert gog_the_crusher_stat_block.challenge == 19
     assert (
@@ -48,6 +56,7 @@ def test_gog_the_crusher_stat_block(gog_the_crusher_stat_block):
         gog_the_crusher_stat_block.reactions[0]
         == "Unyielding: When Gog is subjected to an effect that allows him to make a Strength or Constitution saving throw to take only half damage, he can use his reaction to take no damage if he succeeds on the saving throw, or only half damage if he fails."
     )
+
 
 @pytest.fixture
 def bruthazmus_stat_block():
@@ -93,6 +102,7 @@ def test_bruthazmus_stat_block(bruthazmus_stat_block):
         bruthazmus_stat_block.reactions[0]
         == "Uncanny Dodge: When an attacker that Bruthazmus can see hits him with an attack, he can use his reaction to halve the attack's damage against him."
     )
+
 
 @pytest.fixture
 def throgg_stat_block():
@@ -155,7 +165,10 @@ def test_skalmad_stat_block(skalmad_stat_block):
     assert skalmad_stat_block.abilities.strength == 26
     assert skalmad_stat_block.saving_throws.strength == 14
     assert "Athletics +14" in skalmad_stat_block.skills
-    assert skalmad_stat_block.damage_resistances == "fire, bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert (
+        skalmad_stat_block.damage_resistances
+        == "fire, bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
     assert skalmad_stat_block.condition_immunities == "frightened"
     assert skalmad_stat_block.senses == "darkvision 60 ft., passive Perception 19"
     assert skalmad_stat_block.languages == "Giant, Common, Goblin"
@@ -201,7 +214,10 @@ def test_kargath_stat_block(kargath_stat_block):
     assert kargath_stat_block.abilities.strength == 28
     assert kargath_stat_block.saving_throws.strength == 15
     assert "Athletics +15" in kargath_stat_block.skills
-    assert kargath_stat_block.damage_resistances == "bludgeoning, piercing, and slashing from nonmagical attacks while raging"
+    assert (
+        kargath_stat_block.damage_resistances
+        == "bludgeoning, piercing, and slashing from nonmagical attacks while raging"
+    )
     assert kargath_stat_block.condition_immunities == "frightened, charmed"
     assert kargath_stat_block.senses == "darkvision 60 ft., passive Perception 16"
     assert kargath_stat_block.languages == "Giant, Common"
@@ -231,6 +247,7 @@ def test_kargath_stat_block(kargath_stat_block):
         == "Relentless Endurance: When Kargath is reduced to 0 hit points, he can use his reaction to instead be reduced to 1 hit point. He can't use this feature again until he finishes a long rest."
     )
 
+
 @pytest.fixture
 def hartusk_stat_block():
     # Fixture to provide a sample instance of HumanoidChampionStatBlock for testing
@@ -246,7 +263,10 @@ def test_hartusk_stat_block(hartusk_stat_block):
     assert hartusk_stat_block.abilities.strength == 20
     assert hartusk_stat_block.saving_throws.strength == 10
     assert "Intimidation +10" in hartusk_stat_block.skills
-    assert hartusk_stat_block.damage_resistances == "bludgeoning, piercing, and slashing from nonmagical attacks while raging"
+    assert (
+        hartusk_stat_block.damage_resistances
+        == "bludgeoning, piercing, and slashing from nonmagical attacks while raging"
+    )
     assert hartusk_stat_block.condition_immunities == "frightened"
     assert hartusk_stat_block.senses == "darkvision 60 ft., passive Perception 18"
     assert hartusk_stat_block.languages == "Orc, Common"
@@ -282,6 +302,7 @@ def obould_stat_block():
     # Fixture to provide a sample instance of HumanoidChampionStatBlock for testing
     return HumanoidChampionStatBlock(**legendary_humanoids.obould_custom_stat_block)
 
+
 def test_obould_stat_block(obould_stat_block):
     # Check if the Obould Many-Arrows StatBlock instance is created correctly
     assert obould_stat_block.name == "Obould Many-Arrows"
@@ -291,34 +312,37 @@ def test_obould_stat_block(obould_stat_block):
     assert obould_stat_block.abilities.strength == 22
     assert obould_stat_block.saving_throws.strength == 12
     assert "Intimidation +10" in obould_stat_block.skills
-    assert obould_stat_block.damage_resistances == "bludgeoning, piercing, and slashing from nonmagical attacks"
+    assert (
+        obould_stat_block.damage_resistances
+        == "bludgeoning, piercing, and slashing from nonmagical attacks"
+    )
     assert obould_stat_block.condition_immunities == "frightened"
     assert obould_stat_block.senses == "darkvision 60 ft., passive Perception 19"
     assert obould_stat_block.languages == "Orc, Common"
     assert obould_stat_block.challenge == 20
     assert (
-            "Aura of Conquest: Creatures within 10 feet of Obould that are frightened by him have their speed reduced to 0 and take psychic damage equal to his Charisma modifier at the start of each of their turns."
-            in obould_stat_block.special_abilities
+        "Aura of Conquest: Creatures within 10 feet of Obould that are frightened by him have their speed reduced to 0 and take psychic damage equal to his Charisma modifier at the start of each of their turns."
+        in obould_stat_block.special_abilities
     )
     assert (
-            obould_stat_block.legendary_actions["Conquering Strike"]
-            == "Obould makes a melee weapon attack with his Flame-tongue Greatsword. If the attack hits, the target must succeed on a DC 18 Wisdom saving throw or be frightened until the end of Obould's next turn."
+        obould_stat_block.legendary_actions["Conquering Strike"]
+        == "Obould makes a melee weapon attack with his Flame-tongue Greatsword. If the attack hits, the target must succeed on a DC 18 Wisdom saving throw or be frightened until the end of Obould's next turn."
     )
     assert (
-            obould_stat_block.actions[0]
-            == "Multiattack: Obould makes three attacks with his Flame-tongue Greatsword or Orcish Longbow."
+        obould_stat_block.actions[0]
+        == "Multiattack: Obould makes three attacks with his Flame-tongue Greatsword or Orcish Longbow."
     )
     assert (
-            obould_stat_block.actions[1]
-            == "Flame-tongue Greatsword: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 22 (3d6 + 8) slashing damage plus 7 (2d6) fire damage."
+        obould_stat_block.actions[1]
+        == "Flame-tongue Greatsword: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 22 (3d6 + 8) slashing damage plus 7 (2d6) fire damage."
     )
     assert (
-            obould_stat_block.bonus_actions[0]
-            == "Shield of Faith: Obould can cast *Shield of Faith* as a bonus action, gaining +2 AC for 10 minutes (concentration)."
+        obould_stat_block.bonus_actions[0]
+        == "Shield of Faith: Obould can cast *Shield of Faith* as a bonus action, gaining +2 AC for 10 minutes (concentration)."
     )
     assert (
-            obould_stat_block.reactions[0]
-            == "Parry: Obould adds +3 to his AC against one melee attack that would hit him. To do so, Obould must see the attacker and be wielding a melee weapon."
+        obould_stat_block.reactions[0]
+        == "Parry: Obould adds +3 to his AC against one melee attack that would hit him. To do so, Obould must see the attacker and be wielding a melee weapon."
     )
 
 
@@ -339,7 +363,10 @@ def test_karzoug_stat_block(karzoug_stat_block):
     assert "Arcana +14" in karzoug_stat_block.skills
     assert karzoug_stat_block.damage_resistances == "cold, force"
     assert karzoug_stat_block.condition_immunities == "charmed, frightened"
-    assert karzoug_stat_block.senses == "darkvision 60 ft., truesight 60 ft., passive Perception 20"
+    assert (
+        karzoug_stat_block.senses
+        == "darkvision 60 ft., truesight 60 ft., passive Perception 20"
+    )
     assert karzoug_stat_block.languages == "Giant, Common, Draconic, Infernal, Abyssal"
     assert karzoug_stat_block.challenge == 24
     assert (
