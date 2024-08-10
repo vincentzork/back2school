@@ -1,10 +1,8 @@
-from typing import List, Dict
+from typing import List
 
-from pydantic import BaseModel
 import json
 
-from .abililty_scores import AbilityScores
-from .savings_throws import SavingThrows
+from .stat_block_base import StatBlockBase
 from .directories import data
 
 with open(data("tiger_general_stat_blocks.json")) as f:
@@ -17,30 +15,10 @@ zhao_yun_custom_stat_block = tiger_general_stat_blocks["Zhao Yun"]
 ma_chao_custom_stat_block = tiger_general_stat_blocks["Ma Chao"]
 
 
-class CharacterClass(BaseModel):
-    class_name: str
-    archetype: str
-    level: int
-
-
-class R3KTigerGeneralStatBlock(BaseModel):
-    character_class: Dict[str, CharacterClass]
-    unique_attacks_weapons: List[str]
-    common_behaviors_actions: List[str]
-    name: str
-    hit_points: int
-    armor_class: int
-    speed: str
-    abilities: AbilityScores
-    saving_throws: SavingThrows
-    skills: List[str]
-    damage_resistances: str
-    condition_immunities: str
-    senses: str
-    languages: str
-    challenge: int
-    special_abilities: List[str]
-    legendary_actions: Dict[str, str]
+class R3KTigerGeneralStatBlock(StatBlockBase):
     actions: List[str]
     bonus_actions: List[str]
     reactions: List[str]
+
+    class Config:
+        validate_assignment = True

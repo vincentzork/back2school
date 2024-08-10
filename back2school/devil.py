@@ -5,6 +5,7 @@ import json
 
 from .abililty_scores import AbilityScores
 from .savings_throws import SavingThrows
+from .stat_block_base import StatBlockBase
 from .directories import data
 
 with open(data("devil_stat_blocks.json")) as f:
@@ -19,21 +20,5 @@ mammon_custom_stat_block = devil_stat_blocks["Mammon"]
 mephistopheles_custom_stat_block = devil_stat_blocks["Mephistopheles"]
 
 
-class ArchdevilStatBlock(BaseModel):
-    unique_attacks_weapons: List[str]
-    common_behaviors_actions: List[str]
-    name: str
-    hit_points: int
-    armor_class: int
-    speed: str
-    abilities: AbilityScores
-    saving_throws: SavingThrows
-    skills: List[str]
-    damage_resistances: str
-    damage_immunities: str
-    condition_immunities: str
-    senses: str
-    languages: str
-    challenge: int
-    special_abilities: List[str]
-    legendary_actions: Dict[str, str]
+class ArchdevilStatBlock(StatBlockBase):
+    pass
