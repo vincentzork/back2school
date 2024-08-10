@@ -90,7 +90,7 @@
             "Employing stealth to infiltrate and eliminate high-value targets.",
             "Using his strength and cunning to intimidate and dominate those around him."
         ],
-        "giant_type": "ogre",
+        "race": "ogre",
         "name": "Bruthazmus",
         "hit_points": 280,
         "armor_class": 17,
@@ -165,7 +165,7 @@
             "Using his regenerative abilities to outlast and overpower his enemies in prolonged battles.",
             "Calling upon dark powers to enhance his physical might and wreak havoc on his enemies."
         ],
-        "giant_type": "troll",
+        "race": "troll",
         "name": "Throgg the Troll King",
         "hit_points": 400,
         "armor_class": 18,
@@ -236,7 +236,7 @@
             "Using the Eye of Veng to crush his enemies and assert his dominance.",
             "Employing his fiery gaze to incinerate foes from a distance."
         ],
-        "giant_type": "troll",
+        "race": "troll",
         "name": "Skalmad the Troll Champion",
         "hit_points": 370,
         "armor_class": 19,
@@ -305,7 +305,7 @@
             "Decimating opponents with powerful, sweeping strikes from his massive greataxe.",
             "Intimidating his foes with his sheer presence and battle-hardened scars."
         ],
-        "giant_type": "ogre",
+        "race": "ogre",
         "name": "Kargath the Slayer",
         "hit_points": 425,
         "armor_class": 18,
@@ -379,7 +379,7 @@
             "Using his tactical mind to outmaneuver and overwhelm his enemies.",
             "Invoking the wrath of Gruumsh to inspire his warriors and demoralize his foes."
         ],
-        "giant_type": "orc",
+        "race": "orc",
         "name": "Hartusk the Orc Warlord",
         "hit_points": 290,
         "armor_class": 20,
@@ -454,7 +454,7 @@
             "Leading his warriors into battle with unmatched valor and ferocity.",
             "Using his tactical brilliance to outmaneuver and defeat his enemies."
         ],
-        "giant_type": "orc",
+        "race": "orc",
         "name": "Obould Many-Arrows",
         "hit_points": 320,
         "armor_class": 21,
@@ -529,10 +529,10 @@
             "Using his vast arcane knowledge to dominate and control others.",
             "Bending the laws of nature to achieve his insatiable desires."
         ],
-        "giant_type": "ogre mage",
+        "race": "ogre mage",
         "name": "Karzoug, the Runelord of Greed",
         "hit_points": 375,
-        "armor_class": "20 (Mage Armor + Shield)",
+        "armor_class": "20",
         "speed": "30 ft., fly 60 ft.",
         "abilities": {
             "strength": 24,
@@ -607,10 +607,10 @@
             "Using his sorcery to deceive and ambush opponents in the darkness.",
             "Combining physical power with arcane might to overwhelm his foes."
         ],
-        "giant_type": "ogre mage",
+        "race": "ogre mage",
         "name": "Sharak the Sorcerer",
         "hit_points": 340,
-        "armor_class": "20 (Mage Armor + Shield)",
+        "armor_class": "20",
         "speed": "30 ft., fly 60 ft.",
         "abilities": {
             "strength": 22,
