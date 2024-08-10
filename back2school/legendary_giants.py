@@ -1,4 +1,3 @@
-
 from typing import List, Dict
 
 from pydantic import BaseModel
@@ -12,7 +11,9 @@ with open(data("legendary_giant_stat_blocks.json")) as f:
     legendary_giant_stat_blocks = json.load(f)
 
 thane_kayalithica_custom_stat_block = legendary_giant_stat_blocks["Thane Kayalithica"]
-king_snurre_ironbelly_custom_stat_block = legendary_giant_stat_blocks["King Snurre Ironbelly"]
+king_snurre_ironbelly_custom_stat_block = legendary_giant_stat_blocks[
+    "King Snurre Ironbelly"
+]
 queen_neri_custom_stat_block = legendary_giant_stat_blocks["Queen Neri"]
 king_hekaton_custom_stat_block = legendary_giant_stat_blocks["King Hekaton"]
 chief_nosnra_custom_stat_block = legendary_giant_stat_blocks["Chief Nosnra"]
@@ -25,10 +26,12 @@ morak_thunderstep_custom_stat_block = legendary_giant_stat_blocks["Morak Thunder
 wiggan_nettlebee_custom_stat_block = legendary_giant_stat_blocks["Wiggan Nettlebee"]
 tartha_bear_slayer_custom_stat_block = legendary_giant_stat_blocks["Tartha Bear-Slayer"]
 
+
 class CharacterClass(BaseModel):
     class_name: str
     archetype: str
     level: int
+
 
 class LegendaryGiantStatBlock(BaseModel):
     character_class: Dict[str, CharacterClass]
