@@ -1,5 +1,5 @@
 {
-    "Gog the Crusher": {
+    "Gog": {
         "character_class": {
             "primary_class": {
                 "class_name": "Barbarian",
@@ -143,7 +143,7 @@
             "Uncanny Dodge: When an attacker that Bruthazmus can see hits him with an attack, he can use his reaction to halve the attack's damage against him."
         ]
     },
-    "Throgg the Troll King": {
+    "Throgg": {
         "character_class": {
             "primary_class": {
                 "class_name": "Warlock",
@@ -219,7 +219,7 @@
             "Unyielding Endurance: When Throgg is reduced to 0 hit points, he can use his reaction to instead be reduced to 1 hit point. He can't use this feature again until he finishes a long rest."
         ]
     },
-    "Skalmad the Troll Champion": {
+    "Skalmad": {
         "character_class": {
             "primary_class": {
                 "class_name": "Fighter",
@@ -288,7 +288,7 @@
             "Unyielding Endurance: When Skalmad is reduced to 0 hit points, he can use his reaction to instead be reduced to 1 hit point. He can't use this feature again until he finishes a long rest."
         ]
     },
-    "Kargath the Slayer": {
+    "Kargath": {
         "character_class": {
             "primary_class": {
                 "class_name": "Barbarian",
@@ -357,7 +357,7 @@
             "Relentless Endurance: When Kargath is reduced to 0 hit points, he can use his reaction to instead be reduced to 1 hit point. He can't use this feature again until he finishes a long rest."
         ]
     },
-    "Hartusk the Orc Warlord": {
+    "Hartusk": {
         "character_class": {
             "primary_class": {
                 "class_name": "Fighter",
@@ -432,7 +432,7 @@
             "Parry: Hartusk adds +3 to his AC against one melee attack that would hit him. To do so, Hartusk must see the attacker and be wielding a melee weapon."
         ]
     },
-    "Obould Many-Arrows": {
+    "Obould": {
         "character_class": {
             "primary_class": {
                 "class_name": "Paladin",
@@ -507,7 +507,7 @@
             "Parry: Obould adds +3 to his AC against one melee attack that would hit him. To do so, Obould must see the attacker and be wielding a melee weapon."
         ]
     },
-    "Karzoug, the Runelord of Greed": {
+    "Karzoug": {
         "character_class": {
             "primary_class": {
                 "class_name": "Wizard",
@@ -585,7 +585,7 @@
             "Arcane Deflection: When Karzoug is hit by an attack, he can use his reaction to add +4 to his AC against the attack, potentially causing it to miss."
         ]
     },
-    "Sharak the Sorcerer": {
+    "Sharak": {
         "character_class": {
             "primary_class": {
                 "class_name": "Sorcerer",
