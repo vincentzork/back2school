@@ -7,7 +7,7 @@ from .abililty_scores import AbilityScores
 from .savings_throws import SavingThrows
 from .directories import data
 
-with open(data("legendary_humanoid_stat_blocks")) as f:
+with open(data("legendary_humanoid_stat_blocks.json")) as f:
     legendary_humanoid_stat_blocks = json.load(f)
 
 gog_the_crusher_custom_stat_block = legendary_humanoid_stat_blocks["Gog the Crusher"]
