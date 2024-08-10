@@ -2,7 +2,7 @@ import pytest
 
 from .. import legendary_humanoids
 
-from ..legendary_humanoids import LegendaryGiantStatBlock
+from ..legendary_humanoids import HumanoidChampionStatBlock
 
 @pytest.fixture
 
@@ -44,3 +44,4 @@ def test_gog_the_crusher_stat_block(gog_the_crusher_stat_block):
         gog_the_crusher_stat_block.reactions[0]
         == "Unyielding: When Gog is subjected to an effect that allows him to make a Strength or Constitution saving throw to take only half damage, he can use his reaction to take no damage if he succeeds on the saving throw, or only half damage if he fails."
     )
+    assert False
