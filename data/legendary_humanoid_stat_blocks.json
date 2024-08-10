@@ -1,0 +1,76 @@
+{
+    "Gog the Crusher": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Barbarian",
+                "archetype": "Path of the Juggernaut",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Fighter",
+                "archetype": "Champion",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "Crushing Maul",
+            "Spiked Gauntlets"
+        ],
+        "common_behaviors_actions": [
+            "Leading raids against enemy strongholds with unmatched ferocity.",
+            "Using his immense strength to crush and break through enemy defenses.",
+            "Bellowing battle cries to intimidate and demoralize his enemies."
+        ],
+        "race": "ogre",
+        "name": "Gog the Crusher",
+        "hit_points": 350,
+        "armor_class": 19,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 26,
+            "dexterity": 14,
+            "constitution": 22,
+            "intelligence": 10,
+            "wisdom": 12,
+            "charisma": 15
+        },
+        "saving_throws": {
+            "strength": "+14",
+            "dexterity": "+7",
+            "constitution": "+11",
+            "intelligence": "+5",
+            "wisdom": "+6",
+            "charisma": "+7"
+        },
+        "skills": [
+            "Athletics +18",
+            "Intimidation +10",
+            "Perception +8"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks while raging",
+        "condition_immunities": "frightened while raging",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Giant, Common",
+        "challenge": 19,
+        "special_abilities": [
+            "Juggernaut's Fury: When Gog uses his Rage feature, he gains an additional +2 bonus to all damage rolls. His melee weapon attacks also have the chance to knock creatures prone (DC 19 Strength saving throw).",
+            "Relentless (Recharges after a Short or Long Rest): If Gog takes damage that would reduce him to 0 hit points, he is instead reduced to 1 hit point unless the damage comes from a critical hit.",
+            "Indomitable Strength: Gog has advantage on Strength checks and Strength saving throws."
+        ],
+        "legendary_actions": {
+            "Crushing Blow": "Gog makes a single melee weapon attack with his Crushing Maul. If the attack hits, the target must succeed on a DC 19 Constitution saving throw or be stunned until the end of Gog's next turn.",
+            "Bellow (Costs 2 Actions)": "Gog unleashes a terrifying roar. All creatures of his choice within 30 feet must succeed on a DC 18 Wisdom saving throw or become frightened until the end of Gog's next turn."
+        },
+        "actions": [
+            "Multiattack: Gog makes three attacks with his Crushing Maul or Spiked Gauntlets.",
+            "Crushing Maul: Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 25 (3d12 + 6) bludgeoning damage.",
+            "Spiked Gauntlets: Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 20 (3d8 + 6) piercing damage."
+        ],
+        "bonus_actions": [
+            "Rage: Gog can enter a rage as a bonus action, gaining resistance to bludgeoning, piercing, and slashing damage, as well as a +2 bonus to damage rolls."
+        ],
+        "reactions": [
+            "Unyielding: When Gog is subjected to an effect that allows him to make a Strength or Constitution saving throw to take only half damage, he can use his reaction to take no damage if he succeeds on the saving throw, or only half damage if he fails."
+        ]
+    }
+}
