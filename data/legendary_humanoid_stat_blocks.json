@@ -72,5 +72,596 @@
         "reactions": [
             "Unyielding: When Gog is subjected to an effect that allows him to make a Strength or Constitution saving throw to take only half damage, he can use his reaction to take no damage if he succeeds on the saving throw, or only half damage if he fails."
         ]
+    },
+    "Bruthazmus": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Rogue",
+                "archetype": "Assassin",
+                "level": 16
+            }
+        },
+        "unique_attacks_weapons": [
+            "Barbed Longbow",
+            "Poisoned Dagger"
+        ],
+        "common_behaviors_actions": [
+            "Hunting down his enemies using ambush tactics and traps.",
+            "Employing stealth to infiltrate and eliminate high-value targets.",
+            "Using his strength and cunning to intimidate and dominate those around him."
+        ],
+        "giant_type": "ogre",
+        "name": "Bruthazmus",
+        "hit_points": 280,
+        "armor_class": 17,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 20,
+            "dexterity": 18,
+            "constitution": 18,
+            "intelligence": 14,
+            "wisdom": 12,
+            "charisma": 13
+        },
+        "saving_throws": {
+            "strength": "+10",
+            "dexterity": "+9",
+            "constitution": "+9",
+            "intelligence": "+7",
+            "wisdom": "+6",
+            "charisma": "+6"
+        },
+        "skills": [
+            "Stealth +12",
+            "Perception +8",
+            "Athletics +10",
+            "Survival +8"
+        ],
+        "damage_resistances": "poison",
+        "condition_immunities": "frightened",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Giant, Common, Goblin",
+        "challenge": 17,
+        "special_abilities": [
+            "Sneak Attack (5d6): Once per turn, Bruthazmus can deal an extra 5d6 damage to one creature he hits with an attack if he has advantage on the attack roll. The attack must use a finesse or a ranged weapon.",
+            "Cunning Action: Bruthazmus can take a bonus action on each of his turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.",
+            "Assassinate: Bruthazmus has advantage on attack rolls against any creature that hasn't taken a turn in combat yet. Additionally, any hit Bruthazmus scores against a surprised creature is a critical hit."
+        ],
+        "legendary_actions": {
+            "Vanish": "Bruthazmus can take the Hide action.",
+            "Death Shot (Costs 2 Actions)": "Bruthazmus makes a ranged attack with his Barbed Longbow. If the attack hits, the target must succeed on a DC 17 Constitution saving throw or take an additional 4d6 poison damage and become poisoned for 1 minute."
+        },
+        "actions": [
+            "Multiattack: Bruthazmus makes two attacks with his Barbed Longbow or Poisoned Dagger.",
+            "Barbed Longbow: Ranged Weapon Attack: +11 to hit, range 150/600 ft., one target. Hit: 18 (2d10 + 7) piercing damage.",
+            "Poisoned Dagger: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) piercing damage plus 4 (1d8) poison damage."
+        ],
+        "bonus_actions": [
+            "Cunning Action: Bruthazmus can use his bonus action to Dash, Disengage, or Hide."
+        ],
+        "reactions": [
+            "Uncanny Dodge: When an attacker that Bruthazmus can see hits him with an attack, he can use his reaction to halve the attack's damage against him."
+        ]
+    },
+    "Throgg the Troll King": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Warlock",
+                "archetype": "Pact of the Fiend",
+                "level": 15
+            },
+            "secondary_class": {
+                "class_name": "Barbarian",
+                "archetype": "Path of the Totem Warrior (Bear)",
+                "level": 5
+            }
+        },
+        "unique_attacks_weapons": [
+            "Corrupted Greataxe",
+            "Regenerating Claws"
+        ],
+        "common_behaviors_actions": [
+            "Leading his troll kin with an iron fist, enforcing his will through brute strength and fear.",
+            "Using his regenerative abilities to outlast and overpower his enemies in prolonged battles.",
+            "Calling upon dark powers to enhance his physical might and wreak havoc on his enemies."
+        ],
+        "giant_type": "troll",
+        "name": "Throgg the Troll King",
+        "hit_points": 400,
+        "armor_class": 18,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 24,
+            "dexterity": 16,
+            "constitution": 22,
+            "intelligence": 14,
+            "wisdom": 12,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "strength": "+13",
+            "dexterity": "+8",
+            "constitution": "+12",
+            "intelligence": "+7",
+            "wisdom": "+7",
+            "charisma": "+10"
+        },
+        "skills": [
+            "Intimidation +10",
+            "Athletics +13",
+            "Perception +9",
+            "Arcana +8"
+        ],
+        "damage_resistances": "fire, necrotic",
+        "condition_immunities": "frightened, charmed",
+        "senses": "darkvision 60 ft., passive Perception 19",
+        "languages": "Giant, Common, Infernal",
+        "challenge": 20,
+        "special_abilities": [
+            "Regeneration: Throgg regains 20 hit points at the start of his turn if he has at least 1 hit point remaining. If Throgg takes acid or fire damage, this trait doesn't function at the start of his next turn.",
+            "Fiendish Resilience: Throgg can choose one damage type when he finishes a short or long rest. He gains resistance to that damage type until he chooses a different one with this feature (cannot choose fire).",
+            "Unyielding Strength: Throgg has advantage on Strength checks and Strength saving throws.",
+            "Dark Bargain: Throgg can use a bonus action to invoke his fiendish patron's power, granting him an additional 2d6 necrotic damage on all melee attacks for 1 minute (once per long rest)."
+        ],
+        "legendary_actions": {
+            "Fiendish Smite": "Throgg makes a melee weapon attack with his Corrupted Greataxe. On a hit, the target takes an additional 4d6 necrotic damage.",
+            "Horrifying Roar (Costs 2 Actions)": "Throgg lets out a terrifying roar. Each enemy within 30 feet that can hear him must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute."
+        },
+        "actions": [
+            "Multiattack: Throgg makes two attacks with his Corrupted Greataxe or Regenerating Claws.",
+            "Corrupted Greataxe: Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 27 (3d12 + 6) slashing damage plus 7 (2d6) necrotic damage.",
+            "Regenerating Claws: Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 19 (3d6 + 6) slashing damage."
+        ],
+        "bonus_actions": [
+            "Dark Bargain: Throgg can use his bonus action to empower his attacks with necrotic energy, dealing an extra 2d6 necrotic damage on all melee attacks for 1 minute."
+        ],
+        "reactions": [
+            "Unyielding Endurance: When Throgg is reduced to 0 hit points, he can use his reaction to instead be reduced to 1 hit point. He can't use this feature again until he finishes a long rest."
+        ]
+    },
+    "Skalmad the Troll Champion": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Fighter",
+                "archetype": "Champion",
+                "level": 18
+            }
+        },
+        "unique_attacks_weapons": [
+            "Eye of Veng (Enchanted Greatclub)",
+            "Fiery Gaze"
+        ],
+        "common_behaviors_actions": [
+            "Ruling his troll kingdom with unmatched brutality and power.",
+            "Using the Eye of Veng to crush his enemies and assert his dominance.",
+            "Employing his fiery gaze to incinerate foes from a distance."
+        ],
+        "giant_type": "troll",
+        "name": "Skalmad the Troll Champion",
+        "hit_points": 370,
+        "armor_class": 19,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 26,
+            "dexterity": 16,
+            "constitution": 24,
+            "intelligence": 12,
+            "wisdom": 14,
+            "charisma": 16
+        },
+        "saving_throws": {
+            "strength": "+14",
+            "dexterity": "+8",
+            "constitution": "+13",
+            "intelligence": "+6",
+            "wisdom": "+7",
+            "charisma": "+8"
+        },
+        "skills": [
+            "Athletics +14",
+            "Intimidation +10",
+            "Perception +9"
+        ],
+        "damage_resistances": "fire, bludgeoning, piercing, and slashing from nonmagical attacks",
+        "condition_immunities": "frightened",
+        "senses": "darkvision 60 ft., passive Perception 19",
+        "languages": "Giant, Common, Goblin",
+        "challenge": 21,
+        "special_abilities": [
+            "Regeneration: Skalmad regains 20 hit points at the start of his turn if he has at least 1 hit point remaining. If Skalmad takes acid damage, this trait doesn't function at the start of his next turn.",
+            "Eye of Veng: Skalmad's enchanted greatclub deals an additional 2d6 fire damage on a hit. Once per day, Skalmad can use the Eye of Veng to cast *Fireball* (DC 18) centered on himself without taking damage.",
+            "Indomitable Strength: Skalmad has advantage on Strength checks and Strength saving throws."
+        ],
+        "legendary_actions": {
+            "Fiery Gaze": "Skalmad uses his Eye of Veng to shoot a beam of fire at a creature within 60 feet. The target must make a DC 18 Dexterity saving throw, taking 4d10 fire damage on a failed save, or half as much on a successful one.",
+            "Crushing Blow (Costs 2 Actions)": "Skalmad makes a melee attack with his Eye of Veng. If the attack hits, the target must succeed on a DC 18 Constitution saving throw or be stunned until the end of Skalmad's next turn."
+        },
+        "actions": [
+            "Multiattack: Skalmad makes three attacks with his Eye of Veng or one with his Fiery Gaze.",
+            "Eye of Veng: Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 28 (3d12 + 8) bludgeoning damage plus 7 (2d6) fire damage.",
+            "Fiery Gaze: Ranged Spell Attack: +10 to hit, range 60 ft., one target. Hit: 27 (4d10) fire damage."
+        ],
+        "bonus_actions": [
+            "Second Wind: Skalmad can use a bonus action to regain hit points equal to 1d10 + 18."
+        ],
+        "reactions": [
+            "Unyielding Endurance: When Skalmad is reduced to 0 hit points, he can use his reaction to instead be reduced to 1 hit point. He can't use this feature again until he finishes a long rest."
+        ]
+    },
+    "Kargath the Slayer": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Barbarian",
+                "archetype": "Path of the Berserker",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Bloodthirster (Massive Greataxe)",
+            "Brutal Charge"
+        ],
+        "common_behaviors_actions": [
+            "Leading charges against enemy forces with unmatched ferocity.",
+            "Decimating opponents with powerful, sweeping strikes from his massive greataxe.",
+            "Intimidating his foes with his sheer presence and battle-hardened scars."
+        ],
+        "giant_type": "ogre",
+        "name": "Kargath the Slayer",
+        "hit_points": 425,
+        "armor_class": 18,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 28,
+            "dexterity": 14,
+            "constitution": 24,
+            "intelligence": 10,
+            "wisdom": 12,
+            "charisma": 15
+        },
+        "saving_throws": {
+            "strength": "+15",
+            "dexterity": "+7",
+            "constitution": "+13",
+            "intelligence": "+5",
+            "wisdom": "+6",
+            "charisma": "+7"
+        },
+        "skills": [
+            "Athletics +15",
+            "Intimidation +10",
+            "Survival +8"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks while raging",
+        "condition_immunities": "frightened, charmed",
+        "senses": "darkvision 60 ft., passive Perception 16",
+        "languages": "Giant, Common",
+        "challenge": 22,
+        "special_abilities": [
+            "Rage (6/day): Kargath can enter a rage as a bonus action, gaining resistance to bludgeoning, piercing, and slashing damage, as well as a +4 bonus to damage rolls. His rage lasts for 1 minute or until he is incapacitated.",
+            "Frenzied Attack: While raging, Kargath can make an additional melee weapon attack as a bonus action on each of his turns.",
+            "Unstoppable Force: Kargath can charge in a straight line up to his full movement speed. Any creatures in his path must succeed on a DC 20 Strength saving throw or be knocked prone and take 3d8 bludgeoning damage."
+        ],
+        "legendary_actions": {
+            "Reckless Cleave": "Kargath makes a melee weapon attack with Bloodthirster. If the attack hits, it deals an additional 2d12 damage. Kargath then gains advantage on all attacks until the end of his next turn, but attacks against him also have advantage.",
+            "War Cry (Costs 2 Actions)": "Kargath lets out a thunderous roar, bolstering his allies and terrifying his enemies. All allies within 30 feet of Kargath gain advantage on their next attack roll, and all enemies must succeed on a DC 18 Wisdom saving throw or become frightened until the end of Kargath's next turn."
+        },
+        "actions": [
+            "Multiattack: Kargath makes three attacks with Bloodthirster.",
+            "Bloodthirster: Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 32 (3d12 + 9) slashing damage.",
+            "Brutal Charge: Kargath moves up to his speed in a straight line and makes one melee attack with Bloodthirster. On a hit, the target takes an additional 9 (2d8) bludgeoning damage and must succeed on a DC 20 Strength saving throw or be knocked prone."
+        ],
+        "bonus_actions": [
+            "Frenzied Attack: While raging, Kargath can make an additional melee weapon attack as a bonus action."
+        ],
+        "reactions": [
+            "Relentless Endurance: When Kargath is reduced to 0 hit points, he can use his reaction to instead be reduced to 1 hit point. He can't use this feature again until he finishes a long rest."
+        ]
+    },
+    "Hartusk the Orc Warlord": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Fighter",
+                "archetype": "Warlord",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Barbarian",
+                "archetype": "Path of the Battlerager",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "Crushing Warhammer",
+            "Battle Horn of Gruumsh"
+        ],
+        "common_behaviors_actions": [
+            "Leading orcish warbands in brutal assaults on enemy territories.",
+            "Using his tactical mind to outmaneuver and overwhelm his enemies.",
+            "Invoking the wrath of Gruumsh to inspire his warriors and demoralize his foes."
+        ],
+        "giant_type": "orc",
+        "name": "Hartusk the Orc Warlord",
+        "hit_points": 290,
+        "armor_class": 20,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 20,
+            "dexterity": 16,
+            "constitution": 18,
+            "intelligence": 14,
+            "wisdom": 12,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "strength": "+10",
+            "dexterity": "+8",
+            "constitution": "+9",
+            "intelligence": "+7",
+            "wisdom": "+7",
+            "charisma": "+10"
+        },
+        "skills": [
+            "Intimidation +10",
+            "Athletics +10",
+            "Survival +8",
+            "Perception +8"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks while raging",
+        "condition_immunities": "frightened",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Orc, Common",
+        "challenge": 18,
+        "special_abilities": [
+            "Commander's Strike: When Hartusk takes the Attack action on his turn, he can forego one of his attacks and use a bonus action to direct one of his allies to strike. That ally can immediately use their reaction to make one weapon attack, adding Hartusk's Charisma modifier to the attack roll.",
+            "Orcish Fury: Hartusk can use his bonus action to enter a rage, gaining advantage on Strength checks and saving throws, and dealing an extra 2d6 damage on melee weapon attacks for 1 minute.",
+            "Relentless Endurance: When Hartusk is reduced to 0 hit points but not killed outright, he can drop to 1 hit point instead (once per long rest)."
+        ],
+        "legendary_actions": {
+            "War Cry": "Hartusk lets out a powerful war cry, bolstering his allies and intimidating his enemies. All allies within 30 feet gain temporary hit points equal to 10 + Hartusk's Charisma modifier. All enemies must succeed on a DC 18 Wisdom saving throw or become frightened until the end of Hartusk's next turn.",
+            "Devastating Blow (Costs 2 Actions)": "Hartusk makes a melee attack with his Crushing Warhammer. If the attack hits, the target must succeed on a DC 18 Constitution saving throw or be stunned until the end of Hartusk's next turn."
+        },
+        "actions": [
+            "Multiattack: Hartusk makes three attacks with his Crushing Warhammer.",
+            "Crushing Warhammer: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 18 (2d8 + 6) bludgeoning damage.",
+            "Battle Horn of Gruumsh: Hartusk can use his Battle Horn to rally his forces. All orc allies within 60 feet who can hear the horn gain advantage on their next attack roll and have their speed increased by 10 feet until the end of their next turn."
+        ],
+        "bonus_actions": [
+            "Orcish Fury: Hartusk can use his bonus action to enter a rage, gaining advantage on Strength checks and saving throws, and dealing an extra 2d6 damage on melee weapon attacks for 1 minute."
+        ],
+        "reactions": [
+            "Parry: Hartusk adds +3 to his AC against one melee attack that would hit him. To do so, Hartusk must see the attacker and be wielding a melee weapon."
+        ]
+    },
+    "Obould Many-Arrows": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Paladin",
+                "archetype": "Oath of Conquest",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Fighter",
+                "archetype": "Champion",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "Flame-tongue Greatsword",
+            "Orcish Longbow"
+        ],
+        "common_behaviors_actions": [
+            "Ruling the Kingdom of Many-Arrows with a firm hand, uniting various orc tribes.",
+            "Leading his warriors into battle with unmatched valor and ferocity.",
+            "Using his tactical brilliance to outmaneuver and defeat his enemies."
+        ],
+        "giant_type": "orc",
+        "name": "Obould Many-Arrows",
+        "hit_points": 320,
+        "armor_class": 21,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 22,
+            "dexterity": 14,
+            "constitution": 20,
+            "intelligence": 14,
+            "wisdom": 16,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "strength": "+12",
+            "dexterity": "+7",
+            "constitution": "+11",
+            "intelligence": "+7",
+            "wisdom": "+9",
+            "charisma": "+10"
+        },
+        "skills": [
+            "Intimidation +10",
+            "Athletics +12",
+            "Perception +9",
+            "History +8"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+        "condition_immunities": "frightened",
+        "senses": "darkvision 60 ft., passive Perception 19",
+        "languages": "Orc, Common",
+        "challenge": 20,
+        "special_abilities": [
+            "Aura of Conquest: Creatures within 10 feet of Obould that are frightened by him have their speed reduced to 0 and take psychic damage equal to his Charisma modifier at the start of each of their turns.",
+            "Divine Smite: When Obould hits a creature with a melee weapon attack, he can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8.",
+            "Relentless Endurance: When Obould is reduced to 0 hit points but not killed outright, he can drop to 1 hit point instead (once per long rest)."
+        ],
+        "legendary_actions": {
+            "Conquering Strike": "Obould makes a melee weapon attack with his Flame-tongue Greatsword. If the attack hits, the target must succeed on a DC 18 Wisdom saving throw or be frightened until the end of Obould's next turn.",
+            "Martial Prowess (Costs 2 Actions)": "Obould makes a melee weapon attack with advantage. On a hit, the attack deals an additional 3d8 radiant damage."
+        },
+        "actions": [
+            "Multiattack: Obould makes three attacks with his Flame-tongue Greatsword or Orcish Longbow.",
+            "Flame-tongue Greatsword: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 22 (3d6 + 8) slashing damage plus 7 (2d6) fire damage.",
+            "Orcish Longbow: Ranged Weapon Attack: +10 to hit, range 150/600 ft., one target. Hit: 15 (2d8 + 6) piercing damage."
+        ],
+        "bonus_actions": [
+            "Shield of Faith: Obould can cast *Shield of Faith* as a bonus action, gaining +2 AC for 10 minutes (concentration)."
+        ],
+        "reactions": [
+            "Parry: Obould adds +3 to his AC against one melee attack that would hit him. To do so, Obould must see the attacker and be wielding a melee weapon."
+        ]
+    },
+    "Karzoug, the Runelord of Greed": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Wizard",
+                "archetype": "School of Transmutation",
+                "level": 17
+            },
+            "secondary_class": {
+                "class_name": "Fighter",
+                "archetype": "Eldritch Knight",
+                "level": 3
+            }
+        },
+        "unique_attacks_weapons": [
+            "Staff of Greed",
+            "Arcane Ray"
+        ],
+        "common_behaviors_actions": [
+            "Manipulating reality to increase his wealth and power.",
+            "Using his vast arcane knowledge to dominate and control others.",
+            "Bending the laws of nature to achieve his insatiable desires."
+        ],
+        "giant_type": "ogre mage",
+        "name": "Karzoug, the Runelord of Greed",
+        "hit_points": 375,
+        "armor_class": "20 (Mage Armor + Shield)",
+        "speed": "30 ft., fly 60 ft.",
+        "abilities": {
+            "strength": 24,
+            "dexterity": 14,
+            "constitution": 22,
+            "intelligence": 24,
+            "wisdom": 18,
+            "charisma": 20
+        },
+        "saving_throws": {
+            "strength": "+12",
+            "dexterity": "+8",
+            "constitution": "+12",
+            "intelligence": "+14",
+            "wisdom": "+10",
+            "charisma": "+11"
+        },
+        "skills": [
+            "Arcana +14",
+            "Deception +11",
+            "History +14",
+            "Insight +10",
+            "Perception +10"
+        ],
+        "damage_resistances": "cold, force",
+        "condition_immunities": "charmed, frightened",
+        "senses": "darkvision 60 ft., truesight 60 ft., passive Perception 20",
+        "languages": "Giant, Common, Draconic, Infernal, Abyssal",
+        "challenge": 24,
+        "special_abilities": [
+            "Transmuter's Stone: Karzoug can create a magical stone that grants a variety of benefits, such as resistance to a specific damage type, increased speed, or the ability to breathe underwater.",
+            "Arcane Mastery: Karzoug can cast a number of spells at will, such as *Disguise Self*, *Mirror Image*, and *Invisibility*. He can also cast *Wish* once per day.",
+            "Greed's Power: When Karzoug reduces a creature to 0 hit points, he can siphon their life energy to heal himself for an amount equal to the damage dealt.",
+            "Action Surge (1/Short Rest): Karzoug can take one additional action on his turn.",
+            "Second Wind (1/Short Rest): As a bonus action, Karzoug can regain hit points equal to 1d10 + 3."
+        ],
+        "legendary_actions": {
+            "Arcane Ray": "Karzoug makes a ranged spell attack (+14 to hit) against one target within 120 feet. On a hit, the target takes 28 (8d6) force damage.",
+            "Transmute Flesh (Costs 2 Actions)": "Karzoug targets one creature he can see within 60 feet. The target must succeed on a DC 20 Constitution saving throw or be restrained as their flesh begins to turn to stone. The restrained target must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success.",
+            "Martial Prowess (Costs 2 Actions)": "Karzoug makes a melee weapon attack with advantage. On a hit, the attack deals an additional 3d8 radiant damage."
+        },
+        "actions": [
+            "Multiattack: Karzoug makes two Arcane Ray attacks or one attack with his Staff of Greed and one Arcane Ray attack.",
+            "Staff of Greed: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 22 (2d10 + 10) bludgeoning damage plus 14 (4d6) necrotic damage."
+        ],
+        "bonus_actions": [
+            "Second Wind: Karzoug can use a bonus action to regain hit points equal to 1d10 + 3."
+        ],
+        "reactions": [
+            "Arcane Deflection: When Karzoug is hit by an attack, he can use his reaction to add +4 to his AC against the attack, potentially causing it to miss."
+        ]
+    },
+    "Sharak the Sorcerer": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Sorcerer",
+                "archetype": "Shadow Magic",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Fighter",
+                "archetype": "Champion",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "Shadow Blade",
+            "Arcane Blast"
+        ],
+        "common_behaviors_actions": [
+            "Manipulating shadows and illusions to confuse and dominate his enemies.",
+            "Using his sorcery to deceive and ambush opponents in the darkness.",
+            "Combining physical power with arcane might to overwhelm his foes."
+        ],
+        "giant_type": "ogre mage",
+        "name": "Sharak the Sorcerer",
+        "hit_points": 340,
+        "armor_class": "20 (Mage Armor + Shield)",
+        "speed": "30 ft., fly 60 ft.",
+        "abilities": {
+            "strength": 22,
+            "dexterity": 14,
+            "constitution": 20,
+            "intelligence": 16,
+            "wisdom": 16,
+            "charisma": 24
+        },
+        "saving_throws": {
+            "strength": "+11",
+            "dexterity": "+8",
+            "constitution": "+11",
+            "intelligence": "+8",
+            "wisdom": "+8",
+            "charisma": "+14"
+        },
+        "skills": [
+            "Arcana +10",
+            "Deception +14",
+            "Stealth +8",
+            "Perception +8",
+            "Intimidation +14"
+        ],
+        "damage_resistances": "necrotic, psychic",
+        "condition_immunities": "charmed, frightened",
+        "senses": "darkvision 120 ft., passive Perception 18",
+        "languages": "Giant, Common, Infernal, Abyssal",
+        "challenge": 22,
+        "special_abilities": [
+            "Eyes of the Dark: Sharak can see normally in darkness, both magical and nonmagical, up to 120 feet.",
+            "Hound of Ill Omen: As a bonus action, Sharak can spend 3 sorcery points to summon a shadowy hound to track and harry one creature he can see within 120 feet. The hound has the statistics of a dire wolf, but with immunity to all damage except force and radiant damage.",
+            "Strength of the Shadows: When Sharak is in dim light or darkness, he has advantage on Strength checks and Strength saving throws.",
+            "Sorcery Points: Sharak has 18 sorcery points to use for Metamagic, such as Quickened Spell, Twinned Spell, and Subtle Spell.",
+            "Action Surge (1/Short Rest): Sharak can take one additional action on his turn."
+        ],
+        "legendary_actions": {
+            "Arcane Blast": "Sharak makes a ranged spell attack (+14 to hit) against one target within 120 feet. On a hit, the target takes 27 (6d8) force damage.",
+            "Shadow Step (Costs 2 Actions)": "Sharak teleports up to 60 feet to an unoccupied space he can see that is in dim light or darkness. He can then make one melee weapon attack.",
+            "Dark Rebuke (Costs 2 Actions)": "When Sharak takes damage from a creature he can see, he can force that creature to make a DC 20 Wisdom saving throw. On a failed save, the creature takes 30 (6d10) psychic damage."
+        },
+        "actions": [
+            "Multiattack: Sharak makes two attacks with his Shadow Blade or one with his Shadow Blade and one Arcane Blast.",
+            "Shadow Blade: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 19 (2d8 + 10) psychic damage.",
+            "Arcane Blast: Ranged Spell Attack: +14 to hit, range 120 ft., one target. Hit: 27 (6d8) force damage."
+        ],
+        "bonus_actions": [
+            "Hound of Ill Omen: Sharak can use a bonus action to summon a shadowy hound to track and harry one creature he can see within 120 feet."
+        ],
+        "reactions": [
+            "Uncanny Dodge: When an attacker that Sharak can see hits him with an attack, he can use his reaction to halve the attack's damage against him."
+        ]
     }
 }
