@@ -1,10 +1,8 @@
-from typing import List, Dict
+from typing import List
 
-from pydantic import BaseModel
 import json
 
-from .abililty_scores import AbilityScores
-from .savings_throws import SavingThrows
+from .stat_block_base import StatBlockBase
 from .directories import data
 
 with open(data("legendary_giant_stat_blocks.json")) as f:
@@ -27,31 +25,11 @@ wiggan_nettlebee_custom_stat_block = legendary_giant_stat_blocks["Wiggan Nettleb
 tartha_bear_slayer_custom_stat_block = legendary_giant_stat_blocks["Tartha Bear-Slayer"]
 
 
-class CharacterClass(BaseModel):
-    class_name: str
-    archetype: str
-    level: int
-
-
-class LegendaryGiantStatBlock(BaseModel):
-    character_class: Dict[str, CharacterClass]
-    unique_attacks_weapons: List[str]
-    common_behaviors_actions: List[str]
+class LegendaryGiantStatBlock(StatBlockBase):
     giant_type: str
-    name: str
-    hit_points: int
-    armor_class: int
-    speed: str
-    abilities: AbilityScores
-    saving_throws: SavingThrows
-    skills: List[str]
-    damage_resistances: str
-    condition_immunities: str
-    senses: str
-    languages: str
-    challenge: int
-    special_abilities: List[str]
-    legendary_actions: Dict[str, str]
     actions: List[str]
     bonus_actions: List[str]
     reactions: List[str]
+
+    class Config:
+        validate_assignment = True

@@ -1,10 +1,8 @@
-from typing import List, Dict
+from typing import Dict
 
-from pydantic import BaseModel
 import json
 
-from .abililty_scores import AbilityScores
-from .savings_throws import SavingThrows
+from .stat_block_base import StatBlockBase
 from .directories import data
 
 with open(data("legendary_dragon_stat_blocks.json")) as f:
@@ -25,21 +23,9 @@ tiamat_custom_stat_block = legendary_dragon_stat_blocks["Tiamat"]
 # zundaerazylym_custom_stat_block = legendary_dragon_stat_blocks["Zundaerazylym"]
 
 
-class LegendaryDragonStatBlock(BaseModel):
+class LegendaryDragonStatBlock(StatBlockBase):
     dragon_type: str
-    name: str
-    hit_points: int
-    armor_class: int
-    speed: str
-    abilities: AbilityScores
-    saving_throws: SavingThrows
-    skills: List[str]
-    damage_resistances: str
-    damage_immunities: str
-    condition_immunities: str
-    senses: str
-    languages: str
-    challenge: int
-    special_abilities: List[str]
     actions: Dict[str, str]
-    legendary_actions: Dict[str, str]
+
+    class Config:
+        validate_assignment = True
