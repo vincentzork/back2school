@@ -73,6 +73,7 @@
             "Unyielding: When Gog is subjected to an effect that allows him to make a Strength or Constitution saving throw to take only half damage, he can use his reaction to take no damage if he succeeds on the saving throw, or only half damage if he fails."
         ]
     },
+
     "Bruthazmus": {
         "character_class": {
             "primary_class": {
@@ -96,17 +97,17 @@
         "armor_class": 17,
         "speed": "30 ft.",
         "abilities": {
-            "strength": 20,
+            "strength": 22,
             "dexterity": 18,
-            "constitution": 18,
+            "constitution": 21,
             "intelligence": 14,
             "wisdom": 12,
             "charisma": 13
         },
         "saving_throws": {
-            "strength": "+10",
+            "strength": "+12",
             "dexterity": "+9",
-            "constitution": "+9",
+            "constitution": "+11",
             "intelligence": "+7",
             "wisdom": "+6",
             "charisma": "+6"
@@ -387,7 +388,7 @@
         "abilities": {
             "strength": 20,
             "dexterity": 16,
-            "constitution": 18,
+            "constitution": 20,
             "intelligence": 14,
             "wisdom": 12,
             "charisma": 18
@@ -395,7 +396,7 @@
         "saving_throws": {
             "strength": "+10",
             "dexterity": "+8",
-            "constitution": "+9",
+            "constitution": "+10",
             "intelligence": "+7",
             "wisdom": "+7",
             "charisma": "+10"

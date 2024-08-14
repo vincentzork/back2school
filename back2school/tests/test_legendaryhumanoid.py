@@ -70,8 +70,8 @@ def test_bruthazmus_stat_block(bruthazmus_stat_block):
     assert bruthazmus_stat_block.hit_points == 280
     assert bruthazmus_stat_block.armor_class == 17
     assert bruthazmus_stat_block.speed == "30 ft."
-    assert bruthazmus_stat_block.abilities.strength == 20
-    assert bruthazmus_stat_block.saving_throws.strength == 10
+    assert bruthazmus_stat_block.abilities.strength == 22
+    assert bruthazmus_stat_block.saving_throws.strength == 12
     assert "Stealth +12" in bruthazmus_stat_block.skills
     assert bruthazmus_stat_block.damage_resistances == "poison"
     assert bruthazmus_stat_block.condition_immunities == "frightened"

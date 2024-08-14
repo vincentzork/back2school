@@ -1,0 +1,1054 @@
+{
+    "Kharza": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Barbarian",
+                "archetype": "Path of the Berserker",
+                "level": 17
+            },
+            "secondary_class": {
+                "class_name": "Warrior",
+                "archetype": "Savage",
+                "level": 3
+            }
+        },
+        "unique_attacks_weapons": [
+            "Ravager's Axe",
+            "Gnashing Bite"
+        ],
+        "common_behaviors_actions": [
+            "Leading brutal raids, focusing on pure destruction and slaughter.",
+            "Using his berserk fury to tear through enemy lines with unmatched ferocity.",
+            "Howling to rally his gnoll pack and intimidate enemies."
+        ],
+        "race": "gnoll",
+        "name": "Kharza the Ravager",
+        "hit_points": 290,
+        "armor_class": 17,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 22,
+            "dexterity": 16,
+            "constitution": 20,
+            "intelligence": 8,
+            "wisdom": 12,
+            "charisma": 14
+        },
+        "saving_throws": {
+            "strength": "+10",
+            "dexterity": "+8",
+            "constitution": "+10",
+            "intelligence": "+4",
+            "wisdom": "+6",
+            "charisma": "+7"
+        },
+        "skills": [
+            "Athletics +12",
+            "Intimidation +9",
+            "Perception +8"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks while raging",
+        "condition_immunities": "charmed, frightened while raging",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Gnoll, Common",
+        "challenge": 17,
+        "special_abilities": [
+            "Savage Bloodlust: When Kharza reduces a creature to 0 hit points, he can make an additional melee attack as part of the same action. This attack deals an extra 1d8 damage.",
+            "Frenzied Rage: When Kharza enters his Rage, he can choose to enter a frenzied state. While in this state, he can make a single melee weapon attack as a bonus action on each of his turns, but he suffers 1d10 damage at the end of his rage.",
+            "Unyielding Fury: Kharza has advantage on saving throws against being paralyzed or stunned."
+        ],
+        "legendary_actions": {
+            "Ravager's Strike": "Kharza makes a single melee weapon attack with his Ravager's Axe. If the attack hits, the target must succeed on a DC 18 Constitution saving throw or be stunned until the end of Kharza's next turn.",
+            "Howl of Terror (Costs 2 Actions)": "Kharza lets out a bloodcurdling howl. All creatures of his choice within 30 feet must succeed on a DC 17 Wisdom saving throw or become frightened until the end of Kharza's next turn."
+        },
+        "actions": [
+            "Multiattack: Kharza makes three attacks with his Ravager's Axe or Gnashing Bite.",
+            "Ravager's Axe: Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 20 (2d12 + 6) slashing damage.",
+            "Gnashing Bite: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) piercing damage."
+        ],
+        "bonus_actions": [
+            "Rage: Kharza can enter a rage as a bonus action, gaining resistance to bludgeoning, piercing, and slashing damage, as well as a +2 bonus to damage rolls."
+        ],
+        "reactions": [
+            "Savage Instinct: When Kharza is hit by a melee attack, he can use his reaction to make a single melee weapon attack against the attacker."
+        ]
+    },
+    "Vorgath": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Shaman",
+                "archetype": "Blood Mage",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Warlock",
+                "archetype": "Pact of the Fiend",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "Bloodhowl Staff",
+            "Necrotic Claw"
+        ],
+        "common_behaviors_actions": [
+            "Performing dark rituals to summon spectral hyenas and empower his allies.",
+            "Channeling blood magic to enhance his own strength and that of his pack.",
+            "Howling to instill fear and chaos among his enemies."
+        ],
+        "race": "gnoll",
+        "name": "Vorgath the Bloodhowler",
+        "hit_points": 240,
+        "armor_class": 16,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 14,
+            "dexterity": 16,
+            "constitution": 18,
+            "intelligence": 12,
+            "wisdom": 20,
+            "charisma": 16
+        },
+        "saving_throws": {
+            "strength": "+7",
+            "dexterity": "+8",
+            "constitution": "+9",
+            "intelligence": "+6",
+            "wisdom": "+10",
+            "charisma": "+8"
+        },
+        "skills": [
+            "Arcana +10",
+            "Intimidation +8",
+            "Perception +10"
+        ],
+        "damage_resistances": "necrotic, psychic",
+        "condition_immunities": "frightened, charmed",
+        "senses": "darkvision 60 ft., passive Perception 20",
+        "languages": "Gnoll, Abyssal, Common",
+        "challenge": 16,
+        "special_abilities": [
+            "Blood Magic: Vorgath can sacrifice his own hit points to empower his spells, dealing an extra 2d8 necrotic damage. For each 5 hit points sacrificed, the damage increases by 1d8 (max 5d8).",
+            "Spectral Hyenas: Vorgath can summon 1d4 spectral hyenas as an action. Each hyena has AC 13, 22 hit points, and attacks with a bite (+6 to hit, 2d6+3 piercing damage). The hyenas last for 1 hour or until destroyed.",
+            "Howl of Madness: Vorgath can unleash a blood-curdling howl that causes all enemies within 30 feet to make a DC 18 Wisdom saving throw or be stunned until the end of their next turn."
+        ],
+        "legendary_actions": {
+            "Bloodhowl": "Vorgath makes a single melee weapon attack with his Bloodhowl Staff. If the attack hits, the target must succeed on a DC 18 Constitution saving throw or take an additional 2d8 necrotic damage and be frightened until the end of Vorgath's next turn.",
+            "Summon Specters (Costs 2 Actions)": "Vorgath summons 1d2 spectral hyenas or specters to assist him in battle. These creatures act immediately after Vorgath in the initiative order."
+        },
+        "actions": [
+            "Multiattack: Vorgath makes two attacks with his Bloodhowl Staff or Necrotic Claw.",
+            "Bloodhowl Staff: Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage plus 2d8 necrotic damage.",
+            "Necrotic Claw: Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 1d8 necrotic damage."
+        ],
+        "bonus_actions": [
+            "Dark Pact: Vorgath can use a bonus action to regain 1d10 + 5 hit points. This can be used once per short or long rest."
+        ],
+        "reactions": [
+            "Blood Shield: When Vorgath is hit by a melee attack, he can use his reaction to cast a shield of blood, granting him +4 AC until the end of his next turn. If the attack misses, the attacker takes 2d6 necrotic damage."
+        ]
+    },
+    "Kazrak": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Fighter",
+                "archetype": "Battle Master",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Fighter",
+                "archetype": "Champion",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "Ironblood Glaive",
+            "Commanding Strike"
+        ],
+        "common_behaviors_actions": [
+            "Leading armies with unmatched military strategy and discipline.",
+            "Using his tactical acumen to outmaneuver and overwhelm enemies on the battlefield.",
+            "Personally engaging in combat with his enchanted glaive, leading by example."
+        ],
+        "race": "hobgoblin",
+        "name": "General Kazrak Ironblood",
+        "hit_points": 250,
+        "armor_class": 20,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 18,
+            "dexterity": 16,
+            "constitution": 18,
+            "intelligence": 18,
+            "wisdom": 16,
+            "charisma": 14
+        },
+        "saving_throws": {
+            "strength": "+8",
+            "dexterity": "+7",
+            "constitution": "+8",
+            "intelligence": "+9",
+            "wisdom": "+8",
+            "charisma": "+7"
+        },
+        "skills": [
+            "Athletics +10",
+            "Intimidation +7",
+            "Perception +8",
+            "History +9"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+        "condition_immunities": "charmed, frightened",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Goblin, Common, Infernal",
+        "challenge": 18,
+        "special_abilities": [
+            "Battlefield Commander: General Kazrak can use a bonus action to grant an ally within 60 feet an additional melee attack on their next turn.",
+            "Tactical Mastery: General Kazrak can use his Intelligence modifier for initiative rolls. Additionally, once per turn, he can reroll a failed attack roll or saving throw.",
+            "Indomitable Will: General Kazrak has advantage on saving throws against being charmed or frightened."
+        ],
+        "legendary_actions": {
+            "Ironblood Strike": "General Kazrak makes a single melee weapon attack with his Ironblood Glaive. If the attack hits, the target must succeed on a DC 18 Constitution saving throw or be stunned until the end of General Kazrak's next turn.",
+            "War Cry (Costs 2 Actions)": "General Kazrak lets out a commanding shout. All allies within 30 feet gain advantage on their next attack roll or saving throw until the end of their next turn."
+        },
+        "actions": [
+            "Multiattack: General Kazrak makes three attacks with his Ironblood Glaive or uses his Commanding Strike.",
+            "Ironblood Glaive: Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 20 (2d12 + 6) slashing damage.",
+            "Commanding Strike: General Kazrak can command one of his allies within 60 feet to make a melee attack with a +3 bonus to the damage roll."
+        ],
+        "bonus_actions": [
+            "Tactical Positioning: General Kazrak can use a bonus action to move up to half his speed without provoking opportunity attacks."
+        ],
+        "reactions": [
+            "Parry: When General Kazrak is hit by a melee attack, he can use his reaction to add +4 to his AC for that attack, potentially causing the attack to miss."
+        ]
+    },
+    "Thalrak": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Fighter",
+                "archetype": "Champion",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Colossal Warhammer",
+            "Unyielding Strike"
+        ],
+        "common_behaviors_actions": [
+            "Leading hobgoblin troops into battle with unwavering resolve.",
+            "Standing firm against overwhelming odds, refusing to retreat.",
+            "Inspiring allies with his indomitable spirit, boosting their morale."
+        ],
+        "race": "hobgoblin",
+        "name": "Thalrak the Unyielding",
+        "hit_points": 300,
+        "armor_class": 22,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 20,
+            "dexterity": 14,
+            "constitution": 20,
+            "intelligence": 12,
+            "wisdom": 14,
+            "charisma": 16
+        },
+        "saving_throws": {
+            "strength": "+10",
+            "dexterity": "+7",
+            "constitution": "+10",
+            "intelligence": "+6",
+            "wisdom": "+7",
+            "charisma": "+8"
+        },
+        "skills": [
+            "Athletics +12",
+            "Intimidation +9",
+            "Perception +8",
+            "Survival +8"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+        "condition_immunities": "frightened, paralyzed",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Goblin, Common",
+        "challenge": 19,
+        "special_abilities": [
+            "Unyielding Endurance: Thalrak can reduce damage from a single attack by half as a reaction. This ability recharges after a short or long rest.",
+            "Rallying Cry: Thalrak can use a bonus action to inspire his allies. All allies within 30 feet gain temporary hit points equal to Thalrak's Charisma modifier + 1d10.",
+            "Indomitable Will: Thalrak has advantage on saving throws against being frightened or paralyzed."
+        ],
+        "legendary_actions": {
+            "Unyielding Strike": "Thalrak makes a single melee weapon attack with his Colossal Warhammer. If the attack hits, the target must succeed on a DC 19 Constitution saving throw or be knocked prone and take an additional 2d8 bludgeoning damage.",
+            "Inspiring Roar (Costs 2 Actions)": "Thalrak lets out a thunderous roar. All allies within 30 feet gain advantage on their next attack roll and saving throw until the end of their next turn."
+        },
+        "actions": [
+            "Multiattack: Thalrak makes three attacks with his Colossal Warhammer.",
+            "Colossal Warhammer: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 24 (3d10 + 6) bludgeoning damage."
+        ],
+        "bonus_actions": [
+            "Rallying Cry: Thalrak can use a bonus action to inspire his allies. All allies within 30 feet gain temporary hit points equal to Thalrak's Charisma modifier + 1d10."
+        ],
+        "reactions": [
+            "Unyielding Endurance: Thalrak can reduce damage from a single attack by half as a reaction. This ability recharges after a short or long rest."
+        ]
+    },
+    "Morgath": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Wizard",
+                "archetype": "War Mage",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Fighter",
+                "archetype": "Eldritch Knight",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "Enchanted Longsword",
+            "Arcane Bolt"
+        ],
+        "common_behaviors_actions": [
+            "Combining martial prowess with devastating battle magic.",
+            "Using fire and lightning spells to decimate enemy ranks.",
+            "Enchanting his weapons and armor to enhance their effectiveness in battle."
+        ],
+        "race": "hobgoblin",
+        "name": "Morgath the Red",
+        "hit_points": 240,
+        "armor_class": 18,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 16,
+            "dexterity": 14,
+            "constitution": 16,
+            "intelligence": 20,
+            "wisdom": 14,
+            "charisma": 12
+        },
+        "saving_throws": {
+            "strength": "+8",
+            "dexterity": "+7",
+            "constitution": "+8",
+            "intelligence": "+10",
+            "wisdom": "+7",
+            "charisma": "+6"
+        },
+        "skills": [
+            "Arcana +12",
+            "History +10",
+            "Perception +8",
+            "Intimidation +6"
+        ],
+        "damage_resistances": "fire, lightning",
+        "condition_immunities": "charmed, frightened",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Goblin, Common, Draconic",
+        "challenge": 18,
+        "special_abilities": [
+            "Arcane Ward: Morgath can create a magical barrier around himself that absorbs 20 damage from incoming attacks. This ward recharges after a short or long rest.",
+            "Battle Magic: When Morgath uses his action to cast a cantrip, he can make one weapon attack as a bonus action.",
+            "Spell Resistance: Morgath has advantage on saving throws against spells and other magical effects."
+        ],
+        "legendary_actions": {
+            "Arcane Blast": "Morgath makes a ranged spell attack with Arcane Bolt. If the attack hits, it deals 4d8 force damage, and the target must succeed on a DC 18 Strength saving throw or be pushed back 10 feet.",
+            "Fiery Burst (Costs 2 Actions)": "Morgath casts Fireball centered on himself. He is immune to its effects, but all other creatures within 20 feet must make a DC 18 Dexterity saving throw, taking 8d6 fire damage on a failed save, or half as much on a successful one."
+        },
+        "actions": [
+            "Multiattack: Morgath makes two attacks with his Enchanted Longsword or casts two cantrips.",
+            "Enchanted Longsword: Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage plus 1d8 fire damage.",
+            "Arcane Bolt: Ranged Spell Attack: +10 to hit, range 120 ft., one target. Hit: 18 (4d8) force damage."
+        ],
+        "bonus_actions": [
+            "War Magic: When Morgath uses his action to cast a cantrip, he can make one weapon attack as a bonus action."
+        ],
+        "reactions": [
+            "Shield: When Morgath is hit by an attack, he can use his reaction to cast Shield, increasing his AC by +5 until the start of his next turn."
+        ]
+    },
+    "Rikard": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Rogue",
+                "archetype": "Assassin",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Shadow Dagger",
+            "Life-Sapping Blade"
+        ],
+        "common_behaviors_actions": [
+            "Striking from the shadows and disappearing without a trace.",
+            "Using poison and ambush tactics to eliminate high-profile targets.",
+            "Commanding a network of spies and assassins known as the 'Silent Dagger.'"
+        ],
+        "race": "goblin",
+        "name": "Rikard the Shadowblade",
+        "hit_points": 200,
+        "armor_class": 17,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 12,
+            "dexterity": 22,
+            "constitution": 14,
+            "intelligence": 16,
+            "wisdom": 14,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "strength": "+6",
+            "dexterity": "+11",
+            "constitution": "+7",
+            "intelligence": "+8",
+            "wisdom": "+7",
+            "charisma": "+9"
+        },
+        "skills": [
+            "Stealth +17",
+            "Acrobatics +11",
+            "Deception +11",
+            "Insight +9",
+            "Perception +9",
+            "Sleight of Hand +11",
+            "Intimidation +9"
+        ],
+        "damage_resistances": "poison, psychic",
+        "condition_immunities": "charmed, frightened",
+        "senses": "darkvision 60 ft., passive Perception 19",
+        "languages": "Goblin, Common, Thieves' Cant",
+        "challenge": 19,
+        "special_abilities": [
+            "Assassinate: Rikard has advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit Rikard scores against a surprised creature is a critical hit.",
+            "Cloak of Shadows: Rikard can use a bonus action to become invisible until the start of his next turn, or until he attacks, makes a damage roll, or forces someone to make a saving throw.",
+            "Poison Mastery: Rikard’s weapons are coated with a potent poison. When he hits a creature with a melee attack, the creature must succeed on a DC 18 Constitution saving throw or take 4d6 poison damage and be poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+        ],
+        "legendary_actions": {
+            "Shadow Step": "Rikard teleports up to 30 feet to an unoccupied space he can see. He becomes invisible until the start of his next turn.",
+            "Silent Strike (Costs 2 Actions)": "Rikard makes a melee weapon attack with his Shadow Dagger. If the attack hits, it deals an additional 4d6 necrotic damage, and the target must succeed on a DC 18 Wisdom saving throw or be paralyzed until the end of Rikard's next turn."
+        },
+        "actions": [
+            "Multiattack: Rikard makes three attacks with his Shadow Dagger or Life-Sapping Blade.",
+            "Shadow Dagger: Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) piercing damage plus 2d6 poison damage.",
+            "Life-Sapping Blade: Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) piercing damage plus 4d6 necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest."
+        ],
+        "bonus_actions": [
+            "Cloak of Shadows: Rikard can use a bonus action to become invisible until the start of his next turn, or until he attacks, makes a damage roll, or forces someone to make a saving throw."
+        ],
+        "reactions": [
+            "Uncanny Dodge: When an attacker that Rikard can see hits him with an attack, he can use his reaction to halve the attack’s damage against him."
+        ]
+    },
+    "Skragg": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Fighter",
+                "archetype": "Warlord",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Bard",
+                "archetype": "College of Valor",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "War Horn",
+            "Gutripper Axe"
+        ],
+        "common_behaviors_actions": [
+            "Leading goblin hordes into battle with brutal efficiency.",
+            "Using his war horn to summon reinforcements or demoralize enemies.",
+            "Employing guerrilla warfare tactics to outmaneuver and overwhelm his enemies."
+        ],
+        "race": "goblin",
+        "name": "Skragg the Warcaller",
+        "hit_points": 220,
+        "armor_class": 19,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 18,
+            "dexterity": 16,
+            "constitution": 18,
+            "intelligence": 14,
+            "wisdom": 12,
+            "charisma": 16
+        },
+        "saving_throws": {
+            "strength": "+10",
+            "dexterity": "+8",
+            "constitution": "+9",
+            "intelligence": "+7",
+            "wisdom": "+6",
+            "charisma": "+8"
+        },
+        "skills": [
+            "Athletics +12",
+            "Intimidation +11",
+            "Perception +8",
+            "Stealth +9",
+            "Survival +8"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+        "condition_immunities": "frightened, charmed",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Goblin, Common",
+        "challenge": 18,
+        "special_abilities": [
+            "Warcaller’s Command: Skragg can use a bonus action to give a command to one allied creature within 60 feet. The creature can immediately use its reaction to move up to its speed or make one weapon attack.",
+            "Guerrilla Tactics: Skragg has advantage on attack rolls when he or his allies are attacking from cover or when they have hit-and-run tactics.",
+            "Horn of Doom: Skragg's war horn has three charges. As an action, he can expend one charge to either summon 1d4+1 goblin warriors, cause all enemies within 30 feet to make a DC 18 Wisdom saving throw or be frightened until the end of Skragg's next turn, or rally his allies, giving them advantage on their next attack roll."
+        ],
+        "legendary_actions": {
+            "War Horn Blast": "Skragg blows his war horn, causing all enemies within 30 feet to make a DC 18 Wisdom saving throw or be frightened until the end of Skragg's next turn.",
+            "Gutripper Slash (Costs 2 Actions)": "Skragg makes a melee weapon attack with his Gutripper Axe. If the attack hits, it deals an additional 4d6 slashing damage, and the target must succeed on a DC 18 Constitution saving throw or be incapacitated until the end of Skragg's next turn."
+        },
+        "actions": [
+            "Multiattack: Skragg makes three attacks with his Gutripper Axe.",
+            "Gutripper Axe: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 18 (2d8 + 8) slashing damage."
+        ],
+        "bonus_actions": [
+            "Warcaller’s Command: Skragg can use a bonus action to give a command to one allied creature within 60 feet. The creature can immediately use its reaction to move up to its speed or make one weapon attack."
+        ],
+        "reactions": [
+            "Parry: When Skragg is hit by a melee attack, he can use his reaction to add +3 to his AC for that attack, potentially causing the attack to miss."
+        ]
+    },
+    "Grishna": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Sorcerer",
+                "archetype": "Pyromancer",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Warlock",
+                "archetype": "Fiend Patron",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "Inferno Staff",
+            "Flameburst Orb"
+        ],
+        "common_behaviors_actions": [
+            "Spreading chaos with fire and destruction.",
+            "Using powerful fire magic to incinerate enemies and their defenses.",
+            "Unleashing infernal spells granted by her fiendish patron."
+        ],
+        "race": "goblin",
+        "name": "Grishna the Firestarter",
+        "hit_points": 190,
+        "armor_class": 17,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 10,
+            "dexterity": 16,
+            "constitution": 14,
+            "intelligence": 12,
+            "wisdom": 14,
+            "charisma": 20
+        },
+        "saving_throws": {
+            "strength": "+4",
+            "dexterity": "+8",
+            "constitution": "+7",
+            "intelligence": "+6",
+            "wisdom": "+7",
+            "charisma": "+10"
+        },
+        "skills": [
+            "Arcana +12",
+            "Deception +10",
+            "Intimidation +12",
+            "Perception +8",
+            "Stealth +9"
+        ],
+        "damage_resistances": "fire",
+        "condition_immunities": "frightened, charmed",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Goblin, Common, Infernal",
+        "challenge": 18,
+        "special_abilities": [
+            "Fiery Presence: Grishna can use a bonus action to cause flames to erupt around her. All creatures within 10 feet must succeed on a DC 18 Dexterity saving throw or take 3d6 fire damage.",
+            "Hellish Rebuke: When Grishna is hit by an attack, she can use her reaction to cast Hellish Rebuke at 4th level, dealing 4d10 fire damage to the attacker on a failed DC 18 Dexterity saving throw, or half as much on a successful save.",
+            "Inferno Mastery: Grishna's fire spells ignore resistance to fire damage, and creatures with immunity to fire damage take half damage from her fire spells."
+        ],
+        "legendary_actions": {
+            "Flame Wave": "Grishna unleashes a wave of fire in a 30-foot cone. Each creature in the area must make a DC 18 Dexterity saving throw, taking 8d6 fire damage on a failed save, or half as much on a successful one.",
+            "Infernal Blast (Costs 2 Actions)": "Grishna makes a ranged spell attack with her Inferno Staff. If the attack hits, it deals an additional 4d8 fire damage and ignites the target, causing them to take 2d6 fire damage at the start of each of their turns until they take an action to extinguish the flames."
+        },
+        "actions": [
+            "Multiattack: Grishna makes two attacks with her Inferno Staff or casts two cantrips.",
+            "Inferno Staff: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 12 (1d8 + 6) bludgeoning damage plus 2d8 fire damage.",
+            "Flameburst Orb: Ranged Spell Attack: +10 to hit, range 60 ft., one target. Hit: 14 (2d10 + 4) fire damage."
+        ],
+        "bonus_actions": [
+            "Fiery Presence: Grishna can use a bonus action to cause flames to erupt around her. All creatures within 10 feet must succeed on a DC 18 Dexterity saving throw or take 3d6 fire damage."
+        ],
+        "reactions": [
+            "Hellish Rebuke: When Grishna is hit by an attack, she can use her reaction to cast Hellish Rebuke at 4th level, dealing 4d10 fire damage to the attacker on a failed DC 18 Dexterity saving throw, or half as much on a successful save."
+        ]
+    },
+    "Thorgar": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Rogue",
+                "archetype": "Assassin",
+                "level": 19
+            }
+        },
+        "unique_attacks_weapons": [
+            "Silencing Dagger",
+            "Shadowstrike Dagger"
+        ],
+        "common_behaviors_actions": [
+            "Stalking high-value targets from the shadows and striking when they least expect it.",
+            "Employing poison and ambush tactics to eliminate enemies swiftly.",
+            "Using his mastery of stealth to infiltrate heavily guarded areas and execute assassination missions."
+        ],
+        "race": "bugbear",
+        "name": "Thorgar the Silent Hunter",
+        "hit_points": 210,
+        "armor_class": 18,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 16,
+            "dexterity": 22,
+            "constitution": 16,
+            "intelligence": 14,
+            "wisdom": 14,
+            "charisma": 12
+        },
+        "saving_throws": {
+            "strength": "+8",
+            "dexterity": "+11",
+            "constitution": "+8",
+            "intelligence": "+7",
+            "wisdom": "+7",
+            "charisma": "+6"
+        },
+        "skills": [
+            "Stealth +17",
+            "Acrobatics +11",
+            "Deception +10",
+            "Perception +9",
+            "Sleight of Hand +11",
+            "Intimidation +8"
+        ],
+        "damage_resistances": "poison, psychic",
+        "condition_immunities": "charmed, frightened",
+        "senses": "darkvision 60 ft., passive Perception 19",
+        "languages": "Goblin, Common, Undercommon",
+        "challenge": 18,
+        "special_abilities": [
+            "Assassinate: Thorgar has advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit Thorgar scores against a surprised creature is a critical hit.",
+            "Silent Killer: Thorgar's daggers are enchanted to muffle the sounds of his attacks. When he hits with a melee attack using his daggers, the target must succeed on a DC 18 Wisdom saving throw or be silenced (unable to speak or cast spells with verbal components) until the end of Thorgar's next turn.",
+            "Poison Mastery: Thorgar’s weapons are coated with a potent poison. When he hits a creature with a melee attack, the creature must succeed on a DC 18 Constitution saving throw or take 4d6 poison damage and be poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+        ],
+        "legendary_actions": {
+            "Shadow Step": "Thorgar teleports up to 30 feet to an unoccupied space he can see. He becomes invisible until the start of his next turn.",
+            "Death Strike (Costs 2 Actions)": "Thorgar makes a melee weapon attack with his Silencing Dagger. If the attack hits, it deals an additional 4d6 necrotic damage, and the target must succeed on a DC 18 Constitution saving throw or be paralyzed until the end of Thorgar's next turn."
+        },
+        "actions": [
+            "Multiattack: Thorgar makes three attacks with his Silencing Dagger or Shadowstrike Dagger.",
+            "Silencing Dagger: Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 16 (2d8 + 6) piercing damage plus 2d6 poison damage.",
+            "Shadowstrike Dagger: Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 5) piercing damage plus 2d6 necrotic damage."
+        ],
+        "bonus_actions": [
+            "Cunning Action: Thorgar can use a bonus action to Dash, Disengage, or Hide."
+        ],
+        "reactions": [
+            "Uncanny Dodge: When an attacker that Thorgar can see hits him with an attack, he can use his reaction to halve the attack’s damage against him."
+        ]
+    },
+    "Gorruk": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Barbarian",
+                "archetype": "Path of the Berserker",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Fighter",
+                "archetype": "Champion",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "Spiked Club",
+            "Bonecrusher Fists"
+        ],
+        "common_behaviors_actions": [
+            "Charging into combat with reckless abandon.",
+            "Using his immense strength to overpower foes and break through defenses.",
+            "Roaring in fury as he crushes bones and armor alike."
+        ],
+        "race": "bugbear",
+        "name": "Gorruk the Bonebreaker",
+        "hit_points": 250,
+        "armor_class": 17,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 24,
+            "dexterity": 14,
+            "constitution": 20,
+            "intelligence": 10,
+            "wisdom": 12,
+            "charisma": 8
+        },
+        "saving_throws": {
+            "strength": "+12",
+            "dexterity": "+7",
+            "constitution": "+10",
+            "intelligence": "+5",
+            "wisdom": "+6",
+            "charisma": "+4"
+        },
+        "skills": [
+            "Athletics +14",
+            "Intimidation +8",
+            "Perception +8"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks while raging",
+        "condition_immunities": "frightened while raging",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Goblin, Common",
+        "challenge": 19,
+        "special_abilities": [
+            "Rage: Gorruk can enter a rage as a bonus action, gaining resistance to bludgeoning, piercing, and slashing damage, as well as a +2 bonus to damage rolls.",
+            "Frenzy: While raging, Gorruk can make a single melee weapon attack as a bonus action on each of his turns.",
+            "Relentless: If Gorruk takes damage that would reduce him to 0 hit points, he is instead reduced to 1 hit point unless the damage comes from a critical hit. This ability recharges after a short or long rest.",
+            "Second Wind (1/Short Rest): Gorruk can use a bonus action to regain hit points equal to 1d10 + his Fighter level."
+        ],
+        "legendary_actions": {
+            "Crushing Blow": "Gorruk makes a melee weapon attack with his Spiked Club. If the attack hits, the target must succeed on a DC 19 Constitution saving throw or be stunned until the end of Gorruk's next turn.",
+            "Berserker's Roar (Costs 2 Actions)": "Gorruk unleashes a terrifying roar. All enemies within 30 feet must succeed on a DC 18 Wisdom saving throw or become frightened until the end of Gorruk's next turn."
+        },
+        "actions": [
+            "Multiattack: Gorruk makes three attacks with his Spiked Club or Bonecrusher Fists.",
+            "Spiked Club: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 25 (3d10 + 8) bludgeoning damage.",
+            "Bonecrusher Fists: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 20 (2d8 + 8) bludgeoning damage."
+        ],
+        "bonus_actions": [
+            "Frenzy: While raging, Gorruk can make a single melee weapon attack as a bonus action on each of his turns.",
+            "Second Wind: Gorruk can use a bonus action to regain hit points equal to 1d10 + his Fighter level."
+        ],
+        "reactions": [
+            "Unyielding: When Gorruk is subjected to an effect that allows him to make a Strength or Constitution saving throw to take only half damage, he can use his reaction to take no damage if he succeeds on the saving throw, or only half damage if he fails."
+        ]
+    },
+    "Kragga": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Ranger",
+                "archetype": "Beast Master",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Rogue",
+                "archetype": "Scout",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "Longbow of the Hunt",
+            "Beastmaster's Whip"
+        ],
+        "common_behaviors_actions": [
+            "Coordinating attacks with his trained beasts to overwhelm enemies.",
+            "Using cunning strategies to outmaneuver and trap his foes.",
+            "Employing his bow to strike from a distance, while his beasts harass and distract."
+        ],
+        "race": "bugbear",
+        "name": "Kragga the Huntmaster",
+        "hit_points": 200,
+        "armor_class": 18,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 18,
+            "dexterity": 20,
+            "constitution": 16,
+            "intelligence": 12,
+            "wisdom": 18,
+            "charisma": 10
+        },
+        "saving_throws": {
+            "strength": "+10",
+            "dexterity": "+11",
+            "constitution": "+8",
+            "intelligence": "+6",
+            "wisdom": "+10",
+            "charisma": "+5"
+        },
+        "skills": [
+            "Stealth +15",
+            "Survival +12",
+            "Perception +10",
+            "Nature +8",
+            "Animal Handling +10"
+        ],
+        "damage_resistances": "poison, bludgeoning from nonmagical attacks",
+        "condition_immunities": "charmed, frightened",
+        "senses": "darkvision 60 ft., passive Perception 20",
+        "languages": "Goblin, Common, Sylvan",
+        "challenge": 18,
+        "special_abilities": [
+            "Beast Command: Kragga can use a bonus action to command one of his beasts to make a melee attack, Dash, Disengage, or use the Help action.",
+            "Master Trapper: Kragga can set a trap as an action, choosing from a list of prepared traps (e.g., snare, pitfall). Creatures that trigger the trap must make a DC 18 saving throw or suffer the effects.",
+            "Hunter's Mark: Kragga can mark a target as his quarry, granting him advantage on all attack rolls against that target and dealing an extra 1d8 damage on each hit."
+        ],
+        "legendary_actions": {
+            "Coordinated Strike": "Kragga commands all his beasts to attack simultaneously. Each beast within 30 feet of Kragga can make one melee attack.",
+            "Rain of Arrows (Costs 2 Actions)": "Kragga makes a ranged attack with his Longbow of the Hunt against each creature he can see within 60 feet. Each target takes 2d8 piercing damage on a hit."
+        },
+        "actions": [
+            "Multiattack: Kragga makes two attacks with his Longbow of the Hunt or Beastmaster's Whip.",
+            "Longbow of the Hunt: Ranged Weapon Attack: +11 to hit, range 150/600 ft., one target. Hit: 15 (2d8 + 6) piercing damage plus 1d8 poison damage.",
+            "Beastmaster's Whip: Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 6) slashing damage. If the target is a beast, it must succeed on a DC 18 Wisdom saving throw or be charmed by Kragga until the end of its next turn."
+        ],
+        "bonus_actions": [
+            "Beast Command: Kragga can use a bonus action to command one of his beasts to make a melee attack, Dash, Disengage, or use the Help action."
+        ],
+        "reactions": [
+            "Counterattack: When a beast under Kragga's command is attacked, Kragga can use his reaction to make a ranged attack with his Longbow of the Hunt against the attacker."
+        ]
+    },
+    "Mazrak": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Fighter",
+                "archetype": "Battle Master",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Warlock",
+                "archetype": "Hexblade",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "Darkshadow Warhammer",
+            "Gloomstrike"
+        ],
+        "common_behaviors_actions": [
+            "Leading his bugbear tribes with brutal efficiency and tactical brilliance.",
+            "Employing guerrilla warfare tactics, including hit-and-run and ambushes, to outmaneuver his enemies.",
+            "Using his warhammer infused with dark magic to shatter shields and crush bones."
+        ],
+        "race": "bugbear",
+        "name": "Mazrak the Darkshadow",
+        "hit_points": 240,
+        "armor_class": 19,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 20,
+            "dexterity": 14,
+            "constitution": 18,
+            "intelligence": 16,
+            "wisdom": 14,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "strength": "+10",
+            "dexterity": "+7",
+            "constitution": "+9",
+            "intelligence": "+8",
+            "wisdom": "+7",
+            "charisma": "+9"
+        },
+        "skills": [
+            "Athletics +12",
+            "Intimidation +11",
+            "Perception +9",
+            "Stealth +9",
+            "Survival +8"
+        ],
+        "damage_resistances": "necrotic, bludgeoning from nonmagical attacks",
+        "condition_immunities": "frightened, charmed",
+        "senses": "darkvision 60 ft., passive Perception 19",
+        "languages": "Goblin, Common, Infernal",
+        "challenge": 19,
+        "special_abilities": [
+            "Dark Command: Mazrak can use a bonus action to command one of his allies within 60 feet to move up to its speed or make a single weapon attack.",
+            "Guerilla Tactician: Mazrak and his allies have advantage on attack rolls when they are hidden from their enemies or when they strike from cover.",
+            "Hexblade's Curse: Mazrak can place a curse on a creature within 30 feet. He gains a bonus to damage rolls against the cursed target equal to his proficiency bonus, and he scores a critical hit on a roll of 19 or 20."
+        ],
+        "legendary_actions": {
+            "Gloomstrike": "Mazrak makes a melee weapon attack with his Darkshadow Warhammer. If the attack hits, the target must succeed on a DC 18 Constitution saving throw or take an additional 4d6 necrotic damage and be blinded until the end of Mazrak's next turn.",
+            "Shadow Step (Costs 2 Actions)": "Mazrak teleports up to 30 feet to an unoccupied space he can see, becoming invisible until the start of his next turn."
+        },
+        "actions": [
+            "Multiattack: Mazrak makes three attacks with his Darkshadow Warhammer or Gloomstrike.",
+            "Darkshadow Warhammer: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 22 (3d8 + 6) bludgeoning damage plus 2d6 necrotic damage.",
+            "Gloomstrike: Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 20 (2d10 + 6) bludgeoning damage plus 4d6 necrotic damage."
+        ],
+        "bonus_actions": [
+            "Dark Command: Mazrak can use a bonus action to command one of his allies within 60 feet to move up to its speed or make a single weapon attack."
+        ],
+        "reactions": [
+            "Parry: When Mazrak is hit by a melee attack, he can use his reaction to add +3 to his AC for that attack, potentially causing the attack to miss."
+        ]
+    },
+    "Vorgeth": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Wizard",
+                "archetype": "Necromancer",
+                "level": 18
+            },
+            "secondary_class": {
+                "class_name": "Warlock",
+                "archetype": "Pact of the Undying",
+                "level": 2
+            }
+        },
+        "unique_attacks_weapons": [
+            "Staff of Bones",
+            "Necrotic Touch"
+        ],
+        "common_behaviors_actions": [
+            "Commanding an army of undead to overwhelm and terrify his enemies.",
+            "Channeling necrotic energy through his staff to drain the life force of his foes.",
+            "Using his necromantic powers to raise the dead on the battlefield."
+        ],
+        "race": "bugbear",
+        "name": "Vorgeth the Soulflayer",
+        "hit_points": 180,
+        "armor_class": 17,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 12,
+            "dexterity": 14,
+            "constitution": 16,
+            "intelligence": 20,
+            "wisdom": 18,
+            "charisma": 16
+        },
+        "saving_throws": {
+            "strength": "+4",
+            "dexterity": "+7",
+            "constitution": "+8",
+            "intelligence": "+10",
+            "wisdom": "+9",
+            "charisma": "+8"
+        },
+        "skills": [
+            "Arcana +12",
+            "History +10",
+            "Perception +9",
+            "Intimidation +8"
+        ],
+        "damage_resistances": "necrotic, cold",
+        "condition_immunities": "frightened, charmed",
+        "senses": "darkvision 60 ft., passive Perception 19",
+        "languages": "Goblin, Common, Abyssal",
+        "challenge": 18,
+        "special_abilities": [
+            "Undead Mastery: Vorgeth can control up to twice the usual number of undead using his necromancy spells. Additionally, undead under his control have advantage on attack rolls and saving throws while within 60 feet of him.",
+            "Life Drain: When Vorgeth reduces a creature to 0 hit points, he regains hit points equal to the damage dealt. This ability can only be used once per turn.",
+            "Aura of Dread: Any creature that starts its turn within 10 feet of Vorgeth must succeed on a DC 18 Wisdom saving throw or be frightened until the end of its next turn."
+        ],
+        "legendary_actions": {
+            "Necrotic Bolt": "Vorgeth makes a ranged spell attack with Necrotic Touch. If the attack hits, it deals 4d8 necrotic damage, and the target must succeed on a DC 18 Constitution saving throw or have its hit point maximum reduced by the damage taken.",
+            "Raise Dead (Costs 2 Actions)": "Vorgeth raises 1d4 skeletons or zombies within 30 feet of him. These undead remain under his control until destroyed."
+        },
+        "actions": [
+            "Multiattack: Vorgeth makes two attacks with his Staff of Bones or casts two cantrips.",
+            "Staff of Bones: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage plus 2d6 necrotic damage.",
+            "Necrotic Touch: Ranged Spell Attack: +10 to hit, range 120 ft., one target. Hit: 18 (4d8) necrotic damage."
+        ],
+        "bonus_actions": [
+            "Life Drain: When Vorgeth reduces a creature to 0 hit points, he regains hit points equal to the damage dealt."
+        ],
+        "reactions": [
+            "Shield: When Vorgeth is hit by an attack, he can use his reaction to cast Shield, increasing his AC by +5 until the start of his next turn."
+        ]
+    },
+    "Zorgath": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Barbarian",
+                "archetype": "Path of the Bloodrager",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Bloodthirsty Greatsword",
+            "Bloodletting Claws"
+        ],
+        "common_behaviors_actions": [
+            "Charging into battle with a ferocious bloodlust.",
+            "Using blood magic to absorb the life force of his enemies and heal himself.",
+            "Empowering himself and his allies with the blood of his enemies."
+        ],
+        "race": "bugbear",
+        "name": "Zorgath the Bloodhound",
+        "hit_points": 280,
+        "armor_class": 18,
+        "speed": "40 ft.",
+        "abilities": {
+            "strength": 22,
+            "dexterity": 16,
+            "constitution": 20,
+            "intelligence": 10,
+            "wisdom": 14,
+            "charisma": 12
+        },
+        "saving_throws": {
+            "strength": "+12",
+            "dexterity": "+8",
+            "constitution": "+10",
+            "intelligence": "+5",
+            "wisdom": "+7",
+            "charisma": "+6"
+        },
+        "skills": [
+            "Athletics +14",
+            "Intimidation +10",
+            "Perception +9",
+            "Survival +9"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks while raging",
+        "condition_immunities": "charmed, frightened",
+        "senses": "darkvision 60 ft., passive Perception 19",
+        "languages": "Goblin, Common",
+        "challenge": 19,
+        "special_abilities": [
+            "Blood Frenzy: Zorgath has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+            "Blood Magic: Zorgath can use a bonus action to drain the life force of a creature he has hit with a melee attack, healing himself for 1d10 hit points per level of the creature.",
+            "Relentless Rage: If Zorgath drops to 0 hit points while raging and doesn't die outright, he can make a DC 10 Constitution saving throw. If he succeeds, he drops to 1 hit point instead."
+        ],
+        "legendary_actions": {
+            "Bloodrage Strike": "Zorgath makes a single melee weapon attack with his Bloodthirsty Greatsword. If the attack hits, it deals an additional 4d6 necrotic damage, and Zorgath regains hit points equal to the necrotic damage dealt.",
+            "Terrifying Roar (Costs 2 Actions)": "Zorgath lets out a bloodcurdling roar. All enemies within 30 feet must succeed on a DC 18 Wisdom saving throw or be frightened until the end of Zorgath's next turn."
+        },
+        "actions": [
+            "Multiattack: Zorgath makes three attacks with his Bloodthirsty Greatsword or Bloodletting Claws.",
+            "Bloodthirsty Greatsword: Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 6) slashing damage plus 2d6 necrotic damage.",
+            "Bloodletting Claws: Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 18 (2d8 + 6) slashing damage plus 1d8 necrotic damage."
+        ],
+        "bonus_actions": [
+            "Blood Magic: Zorgath can use a bonus action to drain the life force of a creature he has hit with a melee attack, healing himself for 1d10 hit points per level of the creature."
+        ],
+        "reactions": [
+            "Unyielding Rage: When Zorgath is hit by a melee attack, he can use his reaction to reduce the damage by half."
+        ]
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

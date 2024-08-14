@@ -1,6 +1,5 @@
 import pytest
 
-
 from .. import legendary_dragons
 
 from ..legendary_dragons import LegendaryDragonStatBlock
