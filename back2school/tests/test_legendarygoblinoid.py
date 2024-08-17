@@ -11,6 +11,8 @@ def kharza_the_ravager_stat_block():
     return GoblinoidChampionStatBlock(
         **legendary_goblinoids.kharza_the_ravager_custom_stat_block
     )
+
+
 def test_kharza_the_ravager_stat_block(kharza_the_ravager_stat_block):
     # Check if the Kharza the Ravager StatBlock instance is created correctly
     assert kharza_the_ravager_stat_block.name == "Kharza the Ravager"
@@ -24,9 +26,13 @@ def test_kharza_the_ravager_stat_block(kharza_the_ravager_stat_block):
         kharza_the_ravager_stat_block.damage_resistances
         == "bludgeoning, piercing, and slashing from nonmagical attacks while raging"
     )
-    assert kharza_the_ravager_stat_block.condition_immunities == "charmed, frightened while raging"
     assert (
-        kharza_the_ravager_stat_block.senses == "darkvision 60 ft., passive Perception 18"
+        kharza_the_ravager_stat_block.condition_immunities
+        == "charmed, frightened while raging"
+    )
+    assert (
+        kharza_the_ravager_stat_block.senses
+        == "darkvision 60 ft., passive Perception 18"
     )
     assert kharza_the_ravager_stat_block.languages == "Gnoll, Common"
     assert kharza_the_ravager_stat_block.challenge == 17
@@ -55,12 +61,15 @@ def test_kharza_the_ravager_stat_block(kharza_the_ravager_stat_block):
         == "Savage Instinct: When Kharza is hit by a melee attack, he can use his reaction to make a single melee weapon attack against the attacker."
     )
 
+
 @pytest.fixture
 def vorgath_the_bloodhowler_stat_block():
     # Fixture to provide a sample instance of HumanoidChampionStatBlock for testing
     return GoblinoidChampionStatBlock(
         **legendary_goblinoids.vorgath_the_bloodhowler_custom_stat_block
     )
+
+
 def test_vorgath_the_bloodhowler_stat_block(vorgath_the_bloodhowler_stat_block):
     # Check if the Vorgath the Bloodhowler StatBlock instance is created correctly
     assert vorgath_the_bloodhowler_stat_block.name == "Vorgath the Bloodhowler"
@@ -70,13 +79,13 @@ def test_vorgath_the_bloodhowler_stat_block(vorgath_the_bloodhowler_stat_block):
     assert vorgath_the_bloodhowler_stat_block.abilities.wisdom == 20
     assert vorgath_the_bloodhowler_stat_block.saving_throws.wisdom == 10
     assert "Arcana +10" in vorgath_the_bloodhowler_stat_block.skills
+    assert vorgath_the_bloodhowler_stat_block.damage_resistances == "necrotic, psychic"
     assert (
-        vorgath_the_bloodhowler_stat_block.damage_resistances
-        == "necrotic, psychic"
+        vorgath_the_bloodhowler_stat_block.condition_immunities == "frightened, charmed"
     )
-    assert vorgath_the_bloodhowler_stat_block.condition_immunities == "frightened, charmed"
     assert (
-        vorgath_the_bloodhowler_stat_block.senses == "darkvision 60 ft., passive Perception 20"
+        vorgath_the_bloodhowler_stat_block.senses
+        == "darkvision 60 ft., passive Perception 20"
     )
     assert vorgath_the_bloodhowler_stat_block.languages == "Gnoll, Abyssal, Common"
     assert vorgath_the_bloodhowler_stat_block.challenge == 16
@@ -112,6 +121,8 @@ def general_kazrak_ironblood_stat_block():
     return GoblinoidChampionStatBlock(
         **legendary_goblinoids.general_kazrak_ironblood_custom_stat_block
     )
+
+
 def test_general_kazrak_ironblood_stat_block(general_kazrak_ironblood_stat_block):
     # Check if the General Kazrak Ironblood StatBlock instance is created correctly
     assert general_kazrak_ironblood_stat_block.name == "General Kazrak Ironblood"
@@ -125,9 +136,13 @@ def test_general_kazrak_ironblood_stat_block(general_kazrak_ironblood_stat_block
         general_kazrak_ironblood_stat_block.damage_resistances
         == "bludgeoning, piercing, and slashing from nonmagical attacks"
     )
-    assert general_kazrak_ironblood_stat_block.condition_immunities == "charmed, frightened"
     assert (
-        general_kazrak_ironblood_stat_block.senses == "darkvision 60 ft., passive Perception 18"
+        general_kazrak_ironblood_stat_block.condition_immunities
+        == "charmed, frightened"
+    )
+    assert (
+        general_kazrak_ironblood_stat_block.senses
+        == "darkvision 60 ft., passive Perception 18"
     )
     assert general_kazrak_ironblood_stat_block.languages == "Goblin, Common, Infernal"
     assert general_kazrak_ironblood_stat_block.challenge == 18
@@ -156,12 +171,15 @@ def test_general_kazrak_ironblood_stat_block(general_kazrak_ironblood_stat_block
         == "Parry: When General Kazrak is hit by a melee attack, he can use his reaction to add +4 to his AC for that attack, potentially causing the attack to miss."
     )
 
+
 @pytest.fixture
 def thalrak_the_unyielding_stat_block():
     # Fixture to provide a sample instance of GoblinoidChampionStatBlock for testing
     return GoblinoidChampionStatBlock(
         **legendary_goblinoids.thalrak_the_unyielding_custom_stat_block
     )
+
+
 def test_thalrak_the_unyielding_stat_block(thalrak_the_unyielding_stat_block):
     # Check if the Thalrak the Unyielding StatBlock instance is created correctly
     assert thalrak_the_unyielding_stat_block.name == "Thalrak the Unyielding"
@@ -175,9 +193,13 @@ def test_thalrak_the_unyielding_stat_block(thalrak_the_unyielding_stat_block):
         thalrak_the_unyielding_stat_block.damage_resistances
         == "bludgeoning, piercing, and slashing from nonmagical attacks"
     )
-    assert thalrak_the_unyielding_stat_block.condition_immunities == "frightened, paralyzed"
     assert (
-        thalrak_the_unyielding_stat_block.senses == "darkvision 60 ft., passive Perception 18"
+        thalrak_the_unyielding_stat_block.condition_immunities
+        == "frightened, paralyzed"
+    )
+    assert (
+        thalrak_the_unyielding_stat_block.senses
+        == "darkvision 60 ft., passive Perception 18"
     )
     assert thalrak_the_unyielding_stat_block.languages == "Goblin, Common"
     assert thalrak_the_unyielding_stat_block.challenge == 19
@@ -214,6 +236,7 @@ def morgath_the_red_stat_block():
         **legendary_goblinoids.morgath_the_red_custom_stat_block
     )
 
+
 def test_morgath_the_red_stat_block(morgath_the_red_stat_block):
     # Check if the Morgath the Red StatBlock instance is created correctly
     assert morgath_the_red_stat_block.name == "Morgath the Red"
@@ -223,10 +246,7 @@ def test_morgath_the_red_stat_block(morgath_the_red_stat_block):
     assert morgath_the_red_stat_block.abilities.intelligence == 20
     assert morgath_the_red_stat_block.saving_throws.intelligence == 10
     assert "Arcana +12" in morgath_the_red_stat_block.skills
-    assert (
-        morgath_the_red_stat_block.damage_resistances
-        == "fire, lightning"
-    )
+    assert morgath_the_red_stat_block.damage_resistances == "fire, lightning"
     assert morgath_the_red_stat_block.condition_immunities == "charmed, frightened"
     assert (
         morgath_the_red_stat_block.senses == "darkvision 60 ft., passive Perception 18"
@@ -266,6 +286,7 @@ def rikard_the_shadowblade_stat_block():
         **legendary_goblinoids.rikard_the_shadowblade_custom_stat_block
     )
 
+
 def test_rikard_the_shadowblade_stat_block(rikard_the_shadowblade_stat_block):
     # Check if the Rikard the Shadowblade StatBlock instance is created correctly
     assert rikard_the_shadowblade_stat_block.name == "Rikard the Shadowblade"
@@ -275,15 +296,17 @@ def test_rikard_the_shadowblade_stat_block(rikard_the_shadowblade_stat_block):
     assert rikard_the_shadowblade_stat_block.abilities.dexterity == 22
     assert rikard_the_shadowblade_stat_block.saving_throws.dexterity == 11
     assert "Stealth +17" in rikard_the_shadowblade_stat_block.skills
+    assert rikard_the_shadowblade_stat_block.damage_resistances == "poison, psychic"
     assert (
-        rikard_the_shadowblade_stat_block.damage_resistances
-        == "poison, psychic"
+        rikard_the_shadowblade_stat_block.condition_immunities == "charmed, frightened"
     )
-    assert rikard_the_shadowblade_stat_block.condition_immunities == "charmed, frightened"
     assert (
-        rikard_the_shadowblade_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+        rikard_the_shadowblade_stat_block.senses
+        == "darkvision 60 ft., passive Perception 19"
     )
-    assert rikard_the_shadowblade_stat_block.languages == "Goblin, Common, Thieves' Cant"
+    assert (
+        rikard_the_shadowblade_stat_block.languages == "Goblin, Common, Thieves' Cant"
+    )
     assert rikard_the_shadowblade_stat_block.challenge == 19
     assert (
         "Assassinate: Rikard has advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit Rikard scores against a surprised creature is a critical hit."
@@ -318,6 +341,7 @@ def skragg_the_warcaller_stat_block():
         **legendary_goblinoids.skragg_the_warcaller_custom_stat_block
     )
 
+
 def test_skragg_the_warcaller_stat_block(skragg_the_warcaller_stat_block):
     # Check if the Skragg the Warcaller StatBlock instance is created correctly
     assert skragg_the_warcaller_stat_block.name == "Skragg the Warcaller"
@@ -333,7 +357,8 @@ def test_skragg_the_warcaller_stat_block(skragg_the_warcaller_stat_block):
     )
     assert skragg_the_warcaller_stat_block.condition_immunities == "frightened, charmed"
     assert (
-        skragg_the_warcaller_stat_block.senses == "darkvision 60 ft., passive Perception 18"
+        skragg_the_warcaller_stat_block.senses
+        == "darkvision 60 ft., passive Perception 18"
     )
     assert skragg_the_warcaller_stat_block.languages == "Goblin, Common"
     assert skragg_the_warcaller_stat_block.challenge == 18
@@ -370,6 +395,7 @@ def grishna_the_firestarter_stat_block():
         **legendary_goblinoids.grishna_the_firestarter_custom_stat_block
     )
 
+
 def test_grishna_the_firestarter_stat_block(grishna_the_firestarter_stat_block):
     # Check if the Grishna the Firestarter StatBlock instance is created correctly
     assert grishna_the_firestarter_stat_block.name == "Grishna the Firestarter"
@@ -379,13 +405,13 @@ def test_grishna_the_firestarter_stat_block(grishna_the_firestarter_stat_block):
     assert grishna_the_firestarter_stat_block.abilities.charisma == 20
     assert grishna_the_firestarter_stat_block.saving_throws.charisma == 10
     assert "Arcana +12" in grishna_the_firestarter_stat_block.skills
+    assert grishna_the_firestarter_stat_block.damage_resistances == "fire"
     assert (
-        grishna_the_firestarter_stat_block.damage_resistances
-        == "fire"
+        grishna_the_firestarter_stat_block.condition_immunities == "frightened, charmed"
     )
-    assert grishna_the_firestarter_stat_block.condition_immunities == "frightened, charmed"
     assert (
-        grishna_the_firestarter_stat_block.senses == "darkvision 60 ft., passive Perception 18"
+        grishna_the_firestarter_stat_block.senses
+        == "darkvision 60 ft., passive Perception 18"
     )
     assert grishna_the_firestarter_stat_block.languages == "Goblin, Common, Infernal"
     assert grishna_the_firestarter_stat_block.challenge == 18
@@ -422,6 +448,7 @@ def thorgar_the_silent_hunter_stat_block():
         **legendary_goblinoids.thorgar_the_silent_hunter_custom_stat_block
     )
 
+
 def test_thorgar_the_silent_hunter_stat_block(thorgar_the_silent_hunter_stat_block):
     # Check if the Thorgar the Silent Hunter StatBlock instance is created correctly
     assert thorgar_the_silent_hunter_stat_block.name == "Thorgar the Silent Hunter"
@@ -431,15 +458,18 @@ def test_thorgar_the_silent_hunter_stat_block(thorgar_the_silent_hunter_stat_blo
     assert thorgar_the_silent_hunter_stat_block.abilities.dexterity == 22
     assert thorgar_the_silent_hunter_stat_block.saving_throws.dexterity == 11
     assert "Stealth +17" in thorgar_the_silent_hunter_stat_block.skills
+    assert thorgar_the_silent_hunter_stat_block.damage_resistances == "poison, psychic"
     assert (
-        thorgar_the_silent_hunter_stat_block.damage_resistances
-        == "poison, psychic"
+        thorgar_the_silent_hunter_stat_block.condition_immunities
+        == "charmed, frightened"
     )
-    assert thorgar_the_silent_hunter_stat_block.condition_immunities == "charmed, frightened"
     assert (
-        thorgar_the_silent_hunter_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+        thorgar_the_silent_hunter_stat_block.senses
+        == "darkvision 60 ft., passive Perception 19"
     )
-    assert thorgar_the_silent_hunter_stat_block.languages == "Goblin, Common, Undercommon"
+    assert (
+        thorgar_the_silent_hunter_stat_block.languages == "Goblin, Common, Undercommon"
+    )
     assert thorgar_the_silent_hunter_stat_block.challenge == 18
     assert (
         "Assassinate: Thorgar has advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit Thorgar scores against a surprised creature is a critical hit."
@@ -466,12 +496,15 @@ def test_thorgar_the_silent_hunter_stat_block(thorgar_the_silent_hunter_stat_blo
         == "Uncanny Dodge: When an attacker that Thorgar can see hits him with an attack, he can use his reaction to halve the attack’s damage against him."
     )
 
+
 @pytest.fixture
 def gorruk_the_bonebreaker_stat_block():
     # Fixture to provide a sample instance of GoblinoidChampionStatBlock for testing
     return GoblinoidChampionStatBlock(
         **legendary_goblinoids.gorruk_the_bonebreaker_custom_stat_block
     )
+
+
 def test_gorruk_the_bonebreaker_stat_block(gorruk_the_bonebreaker_stat_block):
     # Check if the Gorruk the Bonebreaker StatBlock instance is created correctly
     assert gorruk_the_bonebreaker_stat_block.name == "Gorruk the Bonebreaker"
@@ -485,9 +518,13 @@ def test_gorruk_the_bonebreaker_stat_block(gorruk_the_bonebreaker_stat_block):
         gorruk_the_bonebreaker_stat_block.damage_resistances
         == "bludgeoning, piercing, and slashing from nonmagical attacks while raging"
     )
-    assert gorruk_the_bonebreaker_stat_block.condition_immunities == "frightened while raging"
     assert (
-        gorruk_the_bonebreaker_stat_block.senses == "darkvision 60 ft., passive Perception 18"
+        gorruk_the_bonebreaker_stat_block.condition_immunities
+        == "frightened while raging"
+    )
+    assert (
+        gorruk_the_bonebreaker_stat_block.senses
+        == "darkvision 60 ft., passive Perception 18"
     )
     assert gorruk_the_bonebreaker_stat_block.languages == "Goblin, Common"
     assert gorruk_the_bonebreaker_stat_block.challenge == 19
@@ -523,6 +560,8 @@ def kragga_the_huntmaster_stat_block():
     return GoblinoidChampionStatBlock(
         **legendary_goblinoids.kragga_the_huntmaster_custom_stat_block
     )
+
+
 def test_kragga_the_huntmaster_stat_block(kragga_the_huntmaster_stat_block):
     # Check if the Kragga the Huntmaster StatBlock instance is created correctly
     assert kragga_the_huntmaster_stat_block.name == "Kragga the Huntmaster"
@@ -536,9 +575,12 @@ def test_kragga_the_huntmaster_stat_block(kragga_the_huntmaster_stat_block):
         kragga_the_huntmaster_stat_block.damage_resistances
         == "poison, bludgeoning from nonmagical attacks"
     )
-    assert kragga_the_huntmaster_stat_block.condition_immunities == "charmed, frightened"
     assert (
-        kragga_the_huntmaster_stat_block.senses == "darkvision 60 ft., passive Perception 20"
+        kragga_the_huntmaster_stat_block.condition_immunities == "charmed, frightened"
+    )
+    assert (
+        kragga_the_huntmaster_stat_block.senses
+        == "darkvision 60 ft., passive Perception 20"
     )
     assert kragga_the_huntmaster_stat_block.languages == "Goblin, Common, Sylvan"
     assert kragga_the_huntmaster_stat_block.challenge == 18
@@ -575,6 +617,7 @@ def mazrak_the_darkshadow_stat_block():
         **legendary_goblinoids.mazrak_the_darkshadow_custom_stat_block
     )
 
+
 def test_mazrak_the_darkshadow_stat_block(mazrak_the_darkshadow_stat_block):
     # Check if the Mazrak the Darkshadow StatBlock instance is created correctly
     assert mazrak_the_darkshadow_stat_block.name == "Mazrak the Darkshadow"
@@ -588,9 +631,12 @@ def test_mazrak_the_darkshadow_stat_block(mazrak_the_darkshadow_stat_block):
         mazrak_the_darkshadow_stat_block.damage_resistances
         == "necrotic, bludgeoning from nonmagical attacks"
     )
-    assert mazrak_the_darkshadow_stat_block.condition_immunities == "frightened, charmed"
     assert (
-        mazrak_the_darkshadow_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+        mazrak_the_darkshadow_stat_block.condition_immunities == "frightened, charmed"
+    )
+    assert (
+        mazrak_the_darkshadow_stat_block.senses
+        == "darkvision 60 ft., passive Perception 19"
     )
     assert mazrak_the_darkshadow_stat_block.languages == "Goblin, Common, Infernal"
     assert mazrak_the_darkshadow_stat_block.challenge == 19
@@ -620,13 +666,13 @@ def test_mazrak_the_darkshadow_stat_block(mazrak_the_darkshadow_stat_block):
     )
 
 
-
 @pytest.fixture
 def vorgeth_the_soulflayer_stat_block():
     # Fixture to provide a sample instance of GoblinoidChampionStatBlock for testing
     return GoblinoidChampionStatBlock(
         **legendary_goblinoids.vorgeth_the_soulflayer_custom_stat_block
     )
+
 
 def test_vorgeth_the_soulflayer_stat_block(vorgeth_the_soulflayer_stat_block):
     # Check if the Vorgeth the Soulflayer StatBlock instance is created correctly
@@ -637,13 +683,13 @@ def test_vorgeth_the_soulflayer_stat_block(vorgeth_the_soulflayer_stat_block):
     assert vorgeth_the_soulflayer_stat_block.abilities.intelligence == 20
     assert vorgeth_the_soulflayer_stat_block.saving_throws.intelligence == 10
     assert "Arcana +12" in vorgeth_the_soulflayer_stat_block.skills
+    assert vorgeth_the_soulflayer_stat_block.damage_resistances == "necrotic, cold"
     assert (
-            vorgeth_the_soulflayer_stat_block.damage_resistances
-            == "necrotic, cold"
+        vorgeth_the_soulflayer_stat_block.condition_immunities == "frightened, charmed"
     )
-    assert vorgeth_the_soulflayer_stat_block.condition_immunities == "frightened, charmed"
     assert (
-            vorgeth_the_soulflayer_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+        vorgeth_the_soulflayer_stat_block.senses
+        == "darkvision 60 ft., passive Perception 19"
     )
     assert vorgeth_the_soulflayer_stat_block.languages == "Goblin, Common, Abyssal"
     assert vorgeth_the_soulflayer_stat_block.challenge == 18
@@ -652,33 +698,32 @@ def test_vorgeth_the_soulflayer_stat_block(vorgeth_the_soulflayer_stat_block):
     expected_special_abilities = [
         "Undead Mastery: Vorgeth can control up to twice the usual number of undead using his necromancy spells. Additionally, undead under his control have advantage on attack rolls and saving throws while within 60 feet of him.",
         "Life Drain: When Vorgeth reduces a creature to 0 hit points, he regains hit points equal to the damage dealt. This ability can only be used once per turn.",
-        "Aura of Dread: Any creature that starts its turn within 10 feet of Vorgeth must succeed on a DC 18 Wisdom saving throw or be frightened until the end of its next turn."
+        "Aura of Dread: Any creature that starts its turn within 10 feet of Vorgeth must succeed on a DC 18 Wisdom saving throw or be frightened until the end of its next turn.",
     ]
 
     for ability in expected_special_abilities:
         assert ability in vorgeth_the_soulflayer_stat_block.special_abilities
 
     assert (
-            vorgeth_the_soulflayer_stat_block.legendary_actions["Necrotic Bolt"]
-            == "Vorgeth makes a ranged spell attack with Necrotic Touch. If the attack hits, it deals 4d8 necrotic damage, and the target must succeed on a DC 18 Constitution saving throw or have its hit point maximum reduced by the damage taken."
+        vorgeth_the_soulflayer_stat_block.legendary_actions["Necrotic Bolt"]
+        == "Vorgeth makes a ranged spell attack with Necrotic Touch. If the attack hits, it deals 4d8 necrotic damage, and the target must succeed on a DC 18 Constitution saving throw or have its hit point maximum reduced by the damage taken."
     )
     assert (
-            vorgeth_the_soulflayer_stat_block.actions[0]
-            == "Multiattack: Vorgeth makes two attacks with his Staff of Bones or casts two cantrips."
+        vorgeth_the_soulflayer_stat_block.actions[0]
+        == "Multiattack: Vorgeth makes two attacks with his Staff of Bones or casts two cantrips."
     )
     assert (
-            vorgeth_the_soulflayer_stat_block.actions[1]
-            == "Staff of Bones: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage plus 2d6 necrotic damage."
+        vorgeth_the_soulflayer_stat_block.actions[1]
+        == "Staff of Bones: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage plus 2d6 necrotic damage."
     )
     assert (
-            vorgeth_the_soulflayer_stat_block.bonus_actions[0]
-            == "Life Drain: When Vorgeth reduces a creature to 0 hit points, he regains hit points equal to the damage dealt."
+        vorgeth_the_soulflayer_stat_block.bonus_actions[0]
+        == "Life Drain: When Vorgeth reduces a creature to 0 hit points, he regains hit points equal to the damage dealt."
     )
     assert (
-            vorgeth_the_soulflayer_stat_block.reactions[0]
-            == "Shield: When Vorgeth is hit by an attack, he can use his reaction to cast Shield, increasing his AC by +5 until the start of his next turn."
+        vorgeth_the_soulflayer_stat_block.reactions[0]
+        == "Shield: When Vorgeth is hit by an attack, he can use his reaction to cast Shield, increasing his AC by +5 until the start of his next turn."
     )
-
 
 
 @pytest.fixture
@@ -687,6 +732,7 @@ def zorgath_the_bloodhound_stat_block():
     return GoblinoidChampionStatBlock(
         **legendary_goblinoids.zorgath_the_bloodhound_custom_stat_block
     )
+
 
 def test_zorgath_the_bloodhound_stat_block(zorgath_the_bloodhound_stat_block):
     # Check if the Zorgath the Bloodhound StatBlock instance is created correctly
@@ -698,12 +744,15 @@ def test_zorgath_the_bloodhound_stat_block(zorgath_the_bloodhound_stat_block):
     assert zorgath_the_bloodhound_stat_block.saving_throws.strength == 12
     assert "Athletics +14" in zorgath_the_bloodhound_stat_block.skills
     assert (
-            zorgath_the_bloodhound_stat_block.damage_resistances
-            == "bludgeoning, piercing, and slashing from nonmagical attacks while raging"
+        zorgath_the_bloodhound_stat_block.damage_resistances
+        == "bludgeoning, piercing, and slashing from nonmagical attacks while raging"
     )
-    assert zorgath_the_bloodhound_stat_block.condition_immunities == "charmed, frightened"
     assert (
-            zorgath_the_bloodhound_stat_block.senses == "darkvision 60 ft., passive Perception 19"
+        zorgath_the_bloodhound_stat_block.condition_immunities == "charmed, frightened"
+    )
+    assert (
+        zorgath_the_bloodhound_stat_block.senses
+        == "darkvision 60 ft., passive Perception 19"
     )
     assert zorgath_the_bloodhound_stat_block.languages == "Goblin, Common"
     assert zorgath_the_bloodhound_stat_block.challenge == 19
@@ -712,7 +761,7 @@ def test_zorgath_the_bloodhound_stat_block(zorgath_the_bloodhound_stat_block):
     expected_special_abilities = [
         "Blood Frenzy: Zorgath has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
         "Blood Magic: Zorgath can use a bonus action to drain the life force of a creature he has hit with a melee attack, healing himself for 1d10 hit points per level of the creature.",
-        "Relentless Rage: If Zorgath drops to 0 hit points while raging and doesn't die outright, he can make a DC 10 Constitution saving throw. If he succeeds, he drops to 1 hit point instead."
+        "Relentless Rage: If Zorgath drops to 0 hit points while raging and doesn't die outright, he can make a DC 10 Constitution saving throw. If he succeeds, he drops to 1 hit point instead.",
     ]
 
     for ability in expected_special_abilities:
@@ -720,32 +769,34 @@ def test_zorgath_the_bloodhound_stat_block(zorgath_the_bloodhound_stat_block):
 
     # Check legendary actions
     assert (
-            zorgath_the_bloodhound_stat_block.legendary_actions["Bloodrage Strike"]
-            == "Zorgath makes a single melee weapon attack with his Bloodthirsty Greatsword. If the attack hits, it deals an additional 4d6 necrotic damage, and Zorgath regains hit points equal to the necrotic damage dealt."
+        zorgath_the_bloodhound_stat_block.legendary_actions["Bloodrage Strike"]
+        == "Zorgath makes a single melee weapon attack with his Bloodthirsty Greatsword. If the attack hits, it deals an additional 4d6 necrotic damage, and Zorgath regains hit points equal to the necrotic damage dealt."
     )
     assert (
-            zorgath_the_bloodhound_stat_block.legendary_actions["Terrifying Roar (Costs 2 Actions)"]
-            == "Zorgath lets out a bloodcurdling roar. All enemies within 30 feet must succeed on a DC 18 Wisdom saving throw or be frightened until the end of Zorgath's next turn."
+        zorgath_the_bloodhound_stat_block.legendary_actions[
+            "Terrifying Roar (Costs 2 Actions)"
+        ]
+        == "Zorgath lets out a bloodcurdling roar. All enemies within 30 feet must succeed on a DC 18 Wisdom saving throw or be frightened until the end of Zorgath's next turn."
     )
 
     # Check actions
     assert (
-            zorgath_the_bloodhound_stat_block.actions[0]
-            == "Multiattack: Zorgath makes three attacks with his Bloodthirsty Greatsword or Bloodletting Claws."
+        zorgath_the_bloodhound_stat_block.actions[0]
+        == "Multiattack: Zorgath makes three attacks with his Bloodthirsty Greatsword or Bloodletting Claws."
     )
     assert (
-            zorgath_the_bloodhound_stat_block.actions[1]
-            == "Bloodthirsty Greatsword: Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 6) slashing damage plus 2d6 necrotic damage."
+        zorgath_the_bloodhound_stat_block.actions[1]
+        == "Bloodthirsty Greatsword: Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 6) slashing damage plus 2d6 necrotic damage."
     )
 
     # Check bonus actions
     assert (
-            zorgath_the_bloodhound_stat_block.bonus_actions[0]
-            == "Blood Magic: Zorgath can use a bonus action to drain the life force of a creature he has hit with a melee attack, healing himself for 1d10 hit points per level of the creature."
+        zorgath_the_bloodhound_stat_block.bonus_actions[0]
+        == "Blood Magic: Zorgath can use a bonus action to drain the life force of a creature he has hit with a melee attack, healing himself for 1d10 hit points per level of the creature."
     )
 
     # Check reactions
     assert (
-            zorgath_the_bloodhound_stat_block.reactions[0]
-            == "Unyielding Rage: When Zorgath is hit by a melee attack, he can use his reaction to reduce the damage by half."
+        zorgath_the_bloodhound_stat_block.reactions[0]
+        == "Unyielding Rage: When Zorgath is hit by a melee attack, he can use his reaction to reduce the damage by half."
     )

@@ -1,0 +1,270 @@
+{
+    "Vecna": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Wizard",
+                "archetype": "Necromancer",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Hand of Vecna",
+            "Eye of Vecna"
+        ],
+        "common_behaviors_actions": [
+            "Plotting intricate schemes to gain more power.",
+            "Studying ancient tomes of forbidden knowledge.",
+            "Seeking out artifacts and relics of immense power."
+        ],
+        "name": "Vecna",
+        "hit_points": 400,
+        "armor_class": 22,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 18,
+            "dexterity": 16,
+            "constitution": 20,
+            "intelligence": 26,
+            "wisdom": 24,
+            "charisma": 22
+        },
+        "saving_throws": {
+            "strength": "+10",
+            "dexterity": "+12",
+            "constitution": "+15",
+            "intelligence": "+18",
+            "wisdom": "+17",
+            "charisma": "+14"
+        },
+        "skills": [
+            "Arcana +18",
+            "History +18",
+            "Insight +17",
+            "Perception +17"
+        ],
+        "damage_resistances": "necrotic, cold, bludgeoning, piercing, and slashing from nonmagical attacks",
+        "damage_immunities": "poison",
+        "condition_immunities": "charmed, frightened, paralyzed, poisoned",
+        "senses": "truesight 120 ft., passive Perception 27",
+        "languages": "Common, Draconic, Infernal, Elvish, telepathy 120 ft.",
+        "challenge": 26,
+        "special_abilities": [
+            "Undying Mastery: Vecna can never be truly destroyed as long as his phylactery remains intact.",
+            "Legendary Spellcasting: Vecna can cast spells as a 20th-level wizard and has access to all necromancy spells."
+        ],
+        "legendary_actions": {
+            "Cast a Spell": "Vecna casts one of his prepared spells.",
+            "Hand of Vecna": "Vecna can make a melee attack with the Hand of Vecna, dealing necrotic damage."
+        },
+        "legendary_resistances": 3,
+        "lair_actions": [
+            "Vecna can cast the spell 'detect magic' without using a spell slot.",
+            "Vecna can cause spectral hands to rise from the ground and restrain a creature."
+        ],
+        "regional_effects": [
+            "Dead creatures within 1 mile of Vecna's lair cannot be resurrected except by wish.",
+            "The area within 1 mile of Vecna's lair is shrouded in perpetual twilight."
+        ]
+    },
+    "Strahd": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Fighter",
+                "archetype": "Eldritch Knight",
+                "level": 16
+            }
+        },
+        "unique_attacks_weapons": [
+            "Vampiric Bite",
+            "Unholy Sword"
+        ],
+        "common_behaviors_actions": [
+            "Obsessively watching over Barovia.",
+            "Seeking out and manipulating Tatyana's reincarnations.",
+            "Holding court in Castle Ravenloft."
+        ],
+        "name": "Strahd",
+        "hit_points": 300,
+        "armor_class": 20,
+        "speed": "30 ft., fly 60 ft.",
+        "abilities": {
+            "strength": 20,
+            "dexterity": 18,
+            "constitution": 18,
+            "intelligence": 18,
+            "wisdom": 15,
+            "charisma": 22
+        },
+        "saving_throws": {
+            "strength": "+12",
+            "dexterity": "+10",
+            "constitution": "+10",
+            "intelligence": "+10",
+            "wisdom": "+8",
+            "charisma": "+14"
+        },
+        "skills": [
+            "Perception +12",
+            "Stealth +10",
+            "Persuasion +14",
+            "Arcana +10"
+        ],
+        "damage_resistances": "necrotic, bludgeoning, piercing, and slashing from nonmagical attacks",
+        "damage_immunities": "poison",
+        "condition_immunities": "charmed, exhaustion, frightened",
+        "senses": "darkvision 120 ft., passive Perception 22",
+        "languages": "Common, Elvish, Draconic",
+        "challenge": 23,
+        "special_abilities": [
+            "Shapechanger: Strahd can polymorph into a bat, wolf, or mist.",
+            "Vampiric Regeneration: Strahd regains hit points each round as long as he has at least 1 hit point."
+        ],
+        "legendary_actions": {
+            "Move": "Strahd can move up to his speed without provoking opportunity attacks.",
+            "Unholy Sword": "Strahd makes a melee attack with his Unholy Sword."
+        },
+        "legendary_resistances": 3,
+        "lair_actions": [
+            "Strahd can summon a swarm of bats or rats to aid him in combat.",
+            "Strahd can cause shadows to darken within his lair, imposing disadvantage on attack rolls against him."
+        ],
+        "regional_effects": [
+            "The area within 6 miles of Castle Ravenloft is perpetually covered in mist.",
+            "Strahd can exert control over Barovia, spying on its inhabitants and influencing events."
+        ]
+    },
+    "Azalin": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Wizard",
+                "archetype": "Necromancer",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Paralyzing Touch",
+            "Necrotic Bolt"
+        ],
+        "common_behaviors_actions": [
+            "Relentlessly seeking ways to escape Ravenloft.",
+            "Experimenting with necromantic magic.",
+            "Ruling Darkon with a cold, iron fist."
+        ],
+        "name": "Azalin",
+        "hit_points": 350,
+        "armor_class": 22,
+        "speed": "30 ft., fly 60 ft.",
+        "abilities": {
+            "strength": 16,
+            "dexterity": 14,
+            "constitution": 20,
+            "intelligence": 28,
+            "wisdom": 20,
+            "charisma": 16
+        },
+        "saving_throws": {
+            "strength": "+8",
+            "dexterity": "+10",
+            "constitution": "+12",
+            "intelligence": "+20",
+            "wisdom": "+15",
+            "charisma": "+10"
+        },
+        "skills": [
+            "Arcana +20",
+            "History +20",
+            "Insight +15",
+            "Intimidation +10"
+        ],
+        "damage_resistances": "necrotic, cold, bludgeoning, piercing, and slashing from nonmagical attacks",
+        "damage_immunities": "poison",
+        "condition_immunities": "charmed, frightened, paralyzed, poisoned",
+        "senses": "truesight 120 ft., passive Perception 25",
+        "languages": "Common, Draconic, Infernal, Elvish, telepathy 120 ft.",
+        "challenge": 24,
+        "special_abilities": [
+            "Undying Will: Azalin can never be truly destroyed as long as his phylactery remains intact.",
+            "Legendary Spellcasting: Azalin can cast spells as a 20th-level wizard and has access to all necromancy spells."
+        ],
+        "legendary_actions": {
+            "Cast a Spell": "Azalin casts one of his prepared spells.",
+            "Paralyzing Touch": "Azalin can make a melee attack that paralyzes his target."
+        },
+        "legendary_resistances": 3,
+        "lair_actions": [
+            "Azalin can create an anti-magic field in a 30-foot radius around him.",
+            "Azalin can cause the dead to rise from the ground and fight for him."
+        ],
+        "regional_effects": [
+            "Undead creatures within 1 mile of Azalin's lair gain resistance to necrotic damage.",
+            "The area within 1 mile of Azalin's lair is shrouded in a permanent fog, reducing visibility."
+        ]
+    },
+    "Soth": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Paladin",
+                "archetype": "Oathbreaker",
+                "level": 18
+            }
+        },
+        "unique_attacks_weapons": [
+            "Hellfire Orb",
+            "Deathly Touch"
+        ],
+        "common_behaviors_actions": [
+            "Brooding over his past sins.",
+            "Riding his nightmare steed across the land.",
+            "Seeking out powerful artifacts to increase his power."
+        ],
+        "name": "Soth",
+        "hit_points": 350,
+        "armor_class": 22,
+        "speed": "30 ft., fly 60 ft. (on nightmare steed)",
+        "abilities": {
+            "strength": 24,
+            "dexterity": 10,
+            "constitution": 20,
+            "intelligence": 14,
+            "wisdom": 16,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "strength": "+15",
+            "dexterity": "+5",
+            "constitution": "+12",
+            "intelligence": "+8",
+            "wisdom": "+10",
+            "charisma": "+12"
+        },
+        "skills": [
+            "Athletics +15",
+            "Intimidation +12",
+            "History +8",
+            "Perception +10"
+        ],
+        "damage_resistances": "necrotic, fire, bludgeoning, piercing, and slashing from nonmagical attacks",
+        "damage_immunities": "poison",
+        "condition_immunities": "charmed, frightened, poisoned",
+        "senses": "darkvision 120 ft., passive Perception 20",
+        "languages": "Common, Infernal",
+        "challenge": 25,
+        "special_abilities": [
+            "Aura of Fear: Enemies within 10 feet of Soth must succeed on a DC 18 Wisdom saving throw or be frightened for 1 minute.",
+            "Hellfire Orb: Soth can hurl an orb of hellfire that explodes on impact, dealing fire and necrotic damage."
+        ],
+        "legendary_actions": {
+            "Move": "Soth can move up to his speed without provoking opportunity attacks.",
+            "Hellfire Orb": "Soth can use his Hellfire Orb ability as a legendary action."
+        },
+        "legendary_resistances": 3,
+        "lair_actions": [
+            "Soth can summon ghostly knights to fight for him.",
+            "Soth can create a wall of flame that deals fire damage to creatures that pass through it."
+        ],
+        "regional_effects": [
+            "The area within 1 mile of Soth's lair is filled with the sound of distant wailing and screams.",
+            "Undead creatures within 1 mile of Soth's lair gain advantage on saving throws against being turned."
+        ]
+    }
+}
