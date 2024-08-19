@@ -1,0 +1,304 @@
+{
+    "Iron Golem of Acererak": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Fighter",
+                "archetype": "Champion",
+                "level": 20
+            },
+            "secondary_class": {
+                "class_name": "Warlock",
+                "archetype": "Pact of the Fiend",
+                "level": 10
+            }
+        },
+        "unique_attacks_weapons": [
+            "Adamantine Fist",
+            "Fiendish Slam"
+        ],
+        "common_behaviors_actions": [
+            "Patrolling the tomb with unwavering vigilance.",
+            "Channeling dark magic from Acererak to enhance its attacks.",
+            "Executing intruders with ruthless precision."
+        ],
+        "race": "Iron Golem",
+        "name": "Iron Golem of Acererak",
+        "hit_points": 350,
+        "armor_class": 23,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 28,
+            "dexterity": 10,
+            "constitution": 26,
+            "intelligence": 10,
+            "wisdom": 14,
+            "charisma": 16
+        },
+        "saving_throws": {
+            "strength": "+16",
+            "dexterity": "+6",
+            "constitution": "+14",
+            "intelligence": "+7",
+            "wisdom": "+10",
+            "charisma": "+12"
+        },
+        "skills": [
+            "Athletics +18",
+            "Intimidation +14",
+            "Perception +12",
+            "Arcana +10"
+        ],
+        "damage_resistances": "fire, cold, necrotic",
+        "damage_immunities": "poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks",
+        "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+        "senses": "darkvision 120 ft., passive Perception 22",
+        "languages": "Understands Common, Infernal, and the languages of its creator but cannot speak",
+        "challenge": 22,
+        "special_abilities": [
+            "Magic Resistance: The golem has advantage on saving throws against spells and other magical effects.",
+            "Immutable Form: The golem is immune to any spell or effect that would alter its form.",
+            "Fiendish Resilience: The golem gains temporary hit points equal to 5 times its Warlock level (50) whenever it reduces a creature to 0 hit points."
+        ],
+        "legendary_actions": {
+            "Adamantine Slam": "The golem makes a single slam attack. If the attack hits, it deals an additional 3d8 force damage.",
+            "Hellfire Burst (Costs 2 Actions)": "The golem releases a burst of hellfire in a 20-foot radius. Each creature in the area must make a DC 20 Dexterity saving throw, taking 6d6 fire damage and 6d6 necrotic damage on a failed save, or half as much damage on a successful one."
+        },
+        "actions": [
+            "Multiattack: The golem makes two attacks with its Adamantine Fist.",
+            "Adamantine Fist: Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 25 (3d10 + 10) bludgeoning damage plus 2d6 necrotic damage.",
+            "Fiendish Slam: Melee Weapon Attack: +16 to hit, reach 5 ft., one target. Hit: 20 (2d8 + 10) bludgeoning damage plus 3d6 fire damage."
+        ],
+        "bonus_actions": [
+            "Fiendish Smite: The golem can use a bonus action to expend a Warlock spell slot, adding 4d8 necrotic damage to its next attack."
+        ],
+        "reactions": [
+            "Dark Vengeance: When the golem is hit by a melee attack, it can use its reaction to deal 3d10 necrotic damage to the attacker."
+        ]
+    },
+    "Aegis Fang Golem": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Fighter",
+                "archetype": "Eldritch Knight",
+                "level": 20
+            }
+        },
+        "unique_attacks_weapons": [
+            "Arcane-Infused Slam",
+            "Stoneshield Strike"
+        ],
+        "common_behaviors_actions": [
+            "Guarding the halls of Mithral Hall with unwavering loyalty.",
+            "Channeling the magic of Aegis-Fang to bolster its defenses and attacks.",
+            "Crushing intruders with its immense strength and arcane power."
+        ],
+        "race": "Stone Golem",
+        "name": "Aegis-Fang Golem",
+        "hit_points": 400,
+        "armor_class": 24,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 30,
+            "dexterity": 10,
+            "constitution": 28,
+            "intelligence": 10,
+            "wisdom": 14,
+            "charisma": 12
+        },
+        "saving_throws": {
+            "strength": "+17",
+            "dexterity": "+6",
+            "constitution": "+16",
+            "intelligence": "+8",
+            "wisdom": "+10",
+            "charisma": "+8"
+        },
+        "skills": [
+            "Athletics +20",
+            "Arcana +10",
+            "Perception +12"
+        ],
+        "damage_resistances": "fire, cold, force",
+        "damage_immunities": "poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks",
+        "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+        "senses": "darkvision 120 ft., passive Perception 22",
+        "languages": "Understands Common, Dwarvish, and the languages of its creator but cannot speak",
+        "challenge": 23,
+        "special_abilities": [
+            "Magic Resistance: The golem has advantage on saving throws against spells and other magical effects.",
+            "Immutable Form: The golem is immune to any spell or effect that would alter its form.",
+            "Stone's Endurance: The golem has advantage on saving throws against being knocked prone, and any critical hit against it becomes a normal hit unless the golem is incapacitated."
+        ],
+        "legendary_actions": {
+            "Arcane Blast": "The golem releases a burst of arcane energy in a 20-foot radius. Each creature in the area must make a DC 22 Dexterity saving throw, taking 8d6 force damage on a failed save, or half as much damage on a successful one.",
+            "Stoneshield (Costs 2 Actions)": "The golem conjures a magical barrier of stone around itself or an ally within 10 feet, granting +2 to AC and resistance to all damage types until the start of the golem's next turn."
+        },
+        "actions": [
+            "Multiattack: The golem makes two attacks with its Arcane-Infused Slam.",
+            "Arcane-Infused Slam: Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 32 (4d10 + 10) bludgeoning damage plus 3d8 force damage.",
+            "Stoneshield Strike: Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 28 (3d8 + 10) bludgeoning damage plus 2d8 force damage. The target must succeed on a DC 22 Strength saving throw or be knocked prone."
+        ],
+        "bonus_actions": [
+            "Arcane Charge: The golem can use a bonus action to teleport up to 30 feet to an unoccupied space it can see. The next attack it makes before the end of its turn deals an additional 2d8 force damage."
+        ],
+        "reactions": [
+            "Arcane Parry: When the golem is hit by a spell attack, it can use its reaction to halve the damage and reflect a portion of the spell's energy back at the caster. The caster must make a DC 22 Intelligence saving throw or take 4d6 force damage."
+        ]
+    },
+    "Mithral Golem of Myth Drannor": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Monk",
+                "archetype": "Way of the Kensei",
+                "level": 20
+            },
+            "secondary_class": {
+                "class_name": "Wizard",
+                "archetype": "Bladesinger",
+                "level": 15
+            }
+        },
+        "unique_attacks_weapons": [
+            "Mithral Strike",
+            "Arcane Blade Dance"
+        ],
+        "common_behaviors_actions": [
+            "Defending the ancient elven ruins with unmatched grace and precision.",
+            "Channeling arcane energy through its strikes to enhance its combat effectiveness.",
+            "Utilizing incredible speed and agility to outmaneuver opponents and protect key locations."
+        ],
+        "race": "mithral golem",
+        "name": "Mithral Golem of Myth Drannor",
+        "hit_points": 300,
+        "armor_class": 22,
+        "speed": "50 ft.",
+        "abilities": {
+            "strength": 20,
+            "dexterity": 28,
+            "constitution": 24,
+            "intelligence": 18,
+            "wisdom": 20,
+            "charisma": 16
+        },
+        "saving_throws": {
+            "strength": "+12",
+            "dexterity": "+14",
+            "constitution": "+14",
+            "intelligence": "+11",
+            "wisdom": "+12",
+            "charisma": "+9"
+        },
+        "skills": [
+            "Acrobatics +16",
+            "Arcana +14",
+            "Perception +12",
+            "Stealth +16"
+        ],
+        "damage_resistances": "radiant, cold, force",
+        "damage_immunities": "poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks",
+        "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+        "senses": "darkvision 120 ft., passive Perception 22",
+        "languages": "Understands Common, Elvish, and the languages of its creator but cannot speak",
+        "challenge": 24,
+        "special_abilities": [
+            "Magic Resistance: The golem has advantage on saving throws against spells and other magical effects.",
+            "Unarmored Defense: The golem's AC includes its Dexterity and Wisdom modifiers, reflecting its agility and martial prowess.",
+            "Deflect Missiles: The golem can use its reaction to deflect or catch a ranged weapon attack it is hit by. When it does so, the damage it takes is reduced by 1d10 + its Dexterity modifier + its Monk level.",
+            "Arcane Regeneration: At the start of each of its turns, the golem regains 15 hit points. This regeneration is suppressed if the golem takes fire or force damage in the previous round.",
+            "Immutable Form: The golem is immune to any spell or effect that would alter its form."
+        ],
+        "legendary_actions": {
+            "Arcane Flurry": "The golem makes a flurry of strikes, making three attacks with its Mithral Strike. If all three attacks hit the same target, the target must succeed on a DC 20 Constitution saving throw or be stunned until the end of the golem's next turn.",
+            "Blade Dance (Costs 2 Actions)": "The golem channels its Bladesong, gaining a +4 bonus to AC and an additional 10 feet of movement speed until the start of its next turn. It also gains advantage on Dexterity saving throws."
+        },
+        "actions": [
+            "Multiattack: The golem makes two attacks with its Mithral Strike or Arcane Blade Dance.",
+            "Mithral Strike: Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 18 (2d8 + 9) slashing damage plus 2d6 force damage.",
+            "Arcane Blade Dance: Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage plus 3d6 radiant damage. The target must make a DC 20 Wisdom saving throw or be blinded until the end of the golem's next turn."
+        ],
+        "bonus_actions": [
+            "Step of the Wind: The golem can use a bonus action to dash or disengage, doubling its jump distance for the turn.",
+            "Bladesong: The golem activates its Bladesong, granting it a +4 bonus to AC and advantage on Acrobatics checks for 1 minute. The golem can use this ability twice per long rest."
+        ],
+        "reactions": [
+            "Deflect Missiles: The golem can use its reaction to deflect or catch a ranged weapon attack it is hit by. When it does so, the damage it takes is reduced by 1d10 + its Dexterity modifier + its Monk level. If it reduces the damage to 0, it can catch the missile and make a ranged attack with it as part of the same reaction.",
+            "Arcane Shield: When the golem is targeted by a spell, it can use its reaction to cast Shield, increasing its AC by +5 until the start of its next turn."
+        ]
+    },
+    "Adamantine Golem of Undermountain": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Barbarian",
+                "archetype": "Path of the Juggernaut",
+                "level": 20
+            },
+            "secondary_class": {
+                "class_name": "Fighter",
+                "archetype": "Cavalier",
+                "level": 15
+            }
+        },
+        "unique_attacks_weapons": [
+            "Juggernaut Slam",
+            "Arcane-Enhanced Fist"
+        ],
+        "common_behaviors_actions": [
+            "Guarding the most dangerous secrets of Undermountain with relentless vigilance.",
+            "Smashing through obstacles and enemies with unstoppable force.",
+            "Utilizing arcane energies to enhance its defensive and offensive capabilities."
+        ],
+        "race": "adamantine golem",
+        "name": "Adamantine Golem of Undermountain",
+        "hit_points": 400,
+        "armor_class": 24,
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 30,
+            "dexterity": 12,
+            "constitution": 28,
+            "intelligence": 10,
+            "wisdom": 14,
+            "charisma": 8
+        },
+        "saving_throws": {
+            "strength": "+18",
+            "dexterity": "+8",
+            "constitution": "+16",
+            "intelligence": "+7",
+            "wisdom": "+10",
+            "charisma": 8
+        },
+        "skills": [
+            "Athletics +18",
+            "Intimidation +12",
+            "Perception +10"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from magical attacks",
+        "damage_immunities": "fire, poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks",
+        "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+        "senses": "darkvision 120 ft., passive Perception 20",
+        "languages": "Understands Common, Infernal, and the languages of its creator but cannot speak",
+        "challenge": 23,
+        "special_abilities": [
+            "Arcane Ward: The golem has an additional pool of hit points equal to its Constitution modifier x 10 (50 hit points) that regenerates at the start of its turn. These hit points are depleted before the golem’s actual hit points are reduced.",
+            "Spell Reflection: When the golem is targeted by a spell that requires a saving throw, and it succeeds, the spell is reflected back at the caster as if the golem had cast it.",
+            "Arcane Might: The golem’s melee attacks deal an additional 2d6 force damage, representing the magical power imbued in its strikes.",
+            "Teleportation Anchor: The golem projects a 60-foot-radius aura that prevents creatures from teleporting or using planar travel spells. Any attempt to do so automatically fails."
+        ],
+        "legendary_actions": {
+        "Juggernaut Charge": "The golem moves up to its speed in a straight line and can make a Juggernaut Slam attack against any creature in its path. If it hits, the target must make a DC 24 Strength saving throw or be knocked prone and take an additional 2d6 bludgeoning damage.",
+        "Arcane Slam (Costs 2 Actions)": "The golem channels arcane energy into a powerful slam, dealing an additional 3d10 force damage and creating a shockwave that forces all creatures within 10 feet to make a DC 20 Dexterity saving throw or be pushed back 10 feet."
+    },
+        "actions": [
+            "Multiattack: The golem makes two attacks with its Juggernaut Slam or Arcane-Enhanced Fist.",
+            "Juggernaut Slam: Melee Weapon Attack: +18 to hit, reach 10 ft., one target. Hit: 28 (3d10 + 8) bludgeoning damage plus 2d6 force damage.",
+            "Arcane-Enhanced Fist: Melee Weapon Attack: +18 to hit, reach 5 ft., one target. Hit: 24 (3d8 + 6) bludgeoning damage plus 3d6 force damage."
+        ],
+        "bonus_actions": [
+            "Shield Bash: The golem can use a bonus action to bash a target with its shield, dealing 1d8 bludgeoning damage and forcing the target to make a DC 24 Strength saving throw or be knocked prone."
+        ],
+        "reactions": [
+            "Arcane Shield: When the golem is targeted by a spell, it can use its reaction to cast Shield, increasing its AC by +5 until the start of its next turn."
+        ]
+    }
+}
