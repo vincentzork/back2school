@@ -165,7 +165,76 @@
             "armor_class": 18,
             "special_properties": "Enchanted to provide an additional +1 AC"
         }
-    }
+    },
+    Zhu_Bajie": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Barbarian",
+                "archetype": "Path of the Berserker",
+                "level": 14
+            },
+            "secondary_class": {
+                "class_name": "Fighter",
+                "archetype": "Battle Master",
+                "level": 6
+            }
+        },
+        "unique_attacks_weapons": [
+            "Nine-Tooth Rake"
+        ],
+        "common_behaviors_actions": [
+            "Indulging in food, drink, and other base desires.",
+            "Using brute strength to overpower enemies in combat.",
+            "Attempting to charm or manipulate others to satisfy his needs."
+        ],
+        "race": "Celestial Being (Cursed)",
+        "name": "Zhu Bajie",
+        "hit_points": 224,
+        "armor_class": "17 (Heavy Armor)",
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 20,
+            "dexterity": 12,
+            "constitution": 20,
+            "intelligence": 10,
+            "wisdom": 10,
+            "charisma": 14
+        },
+        "saving_throws": {
+            "strength": "+10",
+            "dexterity": "+4",
+            "constitution": "+10",
+            "intelligence": "+3",
+            "wisdom": "+3",
+            "charisma": "+5"
+        },
+        "skills": [
+            "Athletics +10",
+            "Intimidation +7",
+            "Survival +5",
+            "Deception +5"
+        ],
+        "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+        "damage_immunities": "poison",
+        "condition_immunities": "charmed, frightened, poisoned",
+        "senses": "darkvision 60 ft., passive Perception 10",
+        "languages": "Understands Common, Celestial, and other languages spoken during his celestial service",
+        "challenge": "Legendary",
+        "special_abilities": [
+            "Rage: Can enter a rage to gain advantage on Strength checks and saving throws, resistance to bludgeoning, piercing, and slashing damage, and a bonus to damage rolls.",
+            "Frenzy: While raging, Zhu Bajie can make a single melee weapon attack as a bonus action on each of his turns.",
+            "Reckless Attack: On his turn, Zhu Bajie can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against him have advantage until his next turn.",
+            "Great Weapon Fighting: When Zhu Bajie rolls a 1 or 2 on a damage die for an attack made with a melee weapon that he is wielding with two hands, he can reroll the die and must use the new roll.",
+            "Combat Superiority (Battle Master): Zhu Bajie has four superiority dice (d8s) that he can use to perform maneuvers such as Trip Attack, Disarming Attack, and Menacing Attack."
+        ],
+        "legendary_actions": {
+            "Furious Strike": "Zhu Bajie makes an additional melee weapon attack with his Nine-Tooth Rake.",
+            "Intimidating Roar (Costs 2 Actions)": "Zhu Bajie lets out a terrifying roar. Each enemy within 30 feet must make a DC 15 Wisdom saving throw or be frightened until the end of their next turn."
+        },
+        "actions": [
+            "Multiattack: Zhu Bajie makes two attacks with his Nine-Tooth Rake.",
+            "Nine-Tooth Rake: Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (,
+
 }
 
 
