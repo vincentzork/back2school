@@ -235,6 +235,86 @@
             "Multiattack: Zhu Bajie makes two attacks with his Nine-Tooth Rake.",
             "Nine-Tooth Rake: Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (,
 
+},
+            {
+    "Xuanzang": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Cleric",
+                "archetype": "Peace Domain",
+                "level": 14
+            },
+            "secondary_class": {
+                "class_name": "Monk",
+                "archetype": "Way of the Open Hand",
+                "level": 6
+            }
+        },
+        "unique_attacks_weapons": [
+            "Staff of Serenity"
+        ],
+        "common_behaviors_actions": [
+            "Offering guidance and wisdom to his companions.",
+            "Resolving conflicts through peace and diplomacy.",
+            "Enduring hardships with patience and spiritual strength."
+        ],
+        "race": "Human",
+        "name": "Xuanzang (Tripitaka or Tang Sanzang)",
+        "hit_points": 130,
+        "armor_class": "16 (Unarmored Defense and Monk abilities)",
+        "speed": "30 ft.",
+        "abilities": {
+            "strength": 8,
+            "dexterity": 12,
+            "constitution": 14,
+            "intelligence": 16,
+            "wisdom": 20,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "wisdom": "+9",
+            "charisma": "+8"
+        },
+        "skills": [
+            "Insight +9",
+            "Religion +7",
+            "Medicine +7",
+            "Persuasion +8"
+        ],
+        "damage_resistances": "Psychic",
+        "damage_immunities": "None",
+        "condition_immunities": "Charmed, Frightened",
+        "senses": "passive Perception 15",
+        "languages": "Common, Celestial, and other languages of religious texts",
+        "challenge": "Legendary",
+        "special_abilities": [
+            "Unarmored Defense: AC equals 10 + Dexterity modifier + Wisdom modifier.",
+            "Channel Divinity (Emboldening Bond): As an action, Xuanzang can choose up to 4 creatures within 30 feet and create a bond among them for 10 minutes. While bonded, the creatures can add 1d4 to an attack roll, ability check, or saving throw once per turn.",
+            "Sanctuary: As a bonus action, Xuanzang can ward a creature within 30 feet against attack. Until the spell ends, any creature who targets the warded creature with an attack or harmful spell must first make a Wisdom saving throw.",
+            "Stillness of Mind: As an action, Xuanzang can end one effect on himself that is causing him to be charmed or frightened.",
+            "Aura of Peace: Xuanzang and his allies within 30 feet gain a bonus to saving throws against fear and charm effects."
+        ],
+        "legendary_actions": {
+            "Serene Presence": "Xuanzang can grant an ally within 30 feet advantage on their next saving throw.",
+            "Tranquil Mind (Costs 2 Actions)": "Xuanzang can cast *Calm Emotions* as a legendary action."
+        },
+        "actions": [
+            "Staff of Serenity: Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 - 1) bludgeoning damage."
+        ],
+        "bonus_actions": [
+            "Sanctuary: Xuanzang can cast *Sanctuary* as a bonus action."
+        ],
+        "reactions": [
+            "Protective Word: When an ally within 30 feet of Xuanzang is about to take damage, he can use his reaction to reduce the damage by 1d6 + 4."
+        ],
+        "armor": {
+            "name": "Monk's Robes",
+            "type": "Clothing",
+            "armor_class": "16 with Unarmored Defense",
+            "special_properties": "These robes are simple yet durable, representing Xuanzang's humble and ascetic lifestyle."
+        }
+    }
 }
+
 
 
