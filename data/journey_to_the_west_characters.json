@@ -166,7 +166,7 @@
             "special_properties": "Enchanted to provide an additional +1 AC"
         }
     },
-    Zhu_Bajie": {
+    "Zhu_Bajie": {
         "character_class": {
             "primary_class": {
                 "class_name": "Barbarian",
@@ -233,10 +233,22 @@
         },
         "actions": [
             "Multiattack: Zhu Bajie makes two attacks with his Nine-Tooth Rake.",
-            "Nine-Tooth Rake: Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (,
-
-},
-            {
+            "Nine-Tooth Rake: Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (2d6 + 5) bludgeoning damage.",
+            "Unarmed Strike: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) bludgeoning damage."
+        ],
+        "bonus_actions": [
+            "Frenzy Attack: While raging, Zhu Bajie can make an additional melee weapon attack as a bonus action."
+        ],
+        "reactions": [
+            "Parry: Zhu Bajie can use his reaction to reduce the damage of a melee attack made against him by 1d8 + 3."
+        ],
+        "armor": {
+            "name": "Heavy Armor",
+            "type": "Plate Armor",
+            "armor_class": 17,
+            "special_properties": "Heavy armor that provides significant protection, fitting Zhu Bajie's resilient nature."
+        }
+    },
     "Xuanzang": {
         "character_class": {
             "primary_class": {
@@ -314,7 +326,6 @@
             "special_properties": "These robes are simple yet durable, representing Xuanzang's humble and ascetic lifestyle."
         }
     },
-    {
     "White_Dragon_Horse": {
         "character_class": {
             "primary_class": {
