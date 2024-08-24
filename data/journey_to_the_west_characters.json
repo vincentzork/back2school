@@ -313,8 +313,93 @@
             "armor_class": "16 with Unarmored Defense",
             "special_properties": "These robes are simple yet durable, representing Xuanzang's humble and ascetic lifestyle."
         }
+    },
+    {
+    "White_Dragon_Horse": {
+        "character_class": {
+            "primary_class": {
+                "class_name": "Paladin",
+                "archetype": "Oath of Devotion",
+                "level": 14
+            },
+            "secondary_class": {
+                "class_name": "Dragon",
+                "archetype": "Silver Dragon Ancestry",
+                "level": "Innate"
+            }
+        },
+        "unique_attacks_weapons": [
+            "Bite (Dragon Form)",
+            "Frost Breath (Dragon Form)"
+        ],
+        "common_behaviors_actions": [
+            "Serving and protecting Xuanzang with unwavering loyalty.",
+            "Using his draconic abilities to overcome obstacles and protect the group.",
+            "Transforming into his true dragon form when needed."
+        ],
+        "race": "Dragon (Transformed into Horse)",
+        "name": "White Dragon Horse (Bai Long Ma)",
+        "hit_points": 147,
+        "armor_class": "18 (Natural Armor in Dragon Form, Unarmored Defense in Horse Form)",
+        "speed": "60 ft. (Horse Form), 40 ft., fly 80 ft. (Dragon Form)",
+        "abilities": {
+            "strength": 18,
+            "dexterity": 16,
+            "constitution": 20,
+            "intelligence": 14,
+            "wisdom": 16,
+            "charisma": 18
+        },
+        "saving_throws": {
+            "strength": "+9",
+            "dexterity": "+8",
+            "constitution": "+10",
+            "wisdom": "+8",
+            "charisma": "+9"
+        },
+        "skills": [
+            "Perception +8",
+            "Insight +8",
+            "Persuasion +9",
+            "Athletics +9"
+        ],
+        "damage_resistances": "Cold (Dragon Form), Radiant (Paladin abilities)",
+        "damage_immunities": "None",
+        "condition_immunities": "Frightened",
+        "senses": "darkvision 60 ft., passive Perception 18",
+        "languages": "Common, Draconic, Celestial",
+        "challenge": "Legendary",
+        "special_abilities": [
+            "Lay on Hands: The White Dragon Horse has a pool of healing power that can restore 70 hit points per long rest.",
+            "Divine Sense: The White Dragon Horse can detect the presence of celestial, fiend, and undead within 60 feet.",
+            "Frost Breath (Dragon Form): The White Dragon Horse exhales cold in a 30-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 45 (10d8) cold damage on a failed save, or half as much on a successful one.",
+            "Aura of Protection: Allies within 10 feet of the White Dragon Horse gain a bonus to all saving throws equal to his Charisma modifier (+4)."
+        ],
+        "legendary_actions": {
+            "Dragon's Wrath": "The White Dragon Horse makes a bite attack in dragon form or a charge attack in horse form.",
+            "Protective Wings (Costs 2 Actions)": "In dragon form, the White Dragon Horse can shield an ally within 10 feet with his wings, granting them half cover."
+        },
+        "actions": [
+            "Multiattack (Dragon Form): The White Dragon Horse makes two attacks: one with his bite and one with his claws.",
+            "Bite (Dragon Form): Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
+            "Claws (Dragon Form): Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
+            "Charge (Horse Form): If the White Dragon Horse moves at least 20 feet straight toward a target and then hits it with a hooves attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage."
+        ],
+        "bonus_actions": [
+            "Shield of Faith: The White Dragon Horse can cast *Shield of Faith* to grant an ally within 60 feet a +2 bonus to AC for 10 minutes."
+        ],
+        "reactions": [
+            "Parry (Dragon Form): The White Dragon Horse can use his reaction to increase his AC by 2 against one melee attack that would hit him."
+        ],
+        "armor": {
+            "name": "Natural Armor (Dragon Form)",
+            "type": "None",
+            "armor_class": "18 in Dragon Form, 16 in Horse Form",
+            "special_properties": "The White Dragon Horse has natural scales that provide excellent protection in dragon form."
+        }
     }
 }
+
 
 
 
