@@ -80,86 +80,91 @@
             "Deflect Missiles: When hit by a ranged weapon attack, he can use his reaction to reduce the damage by 1d10 + Dexterity modifier + Monk level."
         ]
     },
-    "Sun_Wukong": {
+    "Sha_Wujing": {
         "character_class": {
             "primary_class": {
-                "class_name": "Monk",
-                "archetype": "Way of the Open Hand",
+                "class_name": "Barbarian",
+                "archetype": "Path of the Ancestral Guardian",
                 "level": 14
             },
             "secondary_class": {
-                "class_name": "Sorcerer",
-                "archetype": "Divine Soul",
+                "class_name": "Monk",
+                "archetype": "Way of the Long Death",
                 "level": 6
             }
         },
         "unique_attacks_weapons": [
-            "Ruyi Jingu Bang (Magical Quarterstaff)"
+            "Heavy Staff"
         ],
         "common_behaviors_actions": [
-            "Outwitting enemies with trickery and deception.",
-            "Engaging in combat with unmatched martial skill.",
-            "Using his magical abilities to transform and manipulate reality."
+            "Acting as the steadfast protector of his companions.",
+            "Using his physical strength to carry heavy burdens and strike down foes.",
+            "Contemplating life and death, and seeking redemption for past sins."
         ],
         "race": "Celestial Being",
-        "name": "Sun Wukong",
-        "hit_points": "Dependent on level and Constitution (14d8 Monk + 6d6 Sorcerer)",
-        "armor_class": "Dependent on Unarmored Defense (10 + Dex mod + Wis mod)",
-        "speed": "50 ft. (Base, potentially higher with Mobile feat and Boots of Speed)",
+        "name": "Sha Wujing, Sandy",
+        "hit_points": 218,
+        "armor_class": 18,
+        "speed": "40 ft.",
         "abilities": {
-            "strength": 18,
-            "dexterity": 20,
-            "constitution": 18,
-            "intelligence": 14,
+            "strength": 20,
+            "dexterity": 14,
+            "constitution": 20,
+            "intelligence": 12,
             "wisdom": 18,
-            "charisma": 16
+            "charisma": 14
         },
         "saving_throws": {
-            "strength": "+8",
-            "dexterity": "+10",
-            "constitution": "+8",
+            "strength": "+10",
+            "dexterity": "+5",
+            "constitution": "+10",
             "intelligence": "+4",
             "wisdom": "+8",
-            "charisma": "+6"
+            "charisma": "+5"
         },
         "skills": [
-            "Acrobatics +10",
-            "Athletics +8",
-            "Deception +6",
-            "Perception +8",
+            "Athletics +10",
+            "Survival +8",
             "Insight +8",
-            "Stealth +10"
+            "Perception +8",
+            "Religion +5"
         ],
         "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
         "damage_immunities": "poison",
         "condition_immunities": "charmed, frightened, poisoned",
         "senses": "darkvision 60 ft., passive Perception 18",
-        "languages": "All spoken languages (Tongue of the Sun and Moon)",
+        "languages": "Understands Common, Celestial, and all spoken languages (Tongue of the Sun and Moon)",
         "challenge": "Legendary",
         "special_abilities": [
+            "Unarmored Defense: AC equals 10 + Dexterity modifier + Wisdom modifier.",
+            "Rage: Can enter a rage to gain advantage on Strength checks and saving throws, resistance to bludgeoning, piercing, and slashing damage, and a bonus to damage rolls.",
+            "Ancestral Protectors: While raging, the first creature he hits on his turn has disadvantage on attack rolls against targets other than Sha Wujing until the start of his next turn.",
+            "Spirit Shield: When a creature he can see within 30 feet takes damage, he can reduce that damage by 2d6 as a reaction.",
             "Martial Arts: Allows use of Dexterity for attack and damage rolls with unarmed strikes and monk weapons.",
             "Ki: Grants abilities like Flurry of Blows, Patient Defense, Step of the Wind, Stunning Strike.",
-            "Evasion: Takes no damage on a successful Dexterity saving throw.",
-            "Stillness of Mind: End one charmed or frightened effect on self.",
-            "Tongue of the Sun and Moon: Understands all spoken languages and can communicate with any creature.",
-            "Divine Magic (Sorcerer): Access to cleric and sorcerer spells.",
-            "Empowered Healing: Can reroll dice for healing spells for self or allies."
+            "Deflect Missiles: When hit by a ranged weapon attack, he can use his reaction to reduce the damage by 1d10 + Dexterity modifier + Monk level."
         ],
         "legendary_actions": {
-            "Unseen Strike": "Sun Wukong uses his speed to make an additional unarmed strike with advantage.",
-            "Mirage (Costs 2 Actions)": "Creates an illusory duplicate of himself that lasts until the start of his next turn, causing attacks against him to have disadvantage."
+            "Guardian's Presence": "Sha Wujing can impose disadvantage on an attack roll made against an ally within 10 feet of him.",
+            "Spiritual Strike (Costs 2 Actions)": "Sha Wujing makes an unarmed strike that deals an additional 2d10 necrotic damage, symbolizing his connection to the Way of the Long Death."
         },
         "actions": [
-            "Multiattack: Sun Wukong makes two attacks with his Ruyi Jingu Bang or unarmed strikes.",
-            "Ruyi Jingu Bang: Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 12 (1d8 + 4) bludgeoning damage plus 2d6 force damage.",
-            "Unarmed Strike: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 4) bludgeoning damage."
+            "Multiattack: Sha Wujing makes two attacks with his Heavy Staff or unarmed strikes.",
+            "Heavy Staff: Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 14 (2d6 + 5) bludgeoning damage.",
+            "Unarmed Strike: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) bludgeoning damage."
         ],
         "bonus_actions": [
-            "Step of the Wind: Sun Wukong can use a bonus action to Disengage or Dash and double his jump distance."
+            "Rage: Sha Wujing can enter a rage as a bonus action."
         ],
         "reactions": [
-            "Deflect Missiles: When hit by a ranged weapon attack, he can use his reaction to reduce the damage by 1d10 + Dexterity modifier + Monk level."
-        ]
+            "Spirit Shield: As a reaction, Sha Wujing can reduce damage taken by an ally within 30 feet by 2d6."
+        ],
+        "armor": {
+            "name": "Armor of the Guardian",
+            "type": "Half Plate (Medium Armor)",
+            "armor_class": 18,
+            "special_properties": "Enchanted to provide an additional +1 AC"
+        }
     }
 }
 
