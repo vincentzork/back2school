@@ -1,5 +1,5 @@
 {
-    "Sun_Wukong": {
+    "Sun Wukong": {
         "character_class": {
             "primary_class": {
                 "class_name": "Monk",
@@ -78,7 +78,13 @@
         ],
         "reactions": [
             "Deflect Missiles: When hit by a ranged weapon attack, he can use his reaction to reduce the damage by 1d10 + Dexterity modifier + Monk level."
-        ]
+        ],
+        "armor": {
+            "name": "None",
+            "type": "None",
+            "armor_class": 18,
+            "special_properties": "None"
+        }
     },
     "Sha_Wujing": {
         "character_class": {
