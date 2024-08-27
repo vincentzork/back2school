@@ -22,8 +22,8 @@
         ],
         "race": "Celestial Being",
         "name": "Sun Wukong",
-        "hit_points": "Dependent on level and Constitution (14d8 Monk + 6d6 Sorcerer)",
-        "armor_class": "Dependent on Unarmored Defense (10 + Dex mod + Wis mod)",
+        "hit_points": 158,
+        "armor_class": 19,
         "speed": "50 ft. (Base, potentially higher with Mobile feat and Boots of Speed)",
         "abilities": {
             "strength": 18,
@@ -54,7 +54,7 @@
         "condition_immunities": "charmed, frightened, poisoned",
         "senses": "darkvision 60 ft., passive Perception 18",
         "languages": "All spoken languages (Tongue of the Sun and Moon)",
-        "challenge": "Legendary",
+        "challenge": 20,
         "special_abilities": [
             "Martial Arts: Allows use of Dexterity for attack and damage rolls with unarmed strikes and monk weapons.",
             "Ki: Grants abilities like Flurry of Blows, Patient Defense, Step of the Wind, Stunning Strike.",
@@ -81,7 +81,7 @@
         ],
         "armor": {
             "name": "None",
-            "type": "None",
+            "armor_type": "None",
             "armor_class": 18,
             "special_properties": "None"
         }
@@ -140,7 +140,7 @@
         "condition_immunities": "charmed, frightened, poisoned",
         "senses": "darkvision 60 ft., passive Perception 18",
         "languages": "Understands Common, Celestial, and all spoken languages (Tongue of the Sun and Moon)",
-        "challenge": "Legendary",
+        "challenge": 20,
         "special_abilities": [
             "Unarmored Defense: AC equals 10 + Dexterity modifier + Wisdom modifier.",
             "Rage: Can enter a rage to gain advantage on Strength checks and saving throws, resistance to bludgeoning, piercing, and slashing damage, and a bonus to damage rolls.",
@@ -167,7 +167,7 @@
         ],
         "armor": {
             "name": "Armor of the Guardian",
-            "type": "Half Plate (Medium Armor)",
+            "armor_type": "Half Plate (Medium Armor)",
             "armor_class": 18,
             "special_properties": "Enchanted to provide an additional +1 AC"
         }
@@ -196,7 +196,7 @@
         "race": "Celestial Being (Cursed)",
         "name": "Zhu Bajie",
         "hit_points": 224,
-        "armor_class": "17 (Heavy Armor)",
+        "armor_class": 17,
         "speed": "30 ft.",
         "abilities": {
             "strength": 20,
@@ -225,7 +225,7 @@
         "condition_immunities": "charmed, frightened, poisoned",
         "senses": "darkvision 60 ft., passive Perception 10",
         "languages": "Understands Common, Celestial, and other languages spoken during his celestial service",
-        "challenge": "Legendary",
+        "challenge": 20,
         "special_abilities": [
             "Rage: Can enter a rage to gain advantage on Strength checks and saving throws, resistance to bludgeoning, piercing, and slashing damage, and a bonus to damage rolls.",
             "Frenzy: While raging, Zhu Bajie can make a single melee weapon attack as a bonus action on each of his turns.",
@@ -250,7 +250,7 @@
         ],
         "armor": {
             "name": "Heavy Armor",
-            "type": "Plate Armor",
+            "armor_type": "Plate Armor",
             "armor_class": 17,
             "special_properties": "Heavy armor that provides significant protection, fitting Zhu Bajie's resilient nature."
         }
@@ -279,7 +279,7 @@
         "race": "Human",
         "name": "Xuanzang (Tripitaka or Tang Sanzang)",
         "hit_points": 130,
-        "armor_class": "16 (Unarmored Defense and Monk abilities)",
+        "armor_class": 16,
         "speed": "30 ft.",
         "abilities": {
             "strength": 8,
@@ -304,7 +304,7 @@
         "condition_immunities": "Charmed, Frightened",
         "senses": "passive Perception 15",
         "languages": "Common, Celestial, and other languages of religious texts",
-        "challenge": "Legendary",
+        "challenge": 20,
         "special_abilities": [
             "Unarmored Defense: AC equals 10 + Dexterity modifier + Wisdom modifier.",
             "Channel Divinity (Emboldening Bond): As an action, Xuanzang can choose up to 4 creatures within 30 feet and create a bond among them for 10 minutes. While bonded, the creatures can add 1d4 to an attack roll, ability check, or saving throw once per turn.",
@@ -327,7 +327,7 @@
         ],
         "armor": {
             "name": "Monk's Robes",
-            "type": "Clothing",
+            "armor_type": "Clothing",
             "armor_class": "16 with Unarmored Defense",
             "special_properties": "These robes are simple yet durable, representing Xuanzang's humble and ascetic lifestyle."
         }
@@ -357,7 +357,7 @@
         "race": "Dragon (Transformed into Horse)",
         "name": "White Dragon Horse (Bai Long Ma)",
         "hit_points": 147,
-        "armor_class": "18 (Natural Armor in Dragon Form, Unarmored Defense in Horse Form)",
+        "armor_class": 18,
         "speed": "60 ft. (Horse Form), 40 ft., fly 80 ft. (Dragon Form)",
         "abilities": {
             "strength": 18,
@@ -385,7 +385,7 @@
         "condition_immunities": "Frightened",
         "senses": "darkvision 60 ft., passive Perception 18",
         "languages": "Common, Draconic, Celestial",
-        "challenge": "Legendary",
+        "challenge": 20,
         "special_abilities": [
             "Lay on Hands: The White Dragon Horse has a pool of healing power that can restore 70 hit points per long rest.",
             "Divine Sense: The White Dragon Horse can detect the presence of celestial, fiend, and undead within 60 feet.",
@@ -410,7 +410,7 @@
         ],
         "armor": {
             "name": "Natural Armor (Dragon Form)",
-            "type": "None",
+            "armor_type": "None",
             "armor_class": "18 in Dragon Form, 16 in Horse Form",
             "special_properties": "The White Dragon Horse has natural scales that provide excellent protection in dragon form."
         }
