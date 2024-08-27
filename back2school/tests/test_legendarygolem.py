@@ -12,6 +12,7 @@ def iron_golem_of_acererak_stat_block():
         **legendary_golems.iron_golem_of_acererak_custom_stat_block
     )
 
+
 def test_iron_golem_of_acererak_stat_block(iron_golem_of_acererak_stat_block):
     # Check if the Iron Golem of Acererak StatBlock instance is created correctly
     assert iron_golem_of_acererak_stat_block.name == "Iron Golem of Acererak"
@@ -21,7 +22,9 @@ def test_iron_golem_of_acererak_stat_block(iron_golem_of_acererak_stat_block):
     assert iron_golem_of_acererak_stat_block.abilities.strength == 28
     assert iron_golem_of_acererak_stat_block.saving_throws.strength == 16
     assert "Athletics +18" in iron_golem_of_acererak_stat_block.skills
-    assert iron_golem_of_acererak_stat_block.damage_resistances == "fire, cold, necrotic"
+    assert (
+        iron_golem_of_acererak_stat_block.damage_resistances == "fire, cold, necrotic"
+    )
     assert (
         iron_golem_of_acererak_stat_block.damage_immunities
         == "poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks"
@@ -34,7 +37,10 @@ def test_iron_golem_of_acererak_stat_block(iron_golem_of_acererak_stat_block):
         iron_golem_of_acererak_stat_block.senses
         == "darkvision 120 ft., passive Perception 22"
     )
-    assert iron_golem_of_acererak_stat_block.languages == "Understands Common, Infernal, and the languages of its creator but cannot speak"
+    assert (
+        iron_golem_of_acererak_stat_block.languages
+        == "Understands Common, Infernal, and the languages of its creator but cannot speak"
+    )
     assert iron_golem_of_acererak_stat_block.challenge == 22
     assert (
         "Magic Resistance: The golem has advantage on saving throws against spells and other magical effects."
@@ -61,12 +67,14 @@ def test_iron_golem_of_acererak_stat_block(iron_golem_of_acererak_stat_block):
         == "Dark Vengeance: When the golem is hit by a melee attack, it can use its reaction to deal 3d10 necrotic damage to the attacker."
     )
 
+
 @pytest.fixture
 def aegis_fang_golem_stat_block():
     # Fixture to provide a sample instance of GolemChampionStatBlock for testing
     return LegendaryGolemStatBlock(
         **legendary_golems.aegis_fang_golem_custom_stat_block
     )
+
 
 def test_aegis_fang_golem_stat_block(aegis_fang_golem_stat_block):
     # Check if the Aegis-Fang Golem StatBlock instance is created correctly
@@ -90,7 +98,10 @@ def test_aegis_fang_golem_stat_block(aegis_fang_golem_stat_block):
         aegis_fang_golem_stat_block.senses
         == "darkvision 120 ft., passive Perception 22"
     )
-    assert aegis_fang_golem_stat_block.languages == "Understands Common, Dwarvish, and the languages of its creator but cannot speak"
+    assert (
+        aegis_fang_golem_stat_block.languages
+        == "Understands Common, Dwarvish, and the languages of its creator but cannot speak"
+    )
     assert aegis_fang_golem_stat_block.challenge == 23
     assert (
         "Magic Resistance: The golem has advantage on saving throws against spells and other magical effects."
@@ -125,9 +136,14 @@ def mithral_golem_of_myth_drannor_stat_block():
         **legendary_golems.mithral_golem_of_myth_drannor_custom_stat_block
     )
 
-def test_mithral_golem_of_myth_drannor_stat_block(mithral_golem_of_myth_drannor_stat_block):
+
+def test_mithral_golem_of_myth_drannor_stat_block(
+    mithral_golem_of_myth_drannor_stat_block,
+):
     # Check if the Mithral Golem StatBlock instance is created correctly
-    assert mithral_golem_of_myth_drannor_stat_block.name == "Mithral Golem of Myth Drannor"
+    assert (
+        mithral_golem_of_myth_drannor_stat_block.name == "Mithral Golem of Myth Drannor"
+    )
     assert mithral_golem_of_myth_drannor_stat_block.hit_points == 300
     assert mithral_golem_of_myth_drannor_stat_block.armor_class == 22
     assert mithral_golem_of_myth_drannor_stat_block.speed == "50 ft."
@@ -150,7 +166,10 @@ def test_mithral_golem_of_myth_drannor_stat_block(mithral_golem_of_myth_drannor_
         mithral_golem_of_myth_drannor_stat_block.senses
         == "darkvision 120 ft., passive Perception 22"
     )
-    assert mithral_golem_of_myth_drannor_stat_block.languages == "Understands Common, Elvish, and the languages of its creator but cannot speak"
+    assert (
+        mithral_golem_of_myth_drannor_stat_block.languages
+        == "Understands Common, Elvish, and the languages of its creator but cannot speak"
+    )
     assert mithral_golem_of_myth_drannor_stat_block.challenge == 24
     assert (
         "Magic Resistance: The golem has advantage on saving throws against spells and other magical effects."
@@ -205,9 +224,15 @@ def adamantine_golem_of_undermountain_stat_block():
         **legendary_golems.adamantine_golem_of_undermountain_custom_stat_block
     )
 
-def test_adamantine_golem_of_undermountain_stat_block(adamantine_golem_of_undermountain_stat_block):
+
+def test_adamantine_golem_of_undermountain_stat_block(
+    adamantine_golem_of_undermountain_stat_block,
+):
     # Check if the Adamantine Golem StatBlock instance is created correctly
-    assert adamantine_golem_of_undermountain_stat_block.name == "Adamantine Golem of Undermountain"
+    assert (
+        adamantine_golem_of_undermountain_stat_block.name
+        == "Adamantine Golem of Undermountain"
+    )
     assert adamantine_golem_of_undermountain_stat_block.hit_points == 400
     assert adamantine_golem_of_undermountain_stat_block.armor_class == 24
     assert adamantine_golem_of_undermountain_stat_block.speed == "30 ft."
@@ -230,7 +255,10 @@ def test_adamantine_golem_of_undermountain_stat_block(adamantine_golem_of_underm
         adamantine_golem_of_undermountain_stat_block.senses
         == "darkvision 120 ft., passive Perception 20"
     )
-    assert adamantine_golem_of_undermountain_stat_block.languages == "Understands Common, Infernal, and the languages of its creator but cannot speak"
+    assert (
+        adamantine_golem_of_undermountain_stat_block.languages
+        == "Understands Common, Infernal, and the languages of its creator but cannot speak"
+    )
     assert adamantine_golem_of_undermountain_stat_block.challenge == 23
     assert (
         "Arcane Ward: The golem has an additional pool of hit points equal to its Constitution modifier x 10 (50 hit points) that regenerates at the start of its turn. These hit points are depleted before the golem’s actual hit points are reduced."
@@ -249,7 +277,9 @@ def test_adamantine_golem_of_undermountain_stat_block(adamantine_golem_of_underm
         in adamantine_golem_of_undermountain_stat_block.special_abilities
     )
     assert (
-        adamantine_golem_of_undermountain_stat_block.legendary_actions["Juggernaut Charge"]
+        adamantine_golem_of_undermountain_stat_block.legendary_actions[
+            "Juggernaut Charge"
+        ]
         == "The golem moves up to its speed in a straight line and can make a Juggernaut Slam attack against any creature in its path. If it hits, the target must make a DC 24 Strength saving throw or be knocked prone and take an additional 2d6 bludgeoning damage."
     )
     assert (
